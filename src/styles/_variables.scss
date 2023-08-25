@@ -1,0 +1,66 @@
+// Font weights
+$weight--extrabold: 900;
+$weight--heavy: 800;
+$weight--bold: 700;
+$weight--semibold: 600;
+$weight--medium: 500;
+$weight--normal: 400;
+$weight--light: 100;
+
+// Font sizes
+$base-font-size: 18px;
+
+// Font variables
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.333,1240,22,1.333,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+$font-size-map: (
+    xxxxl: clamp(6.31rem, calc(5.82rem + 2.44vw), 7.71rem),
+    xxxl: clamp(4.74rem, calc(4.37rem + 1.83vw), 5.79rem),
+    xxl: clamp(3.55rem, calc(3.28rem + 1.37vw), 4.34rem),
+    xl: clamp(2.66rem, calc(2.46rem + 1.03vw), 3.26rem),
+    l: clamp(2rem, calc(1.84rem + 0.77vw), 2.44rem),
+    m: clamp(1.5rem, calc(1.38rem + 0.58vw), 1.83rem),
+    s: clamp(1.13rem, calc(1.04rem + 0.43vw), 1.38rem),
+    xs: clamp(0.84rem, calc(0.78rem + 0.33vw), 1.03rem),
+);
+
+// --------------------------------- Breakpoints --------------------------------------
+$breakpoints: (
+    'medium' '(min-width: 599px)',
+    'large' '(min-width: 1023px)',
+    'site-width' '(min-width: 1441px)',
+    'x-large' '(min-width: 1919px)'
+);
+
+// --------------------------------- Grid Dimensions --------------------------------------
+
+// Wrappers
+$site-width: 1440px;
+
+// Grid setup
+$grid: 20px;
+$gutter: $grid;
+
+$variable-gutter--small: 8.33vw;
+$variable-gutter--medium: ($variable-gutter--small * 2);
+$variable-gutter--large: ($variable-gutter--small * 3);
+
+$component-spacing--small: $grid;
+$component-spacing--medium: ($component-spacing--small * 3);
+$component-spacing--large: ($component-spacing--small * 5.5);
+
+// --------------------------------- Transitions --------------------------------------
+
+$transition: 0.25s ease-out;
+$transition-quick: 0.2s ease;
+
+// --------------------------------- Z-indices --------------------------------------
+
+$z-index: (
+    under: -1,
+    zero: 0,
+    one: 1,
+    two: 2,
+    three: 3,
+    four: 4,
+);

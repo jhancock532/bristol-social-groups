@@ -1,0 +1,29 @@
+{
+  "name": "social-bristol",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint && prettier --check '**/?(.)*.{md,css,scss,js,ts,tsx,json,yaml,yml}'",
+    "format": "prettier --write '**/?(.)*.{md,css,scss,js,ts,tsx,json,yaml,yml}'"
+  },
+  "dependencies": {
+    "@types/node": "20.5.6",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "prettier": "^3.0.2",
+    "prettier-eslint": "^15.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.66.1",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "eslint-config-torchbox": "^1.1.0"
+  }
+}

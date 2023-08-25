@@ -1,0 +1,109 @@
+@use 'variables' as *;
+
+/* ============================================
+    Media queries
+*/
+@mixin media-query($queries...) {
+    @each $query in $queries {
+        @each $breakpoint in $breakpoints {
+            $name: nth($breakpoint, 1);
+            $declaration: nth($breakpoint, 2);
+
+            @if $query == $name and $declaration {
+                @media only screen and #{$declaration} {
+                    @content;
+                }
+            }
+        }
+    }
+}
+
+/* ============================================
+    z-index
+*/
+
+@mixin z-index($key) {
+    z-index: z-index($key);
+}
+
+// Todo: not required?
+@function z-index($key) {
+    @return map-get($z-index, $key);
+}
+
+/* ============================================
+  Hide text
+*/
+@mixin hidden() {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ============================================
+  iOS Native vertical scroll
+*/
+@mixin native-vertical-scroll() {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ============================================
+    Font sizes
+*/
+
+@mixin font-size($size) {
+    @if $size == null {
+        @warn 'Font size ‘#{$keyword}’ does not exist';
+    } @else {
+        $clamp-size: map-get($font-size-map, $size);
+        font-size: $clamp-size;
+    }
+}
+
+/* ============================================
+    Animations
+*/
+
+@mixin animation() {
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+            display: block;
+        }
+
+        100% {
+            opacity: 0;
+            display: none;
+        }
+    }
+}
+
+/* ============================================
+    IE11 target
+*/
+
+// All credits go to: https://gist.github.com/tcrammond/99fd936007685dba97b7
+@mixin target-ie {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+
+@mixin heading-text() {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+@mixin body-text() {
+    font-style: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+}

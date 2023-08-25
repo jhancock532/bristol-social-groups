@@ -1,0 +1,8 @@
+static_compiled
+*.html
+.next
+data
+
+.git
+node_modules
+out
