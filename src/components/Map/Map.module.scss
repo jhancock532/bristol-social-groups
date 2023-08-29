@@ -1,0 +1,6 @@
+.container {
+    :global(.leaflet-container) {
+        border-radius: $border-radius;
+        height: 350px;
+    }
+}

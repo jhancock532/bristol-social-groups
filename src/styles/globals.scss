@@ -3,22 +3,23 @@
 :root {
     // Base colors
     // https://coolors.co/palette/fffae8-d04200-363635-465e4d-558564-1c221d
-    --color--white: #fffae8;
-    --color--orange: #d04200;
+    --color--white: #edffef;
+    --color--dark-green: #1a6201;
+    --color--underline-green: #65c783;
+    --color--inverse-link-highlight: #8beba8;
     --color--brown: #a33400;
     --color--dark-gray: #363635;
-    --color--dark-green: #465e4d;
     --color--green: #558564;
     --color--midnight: #1c221d;
     --color--black: #121613;
 
     // Theme colors
-    --color--primary: var(--color--orange);
+    --color--primary: var(--color--dark-green);
     --color--text: var(--color--midnight);
     --color--link: var(--color--primary);
-    --color--underline: var(--color--primary);
+    --color--underline: var(--color--underline-green);
     --color--hover: var(--color--brown);
-    --color--background: var(--color--black);
+    --color--background: var(--color--white);
 }
 
 *,

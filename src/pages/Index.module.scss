@@ -22,4 +22,5 @@
 }
 
 .title {
+    @include font-size(xl);
 }

@@ -15,15 +15,18 @@
     "@types/react-dom": "18.2.7",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "leaflet": "^1.9.4",
     "next": "13.4.19",
     "prettier": "^3.0.2",
     "prettier-eslint": "^15.0.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
     "sass": "^1.66.1",
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.3",
     "eslint-config-torchbox": "^1.1.0"
   }
 }

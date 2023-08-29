@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import styles from '@/styles/Index.module.scss';
-import events from 'data/events.json';
+import events from '@/../data/events.json';
+import EventCard from '@/components/EventCard';
+import styles from './Index.module.scss';
 
 export default function Home() {
     return (
@@ -13,6 +14,12 @@ export default function Home() {
                     content="width=device-width, initial-scale=1"
                 />
                 <link rel="icon" href="/favicon.ico" />
+                <link
+                    rel="stylesheet"
+                    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+                    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+                    crossOrigin=""
+                />
             </Head>
             <div className={styles.container}>
                 <div className={styles.sidebar}></div>
@@ -24,14 +31,7 @@ export default function Home() {
                     </p>
                     <div className={styles.events}>
                         {events.map((event: any, index: number) => (
-                            <div className={styles.event} key={index}>
-                                <h2 className={styles.eventTitle}>
-                                    {event.name}
-                                </h2>
-                                <p className={styles.eventDescription}>
-                                    {event.description}
-                                </p>
-                            </div>
+                            <EventCard key={index} {...event} />
                         ))}
                     </div>
                 </main>

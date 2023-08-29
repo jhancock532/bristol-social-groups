@@ -1,0 +1,77 @@
+@use 'variables' as *;
+
+.title {
+    @include font-size(m);
+    line-height: 1.25;
+    font-weight: 500;
+
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
+    text-decoration-color: var(--color--underline);
+}
+
+.description {
+    @include font-size(s);
+    font-weight: 400;
+    margin-bottom: $grid;
+}
+
+.details {
+    @include font-size(s);
+    padding: $grid;
+    background-color: var(--color--primary);
+    display: flex;
+    flex-direction: column;
+    gap: $grid;
+    border-radius: $border-radius;
+
+    max-width: 600px;
+
+    &__icon {
+        flex-shrink: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+
+        p {
+            color: var(--color--white);
+            margin: -1px 0 0 0;
+        }
+    }
+}
+
+.googleMapsLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: max-content;
+    margin: 0;
+    margin-left: auto;
+    gap: 4px;
+
+    color: var(--color--white);
+
+    text-decoration: underline;
+
+    svg path {
+        transition:
+            transform $transition,
+            fill $transition;
+    }
+
+    &:hover {
+        color: var(--color--inverse-link-highlight);
+
+        svg path {
+            fill: var(--color--inverse-link-highlight);
+            transform: translate(2px, -2px);
+        }
+    }
+}
