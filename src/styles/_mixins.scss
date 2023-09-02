@@ -87,6 +87,62 @@
 }
 
 /* ============================================
+    Link underscore
+*/
+
+@mixin highlight-link {
+    position: relative;
+    display: inline-block;
+
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
+    text-decoration-color: var(--color--underline);
+
+    transition: text-decoration-color $transition;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: -4px;
+        bottom: -4px;
+        width: calc(100% + 8px);
+        height: 0%;
+        border-radius: $border-radius;
+        background-color: var(--color--inverse-link-highlight);
+        transition: height 0.1s;
+        mix-blend-mode: multiply;
+    }
+
+    &:hover {
+        color: var(--color--text);
+        text-decoration-color: var(--color--text);
+    }
+
+    &:hover::after {
+        transition: height $transition;
+        height: calc(100% + 8px);
+    }
+}
+
+@mixin focus-outline() {
+    &:focus-visible {
+        border-radius: $border-radius;
+        outline: 3px solid var(--color--primary);
+        outline-offset: 3px;
+    }
+}
+
+@mixin focus-outline-inverse() {
+    &:focus-visible {
+        border-radius: $border-radius;
+        outline: 3px solid var(--color--inverse-link-highlight);
+        outline-offset: 3px;
+    }
+}
+
+/* ============================================
     IE11 target
 */
 

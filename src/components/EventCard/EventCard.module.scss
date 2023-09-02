@@ -2,14 +2,13 @@
 
 .title {
     @include font-size(m);
+    @include highlight-link();
     line-height: 1.25;
     font-weight: 500;
 
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
-    text-decoration-skip-ink: none;
-    text-decoration-color: var(--color--underline);
+    &__link {
+        @include focus-outline();
+    }
 }
 
 .description {
@@ -24,7 +23,7 @@
     background-color: var(--color--primary);
     display: flex;
     flex-direction: column;
-    gap: $grid;
+    gap: 15px;
     border-radius: $border-radius;
 
     max-width: 600px;
@@ -46,7 +45,47 @@
     }
 }
 
+.locationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toggleMapButton {
+    @include font-size(s);
+    @include focus-outline-inverse();
+
+    font-weight: bold;
+    background-color: var(--color--white);
+    color: var(--color--primary);
+    border: none;
+    border-radius: $border-radius;
+    width: max-content;
+    padding: 5px 5px 4px 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color--inverse-link-highlight);
+        color: var(--color--text);
+
+        & .toggleMapButton__icon path {
+            fill: var(--color--text);
+        }
+    }
+
+    &__icon {
+        margin-top: -2px;
+
+        @include media-query(medium) {
+            height: 27px;
+            width: 27px;
+        }
+    }
+}
+
 .googleMapsLink {
+    @include focus-outline-inverse();
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,6 +111,30 @@
         svg path {
             fill: var(--color--inverse-link-highlight);
             transform: translate(2px, -2px);
+        }
+    }
+}
+
+.eventDetailsLink {
+    @include highlight-link();
+    @include focus-outline();
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    margin-top: $grid;
+    color: var(--color--text);
+    width: max-content;
+    font-weight: 500;
+
+    &__icon {
+        transition: transform $transition;
+    }
+
+    &:hover {
+        .eventDetailsLink__icon {
+            transform: translate(3px, 0);
         }
     }
 }

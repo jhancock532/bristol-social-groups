@@ -1,41 +1,53 @@
-import Head from 'next/head';
-import events from '@/../data/events.json';
+import fs from 'fs';
+import { join } from 'path';
 import EventCard from '@/components/EventCard';
+import Layout from '@/components/Layout';
+import Metadata from '@/components/Metadata';
 import styles from './Index.module.scss';
 
-export default function Home() {
+export default function Home({ events }: any) {
     return (
-        <>
-            <Head>
-                <title>Social Bristol</title>
-                <meta name="description" content="" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                />
-                <link rel="icon" href="/favicon.ico" />
-                <link
-                    rel="stylesheet"
-                    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-                    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-                    crossOrigin=""
-                />
-            </Head>
-            <div className={styles.container}>
-                <div className={styles.sidebar}></div>
-                <main className={styles.content}>
-                    <h1 className={styles.title}>Social Bristol</h1>
-                    <p>
-                        A collection of regular social meetups in Bristol that
-                        are open to newcomers.
-                    </p>
-                    <div className={styles.events}>
-                        {events.map((event: any, index: number) => (
-                            <EventCard key={index} {...event} />
-                        ))}
-                    </div>
-                </main>
+        <Layout>
+            <Metadata
+                title="Social Bristol"
+                description="A list of regular meetups in Bristol that are open to newcomers."
+            />
+            <h1 className={styles.title}>Social Bristol</h1>
+            <p>
+                A list of regular meetups in Bristol that are open to newcomers.
+            </p>
+            <div className={styles.events}>
+                {events.map((event: any, index: number) => (
+                    <EventCard key={index} {...event} />
+                ))}
             </div>
-        </>
+        </Layout>
     );
 }
+
+const EVENT_DETAILS_PATH = join(process.cwd(), 'data/events');
+
+const getDirectories = (source: string) =>
+    fs
+        .readdirSync(source, { withFileTypes: true })
+        .filter((dirent) => dirent.isDirectory())
+        .map((dirent) => dirent.name);
+
+export const getStaticProps = async () => {
+    const paths = getDirectories(EVENT_DETAILS_PATH);
+
+    const events = paths.map((path: string) => {
+        const fullEventPath = join(EVENT_DETAILS_PATH, path, 'details.json');
+        const eventData = JSON.parse(
+            fs.readFileSync(fullEventPath, { encoding: 'utf8' }),
+        );
+
+        return eventData;
+    });
+
+    return {
+        props: {
+            events,
+        },
+    };
+};

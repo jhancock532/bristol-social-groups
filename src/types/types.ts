@@ -20,7 +20,7 @@ export type EventTime = {
         | 'Friday'
         | 'Saturday'
         | 'Sunday';
-    start: number;
-    end: number | 'late';
+    start: string;
+    end: string;
     description?: string;
 };
