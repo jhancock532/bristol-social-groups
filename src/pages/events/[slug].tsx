@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
 import fs from 'fs';
 import { join } from 'path';
+import { getDirectories } from '@/utils/utils';
 
 const EVENTS_PATH = join(process.cwd(), 'data/events/');
 
@@ -15,13 +16,6 @@ const Post = ({ data }: { data: any }) => {
     );
 };
 
-const getDirectories = (source: string) =>
-    fs
-        .readdirSync(source, { withFileTypes: true })
-        .filter((dirent) => dirent.isDirectory())
-        .map((dirent) => dirent.name);
-
-// Generate a list of path names from all the .json files in the /data/writing directory.
 export const getStaticPaths = async () => {
     const paths: any[] = [];
 

@@ -3,6 +3,7 @@ import { join } from 'path';
 import EventCard from '@/components/EventCard';
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
+import { getDirectories } from '@/utils/utils';
 import styles from './Index.module.scss';
 
 export default function Home({ events }: any) {
@@ -26,12 +27,6 @@ export default function Home({ events }: any) {
 }
 
 const EVENT_DETAILS_PATH = join(process.cwd(), 'data/events');
-
-const getDirectories = (source: string) =>
-    fs
-        .readdirSync(source, { withFileTypes: true })
-        .filter((dirent) => dirent.isDirectory())
-        .map((dirent) => dirent.name);
 
 export const getStaticProps = async () => {
     const paths = getDirectories(EVENT_DETAILS_PATH);
