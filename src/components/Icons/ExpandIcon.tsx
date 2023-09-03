@@ -26,7 +26,7 @@ export const ExpandIcon = ({
         >
             <path
                 d="M12 8.29498L6 14.295L7.41 15.705L12 11.125L16.59 15.705L18 14.295L12 8.29498Z"
-                fill={fill || '#1A6201'}
+                fill={fill || 'currentColor'}
             />
         </svg>
     );

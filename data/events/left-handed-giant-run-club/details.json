@@ -1,0 +1,30 @@
+{
+  "name": "Left Handed Giant Run Club",
+  "slug": "left-handed-giant-run-club",
+  "description": "A weekly running club meeting at the Left Handed Giant taproom.",
+  "events": [
+    {
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 22:00",
+        "details": "Meet at 6PM onwards to start the run at 6:30PM."
+      },
+      "location": {
+        "address": "Left Handed Giant Brewpub, Finzels Reach, BS1 6EU",
+        "latitude": "51.454404",
+        "longitude": "-2.589558",
+        "googleMapsLink": "https://goo.gl/maps/XLsSwE54esztMU5v6"
+      },
+      "cost": {
+        "sessionPrice": 0.0,
+        "details": "Free to attend, no equipment required except suitable running clothes."
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://lefthandedgiant.com/pages/lhg-runclub"
+    }
+  ]
+}

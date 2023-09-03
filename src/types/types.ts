@@ -3,11 +3,17 @@ export type IconProps = {
     fill?: string;
 };
 
+export type EventCost = {
+    sessionPrice: number;
+    details: string;
+};
+
 export type EventLocation = {
     address: string;
     latitude: string;
     longitude: string;
     googleMapsLink: string;
+    details?: string;
 };
 
 export type EventTime = {
@@ -22,5 +28,5 @@ export type EventTime = {
         | 'Sunday';
     start: string;
     end: string;
-    description?: string;
+    details?: string;
 };

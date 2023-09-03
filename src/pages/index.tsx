@@ -14,7 +14,7 @@ export default function Home({ events }: any) {
                 description="A list of regular meetups in Bristol that are open to newcomers."
             />
             <h1 className={styles.title}>Social Bristol</h1>
-            <p>
+            <p className={styles.description}>
                 A list of regular meetups in Bristol that are open to newcomers.
             </p>
             <div className={styles.events}>

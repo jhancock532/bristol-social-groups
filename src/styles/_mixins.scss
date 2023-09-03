@@ -92,7 +92,8 @@
 
 @mixin highlight-link {
     position: relative;
-    display: inline-block;
+    display: inline;
+    border-radius: $border-radius;
 
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -100,29 +101,26 @@
     text-decoration-skip-ink: none;
     text-decoration-color: var(--color--underline);
 
-    transition: text-decoration-color $transition;
+    background-image: linear-gradient(
+        180deg,
+        var(--color--inverse-link-highlight) 0%,
+        var(--color--inverse-link-highlight) 50%,
+        transparent 50%,
+        transparent 100%
+    );
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    background-position: 0 -100%;
 
-    &:after {
-        content: '';
-        position: absolute;
-        left: -4px;
-        bottom: -4px;
-        width: calc(100% + 8px);
-        height: 0%;
-        border-radius: $border-radius;
-        background-color: var(--color--inverse-link-highlight);
-        transition: height 0.1s;
-        mix-blend-mode: multiply;
-    }
+    transition:
+        background-position 0.2s,
+        text-decoration-color $transition;
 
     &:hover {
-        color: var(--color--text);
-        text-decoration-color: var(--color--text);
-    }
-
-    &:hover::after {
-        transition: height $transition;
-        height: calc(100% + 8px);
+        color: var(--color--black);
+        text-decoration-color: var(--color--black);
+        background-position: 0 0;
+        transition: background-position $transition;
     }
 }
 

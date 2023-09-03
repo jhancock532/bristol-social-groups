@@ -1,0 +1,29 @@
+{
+  "name": "Sea Shanty Singing Night",
+  "slug": "sea-shanty-singing-night",
+  "description": "An open choir singing sea shanties.",
+  "events": [
+    {
+      "time": {
+        "frequency": "Every 2nd and 4th Tuesday of the month",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 20:00",
+        "end": "Jan 1, 1970 22:00",
+        "details": "Run fortnightly."
+      },
+      "location": {
+        "address": "The Llandoger Trow Pub, King St, BS1 4ER",
+        "latitude": "51.4518716",
+        "longitude": "-2.5933333",
+        "googleMapsLink": "https://goo.gl/maps/GPz1c61uxqtUpqiu6"
+      },
+      "cost": {
+        "sessionPrice": 0.0
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.llandogertrow.co.uk/events-1"
+    }
+  ]
+}

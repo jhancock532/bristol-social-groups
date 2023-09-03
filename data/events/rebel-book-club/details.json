@@ -1,0 +1,31 @@
+{
+  "name": "Rebel Book Club",
+  "slug": "rebel-book-club",
+  "description": "A non-fiction book club.",
+  "events": [
+    {
+      "time": {
+        "frequency": "The last Tuesday of every month",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 19:00",
+        "end": "Jan 1, 1970 21:00",
+        "details": "The last Tuesday of every month"
+      },
+      "location": {
+        "address": "Generator Building, Counterslip, BS1 6BX",
+        "latitude": "51.4538678",
+        "longitude": "-2.5874324",
+        "googleMapsLink": "https://goo.gl/maps/W4YShHLVrpNtHJTKA"
+      },
+      "cost": {
+        "sessionPrice": 10.0,
+        "details": "Average price of session not including book for a 12 month subscription at £120."
+      },
+      "booking": {
+        "required": true,
+        "details": "https://www.rebelbook.club/events"
+      },
+      "url": "https://www.rebelbook.club/events"
+    }
+  ]
+}

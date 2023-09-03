@@ -2,4 +2,11 @@
 
 .title {
     @include font-size(xl);
+    margin-bottom: $grid * 2;
+}
+
+.description {
+    @include media-query(large) {
+        margin-bottom: $grid * 3;
+    }
 }

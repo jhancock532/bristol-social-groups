@@ -1,12 +1,26 @@
 @use 'variables' as *;
 
+.container {
+    margin-bottom: $grid * 3;
+
+    @include media-query(large) {
+        margin-bottom: $grid * 4;
+    }
+}
+
 .title {
     @include font-size(m);
     @include highlight-link();
     line-height: 1.25;
     font-weight: 500;
 
+    @include media-query(large) {
+        @include font-size(l);
+    }
+
     &__link {
+        display: inline-block;
+        margin-bottom: $grid;
         @include focus-outline();
     }
 }
@@ -17,19 +31,42 @@
     margin-bottom: $grid;
 }
 
+.eventDetailsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $grid;
+
+    @include media-query('large') {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .details {
     @include font-size(s);
     padding: $grid;
-    background-color: var(--color--primary);
     display: flex;
     flex-direction: column;
     gap: 15px;
     border-radius: $border-radius;
-
+    border: 1px solid var(--color--inverse-link-highlight);
+    margin-bottom: auto;
     max-width: 600px;
+
+    @include media-query(medium) {
+        padding: $grid + 10px;
+    }
 
     &__icon {
         flex-shrink: 0;
+
+        path {
+            fill: var(--color--text);
+        }
+
+        @include media-query(medium) {
+            height: 27px;
+            width: 27px;
+        }
     }
 
     &__item {
@@ -39,7 +76,7 @@
         gap: 10px;
 
         p {
-            color: var(--color--white);
+            color: var(--color--text);
             margin: -1px 0 0 0;
         }
     }
@@ -53,16 +90,20 @@
 
 .toggleMapButton {
     @include font-size(s);
-    @include focus-outline-inverse();
+    @include focus-outline();
 
     font-weight: bold;
-    background-color: var(--color--white);
-    color: var(--color--primary);
+    background-color: var(--color--primary);
+    color: var(--color--white);
     border: none;
     border-radius: $border-radius;
     width: max-content;
     padding: 5px 5px 4px 8px;
     cursor: pointer;
+
+    & .toggleMapButton__icon path {
+        fill: var(--color--white);
+    }
 
     &:hover {
         background-color: var(--color--inverse-link-highlight);
@@ -84,7 +125,8 @@
 }
 
 .googleMapsLink {
-    @include focus-outline-inverse();
+    @include highlight-link();
+    @include focus-outline();
 
     display: flex;
     flex-direction: row;
@@ -94,22 +136,20 @@
     margin: 0;
     margin-left: auto;
     gap: 4px;
-
-    color: var(--color--white);
-
-    text-decoration: underline;
+    color: var(--color--text);
 
     svg path {
+        fill: var(--color--primary);
         transition:
             transform $transition,
             fill $transition;
     }
 
     &:hover {
-        color: var(--color--inverse-link-highlight);
+        color: var(--color--text);
 
         svg path {
-            fill: var(--color--inverse-link-highlight);
+            fill: var(--color--text);
             transform: translate(2px, -2px);
         }
     }
@@ -127,6 +167,11 @@
     color: var(--color--text);
     width: max-content;
     font-weight: 500;
+    margin-left: auto;
+
+    @include media-query(medium) {
+        margin-left: 0;
+    }
 
     &__icon {
         transition: transform $transition;
