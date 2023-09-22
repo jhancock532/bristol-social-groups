@@ -2,6 +2,7 @@
 const path = require('path');
 
 const nextConfig = {
+    output: 'export',
     reactStrictMode: true,
     sassOptions: {
         // allow all scss files access to these files

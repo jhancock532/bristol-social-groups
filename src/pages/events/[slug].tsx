@@ -8,6 +8,7 @@ import { ClockIcon } from '@/components/Icons/ClockIcon';
 import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
 import { WalletIcon } from '@/components/Icons/WalletIcon';
 import { LocationIcon } from '@/components/Icons/LocationIcon';
+import { ExternalIcon } from '@/components/Icons/ExternalIcon';
 import { get24HourTimeFromDateString, getDirectories } from '@/utils/utils';
 
 import styles from './EventPage.module.scss';
@@ -26,13 +27,15 @@ const EventDetailsSection = ({
     const HeadingTag = headingLevel;
 
     return (
-        <div className={styles.section}>
-            <HeadingTag className={styles.sectionTitle}>
-                {Icon && <Icon className={styles.icon} />}
-                {title}
+        <div className={styles.eventDetails}>
+            <HeadingTag className={styles.eventDetails__heading}>
+                {Icon && <Icon className={styles.eventDetails__icon} />}
+                <span className={styles.eventDetails__title}>{title}</span>
             </HeadingTag>
 
-            {details && <p className={styles.details}>{details}</p>}
+            {details && (
+                <p className={styles.eventDetails__description}>{details}</p>
+            )}
 
             {children}
         </div>
@@ -65,16 +68,38 @@ const Event = ({
 
     return (
         <div>
-            {event.name && <h2>{event.name}</h2>}
-            {event.description && <p>{event.description}</p>}
+            {event.name && (
+                <h2 className={styles.event__title}>{event.name}</h2>
+            )}
+            {event.description && (
+                <p className={styles.event__description}>{event.description}</p>
+            )}
 
             <EventDetailsSection
                 title={timeSectionTitle}
                 details={event.time?.details}
                 Icon={ClockIcon}
                 headingLevel={sectionTitleHeadingLevel}
+            ></EventDetailsSection>
+
+            <EventDetailsSection
+                title="Location"
+                details={event.location?.details || event.location?.address}
+                Icon={LocationIcon}
+                headingLevel={sectionTitleHeadingLevel}
             >
-                <button>Add to calendar</button>
+                <Map
+                    longitude={event.location.longitude}
+                    latitude={event.location.latitude}
+                    address={event.location.address}
+                />
+                <a
+                    className={styles.event__googleMapsLink}
+                    href={event.location.googleMapsLink}
+                    target="_blank"
+                >
+                    Open in Google Maps <ExternalIcon />
+                </a>
             </EventDetailsSection>
 
             <EventDetailsSection
@@ -96,22 +121,6 @@ const Event = ({
                 headingLevel={sectionTitleHeadingLevel}
             />
 
-            <EventDetailsSection
-                title="Location"
-                details={event.location?.details}
-                Icon={LocationIcon}
-                headingLevel={sectionTitleHeadingLevel}
-            >
-                <Map
-                    longitude={event.location.longitude}
-                    latitude={event.location.latitude}
-                    address={event.location.address}
-                />
-                <a href={event.location.googleMapsLink} target="_blank">
-                    Open in Google Maps
-                </a>
-            </EventDetailsSection>
-
             {event.accessibility && (
                 <EventDetailsSection
                     title="Accessibility notes"
@@ -127,8 +136,8 @@ const EventPage = ({ data }: { data: any }) => {
     return (
         <Layout>
             <Metadata title={data.name} description={data.description} />
-            <h1>{data.name}</h1>
-            <div>{data.description}</div>
+            <h1 className={styles.title}>{data.name}</h1>
+            <p className={styles.description}>{data.description}</p>
 
             {data.events.length > 1 ? (
                 data.events.map((event: any, index: number) => {

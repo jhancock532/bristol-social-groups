@@ -1,0 +1,37 @@
+.container {
+    @include main-grid();
+    padding-top: $grid;
+
+    @include media-query(large) {
+        padding-top: $grid * 2;
+    }
+}
+
+.description {
+    @include font-size(s);
+    font-weight: 400;
+    margin-bottom: $grid / 2;
+    color: var(--color--white);
+}
+
+.link {
+    @include highlight-link();
+    @include focus-outline();
+    @include font-size(s);
+    font-weight: 400;
+    color: var(--color--text);
+    padding: $grid / 2;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: $grid;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.navItem {
+    margin-bottom: 0;
+}

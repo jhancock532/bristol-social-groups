@@ -1,12 +1,15 @@
 @use 'variables' as *;
 
+.hero {
+    @include media-query(large) {
+        margin-bottom: $grid * 4;
+    }
+}
+
 .title {
-    @include font-size(xl);
-    margin-bottom: $grid * 2;
+    @include h1();
 }
 
 .description {
-    @include media-query(large) {
-        margin-bottom: $grid * 3;
-    }
+    @include font-size(sm);
 }

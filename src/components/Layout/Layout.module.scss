@@ -1,14 +1,13 @@
-.container {
-    display: grid;
-    grid-template-columns: $grid 1fr $grid;
-    padding-top: 30px;
+.mainContainer {
+    @include main-grid();
+    padding-top: $grid;
+    padding-bottom: $grid * 2;
 
     @include media-query(medium) {
-        grid-template-columns: $grid * 3 1fr $grid * 3;
+        padding-top: $grid * 4;
     }
 
     @include media-query(large) {
-        grid-template-columns: $grid * 6 1fr $grid * 6;
         padding-top: $grid * 6;
     }
 }

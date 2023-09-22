@@ -22,6 +22,7 @@ $font-size-map: (
     xl: clamp(2.66rem, calc(2.46rem + 1.03vw), 3.26rem),
     l: clamp(2rem, calc(1.84rem + 0.77vw), 2.44rem),
     m: clamp(1.5rem, calc(1.38rem + 0.58vw), 1.83rem),
+    sm: clamp(1.32rem, calc(1.22rem + 0.5vw), 1.58rem),
     s: clamp(1.13rem, calc(1.04rem + 0.43vw), 1.38rem),
     xs: clamp(0.84rem, calc(0.78rem + 0.33vw), 1.03rem),
 );

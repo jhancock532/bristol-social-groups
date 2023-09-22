@@ -87,6 +87,26 @@
 }
 
 /* ============================================
+    Focus outline
+*/
+
+@mixin focus-outline() {
+    &:focus-visible {
+        border-radius: $border-radius;
+        outline: 3px solid var(--color--primary);
+        outline-offset: 3px;
+    }
+}
+
+@mixin focus-outline-inverse() {
+    &:focus-visible {
+        border-radius: $border-radius;
+        outline: 3px solid var(--color--highlight-green);
+        outline-offset: 3px;
+    }
+}
+
+/* ============================================
     Link underscore
 */
 
@@ -103,8 +123,8 @@
 
     background-image: linear-gradient(
         180deg,
-        var(--color--inverse-link-highlight) 0%,
-        var(--color--inverse-link-highlight) 50%,
+        var(--color--highlight-green) 0%,
+        var(--color--highlight-green) 50%,
         transparent 50%,
         transparent 100%
     );
@@ -124,30 +144,47 @@
     }
 }
 
-@mixin focus-outline() {
-    &:focus-visible {
-        border-radius: $border-radius;
-        outline: 3px solid var(--color--primary);
-        outline-offset: 3px;
+@mixin external-highlight-link {
+    @include highlight-link();
+    @include focus-outline();
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: max-content;
+    margin: 0;
+    gap: 4px;
+    color: var(--color--text);
+
+    svg path {
+        fill: var(--color--primary);
+        transition:
+            transform $transition,
+            fill $transition;
+    }
+
+    &:hover {
+        color: var(--color--text);
+
+        svg path {
+            fill: var(--color--text);
+            transform: translate(2px, -2px);
+        }
     }
 }
 
-@mixin focus-outline-inverse() {
-    &:focus-visible {
-        border-radius: $border-radius;
-        outline: 3px solid var(--color--inverse-link-highlight);
-        outline-offset: 3px;
-    }
-}
+@mixin h1() {
+    @include font-size(xl);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: $grid;
 
-/* ============================================
-    IE11 target
-*/
-
-// All credits go to: https://gist.github.com/tcrammond/99fd936007685dba97b7
-@mixin target-ie {
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        @content;
+    @include media-query(large) {
+        @include font-size(xxl);
+        letter-spacing: -1.5px;
+        max-width: 20ch;
+        margin-bottom: $grid * 2;
     }
 }
 
@@ -160,4 +197,21 @@
     font-style: inherit;
     font-weight: inherit;
     text-transform: inherit;
+}
+
+/* ============================================
+    Grid
+*/
+
+@mixin main-grid() {
+    display: grid;
+    grid-template-columns: $grid 1fr $grid;
+
+    @include media-query(medium) {
+        grid-template-columns: $grid * 3 1fr $grid * 3;
+    }
+
+    @include media-query(large) {
+        grid-template-columns: $grid * 6 1fr $grid * 6;
+    }
 }

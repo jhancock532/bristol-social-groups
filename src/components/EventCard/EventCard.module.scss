@@ -48,7 +48,7 @@
     flex-direction: column;
     gap: 15px;
     border-radius: $border-radius;
-    border: 1px solid var(--color--inverse-link-highlight);
+    border: 1px solid var(--color--highlight-green);
     margin-bottom: auto;
     max-width: 600px;
 
@@ -106,7 +106,7 @@
     }
 
     &:hover {
-        background-color: var(--color--inverse-link-highlight);
+        background-color: var(--color--highlight-green);
         color: var(--color--text);
 
         & .toggleMapButton__icon path {
@@ -125,34 +125,9 @@
 }
 
 .googleMapsLink {
-    @include highlight-link();
-    @include focus-outline();
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    width: max-content;
-    margin: 0;
+    @include external-highlight-link();
+    margin-top: 0;
     margin-left: auto;
-    gap: 4px;
-    color: var(--color--text);
-
-    svg path {
-        fill: var(--color--primary);
-        transition:
-            transform $transition,
-            fill $transition;
-    }
-
-    &:hover {
-        color: var(--color--text);
-
-        svg path {
-            fill: var(--color--text);
-            transform: translate(2px, -2px);
-        }
-    }
 }
 
 .eventDetailsLink {

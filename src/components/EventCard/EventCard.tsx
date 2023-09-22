@@ -64,6 +64,7 @@ const EventDetails = ({ cost, time, location, bookingRequired }: Event) => {
                     <p>
                         Located at <strong>{location.address}</strong>
                     </p>
+
                     <button
                         className={styles.toggleMapButton}
                         onClick={() => setShowMap(!showMap)}

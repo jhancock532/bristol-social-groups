@@ -13,10 +13,13 @@ export default function Home({ events }: any) {
                 title="Social Bristol"
                 description="A list of regular meetups in Bristol that are open to newcomers."
             />
-            <h1 className={styles.title}>Social Bristol</h1>
-            <p className={styles.description}>
-                A list of regular meetups in Bristol that are open to newcomers.
-            </p>
+            <div className={styles.hero}>
+                <h1 className={styles.title}>Social Bristol</h1>
+                <p className={styles.description}>
+                    A list of groups in Bristol that meet up regularly and are
+                    open to newcomers.
+                </p>
+            </div>
             <div className={styles.events}>
                 {events.map((event: any, index: number) => (
                     <EventCard key={index} {...event} />
