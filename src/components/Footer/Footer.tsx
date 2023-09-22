@@ -11,10 +11,10 @@ export const Footer = () => {
                     This website is currently in development.
                 </p>
                 <a
-                    href="https://github.com/jhancock532?tab=repositories"
+                    href="https://github.com/jhancock532/social-bristol/issues/new"
                     className={styles.link}
                 >
-                    Contributions welcome.
+                    Feedback & code contributions welcome.
                 </a>
             </div>
             <div></div>

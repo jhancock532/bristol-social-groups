@@ -42,7 +42,13 @@ export default function About() {
                     This site is in early development, and will change over time
                     through discussion, community contributions and feedback.
                 </p>
-                <p>Comments can be made on this sites Github repository.</p>
+                <p>
+                    Comments can be made on this sites{' '}
+                    <a href="https://github.com/jhancock532/social-bristol/issues/new">
+                        Github repository
+                    </a>
+                    .
+                </p>
                 <p>Thank you for visiting.</p>
             </div>
         </Layout>
