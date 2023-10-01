@@ -8,13 +8,14 @@ export const Footer = () => {
             <div></div>
             <div>
                 <p className={styles.description}>
-                    This website is currently in development.
+                    This website is currently in development. Thank you for
+                    visiting!
                 </p>
                 <a
                     href="https://github.com/jhancock532/social-bristol/issues/new"
                     className={styles.link}
                 >
-                    Feedback & code contributions welcome.
+                    Feedback, social groups & code contributions welcome.{' '}
                 </a>
             </div>
             <div></div>

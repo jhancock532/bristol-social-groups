@@ -12,44 +12,65 @@ export default function About() {
             <div className={styles.hero}>
                 <h1 className={styles.title}>About</h1>
                 <h2>Aim</h2>
-                <p>To build community and friendships in Bristol.</p>
-                <h2>Method</h2>
                 <p>
-                    List regularly meeting, actively attended, well developed
-                    social groups in a single place, and provide tools for
-                    individuals to find a group they are interested in attending
-                    (search, filters, ...).
+                    This is a free site made without advertising or tracking,
+                    with the aim of building community and friendships in
+                    Bristol.
                 </p>
                 <p>
-                    Events listed here should run consistently, so attendees can
-                    join regularly and get to know each other over time.
-                </p>
-                <h2>Issues with other sites</h2>
-                <p>
-                    Meetup, Eventbrite, etc list many one-off events, which
-                    aren&apos;t as good for building longer term connections.
-                    High quality social groups organised on external sites may
-                    also be listed here.
+                    I started this site as I realised that there are many social
+                    groups in Bristol that are not listed on the major event
+                    platforms such as Meetup and Eventbrite. I also wanted to
+                    curate social groups that are of a high quality; these type
+                    of groups...
                 </p>
                 <p>
-                    We already have apps to connect individuals one-on-one with
-                    the aim of friendship (e.g. Bumble). These apps don&apos;t
-                    allow filtering by a shared activity, and place all the
-                    responsibility on the user to organise events.
+                    <ul>
+                        <li>
+                            <b>Are welcoming to newcomers</b>
+                        </li>
+                        <li>
+                            <b>Are well developed</b>
+                        </li>
+                        <li>
+                            <b>Meet regularly</b> - so attendees can get to know
+                            each other over time.
+                        </li>
+                        <li>
+                            <b>Are free or low cost</b> - so attendees can join
+                            regardless of their financial situation.
+                        </li>
+                        <li>
+                            <b>Have a shared, inclusive activity</b> - so
+                            attendees can connect over a common interest,
+                            outside of just networking.
+                        </li>
+                    </ul>
+                    I&apos;m currently not listing groups that are exclusive to
+                    a particular religious affiliation, career background or
+                    protected characteristic. I would like to list these groups
+                    in the future, with information about what type of person
+                    the group is suitable for, and an option to toggle / filter
+                    these groups, so it&apos;s easy for people to find groups
+                    relevant to them.
                 </p>
                 <h2>Contribution</h2>
                 <p>
-                    This site is in early development, and will change over time
-                    through discussion, community contributions and feedback.
+                    This site is in early development; please do suggest groups
+                    to be added and share your feedback. I&apos;d love to add
+                    more features for how to discover groups, including search
+                    features and an overall map view.
                 </p>
                 <p>
-                    Comments can be made on this sites{' '}
-                    <a href="https://github.com/jhancock532/social-bristol/issues/new">
+                    Please leave suggestions and feedback on this sites{' '}
+                    <a
+                        className={styles.link}
+                        href="https://github.com/jhancock532/social-bristol/issues/new"
+                    >
                         Github repository
                     </a>
-                    .
                 </p>
-                <p>Thank you for visiting.</p>
+                <p>Thank you for visiting!</p>
             </div>
         </Layout>
     );

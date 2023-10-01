@@ -2,6 +2,7 @@
   "name": "Rebel Book Club",
   "slug": "rebel-book-club",
   "description": "A non-fiction book club.",
+  "tags": ["books"],
   "events": [
     {
       "time": {

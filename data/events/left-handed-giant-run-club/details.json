@@ -2,6 +2,7 @@
   "name": "Left Handed Giant Run Club",
   "slug": "left-handed-giant-run-club",
   "description": "A weekly running club meeting at the Left Handed Giant taproom.",
+  "tags": ["sports", "running", "pubs"],
   "events": [
     {
       "time": {

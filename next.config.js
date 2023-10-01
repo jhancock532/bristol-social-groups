@@ -13,7 +13,7 @@ const nextConfig = {
     // Todo: is this really required?
     // Added because fs wasn't found in utils.ts
     // https://stackoverflow.com/questions/64926174/module-not-found-cant-resolve-fs-in-next-js-application
-    webpack5: true,
+    // webpack5: true,
     webpack: (config) => {
         config.resolve.fallback = { fs: false };
 

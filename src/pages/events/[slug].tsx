@@ -75,6 +75,14 @@ const Event = ({
                 <p className={styles.event__description}>{event.description}</p>
             )}
 
+            <a
+                href={event.url}
+                target="_blank"
+                className={styles.eventDetails__url}
+            >
+                Link to event host&apos;s website <ExternalIcon />
+            </a>
+
             <EventDetailsSection
                 title={timeSectionTitle}
                 details={event.time?.details}

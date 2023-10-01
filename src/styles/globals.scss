@@ -8,6 +8,7 @@
     --color--dark-green: #1a6201;
     --color--underline-green: #65c783;
     --color--highlight-green: #8beba8;
+    --color--disabled-green: #c4f0c4;
     --color--brown: #a33400;
     --color--dark-gray: #363635;
     --color--green: #558564;
@@ -21,6 +22,8 @@
     --color--underline: var(--color--underline-green);
     --color--hover: var(--color--brown);
     --color--background: var(--color--white);
+
+    accent-color: var(--color--primary);
 }
 
 *,
@@ -119,12 +122,15 @@ h1 {
     color: var(--color--text);
 }
 
-h2,
-.heading--2 {
+h2 {
     @include font-size(l);
     font-weight: $weight--heavy;
-    margin: ($gutter * 3) 0 $gutter;
+    margin: $grid * 2 0 $grid 0;
     color: var(--color--text);
+
+    @include media-query(large) {
+        margin: $grid * 3 0 $grid 0;
+    }
 }
 
 h3,
@@ -151,6 +157,7 @@ small {
 p {
     margin: 0 0 ($gutter * 1.5);
     color: var(--color--text);
+    max-width: 75ch;
 }
 
 b,

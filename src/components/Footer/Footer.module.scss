@@ -5,7 +5,7 @@
     background-color: var(--color--midnight);
 
     @include media-query(large) {
-        padding-top: $grid * 3;
+        padding-top: $grid * 4;
         padding-bottom: $grid * 4;
     }
 }
@@ -21,8 +21,11 @@
     @include focus-outline-inverse();
     @include font-size(s);
     font-weight: 400;
-    margin-bottom: $grid;
+    margin-top: $grid;
     color: var(--color--highlight-green);
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
 
     &:hover {
         color: var(--color--white);

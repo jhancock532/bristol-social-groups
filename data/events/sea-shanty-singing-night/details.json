@@ -2,6 +2,7 @@
   "name": "Sea Shanty Singing Night",
   "slug": "sea-shanty-singing-night",
   "description": "A group that meets to sing sea shanties together.",
+  "tags": ["pubs", "singing"],
   "events": [
     {
       "time": {
