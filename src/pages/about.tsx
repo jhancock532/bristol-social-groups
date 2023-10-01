@@ -69,6 +69,7 @@ export default function About() {
                     >
                         Github repository
                     </a>
+                    .
                 </p>
                 <p>Thank you for visiting!</p>
             </div>
