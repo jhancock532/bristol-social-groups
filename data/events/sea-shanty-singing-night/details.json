@@ -1,10 +1,11 @@
 {
   "name": "Sea Shanty Singing Night",
   "slug": "sea-shanty-singing-night",
-  "description": "A group that meets to sing sea shanties together.",
+  "description": "A pirate pub takeover from a friendly group that meets to sing sea shanties together.",
   "tags": ["pubs", "singing"],
   "events": [
     {
+      "details": "Can be busy, arrive slightly earlier to get a seat.",
       "time": {
         "frequency": "Every 2nd and 4th Tuesday of the month",
         "weekday": "Tuesday",

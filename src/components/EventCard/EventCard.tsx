@@ -2,7 +2,12 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
-import { EventCost, EventLocation, EventTime } from '@/types/types';
+import {
+    EventCost,
+    EventLocation,
+    EventTime,
+    EventBooking,
+} from '@/types/types';
 import { get24HourTimeFromDateString } from '@/utils/utils';
 
 import { ClockIcon } from '@/components/Icons/ClockIcon';
@@ -21,10 +26,10 @@ type Event = {
     cost: EventCost;
     time: EventTime;
     location: EventLocation;
-    bookingRequired: boolean;
+    booking: EventBooking;
 };
 
-const EventDetails = ({ cost, time, location, bookingRequired }: Event) => {
+const EventDetails = ({ cost, time, location, booking }: Event) => {
     const [showMap, setShowMap] = React.useState(false);
 
     return (
@@ -53,9 +58,11 @@ const EventDetails = ({ cost, time, location, bookingRequired }: Event) => {
             <div className={styles.details__item}>
                 <ReceiptIcon className={styles.details__icon} />
                 <p>
-                    {bookingRequired
-                        ? 'Advance booking required'
-                        : 'No advance booking required'}
+                    {booking.required ? (
+                        <strong>Advance booking required</strong>
+                    ) : (
+                        'No advance booking required'
+                    )}
                 </p>
             </div>
             <div className={styles.details__item}>

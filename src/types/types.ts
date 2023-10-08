@@ -8,6 +8,11 @@ export type EventCost = {
     details: string;
 };
 
+export type EventBooking = {
+    required: boolean;
+    details: string;
+};
+
 export type EventLocation = {
     address: string;
     latitude: string;

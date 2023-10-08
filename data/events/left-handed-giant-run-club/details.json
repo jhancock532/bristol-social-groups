@@ -1,16 +1,17 @@
 {
   "name": "Left Handed Giant Run Club",
   "slug": "left-handed-giant-run-club",
-  "description": "A weekly running club meeting at the Left Handed Giant taproom.",
+  "description": "A weekly social running club meeting at the Left Handed Giant taproom.",
   "tags": ["sports", "running", "pubs"],
   "events": [
     {
+      "details": "There are two running groups split into 6km and 8km routes; both stop roughly halfway through the run to pause and regroup. As a social running group everyone is encouraged to run at their own pace and people typically stay behind after the run to enjoy a drink together. There are no changing facilities at the taproom, but there are toilets and a place to drop bags.",
       "time": {
         "frequency": "Weekly",
         "weekday": "Tuesday",
         "start": "Jan 1, 1970 18:00",
         "end": "Jan 1, 1970 22:00",
-        "details": "Meet at 6PM onwards to start the run at 6:30PM."
+        "details": "The run starts at 6:30PM, waiver signing / bag drop starts from 6:00PM onwards."
       },
       "location": {
         "address": "Left Handed Giant Brewpub, Finzels Reach, BS1 6EU",
@@ -20,10 +21,11 @@
       },
       "cost": {
         "sessionPrice": 0.0,
-        "details": "Free to attend, no equipment required except suitable running clothes."
+        "details": "Free to attend, attendees who join the run get 10% off drinks at the bar."
       },
       "booking": {
-        "required": false
+        "required": false,
+        "details": "No booking is required; please bring a smartphone so you can sign an electronic waiver on the night stating you'll be careful and considerate while running through the city."
       },
       "url": "https://lefthandedgiant.com/pages/lhg-runclub"
     }

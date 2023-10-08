@@ -71,8 +71,13 @@ const Event = ({
             {event.name && (
                 <h2 className={styles.event__title}>{event.name}</h2>
             )}
+
             {event.description && (
                 <p className={styles.event__description}>{event.description}</p>
+            )}
+
+            {event.details && (
+                <p className={styles.event__description}>{event.details}</p>
             )}
 
             <a
