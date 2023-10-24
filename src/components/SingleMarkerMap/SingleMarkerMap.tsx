@@ -3,7 +3,7 @@
 import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import styles from './Map.module.scss';
+import styles from './SingleMarkerMap.module.scss';
 
 type MapProps = {
     longitude: number;
@@ -11,7 +11,7 @@ type MapProps = {
     address: string;
 };
 
-const Map = ({ longitude, latitude, address }: MapProps) => {
+const SingleMarkerMap = ({ longitude, latitude, address }: MapProps) => {
     return (
         <div className={styles.container}>
             <MapContainer
@@ -31,4 +31,4 @@ const Map = ({ longitude, latitude, address }: MapProps) => {
     );
 };
 
-export default Map;
+export default SingleMarkerMap;

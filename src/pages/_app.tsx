@@ -2,7 +2,7 @@ import '@/styles/globals.scss';
 import { Rubik } from 'next/font/google';
 import type { AppProps } from 'next/app';
 
-const rubik = Rubik({
+export const rubik = Rubik({
     subsets: ['latin'],
     display: 'swap',
     adjustFontFallback: false,

@@ -26,33 +26,19 @@ export default function About() {
                 </p>
                 <p>
                     <ul>
-                        <li>
-                            <b>Are welcoming to newcomers</b>
-                        </li>
-                        <li>
-                            <b>Are well developed</b>
-                        </li>
-                        <li>
-                            <b>Meet regularly</b> - so attendees can get to know
-                            each other over time.
-                        </li>
-                        <li>
-                            <b>Are free or low cost</b> - so attendees can join
-                            regardless of their financial situation.
-                        </li>
-                        <li>
-                            <b>Have a shared, inclusive activity</b> - so
-                            attendees can connect over a common interest,
-                            outside of just networking.
-                        </li>
+                        <li>Are welcoming to newcomers</li>
+                        <li>Are well developed</li>
+                        <li>Meet regularly</li>
+                        <li>Are free or low cost</li>
+                        <li>Have a shared, inclusive activity</li>
                     </ul>
                     I&apos;m currently not listing groups that are exclusive to
                     a particular religious affiliation, career background or
                     protected characteristic. I would like to list these groups
-                    in the future, with information about what type of person
-                    the group is suitable for, and an option to toggle / filter
-                    these groups, so it&apos;s easy for people to find groups
-                    relevant to them.
+                    in the future, with information about who the group is
+                    suitable for, and an option to toggle / filter these groups,
+                    so it&apos;s easy for people to find groups relevant to
+                    them.
                 </p>
                 <h2>Contribution</h2>
                 <p>

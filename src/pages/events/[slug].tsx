@@ -13,7 +13,9 @@ import { get24HourTimeFromDateString, getDirectories } from '@/utils/utils';
 
 import styles from './EventPage.module.scss';
 
-const Map = dynamic(() => import('@/components/Map'), { ssr: false });
+const Map = dynamic(() => import('@/components/SingleMarkerMap'), {
+    ssr: false,
+});
 
 const EVENTS_PATH = join(process.cwd(), 'data/events/');
 

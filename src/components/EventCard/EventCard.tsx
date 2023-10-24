@@ -20,7 +20,9 @@ import { ArrowIcon } from '@/components/Icons/ArrowIcon';
 
 import styles from './EventCard.module.scss';
 
-const Map = dynamic(() => import('@/components/Map'), { ssr: false });
+const Map = dynamic(() => import('@/components/SingleMarkerMap'), {
+    ssr: false,
+});
 
 type Event = {
     cost: EventCost;

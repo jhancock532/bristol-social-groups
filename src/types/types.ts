@@ -3,6 +3,17 @@ export type IconProps = {
     fill?: string;
 };
 
+export type Event = {
+    name?: string;
+    slug?: string; // added flexibility for bristol map component
+    details?: string;
+    url?: string;
+    time?: EventTime;
+    location: EventLocation;
+    cost?: EventCost;
+    booking?: EventBooking;
+};
+
 export type EventCost = {
     sessionPrice: number;
     details: string;

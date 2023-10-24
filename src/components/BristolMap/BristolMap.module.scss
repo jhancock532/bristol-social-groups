@@ -1,0 +1,21 @@
+.container {
+    :global(.leaflet-container) {
+        border-radius: $border-radius;
+        width: 100%;
+        height: 90vh;
+    }
+}
+
+.popupTitle {
+    @include font-size(s);
+    @include highlight-link();
+    font-weight: 500;
+
+    a {
+        color: var(--color--text);
+    }
+}
+
+.popupText {
+    @include font-size(xs);
+}

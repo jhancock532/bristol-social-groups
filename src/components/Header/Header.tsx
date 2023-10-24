@@ -15,6 +15,11 @@ export const Header = () => {
                         </Link>
                     </li>
                     <li className={styles.navItem}>
+                        <Link href="/map" className={styles.link}>
+                            Map
+                        </Link>
+                    </li>
+                    <li className={styles.navItem}>
                         <Link href="/about" className={styles.link}>
                             About
                         </Link>
