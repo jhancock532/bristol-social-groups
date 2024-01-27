@@ -43,7 +43,12 @@ const BristolMap = ({ events }: MapProps) => {
                             <p className={styles.popupText}>
                                 {event.location.address}
                             </p>
-                            <a className={styles.eventLink}>
+                            <a
+                                className={styles.eventLink}
+                                href={event.url}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 View event host&apos;s website <ExternalIcon />
                             </a>
                         </Popup>
