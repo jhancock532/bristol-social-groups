@@ -39,6 +39,15 @@
     @include media-query('large') {
         grid-template-columns: 1fr 1fr;
     }
+
+    @include media-query('site-width') {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include media-query('x-large') {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-right: auto;
+    }
 }
 
 .details {
@@ -125,9 +134,27 @@
 }
 
 .googleMapsLink {
-    @include external-highlight-link();
     margin-top: 0;
-    margin-left: auto;
+    text-decoration: underline;
+
+    &:hover {
+        color: var(--color--black);
+
+        svg {
+            transform: translate(0.2ex, -0.2ex);
+        }
+    }
+
+    svg {
+        width: 1.8ex;
+        height: 1.8ex;
+        margin: 0.4ex 0 0 0.2ex;
+
+        transition: transform $transition;
+    }
+}
+.externalLink {
+    @include external-button-link();
 }
 
 .eventDetailsLink {
@@ -138,7 +165,7 @@
     flex-direction: row;
     align-items: center;
     gap: 4px;
-    margin-top: $grid;
+    margin-bottom: $grid;
     color: var(--color--text);
     width: max-content;
     font-weight: 500;

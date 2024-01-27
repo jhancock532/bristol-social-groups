@@ -18,4 +18,16 @@
 
 .popupText {
     @include font-size(xs);
+    margin: $grid * 0.25 0;
+}
+
+.eventLink {
+    :global(.leaflet-container) & {
+        color: var(--color--white);
+    }
+
+    @include external-button-link();
+
+    font-size: 1.125rem;
+    font-weight: 450;
 }

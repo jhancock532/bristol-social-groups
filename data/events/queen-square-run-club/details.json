@@ -1,0 +1,84 @@
+{
+  "name": "Queen Square Run Club",
+  "slug": "queen-square-run-club",
+  "description": "A social running club meeting at Queen's Square several times a week.",
+  "details": "More details available on the club's website",
+  "tags": ["sports", "running"],
+  "events": [
+    {
+      "name": "Monday evenings",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Monday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 20:00",
+        "details": "6PM start, meeting for drinks at Brewdog after the run."
+      },
+      "location": {
+        "address": "Queen Square, BS1 4LH",
+        "latitude": "51.450540",
+        "longitude": "-2.594809",
+        "googleMapsLink": "https://maps.app.goo.gl/LssFrqEMLH1QYThN6"
+      },
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free."
+      },
+      "booking": {
+        "required": false
+      },
+      "accessibility": {
+        "details": "A flat route around the harbourside at a jogging pace. Please wear suitable running gear."
+      },
+      "url": "https://queensquarerunclub.com/"
+    },
+    {
+      "name": "Wednesday lunchtimes",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 12:30",
+        "end": "Jan 1, 1970 13:30",
+        "details": ""
+      },
+      "location": {
+        "address": "Queen Square, BS1 4LH",
+        "latitude": "51.450540",
+        "longitude": "-2.594809",
+        "googleMapsLink": "https://maps.app.goo.gl/LssFrqEMLH1QYThN6"
+      },
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free."
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://queensquarerunclub.com/"
+    },
+    {
+      "name": "Friday mornings",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Friday",
+        "start": "Jan 1, 1970 07:30",
+        "end": "Jan 1, 1970 08:30",
+        "details": ""
+      },
+      "location": {
+        "address": "Queen Square, BS1 4LH",
+        "latitude": "51.450540",
+        "longitude": "-2.594809",
+        "googleMapsLink": "https://maps.app.goo.gl/LssFrqEMLH1QYThN6"
+      },
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free."
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://queensquarerunclub.com/"
+    }
+  ]
+}

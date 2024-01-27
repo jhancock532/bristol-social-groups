@@ -8,6 +8,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import Link from 'next/link';
 import { rubik } from '@/pages/_app';
 import styles from './BristolMap.module.scss';
+import { ExternalIcon } from '../Icons/ExternalIcon';
 
 type MapProps = {
     events: Event[];
@@ -42,6 +43,9 @@ const BristolMap = ({ events }: MapProps) => {
                             <p className={styles.popupText}>
                                 {event.location.address}
                             </p>
+                            <a className={styles.eventLink}>
+                                View event host&apos;s website <ExternalIcon />
+                            </a>
                         </Popup>
                     </Marker>
                 ))}

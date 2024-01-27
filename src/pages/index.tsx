@@ -8,7 +8,7 @@ import Metadata from '@/components/Metadata';
 import { getDirectories } from '@/utils/utils';
 import styles from './Index.module.scss';
 
-const generateListOfEventTags = (events: any) => {
+const generateListOfGroupTags = (events: any) => {
     interface TagsObject {
         [key: string]: number;
     }
@@ -31,27 +31,27 @@ const generateListOfEventTags = (events: any) => {
 };
 
 export default function Home({ events }: any) {
-    const [selectedEventTags, setSelectedEventTags] = React.useState<string[]>(
+    const [selectedGroupTags, setSelectedGroupTags] = React.useState<string[]>(
         [],
     );
 
-    const eventTags = generateListOfEventTags(events);
+    const groupTags = generateListOfGroupTags(events);
 
-    const handleEventFilterClicked = (tag: string) => {
-        if (selectedEventTags.includes(tag)) {
-            const indexOfTag = selectedEventTags.indexOf(tag);
-            selectedEventTags.splice(indexOfTag, 1);
-            setSelectedEventTags([...selectedEventTags]);
+    const handleGroupFilterClicked = (tag: string) => {
+        if (selectedGroupTags.includes(tag)) {
+            const indexOfTag = selectedGroupTags.indexOf(tag);
+            selectedGroupTags.splice(indexOfTag, 1);
+            setSelectedGroupTags([...selectedGroupTags]);
         } else {
-            setSelectedEventTags([tag, ...selectedEventTags]);
+            setSelectedGroupTags([tag, ...selectedGroupTags]);
         }
     };
 
     const filteredEvents =
-        selectedEventTags.length > 0
+        selectedGroupTags.length > 0
             ? events.filter((event: any) => {
                   for (let i = 0; i < event.tags.length; i += 1) {
-                      if (selectedEventTags.includes(event.tags[i])) {
+                      if (selectedGroupTags.includes(event.tags[i])) {
                           return true;
                       }
                   }
@@ -74,41 +74,59 @@ export default function Home({ events }: any) {
                     <Link className={styles.link} href="/about">
                         work in progress site
                     </Link>
-                    , with many more events still to be listed. Filter by tag or
-                    scroll through the listed events.
+                    , with more groups still to be listed. Filter groups by tag
+                    with the options below, or{' '}
+                    <Link className={styles.link} href="/map">
+                        view all the groups on a map
+                    </Link>
+                    .
                 </p>
-                <p className={styles.eventFilterTitle}>Filter by events</p>
-                <div className={styles.eventTags}>
-                    {Object.keys(eventTags).map(
-                        (tag: string, index: number) => (
-                            <div key={index} className={styles.eventTagFilter}>
-                                <input
-                                    type="checkbox"
-                                    id={`event-tag-checkbox-${tag}`}
-                                    checked={selectedEventTags.includes(tag)}
-                                    onChange={() =>
-                                        handleEventFilterClicked(tag)
-                                    }
-                                    className={styles.eventTagFilter__checkbox}
-                                />
-                                <label
-                                    htmlFor={`event-tag-checkbox-${tag}`}
-                                    className={styles.eventTagFilter__label}
-                                >
-                                    {`${tag} (${eventTags[tag]})`}
-                                </label>
-                            </div>
-                        ),
-                    )}
+                <div className={styles.groupFilterOptionsContainer}>
+                    <div className={styles.groupTagFilterContainer}>
+                        <p className={styles.groupFilterTitle}>
+                            Filter by tags
+                        </p>
+                        <div className={styles.groupTagsContainer}>
+                            {Object.keys(groupTags).map(
+                                (tag: string, index: number) => (
+                                    <div
+                                        key={index}
+                                        className={styles.groupTagFilter}
+                                    >
+                                        <input
+                                            type="checkbox"
+                                            id={`group-tag-checkbox-${tag}`}
+                                            checked={selectedGroupTags.includes(
+                                                tag,
+                                            )}
+                                            onChange={() =>
+                                                handleGroupFilterClicked(tag)
+                                            }
+                                            className={
+                                                styles.groupTagFilter__checkbox
+                                            }
+                                        />
+                                        <label
+                                            htmlFor={`group-tag-checkbox-${tag}`}
+                                            className={
+                                                styles.groupTagFilter__label
+                                            }
+                                        >
+                                            {`${tag} (${groupTags[tag]})`}
+                                        </label>
+                                    </div>
+                                ),
+                            )}
+                        </div>
+                        <button
+                            className={styles.clearSelectedTagsButton}
+                            onClick={() => setSelectedGroupTags([])}
+                            disabled={selectedGroupTags.length === 0}
+                        >
+                            Clear selected filters
+                        </button>
+                    </div>
                 </div>
-
-                <button
-                    className={styles.clearSelectedTagsButton}
-                    onClick={() => setSelectedEventTags([])}
-                    disabled={selectedEventTags.length === 0}
-                >
-                    Clear selected filters
-                </button>
             </div>
 
             <div className={styles.events}>

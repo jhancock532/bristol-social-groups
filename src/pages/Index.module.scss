@@ -44,24 +44,32 @@
     }
 }
 
-.eventFilterTitle {
+.groupFilterTitle {
     @include font-size(m);
     margin-bottom: $grid;
     font-weight: 700;
 }
 
-.eventTags {
+.groupTagsContainer {
     display: flex;
     flex-direction: row;
     gap: $grid;
     flex-wrap: wrap;
 }
 
-.eventTagFilter {
+.groupFilterOptionsContainer {
+    display: flex;
+    gap: $grid * 2;
+    flex-direction: column;
+    @include media-query(medium) {
+        flex-direction: row;
+    }
+}
+
+.groupTagFilter {
     @include focus-outline();
     display: flex;
     align-items: baseline;
-    flex-direction: row;
     gap: $grid * 0.5;
 
     &__checkbox {

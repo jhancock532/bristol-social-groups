@@ -1,5 +1,4 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
 import {
@@ -8,32 +7,25 @@ import {
     EventTime,
     EventBooking,
 } from '@/types/types';
-import { get24HourTimeFromDateString } from '@/utils/utils';
+import { getAMPMTimeFromDateString } from '@/utils/utils';
 
 import { ClockIcon } from '@/components/Icons/ClockIcon';
 import { WalletIcon } from '@/components/Icons/WalletIcon';
 import { LocationIcon } from '@/components/Icons/LocationIcon';
 import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
 import { ExternalIcon } from '@/components/Icons/ExternalIcon';
-import { ExpandIcon } from '@/components/Icons/ExpandIcon';
-import { ArrowIcon } from '@/components/Icons/ArrowIcon';
 
 import styles from './EventCard.module.scss';
-
-const Map = dynamic(() => import('@/components/SingleMarkerMap'), {
-    ssr: false,
-});
 
 type Event = {
     cost: EventCost;
     time: EventTime;
     location: EventLocation;
     booking: EventBooking;
+    url: string;
 };
 
-const EventDetails = ({ cost, time, location, booking }: Event) => {
-    const [showMap, setShowMap] = React.useState(false);
-
+const EventDetails = ({ cost, time, location, booking, url }: Event) => {
     return (
         <div className={styles.details}>
             <div className={styles.details__item}>
@@ -47,8 +39,8 @@ const EventDetails = ({ cost, time, location, booking }: Event) => {
                         <strong>{time.frequency}</strong>
                     )}{' '}
                     from{' '}
-                    <strong>{get24HourTimeFromDateString(time.start)}</strong>{' '}
-                    to <strong>{get24HourTimeFromDateString(time.end)}</strong>
+                    <strong>{getAMPMTimeFromDateString(time.start)}</strong> to{' '}
+                    <strong>{getAMPMTimeFromDateString(time.end)}</strong>
                 </p>
             </div>
             <div className={styles.details__item}>
@@ -71,38 +63,29 @@ const EventDetails = ({ cost, time, location, booking }: Event) => {
                 <LocationIcon className={styles.details__icon} />
                 <div className={styles.locationContainer}>
                     <p>
-                        Located at <strong>{location.address}</strong>
+                        Located at{' '}
+                        <a
+                            className={styles.googleMapsLink}
+                            href={location.googleMapsLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            {location.address}
+                            <ExternalIcon />
+                        </a>
                     </p>
-
-                    <button
-                        className={styles.toggleMapButton}
-                        onClick={() => setShowMap(!showMap)}
-                    >
-                        {showMap ? 'Hide map' : 'Show map'}
-                        <ExpandIcon
-                            className={styles.toggleMapButton__icon}
-                            pointDownwards={!showMap}
-                        />
-                    </button>
                 </div>
             </div>
-
-            {showMap && (
-                <>
-                    <Map
-                        longitude={parseFloat(location.longitude)}
-                        latitude={parseFloat(location.latitude)}
-                        address={location.address}
-                    />
-                    <a
-                        className={styles.googleMapsLink}
-                        href={location.googleMapsLink}
-                        target="_blank"
-                    >
-                        Open in Google Maps <ExternalIcon />
-                    </a>
-                </>
-            )}
+            <div className={styles.details__item}>
+                <a
+                    className={styles.externalLink}
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    View more event details <ExternalIcon />
+                </a>
+            </div>
         </div>
     );
 };
@@ -128,11 +111,6 @@ const EventCard = ({ name, description, slug, events }: EventCardProps) => {
                     <EventDetails key={index} {...event} />
                 ))}
             </div>
-
-            <Link href={`/events/${slug}`} className={styles.eventDetailsLink}>
-                See more event details
-                <ArrowIcon className={styles.eventDetailsLink__icon} />
-            </Link>
         </div>
     );
 };

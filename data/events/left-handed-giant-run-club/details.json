@@ -2,15 +2,16 @@
   "name": "Left Handed Giant Run Club",
   "slug": "left-handed-giant-run-club",
   "description": "A weekly social running club meeting at the Left Handed Giant taproom.",
+  "details": "The group has an official website linked below, and further up to date information can be found on the groups instagram page.",
   "tags": ["sports", "running", "pubs"],
   "events": [
     {
-      "details": "There are two running groups split into 6km and 8km routes; both stop roughly halfway through the run to pause and regroup. As a social running group everyone is encouraged to run at their own pace and people typically stay behind after the run to enjoy a drink together. There are no changing facilities at the taproom, but there are toilets and a place to drop bags.",
+      "details": "There are two running groups split into 6km and 8km routes; both stop roughly halfway through the run to pause and regroup. As a social running group everyone is encouraged to run at their own pace and people typically stay behind after the run to enjoy a drink together. There are no changing facilities at the bar, but there are toilets and a place to drop bags.",
       "time": {
         "frequency": "Weekly",
         "weekday": "Tuesday",
         "start": "Jan 1, 1970 18:00",
-        "end": "Jan 1, 1970 22:00",
+        "end": "Jan 1, 1970 20:00",
         "details": "The run starts at 6:30PM, waiver signing / bag drop starts from 6:00PM onwards."
       },
       "location": {
@@ -25,9 +26,34 @@
       },
       "booking": {
         "required": false,
-        "details": "No booking is required; please bring a smartphone so you can sign an electronic waiver on the night stating you'll be careful and considerate while running through the city."
+        "details": "No booking is required; please bring a smartphone so you can sign an electronic waiver."
       },
-      "url": "https://lefthandedgiant.com/pages/lhg-runclub"
+      "url": "https://lhgrunclub.com/events"
+    },
+    {
+      "details": "There are three running groups split into 6km, 8km and 10km routes.",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 20:00",
+        "details": "The run starts at 6:30PM, waiver signing / bag drop starts from 6:00PM onwards."
+      },
+      "location": {
+        "address": "Left Handed Giant Brewery & Tap Room, St Philips Rd, BS2 0JE",
+        "latitude": "51.456048",
+        "longitude": "-2.572042",
+        "googleMapsLink": "https://maps.app.goo.gl/3eoLmUXaW7nQxDhSA"
+      },
+      "cost": {
+        "sessionPrice": 0.0,
+        "details": "Free to attend, attendees who join the run get 10% off drinks at the bar."
+      },
+      "booking": {
+        "required": false,
+        "details": "No booking is required; please bring a smartphone so you can sign an electronic waiver."
+      },
+      "url": "https://lhgrunclub.com/events/run-club-thursdays"
     }
   ]
 }

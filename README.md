@@ -40,3 +40,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Inspiration
 
 https://pcmaffey.com/counting-ghosts
+
+## Events to add
+
+- There's a Queens Square run club on mondays (associated with Brewdog?) (6:00pm)
+- A run club that meets at the Downs on a Saturday
+- Southville run club?
+- A run club that meets in Bedminster near a brewery there as well
+- Update the LHG run club's events to list their wednesday and thursday sessions
+
+## Todo
+
+- All pages use styles from Index.module.scss - update this to seperate out the different page styles, and create a consistent hero component that can be reused on different pages. Note the map hero has custom margin - so our hero should be able to accept a custom container class prop and pass that through?
+
+- The font class should live in a seperate file to `_app` and then get imported into app and the BristolMap component.
+
+- Add more events, then user testing, stakeholder interviews.
