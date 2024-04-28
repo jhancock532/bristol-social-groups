@@ -83,7 +83,7 @@ const EventDetails = ({ cost, time, location, booking, url }: Event) => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    View more event details <ExternalIcon />
+                    View event host&apos;s website <ExternalIcon />
                 </a>
             </div>
         </div>

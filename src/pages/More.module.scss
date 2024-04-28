@@ -1,0 +1,5 @@
+@use 'variables' as *;
+
+.title {
+    @include h1();
+}

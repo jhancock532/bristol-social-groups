@@ -68,16 +68,10 @@ export default function Home({ events }: any) {
             <div className={styles.hero}>
                 <h1 className={styles.title}>Social Bristol</h1>
                 <p className={styles.description}>
-                    Welcome to Social Bristol! This website lists social groups
-                    in Bristol that meet up regularly and are open to newcomers
-                    - it&apos;s a{' '}
-                    <Link className={styles.link} href="/about">
-                        work in progress site
-                    </Link>
-                    , with more groups still to be listed. Filter groups by tag
-                    with the options below, or{' '}
-                    <Link className={styles.link} href="/map">
-                        view all the groups on a map
+                    A list of social groups in Bristol that you won&apos;t find
+                    on{' '}
+                    <Link className={styles.link} href="/more-resources">
+                        other popular event sites
                     </Link>
                     .
                 </p>
