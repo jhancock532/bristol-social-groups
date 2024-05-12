@@ -3,7 +3,7 @@
 }
 
 .description {
-    @include font-size(sm);
+    @include font-size(m);
     line-height: 1.5;
     margin: 0 0 $grid * 2;
 
@@ -71,6 +71,6 @@
         @include external-highlight-link();
         @include focus-outline();
 
-        @include font-size(sm);
+        @include font-size(s);
     }
 }

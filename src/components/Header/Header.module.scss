@@ -26,12 +26,17 @@
 .nav {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: $grid;
     margin-left: 0;
     margin-bottom: 0;
+
+    @include media-query(medium) {
+        flex-direction: row;
+    }
 }
 
 .navItem {
     margin-bottom: 0;
+    white-space: nowrap;
 }

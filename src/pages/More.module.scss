@@ -3,3 +3,14 @@
 .title {
     @include h1();
 }
+
+.description {
+    @include font-size(m);
+    line-height: 1.5;
+    max-width: 52ch;
+    margin-bottom: $grid * 2;
+
+    @include media-query(medium) {
+        margin-bottom: $grid * 3;
+    }
+}

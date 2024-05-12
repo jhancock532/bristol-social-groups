@@ -23,12 +23,10 @@
     font-weight: 400;
     margin-top: $grid;
     color: var(--color--highlight-green);
-    display: flex;
-    gap: 5px;
-    align-items: baseline;
 
     &:hover {
-        color: var(--color--white);
+        color: var(--color--midnight);
         text-decoration: underline;
+        text-decoration-color: var(--color--highlight-green);
     }
 }

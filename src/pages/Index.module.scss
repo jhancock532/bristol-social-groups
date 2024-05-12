@@ -25,7 +25,7 @@
 }
 
 .description {
-    @include font-size(sm);
+    @include font-size(m);
     max-width: 65ch;
     margin-bottom: $grid * 2;
 
@@ -35,7 +35,7 @@
 }
 
 .mapDescription {
-    @include font-size(sm);
+    @include font-size(m);
     max-width: 65ch;
     margin-bottom: 0;
 

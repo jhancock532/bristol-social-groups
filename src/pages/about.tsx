@@ -38,26 +38,29 @@ export default function About() {
                 <h2>Contribution</h2>
                 <p>
                     If you know of a group that meets the above criteria, please
-                    do suggest it to be added to the site. You can leave
-                    suggestions and feedback on this sites{' '}
+                    do suggest it to be added to the site{' '}
+                    <Link url="/add-group">on the following page</Link>.
+                </p>
+                <p>
+                    If you have feedback or suggestions for the site, please{' '}
+                    <Link url="/feedback">use this form</Link>.
+                </p>
+                <p>
+                    As a developer, you can leave suggestions and feedback on
+                    this sites{' '}
                     <Link
                         url="https://github.com/jhancock532/social-bristol/issues/new"
                         external
                     >
                         GitHub repository
                     </Link>
-                    .
-                </p>
-                <p>
-                    Pull requests and other code contributions are much
+                    . Pull requests and other code contributions are much
                     appreciated, contributors will be listed here in the future.
                 </p>
-                <p>
-                    Lead developer:{' '}
-                    <Link url="https://jhancock532.github.io/" external>
-                        James Hancock
-                    </Link>
-                </p>
+                <ul>
+                    <li>Lead developer: James Hancock</li>
+                    <li>Use of Google Forms inspired by Chris Ward</li>
+                </ul>
             </div>
         </Layout>
     );

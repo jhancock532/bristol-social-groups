@@ -29,6 +29,11 @@ export const Header = () => {
                             More resources
                         </Link>
                     </li>
+                    <li className={styles.navItem}>
+                        <Link href="/add-group" className={styles.link}>
+                            Add group
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div></div>

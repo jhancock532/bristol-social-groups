@@ -8,12 +8,15 @@ type LinkProps = {
     text?: string;
     external?: boolean;
     children?: React.ReactNode;
+    className?: string;
 };
 
-const Link = ({ url, text, external, children }: LinkProps) => {
+const Link = ({ url, text, external, children, className }: LinkProps) => {
+    const classNames = `${styles.link} ${className}`;
+
     return (
         <NextLink
-            className={styles.link}
+            className={classNames}
             href={url}
             target={external ? '_blank' : undefined}
             rel={external ? 'noreferrer' : undefined}
