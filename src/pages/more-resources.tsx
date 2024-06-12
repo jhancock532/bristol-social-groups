@@ -70,7 +70,7 @@ export default function More() {
                 Students at the University of the West of England or the
                 University of Bristol have access to a wide range of student
                 groups and societies. Some societies are also open to alumni and
-                other members of the public, although these many require some
+                other members of the public, although these may require some
                 form of external membership with the student union to attend.
             </p>
             <p>
