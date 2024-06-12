@@ -1,7 +1,7 @@
 import React from 'react';
 import fs from 'fs';
 import { join } from 'path';
-import Link from 'next/link';
+// import Link from 'next/link';
 import EventCard from '@/components/EventCard';
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
@@ -30,10 +30,21 @@ const generateListOfGroupTags = (events: any) => {
     return tags;
 };
 
+// const weekdays = [
+//     'Monday',
+//     'Tuesday',
+//     'Wednesday',
+//     'Thursday',
+//     'Friday',
+//     'Saturday',
+//     'Sunday',
+// ];
+
 export default function Home({ events }: any) {
     const [selectedGroupTags, setSelectedGroupTags] = React.useState<string[]>(
         [],
     );
+    // const [selectedWeekday, setSelectedWeekday] = React.useState<string>('');
 
     const groupTags = generateListOfGroupTags(events);
 
@@ -47,17 +58,38 @@ export default function Home({ events }: any) {
         }
     };
 
-    const filteredEvents =
-        selectedGroupTags.length > 0
-            ? events.filter((event: any) => {
-                  for (let i = 0; i < event.tags.length; i += 1) {
-                      if (selectedGroupTags.includes(event.tags[i])) {
-                          return true;
-                      }
-                  }
-                  return false;
-              })
-            : events;
+    // const handleWeekdayFilterClicked = (weekday: string) => {
+    //     setSelectedWeekday((prevSelectedWeekday) =>
+    //         prevSelectedWeekday === weekday ? '' : weekday,
+    //     );
+    // };
+
+    // const filteredEvents = events.filter((event: any) => {
+    //     const matchesTags =
+    //         selectedGroupTags.length === 0 ||
+    //         event.tags.some((tag: string) => selectedGroupTags.includes(tag));
+    //     const matchesWeekday =
+    //         !selectedWeekday || event.time.weekday === selectedWeekday;
+    //     return matchesTags && matchesWeekday;
+    // });
+
+    const filteredEvents = events.filter(
+        (event: any) =>
+            selectedGroupTags.length === 0 ||
+            event.tags.some((tag: string) => selectedGroupTags.includes(tag)),
+    );
+
+    // const filteredEvents =
+    //     selectedGroupTags.length > 0
+    //         ? events.filter((event: any) => {
+    //               for (let i = 0; i < event.tags.length; i += 1) {
+    //                   if (selectedGroupTags.includes(event.tags[i])) {
+    //                       return true;
+    //                   }
+    //               }
+    //               return false;
+    //           })
+    //         : events;
 
     return (
         <Layout>
@@ -68,12 +100,8 @@ export default function Home({ events }: any) {
             <div className={styles.hero}>
                 <h1 className={styles.title}>Social Bristol</h1>
                 <p className={styles.description}>
-                    A list of social groups in Bristol that you won&apos;t find
-                    on{' '}
-                    <Link className={styles.link} href="/more-resources">
-                        other popular event sites
-                    </Link>
-                    .
+                    Social groups in Bristol, UK that meet up regularly and are
+                    open to newcomers.
                 </p>
                 <div className={styles.groupFilterOptionsContainer}>
                     <div className={styles.groupTagFilterContainer}>
@@ -120,6 +148,34 @@ export default function Home({ events }: any) {
                             Clear selected filters
                         </button>
                     </div>
+                    {/* <div className={styles.groupTagFilterContainer}>
+                        <p className={styles.groupFilterTitle}>Filter by day</p>
+                        <div className={styles.groupTagsContainer}>
+                            {weekdays.map((day, index) => (
+                                <div
+                                    key={index}
+                                    className={styles.groupTagFilter}
+                                >
+                                    <input
+                                        type="radio"
+                                        id={`weekday-checkbox-${day}`}
+                                        checked={selectedWeekday === day}
+                                        onChange={() =>
+                                            handleWeekdayFilterClicked(day)
+                                        }
+                                        className={
+                                            styles.groupTagFilter__checkbox
+                                        }
+                                    />
+                                    <label
+                                        htmlFor={`weekday-checkbox-${day}`}
+                                        className={styles.groupTagFilter__label}
+                                    >
+                                        {day}
+                                    </label>
+                                </div>
+                            ))}
+                        </div> */}
                 </div>
             </div>
 

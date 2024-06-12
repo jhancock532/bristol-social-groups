@@ -15,6 +15,8 @@ type MapProps = {
 };
 
 const BristolMap = ({ events }: MapProps) => {
+    const filteredEvents = events.filter((event) => event.location);
+
     return (
         <div className={styles.container}>
             <MapContainer
@@ -26,7 +28,7 @@ const BristolMap = ({ events }: MapProps) => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                {events.map((event, index) => (
+                {filteredEvents.map((event, index) => (
                     <Marker
                         key={index}
                         position={[

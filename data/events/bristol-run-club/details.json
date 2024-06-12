@@ -1,0 +1,47 @@
+{
+  "name": "Bristol Run Club",
+  "slug": "bristol-run-club",
+  "description": "Regular runs with 2.5km and 5km groups around Bristol, check their Instagram to confirm the start location each week.",
+  "details": "",
+  "tags": ["running", "fitness", "cafes", "pubs"],
+  "events": [
+    {
+      "name": "Thursday Evening Run",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 18:15",
+        "end": "Jan 1, 1970 20:00",
+        "details": "Meetup from 6:15pm, with the run starting at 6:30pm. Two groups of 2.5km and 5km followed by a post run get together."
+      },
+      "locationURL": "https://www.instagram.com/bristolrunclub/",
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free to join, no sign up necessary."
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/bristolrunclub/"
+    },
+    {
+      "name": "Sunday Run",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Sunday",
+        "start": "Jan 1, 1970 09:45",
+        "end": "Jan 1, 1970 11:00",
+        "details": "Meetup from 9:45am, with the run starting at 10:00am. Two groups of 2.5km and 5km followed by a post run get together."
+      },
+      "locationURL":  "https://www.instagram.com/bristolrunclub/",
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free to join, no sign up necessary."
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/bristolrunclub/"
+    }
+  ]
+}

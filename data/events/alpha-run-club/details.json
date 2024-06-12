@@ -1,0 +1,60 @@
+{
+  "name": "Alpha Run Club",
+  "slug": "alpha-run-club",
+  "description": "Alpha Run Club welcomes runners of all abilities for weekly and monthly runs starting from Alpha Bottle Shop & Tap in Bedminster.",
+  "details": "",
+  "tags": ["running", "fitness", "pubs"],
+  "events": [
+    {
+      "name": "Thursday Evening Run",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 18:15",
+        "end": "Jan 1, 1970 20:00",
+        "details": "Meetup & bag drop from 6pm, ready to run at 6.30pm. A 5km loop around Bristol harbourside or Victoria Park during summer."
+      },
+      "location": {
+        "address": "Alpha Bottle Shop & Tap, Unit 1, Imperial Arcade, Bedminster, Bristol, BS3 4HH",
+        "latitude": "51.4425846",
+        "longitude": "-2.5958089",
+        "googleMapsLink": "https://maps.app.goo.gl/eQDgUs3wMZVk5SJB7"
+      },
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free to join, no sign up necessary."
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://alphabottleshop.co.uk/pages/alpha-run-club"
+    },
+    {
+      "name": "Monthly Plogging Event",
+      "time": {
+        "frequency": "Monthly",
+        "weekday": "Sunday",
+        "start": "Jan 1, 1970 11:00",
+        "end": "Jan 1, 1970 13:00",
+        "details": "Monthly 'PLOG' to jog and pick up litter in local areas. View the club Instagram page for confirmed dates."
+      },
+      "location": {
+        "address": "Alpha Bottle Shop & Tap, Unit 1, Imperial Arcade, Bedminster, Bristol, BS3 4HH",
+        "latitude": "51.4425846",
+        "longitude": "-2.5958089",
+        "googleMapsLink": "https://maps.app.goo.gl/eQDgUs3wMZVk5SJB7"
+      },
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free to join, no sign up necessary."
+      },
+      "booking": {
+        "required": false
+      },
+      "accessibility": {
+        "details": "Accessible to all abilities."
+      },
+      "url": "https://www.instagram.com/alpha.runclub/"
+    }
+  ]
+}

@@ -67,24 +67,23 @@ export default function More() {
             </p>
             <h2>University Student Union Groups</h2>
             <p>
-                As a student at the University of the West of England or the
-                University of Bristol, you have access to a wide range of
-                student groups and societies. Some societies are also open to
-                alumni and other members of the public, although these are
-                harder to find and many require some form of external membership
-                with the student union to attend.
+                Students at the University of the West of England or the
+                University of Bristol have access to a wide range of student
+                groups and societies. Some societies are also open to alumni and
+                other members of the public, although these many require some
+                form of external membership with the student union to attend.
             </p>
             <p>
                 <Link
                     url="https://www.thestudentsunion.co.uk/dosomething/societies/"
                     external
                 >
-                    University of West of England Student Union Groups
+                    UWE Student Union Groups
                 </Link>
             </p>
             <p>
                 <Link url="https://www.bristolsu.org.uk/groups" external>
-                    University of Bristol Student Union Groups
+                    UoB Student Union Groups
                 </Link>
             </p>
         </Layout>

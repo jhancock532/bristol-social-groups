@@ -82,13 +82,16 @@ const Event = ({
                 <p className={styles.event__description}>{event.details}</p>
             )}
 
-            <a
-                href={event.url}
-                target="_blank"
-                className={styles.eventDetails__url}
-            >
-                Link to event host&apos;s website <ExternalIcon />
-            </a>
+            <p>
+                <a
+                    href={event.url}
+                    target="_blank"
+                    className={styles.eventDetails__url}
+                >
+                    Visit the <strong>group&apos;s website</strong>{' '}
+                    <ExternalIcon />
+                </a>
+            </p>
 
             <EventDetailsSection
                 title={timeSectionTitle}
@@ -97,25 +100,48 @@ const Event = ({
                 headingLevel={sectionTitleHeadingLevel}
             ></EventDetailsSection>
 
-            <EventDetailsSection
-                title="Location"
-                details={event.location?.details || event.location?.address}
-                Icon={LocationIcon}
-                headingLevel={sectionTitleHeadingLevel}
-            >
-                <Map
-                    longitude={event.location.longitude}
-                    latitude={event.location.latitude}
-                    address={event.location.address}
-                />
-                <a
-                    className={styles.event__googleMapsLink}
-                    href={event.location.googleMapsLink}
-                    target="_blank"
+            {event.locationURL && (
+                <EventDetailsSection
+                    title="Location details"
+                    Icon={LocationIcon}
+                    headingLevel={sectionTitleHeadingLevel}
                 >
-                    Open in Google Maps <ExternalIcon />
-                </a>
-            </EventDetailsSection>
+                    <p>
+                        {' '}
+                        This event location changes regularly.
+                        <a
+                            className={styles.event__googleMapsLink}
+                            href={event.locationURL}
+                            target="_blank"
+                        >
+                            Please click here to find out the next location{' '}
+                            <ExternalIcon />
+                        </a>
+                    </p>
+                </EventDetailsSection>
+            )}
+
+            {event.location && (
+                <EventDetailsSection
+                    title="Location"
+                    details={event.location?.details || event.location?.address}
+                    Icon={LocationIcon}
+                    headingLevel={sectionTitleHeadingLevel}
+                >
+                    <Map
+                        longitude={event.location.longitude}
+                        latitude={event.location.latitude}
+                        address={event.location.address}
+                    />
+                    <a
+                        className={styles.event__googleMapsLink}
+                        href={event.location.googleMapsLink}
+                        target="_blank"
+                    >
+                        Open in Google Maps <ExternalIcon />
+                    </a>
+                </EventDetailsSection>
+            )}
 
             <EventDetailsSection
                 title={`Costs £${event.cost.sessionPrice} per

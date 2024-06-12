@@ -10,6 +10,7 @@ export type Event = {
     url?: string;
     time?: EventTime;
     location: EventLocation;
+    locationURL?: string;
     cost?: EventCost;
     booking?: EventBooking;
 };

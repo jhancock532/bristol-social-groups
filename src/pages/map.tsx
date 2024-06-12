@@ -4,6 +4,7 @@ import { join } from 'path';
 import dynamic from 'next/dynamic';
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
+import EventCard from '@/components/EventCard';
 import type { Event } from '@/types/types';
 import { getDirectories } from '@/utils/utils';
 import styles from './Index.module.scss';
@@ -14,9 +15,14 @@ const BristolMap = dynamic(() => import('@/components/BristolMap'), {
 
 type MapProps = {
     events: Event[];
+    groups: any[];
 };
 
-export default function Map({ events }: MapProps) {
+export default function Map({ events, groups }: MapProps) {
+    const groupsWithEventsWithoutLocation = groups.filter((group) =>
+        group.events.some((event: Event) => event.locationURL),
+    );
+
     return (
         <div>
             <Layout>
@@ -31,6 +37,25 @@ export default function Map({ events }: MapProps) {
                     </p>
                 </div>
                 <BristolMap events={events} />
+
+                <h2>Events without regular locations</h2>
+                <p>
+                    Some groups announce upcoming event locations on social
+                    media or external sites; these aren&apos;t shown on the map
+                    above, and are included below.
+                    <br />
+                    <br />
+                </p>
+
+                {groupsWithEventsWithoutLocation.map((group) => (
+                    <EventCard
+                        key={group.slug}
+                        name={group.name}
+                        slug={group.slug}
+                        description={group.description}
+                        events={group.events}
+                    />
+                ))}
             </Layout>
         </div>
     );
@@ -41,7 +66,7 @@ const EVENT_DETAILS_PATH = join(process.cwd(), 'data/events');
 export const getStaticProps = async () => {
     const paths = getDirectories(EVENT_DETAILS_PATH);
 
-    const eventDetails = paths.map((path: string) => {
+    const groups = paths.map((path: string) => {
         const fullEventPath = join(EVENT_DETAILS_PATH, path, 'details.json');
         const eventData = JSON.parse(
             fs.readFileSync(fullEventPath, { encoding: 'utf8' }),
@@ -52,13 +77,13 @@ export const getStaticProps = async () => {
 
     const events = [];
 
-    for (let i = 0; i < eventDetails.length; i += 1) {
-        for (let j = 0; j < eventDetails[i].events.length; j += 1) {
+    for (let i = 0; i < groups.length; i += 1) {
+        for (let j = 0; j < groups[i].events.length; j += 1) {
             let mapDisplayEvent;
 
-            mapDisplayEvent = eventDetails[i].events[j];
-            mapDisplayEvent.slug = eventDetails[i].slug;
-            mapDisplayEvent.name = eventDetails[i].name;
+            mapDisplayEvent = groups[i].events[j];
+            mapDisplayEvent.slug = groups[i].slug;
+            mapDisplayEvent.name = groups[i].name;
 
             events.push(mapDisplayEvent);
         }
@@ -67,6 +92,7 @@ export const getStaticProps = async () => {
     return {
         props: {
             events,
+            groups,
         },
     };
 };

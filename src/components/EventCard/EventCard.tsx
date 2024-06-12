@@ -20,12 +20,22 @@ import styles from './EventCard.module.scss';
 type Event = {
     cost: EventCost;
     time: EventTime;
-    location: EventLocation;
+    location?: EventLocation;
+    locationURL?: string;
     booking: EventBooking;
     url: string;
 };
 
-const EventDetails = ({ cost, time, location, booking, url }: Event) => {
+export const EventDetails = ({
+    cost,
+    time,
+    location,
+    locationURL,
+    booking,
+    url,
+}: Event) => {
+    const formattedSessionPrice = cost.sessionPrice.toFixed(2);
+
     return (
         <div className={styles.details}>
             <div className={styles.details__item}>
@@ -46,7 +56,7 @@ const EventDetails = ({ cost, time, location, booking, url }: Event) => {
             <div className={styles.details__item}>
                 <WalletIcon className={styles.details__icon} />
                 <p>
-                    Costs <strong>£{cost.sessionPrice}</strong> per session
+                    Costs <strong>£{formattedSessionPrice}</strong> per session
                 </p>
             </div>
             <div className={styles.details__item}>
@@ -62,18 +72,34 @@ const EventDetails = ({ cost, time, location, booking, url }: Event) => {
             <div className={styles.details__item}>
                 <LocationIcon className={styles.details__icon} />
                 <div className={styles.locationContainer}>
-                    <p>
-                        Located at{' '}
-                        <a
-                            className={styles.googleMapsLink}
-                            href={location.googleMapsLink}
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            {location.address}
-                            <ExternalIcon />
-                        </a>
-                    </p>
+                    {location && (
+                        <p>
+                            Located at{' '}
+                            <a
+                                className={styles.googleMapsLink}
+                                href={location.googleMapsLink}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                {location.address}
+                                <ExternalIcon />
+                            </a>
+                        </p>
+                    )}
+                    {locationURL && (
+                        <p>
+                            This event&apos;s location changes,{' '}
+                            <Link
+                                href={locationURL}
+                                className={styles.googleMapsLink}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                click here for the latest details
+                                <ExternalIcon />
+                            </Link>
+                        </p>
+                    )}
                 </div>
             </div>
             <div className={styles.details__item}>

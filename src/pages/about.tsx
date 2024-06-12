@@ -55,11 +55,17 @@ export default function About() {
                         GitHub repository
                     </Link>
                     . Pull requests and other code contributions are much
-                    appreciated, contributors will be listed here in the future.
+                    appreciated!
                 </p>
+                <h2>Contributors</h2>
                 <ul>
-                    <li>Lead developer: James Hancock</li>
-                    <li>Use of Google Forms inspired by Chris Ward</li>
+                    <li>
+                        Website developer & group gatherer:{' '}
+                        <Link url="https://github.com/jhancock532" external>
+                            James Hancock
+                        </Link>
+                    </li>
+                    <li>Google Forms inspiration: Chris Ward</li>
                 </ul>
             </div>
         </Layout>

@@ -68,8 +68,36 @@
     }
 
     &__url {
-        @include external-highlight-link();
         @include focus-outline();
+        background-color: var(--color--primary);
+        color: var(--color--white);
+        border: none;
+        border-radius: $border-radius;
+        width: max-content;
+        padding: 10px 10px 8px 16px;
+        cursor: pointer;
+
+        & .toggleMapButton__icon path {
+            fill: var(--color--white);
+        }
+
+        &:hover {
+            background-color: var(--color--highlight-green);
+            color: var(--color--text);
+
+            & .toggleMapButton__icon path {
+                fill: var(--color--text);
+            }
+        }
+
+        &__icon {
+            margin-top: -2px;
+
+            @include media-query(medium) {
+                height: 27px;
+                width: 27px;
+            }
+        }
 
         @include font-size(s);
     }

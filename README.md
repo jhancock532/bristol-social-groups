@@ -44,8 +44,6 @@ https://www.meetup.com/bristol-writing-meetup-group/
 ### A lot of running clubs...
 
 - A run club that meets at the Downs on a Saturday - could be this one: https://www.fergsrunclub.co.uk/get_involved
-- A run club that meets in Bedminster near a brewery there as well - https://www.instagram.com/alpha.runclub/ - free
-- Southville run club - https://www.southvillerunningclub.co.uk/membership - 50p a go, slower runs seem good on the social side?
 - Westbury Harriers? Mix of social / competitive runs? Seems more fitness orientated... Maybe list the slower sessions as social runs? Get in touch. https://groups.runtogether.co.uk/WestburyHarriersRunningClub/Runs
 
 ## Todo

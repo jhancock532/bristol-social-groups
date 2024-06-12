@@ -61,9 +61,6 @@
     display: flex;
     gap: $grid * 2;
     flex-direction: column;
-    @include media-query(medium) {
-        flex-direction: row;
-    }
 }
 
 .groupTagFilter {
@@ -81,6 +78,10 @@
     &__label {
         text-decoration: underline;
         text-wrap: nowrap;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 

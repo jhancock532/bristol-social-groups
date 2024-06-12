@@ -1,0 +1,59 @@
+{
+  "name": "Southville Running Club",
+  "slug": "southville-running-club",
+  "description": "A friendly running club in Bristol welcoming all abilities for social and training runs.",
+  "details": "The club meets twice a week for group runs led by experienced runners. Sessions include various types of training, with some runners joining for a drink at a pub afterwards.",
+  "tags": ["running", "fitness", "pubs"],
+  "events": [
+    {
+      "name": "Tuesday Evening Runs",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 19:15",
+        "details": "Meet at The Southbank Club from 6:00 PM for a 6:15 PM start. Sessions vary from 4 to 11 miles with different training focuses."
+      },
+      "location": {
+        "address": "The Southbank Club, Dean Lane, BS3 1DB",
+        "latitude": "51.440728",
+        "longitude": "-2.594448",
+        "googleMapsLink": "https://maps.google.co.uk/?q=The+Southbank+Club,+Dean+Lane,+BS3+1DB"
+      },
+      "cost": {
+        "sessionPrice": 0.5,
+        "details": "50p per run to cover the cost of using the facilities at the Southbank Club. Annual membership is £4, with an optional EA Competition License for £19 per year."
+      },
+      "booking": {
+        "required": false,
+        "details": "New runners are welcome to join without prior booking. Membership can be obtained for additional benefits."
+      },
+      "url": "https://www.southvillerunningclub.co.uk/new-runners-2"
+    },
+    {
+      "name": "Thursday Evening Runs",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 19:15",
+        "details": "Meet at The Southbank Club from 6:00 PM for a 6:15 PM start. Sessions vary from 4 to 11 miles with different training focuses."
+      },
+      "location": {
+        "address": "The Southbank Club, Dean Lane, BS3 1DB",
+        "latitude": "51.440728",
+        "longitude": "-2.594448",
+        "googleMapsLink": "https://maps.google.co.uk/?q=The+Southbank+Club,+Dean+Lane,+BS3+1DB"
+      },
+      "cost": {
+        "sessionPrice": 0.5,
+        "details": "50p per run to cover the cost of using the facilities at the Southbank Club. Annual membership is £4, with an optional EA Competition License for £19 per year."
+      },
+      "booking": {
+        "required": false,
+        "details": "New runners are welcome to join without prior booking. Membership can be obtained for additional benefits."
+      },
+      "url": "https://www.southvillerunningclub.co.uk/new-runners-2"
+    }
+  ]
+}
