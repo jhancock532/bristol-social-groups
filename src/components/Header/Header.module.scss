@@ -18,12 +18,17 @@
 .link {
     @include highlight-link();
     @include focus-outline();
-    @include font-size(s);
+    @include font-size(sm);
     font-weight: 400;
     color: var(--color--text);
     padding: $grid / 2;
 
     @include media-query(medium) {
+        @include font-size(s);
+    }
+
+    @include media-query(large) {
+        @include font-size(sm);
     }
 }
 
