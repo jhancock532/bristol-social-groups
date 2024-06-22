@@ -86,6 +86,19 @@ export default function More() {
                     UoB Student Union Groups
                 </Link>
             </p>
+            <h2>The Bristol Index</h2>
+            <p>
+                Not recently updated, but some clubs listed are active and still
+                meeting.
+            </p>
+            <p>
+                <Link
+                    url="https://www.bristolindex.co.uk/community-clubs.php"
+                    external
+                >
+                    Visit the Bristol Index
+                </Link>
+            </p>
         </Layout>
     );
 }

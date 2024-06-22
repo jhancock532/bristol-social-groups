@@ -100,8 +100,9 @@ export default function Home({ events }: any) {
             <div className={styles.hero}>
                 <h1 className={styles.title}>Social Bristol</h1>
                 <p className={styles.description}>
-                    Social groups in Bristol, UK that meet up regularly and are
-                    open to newcomers.
+                    A collection of social groups in Bristol, UK that meet up
+                    regularly and are open to newcomers. Use Ctrl or Cmd + F to
+                    search the page.
                 </p>
                 <div className={styles.groupFilterOptionsContainer}>
                     <div className={styles.groupTagFilterContainer}>

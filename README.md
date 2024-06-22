@@ -30,18 +30,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Rubik, a variable Google Font.
 
-## Inspiration
-
-https://pcmaffey.com/counting-ghosts
-
 ## Events to add
 
-### Groups from Meetup?
+A lot of life drawing groups, ideally add the more sociable ones first.
+
+### Groups from Meetup
 
 https://www.meetup.com/board-game-social/ - double check schedule
 https://www.meetup.com/bristol-writing-meetup-group/
 
-### A lot of running clubs...
+### Further running clubs
 
 - A run club that meets at the Downs on a Saturday - could be this one: https://www.fergsrunclub.co.uk/get_involved
 - Westbury Harriers? Mix of social / competitive runs? Seems more fitness orientated... Maybe list the slower sessions as social runs? Get in touch. https://groups.runtogether.co.uk/WestburyHarriersRunningClub/Runs
@@ -51,17 +49,14 @@ https://www.meetup.com/bristol-writing-meetup-group/
 - Add SVG illustrations
 - https://www.toools.design/free-open-source-illustrations
 
-- Add a button to show / hide the mobile menu.
-
 - All pages use styles from Index.module.scss - update this to seperate out the different page styles, and create a consistent hero component that can be reused on different pages. Note the map hero has custom margin - so our hero should be able to accept a custom container class prop and pass that through?
 
 - The font class should live in a seperate file to `_app` and then get imported into app and the BristolMap component.
 - Mailing list integration?
 - AI pre-processing of event data?
-- Investigate setting up a Netlify CMS integration
 - Add star ranking system for how well groups listed abide by the aims of the site.
 - Refactor every text content link to the new link component
-- Carbon impact of the google form pages? May be best to cut these pages and link to the form directly.
+- Carbon impact of the google form pages? Alternatives?
 
 ## Development ethos
 

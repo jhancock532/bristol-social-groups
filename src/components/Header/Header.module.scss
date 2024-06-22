@@ -1,6 +1,7 @@
 .container {
     @include main-grid();
     padding-top: $grid;
+    position: relative;
 
     @include media-query(large) {
         padding-top: $grid * 2;
@@ -21,22 +22,87 @@
     font-weight: 400;
     color: var(--color--text);
     padding: $grid / 2;
+
+    @include media-query(medium) {
+    }
 }
 
 .nav {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: $grid;
-    margin-left: 0;
-    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background-color: var(--color--bright-white);
+    padding: $grid;
+    box-shadow: $box-shadow;
+    display: none;
+
+    &.navOpen {
+        display: flex;
+        flex-direction: column;
+        gap: $grid;
+    }
 
     @include media-query(medium) {
-        flex-direction: row;
+        background-color: var(--color--background);
+        position: static;
+        display: block;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: $grid;
+        margin-left: 0;
+        margin-bottom: 0;
+
+        @include media-query(medium) {
+            flex-direction: row;
+        }
     }
 }
 
 .navItem {
     margin-bottom: 0;
     white-space: nowrap;
+}
+
+.menuButton {
+    @include font-size(m);
+    color: var(--color--white);
+    background-color: var(--color--primary);
+    padding: $grid / 2;
+    border-radius: $border-radius;
+    border: none;
+    cursor: pointer;
+    font-weight: $weight--bold;
+    display: flex;
+    align-items: center;
+    gap: $grid / 2;
+    margin-right: auto;
+
+    &:hover {
+        background-color: var(--color--highlight-green);
+        color: var(--color--text);
+
+        & svg {
+            color: var(--color--text);
+        }
+    }
+
+    &:focus {
+        @include focus-outline();
+    }
+
+    @include media-query(medium) {
+        display: none;
+    }
+
+    svg {
+        color: var(--color--white);
+    }
 }
