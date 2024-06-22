@@ -1,4 +1,4 @@
-$border-radius: 3px;
+$border-radius: 4px;
 
 // Font weights
 $weight--extrabold: 900;
@@ -8,6 +8,14 @@ $weight--semibold: 600;
 $weight--medium: 500;
 $weight--normal: 400;
 $weight--light: 100;
+
+// Box shadow effect
+$shadow-color: rgba(0, 60, 0, 0.2);
+$shadow-offset-y: 4px;
+$shadow-blur: 8px;
+$shadow-spread: 0px;
+
+$box-shadow: 0 $shadow-offset-y $shadow-blur $shadow-spread $shadow-color;
 
 // Font variables
 /* @link https://utopia.fyi/type/calculator?c=320,18,1.333,1240,22,1.333,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */

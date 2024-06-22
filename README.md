@@ -48,7 +48,10 @@ https://www.meetup.com/bristol-writing-meetup-group/
 
 ## Todo
 
-- Add more events
+- Add SVG illustrations
+- https://www.toools.design/free-open-source-illustrations
+
+- Add a button to show / hide the mobile menu.
 
 - All pages use styles from Index.module.scss - update this to seperate out the different page styles, and create a consistent hero component that can be reused on different pages. Note the map hero has custom margin - so our hero should be able to accept a custom container class prop and pass that through?
 
