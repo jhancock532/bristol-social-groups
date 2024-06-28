@@ -51,9 +51,6 @@
       "booking": {
         "required": false
       },
-      "accessibility": {
-        "details": "Accessible to all abilities."
-      },
       "url": "https://www.instagram.com/alpha.runclub/"
     }
   ]
