@@ -232,6 +232,8 @@
 @mixin main-grid() {
     display: grid;
     grid-template-columns: $grid 1fr $grid;
+    max-width: $site-width;
+    margin: auto;
 
     @include media-query(medium) {
         grid-template-columns: $grid * 3 1fr $grid * 3;
