@@ -26,11 +26,11 @@
 
 .description {
     @include font-size(m);
-    max-width: 65ch;
-    margin-bottom: $grid * 2;
+    max-width: $max-content-width;
+    margin-bottom: $grid * 1;
 
     @include media-query(medium) {
-        margin-bottom: $grid * 3;
+        margin-bottom: $grid * 2;
     }
 }
 
@@ -93,13 +93,10 @@
     padding: 8px 12px;
     background-color: var(--color--dark-green);
     color: var(--color--white);
-    margin-top: $grid * 1.5;
     font-weight: 450;
 
-    &[disabled] {
-        color: var(--color--dark-green);
-        background-color: var(--color--disabled-green);
-        cursor: not-allowed;
+    @include media-query(medium) {
+        max-width: 180px;
     }
 }
 
@@ -107,4 +104,62 @@
     @include focus-outline();
     @include highlight-link();
     color: var(--color--black);
+}
+
+.filterAccordion {
+    margin-bottom: $grid * 2;
+    max-width: $max-content-width;
+}
+
+.filterAccordionToggle {
+    @include focus-outline();
+    @include font-size(sm);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: $grid * 0.5;
+    background-color: var(--color--dark-green);
+    color: var(--color--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        color: var(--color--black);
+        background-color: var(--color--disabled-green);
+    }
+
+    &:hover .filterIcon {
+        transform: translateY(2px);
+    }
+
+    @include media-query(medium) {
+        padding: $grid * 0.5 $grid;
+    }
+}
+
+.filterIcon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+
+    @include media-query(medium) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.filterContent {
+    background-color: var(--color--bright-white);
+    border: 1px solid var(--color--dark-green);
+    border-top: none;
+    border-radius: 0 0 $border-radius $border-radius;
+    padding: $grid;
+
+    @include media-query(medium) {
+        padding: $grid * 2;
+    }
 }
