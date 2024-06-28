@@ -24,17 +24,6 @@ export const Footer = () => {
                         on this page
                     </Link>
                     .
-                    <br /> <br />
-                    The website is open source,{' '}
-                    <Link
-                        url="https://github.com/jhancock532/social-bristol/"
-                        external
-                        className={styles.link}
-                    >
-                        with code shared on GitHub.
-                    </Link>
-                    <br />
-                    Pull requests and issues welcome.
                 </p>
             </div>
             <div></div>

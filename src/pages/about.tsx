@@ -23,9 +23,7 @@ export default function About() {
                     <li>Are well attended</li>
                     <li>Meet regularly</li>
                     <li>Are free or low cost</li>
-                    <li>
-                        Have a shared, inclusive and proactively social activity
-                    </li>
+                    <li>Have a shared, inclusive and social activity</li>
                 </ul>
                 <p>
                     There are many social groups in Bristol that are not listed

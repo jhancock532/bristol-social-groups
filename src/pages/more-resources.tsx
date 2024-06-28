@@ -12,7 +12,8 @@ export default function More() {
             />
             <h1 className={styles.title}>More resources</h1>
             <p className={styles.description}>
-                Some of the best websites for finding social groups in Bristol.
+                Some of the best external websites for finding social groups in
+                Bristol.
             </p>
             <h2>Meetup.com</h2>
             <p>
@@ -54,15 +55,17 @@ export default function More() {
                     Headfirst: view all events in Bristol
                 </Link>
             </p>
-            <h2>r/Bristol on Reddit</h2>
+            <h2>The Bristol Index</h2>
             <p>
-                If you&apos;ve not found what you&apos;re looking for elsewhere,
-                it&apos;s likely worth searching or asking in r/Bristol. See the
-                forum sidebar for more websites that list local events.
+                Not recently updated, but some clubs listed are active and still
+                meeting.
             </p>
             <p>
-                <Link url="https://www.reddit.com/r/bristol/" external>
-                    r/Bristol: see all posts
+                <Link
+                    url="https://www.bristolindex.co.uk/community-clubs.php"
+                    external
+                >
+                    Visit the Bristol Index
                 </Link>
             </p>
             <h2>University Student Union Groups</h2>
@@ -86,17 +89,15 @@ export default function More() {
                     UoB Student Union Groups
                 </Link>
             </p>
-            <h2>The Bristol Index</h2>
+            <h2>r/Bristol on Reddit</h2>
             <p>
-                Not recently updated, but some clubs listed are active and still
-                meeting.
+                If you&apos;ve not found what you&apos;re looking for elsewhere,
+                it&apos;s likely worth searching or asking in r/Bristol. See the
+                forum sidebar for more websites that list local events.
             </p>
             <p>
-                <Link
-                    url="https://www.bristolindex.co.uk/community-clubs.php"
-                    external
-                >
-                    Visit the Bristol Index
+                <Link url="https://www.reddit.com/r/bristol/" external>
+                    r/Bristol: see all posts
                 </Link>
             </p>
         </Layout>
