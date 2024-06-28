@@ -4,9 +4,10 @@ import { join } from 'path';
 import dynamic from 'next/dynamic';
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
-import EventCard from '@/components/EventCard';
+import GroupCard from '@/components/GroupCard';
 import type { Event } from '@/types/types';
 import { getDirectories } from '@/utils/utils';
+import { GROUP_DATA_FILE_PATH } from '@/constants';
 import styles from './Index.module.scss';
 
 const BristolMap = dynamic(() => import('@/components/BristolMap'), {
@@ -48,7 +49,7 @@ export default function Map({ events, groups }: MapProps) {
                 </p>
 
                 {groupsWithEventsWithoutLocation.map((group) => (
-                    <EventCard
+                    <GroupCard
                         key={group.slug}
                         name={group.name}
                         slug={group.slug}
@@ -61,18 +62,16 @@ export default function Map({ events, groups }: MapProps) {
     );
 }
 
-const EVENT_DETAILS_PATH = join(process.cwd(), 'data/events');
-
 export const getStaticProps = async () => {
-    const paths = getDirectories(EVENT_DETAILS_PATH);
+    const paths = getDirectories(GROUP_DATA_FILE_PATH);
 
     const groups = paths.map((path: string) => {
-        const fullEventPath = join(EVENT_DETAILS_PATH, path, 'details.json');
-        const eventData = JSON.parse(
-            fs.readFileSync(fullEventPath, { encoding: 'utf8' }),
+        const fullGroupPath = join(GROUP_DATA_FILE_PATH, path, 'details.json');
+        const groupData = JSON.parse(
+            fs.readFileSync(fullGroupPath, { encoding: 'utf8' }),
         );
 
-        return eventData;
+        return groupData;
     });
 
     const events = [];
