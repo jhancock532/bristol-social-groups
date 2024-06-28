@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+.container {
+    margin-bottom: $grid * 3;
+
+    @include media-query(large) {
+        margin-bottom: $grid * 4;
+    }
+}
+
+.title {
+    @include font-size(m);
+    @include highlight-link();
+    line-height: 1.25;
+    font-weight: 500;
+
+    @include media-query(large) {
+        @include font-size(l);
+    }
+
+    &__link {
+        display: inline-block;
+        margin-bottom: $grid;
+        @include focus-outline();
+    }
+}
+
+.description {
+    @include font-size(s);
+    font-weight: 400;
+    margin-bottom: $grid;
+}
+
+.eventDetailsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $grid;
+
+    @include media-query('large') {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-query('site-width') {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include media-query('x-large') {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-right: auto;
+    }
+}

@@ -1,55 +1,5 @@
 @use 'variables' as *;
 
-.container {
-    margin-bottom: $grid * 3;
-
-    @include media-query(large) {
-        margin-bottom: $grid * 4;
-    }
-}
-
-.title {
-    @include font-size(m);
-    @include highlight-link();
-    line-height: 1.25;
-    font-weight: 500;
-
-    @include media-query(large) {
-        @include font-size(l);
-    }
-
-    &__link {
-        display: inline-block;
-        margin-bottom: $grid;
-        @include focus-outline();
-    }
-}
-
-.description {
-    @include font-size(s);
-    font-weight: 400;
-    margin-bottom: $grid;
-}
-
-.eventDetailsContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: $grid;
-
-    @include media-query('large') {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @include media-query('site-width') {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @include media-query('x-large') {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-right: auto;
-    }
-}
-
 .details {
     @include font-size(s);
     padding: $grid;
@@ -99,42 +49,6 @@
     gap: 10px;
 }
 
-.toggleMapButton {
-    @include font-size(s);
-    @include focus-outline();
-
-    font-weight: bold;
-    background-color: var(--color--primary);
-    color: var(--color--white);
-    border: none;
-    border-radius: $border-radius;
-    width: max-content;
-    padding: 5px 5px 4px 8px;
-    cursor: pointer;
-
-    & .toggleMapButton__icon path {
-        fill: var(--color--white);
-    }
-
-    &:hover {
-        background-color: var(--color--highlight-green);
-        color: var(--color--text);
-
-        & .toggleMapButton__icon path {
-            fill: var(--color--text);
-        }
-    }
-
-    &__icon {
-        margin-top: -2px;
-
-        @include media-query(medium) {
-            height: 27px;
-            width: 27px;
-        }
-    }
-}
-
 .googleMapsLink {
     margin-top: 0;
     text-decoration: underline;
@@ -155,35 +69,7 @@
         transition: transform $transition;
     }
 }
+
 .externalLink {
     @include external-button-link();
-}
-
-.eventDetailsLink {
-    @include highlight-link();
-    @include focus-outline();
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
-    margin-bottom: $grid;
-    color: var(--color--text);
-    width: max-content;
-    font-weight: 500;
-    margin-left: auto;
-
-    @include media-query(medium) {
-        margin-left: 0;
-    }
-
-    &__icon {
-        transition: transform $transition;
-    }
-
-    &:hover {
-        .eventDetailsLink__icon {
-            transform: translate(3px, 0);
-        }
-    }
 }
