@@ -17,7 +17,7 @@ const Map = dynamic(() => import('@/components/SingleMarkerMap'), {
     ssr: false,
 });
 
-const EVENTS_PATH = join(process.cwd(), 'data/events/');
+const EVENTS_PATH = join(process.cwd(), 'data/groups/');
 
 const EventDetailsSection = ({
     title,
