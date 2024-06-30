@@ -44,6 +44,10 @@ https://www.meetup.com/bristol-writing-meetup-group/
 - A run club that meets at the Downs on a Saturday - could be this one: https://www.fergsrunclub.co.uk/get_involved
 - Westbury Harriers? Mix of social / competitive runs? Seems more fitness orientated... Maybe list the slower sessions as social runs? Get in touch. https://groups.runtogether.co.uk/WestburyHarriersRunningClub/Runs
 
+### More events
+
+£10 monthly repair workshop - https://www.eventbrite.co.uk/e/lived-loved-monthly-repair-workshop-bristol-tickets-799888777867?aff=ebdsoporgprofile
+
 ## Todo
 
 - Add SVG illustrations
