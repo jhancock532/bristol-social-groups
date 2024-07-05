@@ -15,6 +15,20 @@ export default function More() {
                 Some of the best external websites for finding social groups in
                 Bristol.
             </p>
+            <h2>Bristol Queer Directory</h2>
+            <p>
+                A spreadsheet listing LGBT+ social groups in Bristol. The
+                directory also includes events, local businesses, support
+                services and other resources.
+            </p>
+            <p>
+                <Link
+                    url="https://docs.google.com/spreadsheets/d/1OAW6vUZCFlXs-lWPvR_GHrHM7uGhJ8YzBdA7uX-_1ek/edit?gid=0#gid=0"
+                    external
+                >
+                    View all LGBT+ groups in Bristol
+                </Link>
+            </p>
             <h2>Meetup.com</h2>
             <p>
                 One of the most active social group sites, Meetup hosts a
@@ -29,6 +43,7 @@ export default function More() {
                     Meetup: view all groups in Bristol
                 </Link>
             </p>
+
             <h2>Eventbrite</h2>
             <p>
                 A popular platform that shares and tickets many events from
@@ -104,6 +119,24 @@ export default function More() {
             <p>
                 <Link url="https://www.reddit.com/r/bristol/" external>
                     r/Bristol: see all posts
+                </Link>
+            </p>
+
+            <h2>Discord Communities</h2>
+            <p>
+                These groups organize events via group chats. To take part and
+                learn more about the events hosted, click on the invite link. If
+                you don&apos;t have a Discord account already, it&apos;s free to
+                sign up.
+            </p>
+            <h3>West Country Leders</h3>
+            <p>
+                Regular board game events at different locations in Bristol, as
+                well as online events.
+            </p>
+            <p>
+                <Link url="https://discord.com/invite/BUGXEyvwTc" external>
+                    Join the Discord community
                 </Link>
             </p>
         </Layout>

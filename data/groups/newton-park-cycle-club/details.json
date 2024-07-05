@@ -1,0 +1,53 @@
+{
+  "name": "Newtown Park Cycle Club",
+  "slug": "newtown-park-cycle-club",
+  "description": "A social, welcoming and non-competitive road and gravel cycling community. Open to everyone who enjoys riding their bike, and drinking tasty beer.",
+  "details": "",
+  "tags": ["cycling", "fitness", "pubs"],
+  "events": [
+    {
+      "name": "Hills & Pils",
+      "details": "We ride up and down the lovely hills of Cotham, Redland and Clifton, before finishing with a drink or two at Left Handed Giant Brewpub on Finzels Reach.",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 18:30",
+        "end": "Jan 1, 1970 21:00",
+        "details": "Meet from 18:30 for a 18:40 start."
+      },
+      "location": {
+        "address": "Millenium Square, Explore Lane, Bristol BS1 5SZ",
+        "latitude": "51.449636",
+        "longitude": "-2.600576",
+        "googleMapsLink": "https://maps.app.goo.gl/tiXiU3NiLp7KWPfb8",
+        "details": "Meet by the big silver disco ball in Millennium Square."
+      },
+      "cost": {
+        "sessionPrice": 0.0
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/newtownpark.cc/"
+    },
+    {
+      "name": "Sunday Social rides",
+      "details": "Longer social rides with groups that cycle at different paces. Routes change, for the latest details check the event announcement on Instagram.",
+      "time": {
+        "frequency": "Fortnightly",
+        "weekday": "Sunday",
+        "start": "Jan 1, 1970 09:30",
+        "end": "Jan 1, 1970 12:00",
+        "details": "See the event announcement on Instagram for the latest details. Meet from 09:30 for a 10:00 start."
+      },
+      "locationURL":  "https://www.instagram.com/newtownpark.cc/",
+      "cost": {
+        "sessionPrice": 0.0
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/newtownpark.cc/"
+    }
+  ]
+}

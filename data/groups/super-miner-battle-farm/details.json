@@ -1,0 +1,34 @@
+{
+  "name": "Super Miner Battle Farm",
+  "slug": "super-miner-battle-farm",
+  "description": "A community of fighting game players based in South West England and Wales, hosting weekly sessions and monthly tournaments in Bristol.",
+  "details": "",
+  "tags": ["gaming", "console"],
+  "events": [
+    {
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Sunday",
+        "start": "Jan 1, 1970 12:00",
+        "end": "Jan 1, 1970 18:00",
+        "details": ""
+      },
+      "location": {
+        "address": "The Lanes, Nelson St, BS1 2LE",
+        "latitude": "51.456458",
+        "longitude": "-2.5936113",
+        "googleMapsLink": "https://maps.app.goo.gl/Ze6kkR7Sv9z68g388",
+        "details": ""
+      },
+      "cost": {
+        "sessionPrice": 3.00,
+        "details": "There is £3 fee for bracket entry to each tournament, so please bring cash or PayPal to smbfbristol@gmail.com. Check the latest event for more details."
+      },
+      "booking": {
+        "required": false,
+        "details": "Review the next event details on the superminerbattle.farm website. Some tournaments can be competitive and have limited places, while walk-ins may be available, advance sign-ups are advised."
+      },
+      "url": "https://superminerbattle.farm/"
+    }
+  ]
+}
