@@ -60,12 +60,24 @@ export default function About() {
                 <h2>Contributors</h2>
                 <ul>
                     <li>
-                        Website developer & group gatherer:{' '}
-                        <Link url="https://github.com/jhancock532" external>
+                        Lead website developer:{' '}
+                        <Link
+                            url="https://www.linkedin.com/in/james-hancock-52464a119/"
+                            external
+                        >
                             James Hancock
                         </Link>
                     </li>
                     <li>Google Forms inspiration: Chris Ward</li>
+                    <li>
+                        <Link url="https://tabb.cc/events" external>
+                            Film meetup groups
+                        </Link>{' '}
+                        hosted and provided by{' '}
+                        <Link url="https://tabb.cc" external>
+                            Tabb
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </Layout>

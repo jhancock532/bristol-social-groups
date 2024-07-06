@@ -107,19 +107,22 @@ h4,
 h5,
 h6,
 .heading {
-    @include heading-text();
+    font-style: inherit;
+    font-weight: inherit;
 }
 
 html,
 .body-text {
-    @include body-text();
+    font-style: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
 }
 
 // Default sizes
 h1 {
     @include font-size(xxxl);
     font-weight: $weight--bold;
-    margin: 0 0 math.div($gutter, 2);
+    margin: 0 0 math.div($grid, 2);
     color: var(--color--text);
 }
 
@@ -140,7 +143,7 @@ h4,
 .heading--4 {
     @include font-size(m);
     font-weight: $weight--bold;
-    margin: ($gutter * 3) 0 math.div($gutter, 2);
+    margin: ($grid * 3) 0 math.div($grid, 2);
     color: var(--color--dark-indigo);
 }
 
@@ -156,7 +159,7 @@ small {
 }
 
 p {
-    margin: 0 0 ($gutter * 1.5);
+    margin: 0 0 ($grid * 1.5);
     color: var(--color--text);
     max-width: 60ch;
 }

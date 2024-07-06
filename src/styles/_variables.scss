@@ -17,20 +17,8 @@ $shadow-spread: 0px;
 
 $box-shadow: 0 $shadow-offset-y $shadow-blur $shadow-spread $shadow-color;
 
-// Font variables
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.333,1240,22,1.333,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
-/* @link https://utopia.fyi/type/calculator?c=320,16,1.333,1240,20,1.333,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-
-// :root {
-//     --step--1: clamp(0.7502rem, 0.685rem + 0.3262vi, 0.9377rem);
-//     --step-0: clamp(1rem, 0.913rem + 0.4348vi, 1.25rem);
-//     --step-1: clamp(1.333rem, 1.2171rem + 0.5796vi, 1.6663rem);
-//     --step-2: clamp(1.7769rem, 1.6224rem + 0.7726vi, 2.2211rem);
-//     --step-3: clamp(2.3686rem, 2.1626rem + 1.0298vi, 2.9607rem);
-//     --step-4: clamp(3.1573rem, 2.8828rem + 1.3728vi, 3.9467rem);
-//     --step-5: clamp(4.2087rem, 3.8428rem + 1.8299vi, 5.2609rem);
-//   }
+// Font variables calculated using Utopia
+/* https://utopia.fyi/type/calculator?c=320,16,1.333,1240,20,1.333,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 $font-size-map: (
     xxxl: clamp(4.2087rem, 3.8428rem + 1.8299vi, 5.2609rem),
@@ -47,7 +35,7 @@ $font-size-map: (
 $breakpoints: (
     'medium' '(min-width: 599px)',
     'large' '(min-width: 1023px)',
-    'site-width' '(min-width: 1441px)',
+    'site-width' '(min-width: 1560px)',
     'x-large' '(min-width: 1919px)'
 );
 
@@ -59,15 +47,6 @@ $max-content-width: 1000px;
 
 // Grid setup
 $grid: 20px;
-$gutter: $grid;
-
-$variable-gutter--small: 8.33vw;
-$variable-gutter--medium: ($variable-gutter--small * 2);
-$variable-gutter--large: ($variable-gutter--small * 3);
-
-$component-spacing--small: $grid;
-$component-spacing--medium: ($component-spacing--small * 3);
-$component-spacing--large: ($component-spacing--small * 5.5);
 
 // --------------------------------- Transitions --------------------------------------
 

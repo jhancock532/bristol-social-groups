@@ -214,17 +214,6 @@
     }
 }
 
-@mixin heading-text() {
-    font-style: inherit;
-    font-weight: inherit;
-}
-
-@mixin body-text() {
-    font-style: inherit;
-    font-weight: inherit;
-    text-transform: inherit;
-}
-
 /* ============================================
     Grid
 */
