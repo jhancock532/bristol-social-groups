@@ -1,0 +1,5 @@
+.noGroupsFoundMessage {
+    @include font-size(sm);
+    font-weight: 500;
+    margin-bottom: $grid * 3;
+}

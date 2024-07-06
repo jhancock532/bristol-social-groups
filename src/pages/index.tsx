@@ -3,7 +3,9 @@ import fs from 'fs';
 import { join } from 'path';
 import GroupListingFeed from '@/components/GroupListingFeed';
 import Layout from '@/components/Layout';
+import Link from '@/components/Link';
 import Metadata from '@/components/Metadata';
+import FilteredGroupsShownMessage from '@/components/FilteredGroupsShownMessage';
 import { ExpandIcon } from '@/components/Icons/ExpandIcon';
 import { getDirectories } from '@/utils/utils';
 import { WEEKDAYS, GROUP_DATA_FILE_PATH } from '@/constants';
@@ -20,7 +22,7 @@ const generateListOfGroupTags = (events: any) => {
 
 export default function Home({ groups }: any) {
     const [selectedGroupTags, setSelectedGroupTags] = useState<string[]>([]);
-    const [selectedWeekday, setSelectedWeekday] = useState<string>('None');
+    const [selectedWeekday, setSelectedWeekday] = useState<string>('All');
     const [isFilterOpen, setIsFilterOpen] = useState(false);
 
     const groupTags = useMemo(() => generateListOfGroupTags(groups), [groups]);
@@ -37,7 +39,7 @@ export default function Home({ groups }: any) {
 
     const clearAllFilters = () => {
         setSelectedGroupTags([]);
-        setSelectedWeekday('None');
+        setSelectedWeekday('All');
     };
 
     const toggleFilter = () => {
@@ -52,7 +54,7 @@ export default function Home({ groups }: any) {
                     selectedGroupTags.includes(tag),
                 );
             const matchesWeekday =
-                selectedWeekday === 'None' ||
+                selectedWeekday === 'All' ||
                 event.events.some(
                     (e: any) => e.time.weekday === selectedWeekday,
                 );
@@ -166,8 +168,16 @@ export default function Home({ groups }: any) {
                                         ))}
                                     </div>
                                 </div>
+
+                                <FilteredGroupsShownMessage
+                                    numberOfGroupsFiltered={
+                                        filteredGroups.length
+                                    }
+                                    numberOfPossibleGroups={groups.length}
+                                />
+
                                 {(selectedGroupTags.length !== 0 ||
-                                    selectedWeekday !== 'None') && (
+                                    selectedWeekday !== 'All') && (
                                     <button
                                         className={
                                             styles.clearSelectedTagsButton
@@ -187,6 +197,12 @@ export default function Home({ groups }: any) {
                 groups={filteredGroups}
                 selectedWeekday={selectedWeekday}
             />
+
+            <p className={styles.callToAction}>
+                If you&apos;ve not found what you&apos;re looking for, check the{' '}
+                <Link url="/more-resources">more resources page</Link> for
+                further sites that list groups in Bristol.
+            </p>
         </Layout>
     );
 }

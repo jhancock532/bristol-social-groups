@@ -30,7 +30,7 @@ const GroupListingFeed = ({
                 // Filter group events by selected weekday
                 let filteredEvents = group.events;
 
-                if (selectedWeekday && selectedWeekday !== 'None') {
+                if (selectedWeekday && selectedWeekday !== 'All') {
                     filteredEvents = group.events.filter((e: Event) => {
                         if (e.time === undefined) return false;
                         return e.time.weekday === selectedWeekday;

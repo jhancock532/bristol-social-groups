@@ -1,7 +1,7 @@
 import { join } from 'path';
 
 export const WEEKDAYS = [
-    'None',
+    'All',
     'Monday',
     'Tuesday',
     'Wednesday',

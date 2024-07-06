@@ -91,12 +91,16 @@
     border: 0;
     border-radius: 3px;
     padding: 8px 12px;
-    background-color: var(--color--dark-green);
+    background-color: var(--color--dark-gray);
     color: var(--color--white);
     font-weight: 450;
 
     @include media-query(medium) {
         max-width: 180px;
+    }
+
+    &:hover {
+        background-color: var(--color--black);
     }
 }
 
@@ -162,4 +166,8 @@
     @include media-query(medium) {
         padding: $grid * 2;
     }
+}
+
+.callToAction {
+    @include font-size(sm);
 }
