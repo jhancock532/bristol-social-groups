@@ -1,0 +1,58 @@
+.container {
+    margin-bottom: $grid * 2;
+
+    @include media-query(medium) {
+        margin-bottom: $grid * 2;
+    }
+
+    @include media-query(large) {
+        margin-bottom: $grid * 3;
+    }
+}
+
+.toggleButton {
+    @include focus-outline();
+    padding: $grid;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid var(--color--disabled-green);
+    border-radius: $border-radius;
+    background: linear-gradient(
+        var(--color--highlight-green),
+        var(--color--underline-green)
+    );
+    cursor: pointer;
+
+    &:hover {
+        .mapToggleButtonText {
+            color: var(--color--black);
+            background-color: var(--color--disabled-green);
+        }
+    }
+}
+
+.buttonText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    font-weight: 500;
+    color: var(--color--bright-white);
+    background-color: var(--color--dark-green);
+    padding: $grid * 0.5 $grid * 0.5 $grid * 0.5 $grid;
+    border-radius: $border-radius;
+    border: 1px solid var(--color--dark-gray);
+    transition: background-color 0.3s ease;
+}
+
+.dropdownIcon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+
+    @include media-query(medium) {
+        width: 32px;
+        height: 32px;
+    }
+}

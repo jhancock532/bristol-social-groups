@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import fs from 'fs';
 import { join } from 'path';
-import dynamic from 'next/dynamic';
 import GroupListingFeed from '@/components/GroupListingFeed';
+import GroupListingMap from '@/components/GroupListingMap';
 import Layout from '@/components/Layout';
 import Link from '@/components/Link';
 import Metadata from '@/components/Metadata';
@@ -11,10 +11,6 @@ import { ExpandIcon } from '@/components/Icons/ExpandIcon';
 import { getDirectories } from '@/utils/utils';
 import { WEEKDAYS, GROUP_DATA_FILE_PATH } from '@/constants';
 import styles from './Index.module.scss';
-
-const Map = dynamic(() => import('@/components/Map'), {
-    ssr: false,
-});
 
 const generateListOfGroupTags = (events: any) => {
     return events.reduce((tags: { [key: string]: number }, event: any) => {
@@ -29,7 +25,6 @@ export default function Home({ groups }: any) {
     const [selectedGroupTags, setSelectedGroupTags] = useState<string[]>([]);
     const [selectedWeekday, setSelectedWeekday] = useState<string>('All');
     const [filterIsOpen, setFilterIsOpen] = useState(false);
-    const [mapIsOpen, setMapIsOpen] = useState(false);
 
     const groupTags = useMemo(() => generateListOfGroupTags(groups), [groups]);
 
@@ -199,24 +194,7 @@ export default function Home({ groups }: any) {
                 </div>
             </div>
 
-            {filteredGroups.length !== 0 && (
-                <div className={styles.mapDisplay}>
-                    <button
-                        className={styles.mapToggleButton}
-                        onClick={() => setMapIsOpen(!mapIsOpen)}
-                    >
-                        <span className={styles.mapToggleButtonText}>
-                            {mapIsOpen ? 'Hide map' : 'View map'}
-                            <ExpandIcon
-                                className={styles.filterIcon}
-                                pointDownwards={!mapIsOpen}
-                            />
-                        </span>
-                    </button>
-
-                    {mapIsOpen && <Map groups={filteredGroups} />}
-                </div>
-            )}
+            <GroupListingMap groups={filteredGroups} />
 
             <GroupListingFeed
                 groups={filteredGroups}

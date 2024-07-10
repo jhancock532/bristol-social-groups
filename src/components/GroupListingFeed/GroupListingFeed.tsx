@@ -1,3 +1,4 @@
+import React from 'react';
 import GroupCard from '@/components/GroupCard';
 import { Event } from '@/types/Event';
 import { Group } from '@/types/Group';
