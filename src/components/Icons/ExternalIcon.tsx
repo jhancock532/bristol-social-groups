@@ -1,7 +1,6 @@
 import React from 'react';
-import { IconProps } from '@/types/types';
+import { IconProps } from '@/types/Icon';
 
-// Todo: review height and width of icons & resizing strategy?
 export const ExternalIcon = ({ className, fill }: IconProps) => {
     return (
         <svg

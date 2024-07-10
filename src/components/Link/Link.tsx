@@ -1,7 +1,7 @@
 import React from 'react';
 import NextLink from 'next/link';
-import styles from './Link.module.scss';
 import { ExternalIcon } from '../Icons/ExternalIcon';
+import styles from './Link.module.scss';
 
 type LinkProps = {
     url: string;

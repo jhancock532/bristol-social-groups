@@ -1,5 +1,5 @@
-import { IconProps } from '@/types/types';
 import React from 'react';
+import { IconProps } from '@/types/Icon';
 
 export const LocationIcon = ({ className, fill }: IconProps) => {
     return (

@@ -1,5 +1,7 @@
 # Group JSON File Format Documentation
 
+The type definition for the group object can be found in `src/types/Group.ts`.
+
 ## Root Object
 
 The root object contains the following properties:

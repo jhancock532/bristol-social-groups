@@ -25,7 +25,7 @@
         "details": "There is £3 fee for bracket entry to each tournament, so please bring cash or PayPal to smbfbristol@gmail.com. Check the latest event for more details."
       },
       "booking": {
-        "required": false,
+        "required": "Advised",
         "details": "Review the next event details on the superminerbattle.farm website. Some tournaments can be competitive and have limited places, while walk-ins may be available, advance sign-ups are advised."
       },
       "url": "https://superminerbattle.farm/"

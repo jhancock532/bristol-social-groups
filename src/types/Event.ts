@@ -1,27 +1,16 @@
-export type IconProps = {
-    className?: string;
-    fill?: string;
-};
-
-export type Event = {
-    name?: string;
-    slug?: string; // added flexibility for bristol map component
-    details?: string;
-    url?: string;
-    time?: EventTime;
-    location: EventLocation;
-    locationURL?: string;
-    cost?: EventCost;
-    booking?: EventBooking;
-};
-
 export type EventCost = {
     sessionPrice: number;
     details: string;
 };
 
+export type EventBookingType =
+    | 'Not required'
+    | 'Advised'
+    | 'Required'
+    | boolean; // Where `true` is required and `false` is not required.
+
 export type EventBooking = {
-    required: boolean;
+    required: EventBookingType;
     details: string;
 };
 
@@ -46,4 +35,16 @@ export type EventTime = {
     start: string;
     end: string;
     details?: string;
+};
+
+export type Event = {
+    name?: string;
+    slug?: string;
+    details?: string;
+    url?: string;
+    time?: EventTime;
+    location: EventLocation;
+    locationURL?: string;
+    cost?: EventCost;
+    booking?: EventBooking;
 };

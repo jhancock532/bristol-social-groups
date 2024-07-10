@@ -1,21 +1,33 @@
 'use client';
 
 import React from 'react';
-import type { Event } from '@/types/types';
-
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import Link from 'next/link';
 import { rubik } from '@/pages/_app';
-import styles from './BristolMap.module.scss';
 import { ExternalIcon } from '../Icons/ExternalIcon';
+import styles from './Map.module.scss';
 
 type MapProps = {
-    events: Event[];
+    groups: any[];
 };
 
-const BristolMap = ({ events }: MapProps) => {
-    const filteredEvents = events.filter((event) => event.location);
+const Map = ({ groups }: MapProps) => {
+    const events = [];
+
+    for (let i = 0; i < groups.length; i += 1) {
+        for (let j = 0; j < groups[i].events.length; j += 1) {
+            let event;
+
+            event = groups[i].events[j];
+            event.slug = groups[i].slug;
+            event.name = groups[i].name;
+
+            if (groups[i].events[j].location) {
+                events.push(event);
+            }
+        }
+    }
 
     return (
         <div className={styles.container}>
@@ -28,7 +40,7 @@ const BristolMap = ({ events }: MapProps) => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                {filteredEvents.map((event, index) => (
+                {events.map((event, index) => (
                     <Marker
                         key={index}
                         position={[
@@ -51,7 +63,7 @@ const BristolMap = ({ events }: MapProps) => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                View event host&apos;s website <ExternalIcon />
+                                View group&apos;s website <ExternalIcon />
                             </a>
                         </Popup>
                     </Marker>
@@ -61,4 +73,4 @@ const BristolMap = ({ events }: MapProps) => {
     );
 };
 
-export default BristolMap;
+export default Map;

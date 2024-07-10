@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import EventCard from '@/components/EventCard';
-import { Event } from '@/types/types';
+import { Event } from '@/types/Event';
 
 import styles from './GroupCard.module.scss';
 

@@ -1,21 +1,13 @@
 @use 'variables' as *;
 
 .hero {
-    margin-bottom: $grid * 3;
+    margin-bottom: 0;
 
     @include media-query(medium) {
-        margin-bottom: $grid * 4;
+        margin-bottom: $grid * 2;
     }
 
     @include media-query(large) {
-        margin-bottom: $grid * 4;
-    }
-}
-
-.mapHero {
-    margin-bottom: $grid * 1;
-
-    @include media-query(medium) {
         margin-bottom: $grid * 2;
     }
 }
@@ -118,17 +110,17 @@
 .filterAccordionToggle {
     @include focus-outline();
     @include font-size(sm);
+    width: 290px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     padding: $grid * 0.5;
     background-color: var(--color--dark-green);
     color: var(--color--white);
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -157,17 +149,65 @@
 }
 
 .filterContent {
-    background-color: var(--color--bright-white);
-    border: 1px solid var(--color--dark-green);
-    border-top: none;
-    border-radius: 0 0 $border-radius $border-radius;
-    padding: $grid;
+    padding: $grid 0;
 
     @include media-query(medium) {
-        padding: $grid * 2;
+        padding: $grid * 2 0 0 0;
     }
 }
 
 .callToAction {
     @include font-size(sm);
+    border: 1px solid var(--color--dark-green);
+    background-color: var(--color--bright-white);
+    border-radius: $border-radius;
+    padding: $grid;
+}
+
+.mapDisplay {
+    margin-bottom: $grid * 2;
+
+    @include media-query(medium) {
+        margin-bottom: $grid * 2;
+    }
+
+    @include media-query(large) {
+        margin-bottom: $grid * 3;
+    }
+}
+
+.mapToggleButton {
+    @include focus-outline();
+    padding: $grid;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid var(--color--disabled-green);
+    border-radius: $border-radius;
+    background: linear-gradient(
+        var(--color--highlight-green),
+        var(--color--underline-green)
+    );
+    cursor: pointer;
+
+    &:hover {
+        .mapToggleButtonText {
+            color: var(--color--black);
+            background-color: var(--color--disabled-green);
+        }
+    }
+}
+
+.mapToggleButtonText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    font-weight: 500;
+    color: var(--color--bright-white);
+    background-color: var(--color--dark-green);
+    padding: $grid * 0.5 $grid * 0.5 $grid * 0.5 $grid;
+    border-radius: $border-radius;
+    border: 1px solid var(--color--dark-gray);
+    transition: background-color 0.3s ease;
 }

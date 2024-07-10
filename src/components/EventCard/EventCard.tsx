@@ -6,7 +6,7 @@ import { LocationIcon } from '@/components/Icons/LocationIcon';
 import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
 import { ExternalIcon } from '@/components/Icons/ExternalIcon';
 import { getAMPMTimeFromDateString } from '@/utils/utils';
-import { Event } from '@/types/types';
+import { Event } from '@/types/Event';
 import styles from './EventCard.module.scss';
 
 const EventCard = ({
@@ -46,14 +46,14 @@ const EventCard = ({
                     </p>
                 </div>
             )}
-            {booking && (
+            {booking && booking.required && (
                 <div className={styles.details__item}>
                     <ReceiptIcon className={styles.details__icon} />
                     <p>
-                        {booking.required ? (
-                            <strong>Advance booking required</strong>
+                        {booking.required === 'Advised' ? (
+                            <span>Advance booking advised</span>
                         ) : (
-                            'No advance booking required'
+                            <strong>Advance booking required</strong>
                         )}
                     </p>
                 </div>
@@ -63,7 +63,7 @@ const EventCard = ({
                 <div className={styles.locationContainer}>
                     {location && (
                         <p>
-                            Located at{' '}
+                            Meets at{' '}
                             <a
                                 className={styles.googleMapsLink}
                                 href={location.googleMapsLink}
@@ -98,7 +98,7 @@ const EventCard = ({
                     target="_blank"
                     rel="noreferrer"
                 >
-                    View event host&apos;s website <ExternalIcon />
+                    View group&apos;s website <ExternalIcon />
                 </a>
             </div>
         </div>
