@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+.container {
+    @include font-size(s);
+    padding: $grid;
+    border-radius: $border-radius;
+    background-color: var(--color--bright-white);
+    margin-bottom: auto;
+    max-width: 600px;
+    box-shadow: $box-shadow;
+}
+
+.description {
+    margin-bottom: $grid;
+    display: flex;
+    gap: $grid / 2;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.icon {
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+}
+
+.externalLink {
+    @include external-button-link();
+}

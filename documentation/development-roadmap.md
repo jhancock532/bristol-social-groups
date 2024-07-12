@@ -10,7 +10,9 @@ Replace the map marker icon with a green svg element, and change the size of the
 
 Order the filter tags by most common to least common. Display three rows of tags visually and then a scroll bar should appear, so they don't take up too much space on the screen.
 
-Define the official type for a group object - include "Booking not required, booking recommended, booking required" object type for "booking".
+Add accessibility aria labels or suitable titles to announce the icons in the GroupCard component
+
+Add tests for the filters combined with the map listing component and card feed listing component
 
 ## Nice to have
 

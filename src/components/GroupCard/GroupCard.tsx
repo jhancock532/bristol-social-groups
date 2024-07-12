@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import DiscordCard from '@/components/DiscordCard';
 import EventCard from '@/components/EventCard';
 import { Event } from '@/types/Event';
 
@@ -9,7 +10,9 @@ type GroupCardProps = {
     name: string;
     description: string;
     slug: string;
-    events: Event[];
+    type?: string;
+    url?: string;
+    events?: Event[];
 };
 
 /**
@@ -18,9 +21,18 @@ type GroupCardProps = {
  * @param {string} name - The name of the group
  * @param {string} description - A one to two sentence description of the group
  * @param {string} slug - The URL slug where the user can find more information about the group within this website
+ * @param {string} type - The type of group, e.g. "Meetup" or "Discord"
+ * @param {string} url - A URL where the user can find more information about the group
  * @param {Event[]} events - An array of events hosted by the group
  */
-const GroupCard = ({ name, description, slug, events }: GroupCardProps) => {
+const GroupCard = ({
+    name,
+    description,
+    slug,
+    type,
+    url,
+    events,
+}: GroupCardProps) => {
     return (
         <div className={styles.container}>
             <Link href={`/events/${slug}`} className={styles.title__link}>
@@ -29,11 +41,15 @@ const GroupCard = ({ name, description, slug, events }: GroupCardProps) => {
 
             <p className={styles.description}>{description}</p>
 
-            <div className={styles.eventDetailsContainer}>
-                {events.map((event: Event, index: number) => (
-                    <EventCard key={index} {...event} />
-                ))}
-            </div>
+            {events && (
+                <div className={styles.eventDetailsContainer}>
+                    {events.map((event: Event, index: number) => (
+                        <EventCard key={index} {...event} />
+                    ))}
+                </div>
+            )}
+
+            {type === 'Discord' && url && <DiscordCard url={url} />}
         </div>
     );
 };

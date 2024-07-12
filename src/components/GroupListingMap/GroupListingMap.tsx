@@ -10,20 +10,27 @@ const Map = dynamic(() => import('@/components/Map'), {
 
 type GroupListingMapProps = {
     groups: Group[];
+    selectedWeekday?: string;
 };
 
 /**
  * Renders a map of group listings within a dropdown accordion
  *
  * @param {Group[]} props.groups - An array of group objects to display
+ * @param {string | undefined} props.selectedWeekday - The selected weekday for filtering events, or null for no filter
  * @returns {JSX.Element} A map of the groups in Bristol
  */
-const GroupListingMap = ({ groups }: GroupListingMapProps) => {
+const GroupListingMap = ({ groups, selectedWeekday }: GroupListingMapProps) => {
     const [mapIsOpen, setMapIsOpen] = useState(false);
 
     let toggleButtonStyles = `${styles.toggleButton} `;
 
     if (mapIsOpen) toggleButtonStyles += styles.toggleButtonOpen;
+
+    // If none of the groups have an event with a location, hide the map
+    if (groups.every((group) => !group.events)) {
+        return null;
+    }
 
     if (groups.length !== 0) {
         return (
@@ -41,7 +48,9 @@ const GroupListingMap = ({ groups }: GroupListingMapProps) => {
                     </span>
                 </button>
 
-                {mapIsOpen && <Map groups={groups} />}
+                {mapIsOpen && (
+                    <Map groups={groups} selectedWeekday={selectedWeekday} />
+                )}
             </div>
         );
     }

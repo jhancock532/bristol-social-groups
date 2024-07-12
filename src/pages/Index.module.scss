@@ -158,8 +158,4 @@
 
 .callToAction {
     @include font-size(sm);
-    border: 1px solid var(--color--dark-green);
-    background-color: var(--color--bright-white);
-    border-radius: $border-radius;
-    padding: $grid;
 }

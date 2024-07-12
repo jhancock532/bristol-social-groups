@@ -23,28 +23,27 @@ const GroupListingFeed = ({
         <div>
             {groups.map((group: Group, index: number) => {
                 // Filter group events by selected weekday
-
+                let filteredEvents = group.events;
                 if (group.events) {
-                    let filteredEvents = group.events;
                     if (selectedWeekday && selectedWeekday !== 'All') {
                         filteredEvents = group.events.filter((e: Event) => {
                             if (e.time === undefined) return false;
                             return e.time.weekday === selectedWeekday;
                         });
                     }
-
-                    return (
-                        <GroupCard
-                            key={index}
-                            name={group.name}
-                            description={group.description}
-                            slug={group.slug}
-                            events={filteredEvents}
-                        />
-                    );
                 }
 
-                return null;
+                return (
+                    <GroupCard
+                        key={index}
+                        name={group.name}
+                        type={group.type}
+                        url={group.url}
+                        description={group.description}
+                        slug={group.slug}
+                        events={filteredEvents}
+                    />
+                );
             })}
         </div>
     );

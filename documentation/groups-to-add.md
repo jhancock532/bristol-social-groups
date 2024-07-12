@@ -10,6 +10,8 @@ Board game social group - https://www.meetup.com/board-game-social/
 
 ANimation screening and sharing meetup - https://www.instagram.com/animinspo_bristol/
 
+Women's Craft workshops at the Arnolfini, free, fridays 11am to 1pm
+
 Writing meetup group - https://www.meetup.com/bristol-writing-meetup-group/
 
 £10 monthly repair workshop - https://www.eventbrite.co.uk/e/lived-loved-monthly-repair-workshop-bristol-tickets-799888777867?aff=ebdsoporgprofile

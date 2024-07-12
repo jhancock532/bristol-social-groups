@@ -10,21 +10,33 @@ import styles from './Map.module.scss';
 
 type MapProps = {
     groups: any[];
+    selectedWeekday?: string;
 };
 
-const Map = ({ groups }: MapProps) => {
+const Map = ({ groups, selectedWeekday }: MapProps) => {
     const events = [];
 
     for (let i = 0; i < groups.length; i += 1) {
-        for (let j = 0; j < groups[i].events.length; j += 1) {
-            let event;
+        if (groups[i].events) {
+            for (let j = 0; j < groups[i].events.length; j += 1) {
+                let event;
 
-            event = groups[i].events[j];
-            event.slug = groups[i].slug;
-            event.name = groups[i].name;
+                event = groups[i].events[j];
+                event.slug = groups[i].slug;
+                event.name = groups[i].name;
 
-            if (groups[i].events[j].location) {
-                events.push(event);
+                if (groups[i].events[j].location) {
+                    if (
+                        selectedWeekday &&
+                        selectedWeekday !== 'All' &&
+                        groups[i].events[j].time &&
+                        groups[i].events[j].time.weekday !== selectedWeekday
+                    ) {
+                        // eslint-disable-next-line no-continue
+                        continue;
+                    }
+                    events.push(event);
+                }
             }
         }
     }

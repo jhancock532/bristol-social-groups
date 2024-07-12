@@ -54,11 +54,17 @@ export default function Home({ groups }: any) {
                 event.tags?.some((tag: string) =>
                     selectedGroupTags.includes(tag),
                 );
-            const matchesWeekday =
-                selectedWeekday === 'All' ||
-                event.events.some(
-                    (e: any) => e.time.weekday === selectedWeekday,
-                );
+            let matchesWeekday = selectedWeekday === 'All';
+            if (event.events) {
+                matchesWeekday =
+                    matchesWeekday ||
+                    event.events.some(
+                        (e: any) => e.time.weekday === selectedWeekday,
+                    );
+            }
+            if (event.type === 'Discord') {
+                matchesWeekday = true;
+            }
             return matchesTags && matchesWeekday;
         });
     }, [groups, selectedGroupTags, selectedWeekday]);
@@ -194,18 +200,24 @@ export default function Home({ groups }: any) {
                 </div>
             </div>
 
-            <GroupListingMap groups={filteredGroups} />
+            <GroupListingMap
+                groups={filteredGroups}
+                selectedWeekday={selectedWeekday}
+            />
 
             <GroupListingFeed
                 groups={filteredGroups}
                 selectedWeekday={selectedWeekday}
             />
 
-            <p className={styles.callToAction}>
-                If you&apos;ve not found what you&apos;re looking for, check the{' '}
-                <Link url="/more-resources">more resources page</Link> for
-                further sites that list groups in Bristol.
-            </p>
+            <div className={styles.callToAction}>
+                <h2>Not found what you&apos;re looking for?</h2>{' '}
+                <p>
+                    Check the{' '}
+                    <Link url="/more-resources">more resources page</Link> for
+                    further sites that list groups in Bristol.
+                </p>
+            </div>
         </Layout>
     );
 }

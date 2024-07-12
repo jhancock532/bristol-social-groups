@@ -121,24 +121,6 @@ export default function More() {
                     r/Bristol: see all posts
                 </Link>
             </p>
-
-            <h2>Discord Communities</h2>
-            <p>
-                These groups organize events via group chats. To take part and
-                learn more about the events hosted, click on the invite link. If
-                you don&apos;t have a Discord account already, it&apos;s free to
-                sign up.
-            </p>
-            <h3>West Country Leders</h3>
-            <p>
-                Regular board game events at different locations in Bristol, as
-                well as online events.
-            </p>
-            <p>
-                <Link url="https://discord.com/invite/BUGXEyvwTc" external>
-                    Join the Discord community
-                </Link>
-            </p>
         </Layout>
     );
 }

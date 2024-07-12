@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
+import DiscordCard from '@/components/DiscordCard';
 import { ClockIcon } from '@/components/Icons/ClockIcon';
 import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
 import { WalletIcon } from '@/components/Icons/WalletIcon';
@@ -180,18 +181,34 @@ const EventPage = ({ data }: { data: any }) => {
             <h1 className={styles.title}>{data.name}</h1>
             <p className={styles.description}>{data.description}</p>
 
-            {data.events.length > 1 ? (
-                data.events.map((event: any, index: number) => {
-                    return (
-                        <Event
-                            event={event}
-                            sectionTitleHeadingLevel="h3"
-                            key={index}
-                        />
-                    );
-                })
-            ) : (
-                <Event event={data.events[0]} sectionTitleHeadingLevel="h2" />
+            {data.events &&
+                (data.events.length > 1 ? (
+                    data.events.map((event: any, index: number) => {
+                        return (
+                            <Event
+                                event={event}
+                                sectionTitleHeadingLevel="h3"
+                                key={index}
+                            />
+                        );
+                    })
+                ) : (
+                    <Event
+                        event={data.events[0]}
+                        sectionTitleHeadingLevel="h2"
+                    />
+                ))}
+
+            {data.type === 'Discord' && (
+                <div className={styles.discordContainer}>
+                    <p>
+                        Discord groups organize events via group chats. To take
+                        part and learn more about the events hosted, click on
+                        the invite link. If you don&apos;t have a Discord
+                        account already, it&apos;s free to sign up.
+                    </p>
+                    <DiscordCard url={data.url} />
+                </div>
             )}
         </Layout>
     );
