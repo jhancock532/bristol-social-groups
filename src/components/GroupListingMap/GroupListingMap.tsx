@@ -21,11 +21,15 @@ type GroupListingMapProps = {
 const GroupListingMap = ({ groups }: GroupListingMapProps) => {
     const [mapIsOpen, setMapIsOpen] = useState(false);
 
+    let toggleButtonStyles = `${styles.toggleButton} `;
+
+    if (mapIsOpen) toggleButtonStyles += styles.toggleButtonOpen;
+
     if (groups.length !== 0) {
         return (
             <div className={styles.container}>
                 <button
-                    className={styles.toggleButton}
+                    className={toggleButtonStyles}
                     onClick={() => setMapIsOpen(!mapIsOpen)}
                 >
                     <span className={styles.buttonText}>

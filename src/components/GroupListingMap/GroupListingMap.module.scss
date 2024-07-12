@@ -18,16 +18,43 @@
     width: 100%;
     border: 1px solid var(--color--disabled-green);
     border-radius: $border-radius;
-    background: linear-gradient(
-        var(--color--highlight-green),
-        var(--color--underline-green)
-    );
+    background: url('/images/map-toggle-background.webp'),
+        url('/images/map-toggle-background.png'),
+        linear-gradient(
+            var(--color--highlight-green),
+            var(--color--underline-green)
+        );
     cursor: pointer;
 
     &:hover {
         .mapToggleButtonText {
             color: var(--color--black);
             background-color: var(--color--disabled-green);
+        }
+    }
+}
+
+.toggleButtonOpen {
+    // Whenever we open the dropdown, resize the button container to nothing,
+    // only allowing the central button text to be clickable.
+    // This is because we want the placeholder background image to disappear
+    // and the map element to appear in its place.
+    background: rgba(0, 0, 0, 0);
+    height: 0;
+    padding: 0;
+    border: none;
+    z-index: 500;
+    position: relative;
+    transform: translateY($grid);
+
+    &:focus-visible {
+        // Remove the focus outline from the container button
+        // And only apply the outline effect to the child
+        outline: none;
+
+        .buttonText {
+            outline: 3px solid var(--color--dark-green);
+            outline-offset: 3px;
         }
     }
 }
