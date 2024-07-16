@@ -1,0 +1,24 @@
+# .github/workflows/deploy-github-pages.yaml
+
+name: Build and Publish Storybook to GitHub Pages
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'storybook'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+        with:
+          install_command: npm ci
+          build_command: npm run build-storybook
+          path: storybook-static
