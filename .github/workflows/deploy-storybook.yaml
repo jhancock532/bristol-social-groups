@@ -1,12 +1,9 @@
-# .github/workflows/deploy-github-pages.yaml
-
 name: Build and Publish Storybook to GitHub Pages
 
 on:
   push:
     branches:
       - 'main'
-      - 'storybook'
 
 permissions:
   contents: read
