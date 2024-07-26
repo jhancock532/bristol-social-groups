@@ -53,7 +53,8 @@
       "booking": {
         "required": false
       },
-      "url": "https://www.instagram.com/ridebristol/"
+      "url": "https://www.instagram.com/ridebristol/",
+      "gender": "Women and marginalised genders"
     }
   ]
 }

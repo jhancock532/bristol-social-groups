@@ -32,7 +32,7 @@
     {
       "name": "Monthly Plogging Event",
       "time": {
-        "frequency": "Monthly",
+        "frequency": "Last Sunday of the month",
         "weekday": "Sunday",
         "start": "Jan 1, 1970 11:00",
         "end": "Jan 1, 1970 13:00",

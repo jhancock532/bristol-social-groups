@@ -26,7 +26,7 @@
       },
       "booking": {
         "required": true,
-        "details": "Please join the Facebook group and vote in the latest poll."
+        "details": "Booking recommended so the organisers have a sense of numbers, please join the Facebook group and vote in the latest poll."
       },
       "url": "https://www.facebook.com/groups/bristolultimatedevelopment/"
     },
@@ -51,7 +51,7 @@
       },
       "booking": {
         "required": true,
-        "details": "Please join the Facebook group and vote in the latest poll."
+        "details": "Booking recommended so the organisers have a sense of numbers, please join the Facebook group and vote in the latest poll."
       },
       "url": "https://www.facebook.com/groups/bristolultimatedevelopment/"
     }

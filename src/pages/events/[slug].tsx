@@ -49,8 +49,7 @@ const EventDetailsSection = ({
 /**
  * Renders all of the event details - accepts a heading level parameter
  * to allow for multiple events to be rendered on the same page, separated
- * by a <h2> title referencing `event.name`. Note if event.name is not
- * provided, this component won't meet accessibility criteria and fail.
+ * by a <h2> title referencing `event.name`.
  */
 const Event = ({
     event,
@@ -59,20 +58,13 @@ const Event = ({
     event: any;
     sectionTitleHeadingLevel: 'h2' | 'h3';
 }) => {
-    const timeSectionTitle =
-        event.time.frequency === 'Weekly'
-            ? `Every ${event.time.weekday}`
-            : `${event.time.frequency}
-                from ${get24HourTimeFromDateString(event.time.start)} to
+    const timeSectionTitle = `${event.time.frequency === 'Weekly' ? `Every ${event.time.weekday}` : event.time.frequency} from ${get24HourTimeFromDateString(event.time.start)} to
                 ${get24HourTimeFromDateString(event.time.end)}`;
-
-    if (event.name && sectionTitleHeadingLevel === 'h2') {
-        throw Error("`event.name` provided for event that doesn't need one");
-    }
 
     return (
         <div>
-            {event.name && (
+            {/* Only display the name of the event if there are multiple events */}
+            {event.name && sectionTitleHeadingLevel !== 'h2' && (
                 <h2 className={styles.event__title}>{event.name}</h2>
             )}
 

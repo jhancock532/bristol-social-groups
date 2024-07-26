@@ -1,4 +1,5 @@
-import { Event } from './Event';
+import { Gender } from '@/types/base';
+import { Event } from '@/types/Event';
 
 export type GroupType = 'Discord' | 'Regular' | 'Ad-hoc' | string;
 
@@ -11,4 +12,5 @@ export type Group = {
     events?: Event[];
     type?: GroupType;
     url?: string; // a link to the groups homepage or group chat invite
+    gender?: Gender; // defaults to all if left blank
 };

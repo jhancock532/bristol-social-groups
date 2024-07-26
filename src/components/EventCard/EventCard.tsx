@@ -5,6 +5,8 @@ import { WalletIcon } from '@/components/Icons/WalletIcon';
 import { LocationIcon } from '@/components/Icons/LocationIcon';
 import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
 import { ExternalIcon } from '@/components/Icons/ExternalIcon';
+import { FemaleIcon } from '@/components/Icons/FemaleIcon';
+import { MaleIcon } from '@/components/Icons/MaleIcon';
 import { getAMPMTimeFromDateString } from '@/utils/utils';
 import { Event } from '@/types/Event';
 import styles from './EventCard.module.scss';
@@ -16,9 +18,21 @@ const EventCard = ({
     locationURL,
     booking,
     url,
+    gender,
 }: Event) => {
     return (
         <div className={styles.details}>
+            {gender && (
+                <div className={styles.details__item}>
+                    {gender === 'Women' && (
+                        <FemaleIcon className={styles.details__icon} />
+                    )}
+                    {gender === 'Men' && (
+                        <MaleIcon className={styles.details__icon} />
+                    )}
+                    <p>Open to {gender.toLowerCase()} only.</p>
+                </div>
+            )}
             {time && (
                 <div className={styles.details__item}>
                     <ClockIcon className={styles.details__icon} />

@@ -12,10 +12,10 @@
       "details": "",
       "time": {
         "frequency": "Weekly",
-        "weekday": "Wednesday",
+        "weekday": "Sunday",
         "start": "Jan 1, 1970 10:30",
         "end": "Jan 1, 1970 12:00",
-        "details": "Check the Instagram page for the latest details."
+        "details": "Please check the Instagram page for the latest details."
       },
       "locationURL": "https://www.instagram.com/girlswhowalkbristol/",
       "cost": {
@@ -24,6 +24,7 @@
       "booking": {
         "required": false
       },
+      "gender": "Women",
       "url": "https://www.instagram.com/girlswhowalkbristol/"
     }
   ]

@@ -1,3 +1,5 @@
+import { Gender } from '@/types/base';
+
 export type EventCost = {
     sessionPrice: number;
     details: string;
@@ -47,4 +49,5 @@ export type Event = {
     locationURL?: string;
     cost?: EventCost;
     booking?: EventBooking;
+    gender?: Gender; // defaults to all if left blank
 };
