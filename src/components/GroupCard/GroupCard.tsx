@@ -3,14 +3,16 @@ import Link from 'next/link';
 import DiscordCard from '@/components/DiscordCard';
 import EventCard from '@/components/EventCard';
 import { Event } from '@/types/Event';
+import { GroupType } from '@/types/Group';
 
 import styles from './GroupCard.module.scss';
+import AdHocCard from '../AdHocCard';
 
 type GroupCardProps = {
     name: string;
     description: string;
     slug: string;
-    type?: string;
+    type?: GroupType;
     url?: string;
     events?: Event[];
 };
@@ -21,7 +23,7 @@ type GroupCardProps = {
  * @param {string} name - The name of the group
  * @param {string} description - A one to two sentence description of the group
  * @param {string} slug - The URL slug where the user can find more information about the group within this website
- * @param {string} type - The type of group, e.g. "Meetup" or "Discord"
+ * @param {string} type - The type of group, e.g. "Regular" or "Ad-hoc"
  * @param {string} url - A URL where the user can find more information about the group
  * @param {Event[]} events - An array of events hosted by the group
  */
@@ -50,6 +52,8 @@ const GroupCard = ({
             )}
 
             {type === 'Discord' && url && <DiscordCard url={url} />}
+
+            {type === 'Ad-hoc' && url && <AdHocCard url={url} />}
         </div>
     );
 };

@@ -2,6 +2,8 @@
 
 A website listing social groups in Bristol, UK. [View the live site](https://bristolsocialgroups.com/), or for an extended introduction to the project, [read the about page](https://bristolsocialgroups.com/about).
 
+The pattern library for this project [is hosted with Storybook](https://jhancock532.github.io/bristol-social-groups/?path=/docs/getting-started--docs).
+
 ## Documentation Index
 
 - [Getting started](https://github.com/jhancock532/bristol-social-groups/blob/main/documentation/getting-started.md) - a guide for developers new to the project to get up and running.

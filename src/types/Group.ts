@@ -1,6 +1,6 @@
 import { Event } from './Event';
 
-type GroupType = 'Discord' | 'Meetup' | string;
+export type GroupType = 'Discord' | 'Regular' | 'Ad-hoc' | string;
 
 export type Group = {
     name: string;

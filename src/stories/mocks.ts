@@ -55,7 +55,7 @@ export const MOCK_GROUPS: Group[] = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         tags: ['lorem', 'ipsum', 'dolor'],
         events: [MOCK_EVENTS[0], MOCK_EVENTS[1]],
-        type: 'Meetup',
+        type: 'Regular',
         url: 'https://lorem.ipsum/dolor',
     },
     {
@@ -75,7 +75,7 @@ export const MOCK_GROUPS: Group[] = [
             'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
         tags: ['adipiscing', 'elit', 'sed'],
         events: MOCK_EVENTS,
-        type: 'Meetup',
+        type: 'Regular',
         url: 'https://adipiscing.elit/sed',
     },
 ];

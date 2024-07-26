@@ -1,0 +1,49 @@
+{
+  "name": "Bristol Grit",
+  "slug": "bristol-grit",
+  "description": "Bristol based adventure cyclists, sharing routes, laughs and off road rides. No 🦬💩, just riding bikes.",
+  "details": "",
+  "tags": ["cycling", "pubs"],
+  "type": "Regular",
+  "url": "https://www.instagram.com/bristolgrit/",
+  "events": [
+    {
+      "name": "Wednesday group ride",
+      "details": "",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 18:15",
+        "end": "Jan 1, 1970 21:00",
+        "details": "The meeting and departure time may vary. Check the Instagram page for the latest details."
+      },
+      "locationURL": "https://www.instagram.com/bristolgrit/",
+      "cost": {
+        "sessionPrice": 0.0
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/bristolgrit/"
+    },
+    {
+      "name": "Saturday group ride",
+      "details": "",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Saturday",
+        "start": "Jan 1, 1970 09:00",
+        "end": "Jan 1, 1970 12:00",
+        "details": "The meeting and departure time may vary. Check the Instagram page for the latest details."
+      },
+      "locationURL": "https://www.instagram.com/bristolgrit/",
+      "cost": {
+        "sessionPrice": 0.0
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/bristolgrit/"
+    }
+  ]
+}

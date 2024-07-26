@@ -62,7 +62,7 @@ export default function Home({ groups }: any) {
                         (e: any) => e.time.weekday === selectedWeekday,
                     );
             }
-            if (event.type === 'Discord') {
+            if (event.type === 'Discord' || event.type === 'Ad-hoc') {
                 matchesWeekday = true;
             }
             return matchesTags && matchesWeekday;

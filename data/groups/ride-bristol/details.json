@@ -1,0 +1,62 @@
+{
+  "name": "Ride Bristol",
+  "slug": "ride-bristol",
+  "description": "Bristol’s off-road cycling charity, running community cycling events & developing trails. Rides are at a social, no drop pace, you'll need a mountain bike (or similar) and a helmet. Less experienced riders and newbies are 100% welcome! The first Saturday of the month event is for women/marginalised genders, please check the Instagram page for the latest details.",
+  "details": "",
+  "tags": ["cycling", "pubs"],
+  "type": "Regular",
+  "url": "https://www.instagram.com/ridebristol/",
+  "events": [
+    {
+      "name": "Thursday night ride out",
+      "details": "",
+      "time": {
+        "frequency": "Third Thursday of the month",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 19:00",
+        "end": "Jan 1, 1970 21:00",
+        "details": ""
+      },
+      "location": {
+        "address": "Pedal Progression, Ashton Court Golf and Cycle Hub, Abbots Leigh Road, BS8 3PX",
+        "latitude": "51.451116",
+        "longitude": "-2.644240",
+        "googleMapsLink": "https://maps.app.goo.gl/Pn9EGvMbMyRSKhSu7"
+      },
+      "cost": {
+        "sessionPrice": 0.0
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/ridebristol/"
+    },
+    {
+      "name": "The Women's Ride",
+      "details": "These rides are for all women/marginalised genders and are a social, no drop pace. You'll need a mountain bike (or similar) and a helmet and be happy riding the surfaced, blue trails at AC. Less experienced riders and newbies are 100% welcome!",
+      "time": {
+        "frequency": "First Saturday of the month",
+        "weekday": "Saturday",
+        "start": "Jan 1, 1970 09:15",
+        "end": "Jan 1, 1970 12:00",
+        "details": ""
+      },
+      "location": {
+        "address": "Pedal Progression, Ashton Court Golf and Cycle Hub, Abbots Leigh Road, BS8 3PX",
+        "latitude": "51.451116",
+        "longitude": "-2.644240",
+        "googleMapsLink": "https://maps.app.goo.gl/Pn9EGvMbMyRSKhSu7"
+      },
+      "cost": {
+        "sessionPrice": 0.0
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/ridebristol/"
+    }
+  ]
+}
+
+
+

@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
+import AdHocCard from '@/components/AdHocCard';
 import DiscordCard from '@/components/DiscordCard';
 import { ClockIcon } from '@/components/Icons/ClockIcon';
 import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
@@ -208,6 +209,12 @@ const EventPage = ({ data }: { data: any }) => {
                         account already, it&apos;s free to sign up.
                     </p>
                     <DiscordCard url={data.url} />
+                </div>
+            )}
+
+            {data.type === 'Ad-hoc' && (
+                <div className={styles.discordContainer}>
+                    <AdHocCard url={data.url} />
                 </div>
             )}
         </Layout>
