@@ -1,9 +1,9 @@
 {
   "name": "Ride Bristol",
   "slug": "ride-bristol",
-  "description": "Bristol’s off-road cycling charity, running community cycling events & developing trails. Rides are at a social, no drop pace, you'll need a mountain bike (or similar) and a helmet. Less experienced riders and newbies are 100% welcome! The first Saturday of the month event is for women/marginalised genders, please check the Instagram page for the latest details.",
+  "description": "Bristol’s off-road cycling charity, organising community cycling events & developing trails. Rides are at a social, no drop pace, you'll need a mountain bike (or similar) and a helmet. Less experienced riders and newbies are 100% welcome!",
   "details": "",
-  "tags": ["cycling", "pubs"],
+  "tags": ["cycling", "mountain biking"],
   "type": "Regular",
   "url": "https://www.instagram.com/ridebristol/",
   "events": [
@@ -33,7 +33,7 @@
     },
     {
       "name": "The Women's Ride",
-      "details": "These rides are for all women/marginalised genders and are a social, no drop pace. You'll need a mountain bike (or similar) and a helmet and be happy riding the surfaced, blue trails at AC. Less experienced riders and newbies are 100% welcome!",
+      "details": "These rides are for all women / marginalised genders and are a social, no drop pace. You'll need a mountain bike (or similar) and a helmet and be happy riding the surfaced, blue trails at AC. Less experienced riders and newbies are 100% welcome!",
       "time": {
         "frequency": "First Saturday of the month",
         "weekday": "Saturday",
