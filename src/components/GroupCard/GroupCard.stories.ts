@@ -3,7 +3,7 @@ import { MOCK_EVENTS } from '@/stories/mocks';
 import GroupCard from './GroupCard';
 
 const meta = {
-    title: 'Components/GroupCard',
+    title: 'Components/Cards/GroupCard',
     component: GroupCard,
     parameters: {
         layout: 'padded',

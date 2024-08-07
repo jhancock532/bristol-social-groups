@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/nextjs';
+import path from 'path';
 
 const config: StorybookConfig = {
     stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -37,6 +38,10 @@ const config: StorybookConfig = {
                             },
                         ],
                     },
+                    {
+                        test: /\.(png|jpg|jpeg|gif|webp|svg)$/,
+                        type: 'asset/resource',
+                    },
                 ],
             },
         },
@@ -46,5 +51,14 @@ const config: StorybookConfig = {
         options: {},
     },
     staticDirs: ['../public'],
+    webpackFinal: async (config) => {
+        if (config.resolve) {
+            config.resolve.alias = {
+                ...config.resolve.alias,
+                '/images': path.resolve(__dirname, '../public/images'),
+            };
+        }
+        return config;
+    },
 };
 export default config;

@@ -3,7 +3,7 @@ import { MOCK_EVENTS } from '@/stories/mocks';
 import EventCard from './EventCard';
 
 const meta = {
-    title: 'Components/EventCard',
+    title: 'Components/Cards/EventCard',
     component: EventCard,
     parameters: {
         layout: 'centered',

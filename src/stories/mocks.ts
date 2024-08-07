@@ -17,8 +17,8 @@ const createMockEvent = (
     time: { weekday, start, end, frequency },
     location: {
         address: '123 Example Street, Bristol, BS19 1AA',
-        latitude: '40.7128',
-        longitude: '-74.0060',
+        latitude: (51.456098 + Math.random() / 50 - 0.01).toString(),
+        longitude: (-2.596541 + Math.random() / 50 - 0.01).toString(),
         googleMapsLink: 'https://goo.gl/maps/example',
     },
     cost: { sessionPrice: 10, details: 'Per session' },
