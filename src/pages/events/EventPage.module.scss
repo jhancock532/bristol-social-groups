@@ -78,7 +78,7 @@
         @include focus-outline;
 
         background-color: var(--color--primary);
-        color: var(--color--white);
+        color: var(--color--green-05);
         border: none;
         border-radius: $border-radius;
         width: max-content;
@@ -86,11 +86,11 @@
         cursor: pointer;
 
         & .toggleMapButton__icon path {
-            fill: var(--color--white);
+            fill: var(--color--green-05);
         }
 
         &:hover {
-            background-color: var(--color--highlight-green);
+            background-color: var(--color--green-20);
             color: var(--color--text);
 
             & .toggleMapButton__icon path {

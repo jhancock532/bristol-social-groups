@@ -29,7 +29,7 @@
 
 .eventLink {
     :global(.leaflet-container) & {
-        color: var(--color--white);
+        color: var(--color--green-05);
     }
 
     @include external-button-link;

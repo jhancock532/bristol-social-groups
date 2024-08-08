@@ -1,8 +1,47 @@
-import { Meta } from '@storybook/blocks';
-import ColorDocumentation from './ColourPalette.tsx';
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
 
-<Meta title="Tokens/Colours" />
+<Meta title="Style Guide/Colours" />
 
-# Colour Palette
+# Colours
 
-<ColorDocumentation />
+## Primary Shades
+
+<ColorPalette>
+    <ColorItem
+        title="--color--green-50"
+        subtitle="The primary accent for buttons."
+        colors={['#1a6201']}
+    />
+    <ColorItem
+        title="--color--green-30"
+        subtitle="Used for link underlines."
+        colors={['#65c783']}
+    />
+    <ColorItem
+        title="--color--green-20"
+        subtitle="Used for text highlight & hover effects."
+        colors={['#8beba8']}
+    />
+    <ColorItem
+        title="--color--green-05"
+        subtitle="The main background colour."
+        colors={['#f7fff8']}
+    />
+</ColorPalette>
+
+## Grey Shades
+
+<ColorPalette>
+    <ColorItem
+        title="--color--white"
+        subtitle="Used for the inside of cards."
+        colors={['#fff']}
+    />
+    <ColorItem title="--color--grey-60" colors={['#363635']} />
+    <ColorItem
+        title="--color--grey-80"
+        subtitle="The colour of text."
+        colors={['#1c221d']}
+    />
+    <ColorItem title="--color--black" colors={['#121613']} />
+</ColorPalette>

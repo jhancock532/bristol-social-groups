@@ -17,20 +17,17 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    border: 1px solid var(--color--disabled-green);
+    border: 0.5px solid var(--color--green-20);
     border-radius: $border-radius;
     background: url('/images/map-toggle-background.webp'),
         url('/images/map-toggle-background.png'),
-        linear-gradient(
-            var(--color--highlight-green),
-            var(--color--underline-green)
-        );
+        linear-gradient(var(--color--green-20), var(--color--green-30));
     cursor: pointer;
 
     &:hover {
         .mapToggleButtonText {
             color: var(--color--black);
-            background-color: var(--color--disabled-green);
+            background-color: var(--color--green-20);
         }
     }
 }
@@ -41,11 +38,11 @@
     justify-content: space-between;
     width: max-content;
     font-weight: 500;
-    color: var(--color--bright-white);
-    background-color: var(--color--dark-green);
+    color: var(--color--white);
+    background-color: var(--color--green-50);
     padding: $grid * 0.5 $grid * 0.5 $grid * 0.5 $grid;
     border-radius: $border-radius;
-    border: 1px solid var(--color--dark-gray);
+    border: 1px solid var(--color--grey-60);
     transition: background-color 0.3s ease;
 }
 
@@ -68,7 +65,7 @@
         outline: none;
 
         .buttonText {
-            outline: 3px solid var(--color--dark-green);
+            outline: 3px solid var(--color--green-50);
             outline-offset: 3px;
         }
     }

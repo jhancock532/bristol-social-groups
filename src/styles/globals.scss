@@ -4,25 +4,21 @@
     // Base colors
     // https://coolors.co/palette/fffae8-d04200-363635-465e4d-558564-1c221d
     // https://abc.useallfive.com/?colors[]=F7FFF8,1A6201,8BEBA8,65C783,1C221D,121613
-    --color--bright-white: #fff;
-    --color--white: #f7fff8; // #edffef;
-    --color--dark-green: #1a6201;
-    --color--underline-green: #65c783;
-    --color--highlight-green: #8beba8;
-    --color--disabled-green: #c4f0c4;
-    --color--brown: #a33400;
-    --color--dark-gray: #363635;
-    --color--green: #558564;
-    --color--midnight: #1c221d;
     --color--black: #121613;
+    --color--grey-80: #080c09;
+    --color--grey-60: #363635;
+    --color--green-50: #1a6201;
+    --color--green-30: #65c783;
+    --color--green-20: #8beba8;
+    --color--green-05: #f7fff8;
+    --color--white: #ffffff;
 
     // Theme colors
-    --color--primary: var(--color--dark-green);
-    --color--text: var(--color--midnight);
+    --color--primary: var(--color--green-50);
+    --color--text: var(--color--grey-80);
     --color--link: var(--color--primary);
-    --color--underline: var(--color--underline-green);
-    --color--hover: var(--color--brown);
-    --color--background: var(--color--white);
+    --color--underline: var(--color--green-30);
+    --color--background: var(--color--green-05);
 
     accent-color: var(--color--primary);
 }
@@ -50,7 +46,7 @@ body {
     @include font-size(s);
 
     overflow-x: hidden;
-    background-color: var(--color--white);
+    background-color: var(--color--green-05);
     font-variant-ligatures: none;
 
     &.no-scroll {
@@ -83,7 +79,7 @@ a {
     transition: color $transition;
 
     &:hover {
-        color: var(--color--hover);
+        color: var(--color--black);
         cursor: pointer;
     }
 }

@@ -90,7 +90,7 @@
 @mixin focus-outline-inverse() {
     &:focus-visible {
         border-radius: $border-radius;
-        outline: 3px solid var(--color--highlight-green);
+        outline: 3px solid var(--color--green-20);
         outline-offset: 3px;
     }
 }
@@ -110,8 +110,8 @@
     text-decoration-color: var(--color--underline);
     background-image: linear-gradient(
         180deg,
-        var(--color--highlight-green) 0%,
-        var(--color--highlight-green) 50%,
+        var(--color--green-20) 0%,
+        var(--color--green-20) 50%,
         transparent 50%,
         transparent 100%
     );
@@ -163,7 +163,7 @@
 @mixin external-button-link() {
     @include focus-outline;
 
-    color: var(--color--white);
+    color: var(--color--green-05);
     background-color: var(--color--primary);
     padding: 5px 10px;
     margin-top: $grid * 0.5;
@@ -182,7 +182,7 @@
 
     &:hover {
         color: var(--color--black);
-        background-color: var(--color--highlight-green);
+        background-color: var(--color--green-20);
     }
 }
 

@@ -10,7 +10,7 @@
 .link {
     @include highlight-link;
 
-    color: var(--color--midnight);
+    color: var(--color--grey-80);
 
     &:hover {
         color: var(--color--black);

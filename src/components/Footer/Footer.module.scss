@@ -3,7 +3,7 @@
 
     padding-top: $grid * 2;
     padding-bottom: $grid * 2;
-    background-color: var(--color--midnight);
+    background-color: var(--color--grey-80);
 
     @include media-query(large) {
         padding-top: $grid * 4;
@@ -16,7 +16,7 @@
 
     font-weight: 400;
     margin-bottom: $grid / 2;
-    color: var(--color--white);
+    color: var(--color--green-05);
 }
 
 .link {
@@ -25,11 +25,11 @@
 
     font-weight: 400;
     margin-top: $grid;
-    color: var(--color--highlight-green);
+    color: var(--color--green-20);
 
     &:hover {
-        color: var(--color--midnight);
+        color: var(--color--grey-80);
         text-decoration: underline;
-        text-decoration-color: var(--color--highlight-green);
+        text-decoration-color: var(--color--green-20);
     }
 }
