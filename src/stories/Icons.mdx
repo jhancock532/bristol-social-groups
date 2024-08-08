@@ -1,0 +1,68 @@
+import { Meta, Title, IconGallery, IconItem } from '@storybook/blocks';
+
+import { ArrowIcon } from '@/components/Icons/ArrowIcon';
+import { DiscordIcon } from '@/components/Icons/DiscordIcon';
+import { ExpandIcon } from '@/components/Icons/ExpandIcon';
+import { ExternalIcon } from '@/components/Icons/ExternalIcon';
+import { FemaleIcon } from '@/components/Icons/FemaleIcon';
+import { LocationIcon } from '@/components/Icons/LocationIcon';
+import { MaleIcon } from '@/components/Icons/MaleIcon';
+import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
+import { WalletIcon } from '@/components/Icons/WalletIcon';
+
+<Meta title="Style Guide/Icons" />
+
+# Icons
+
+<IconGallery>
+    <IconItem name="Arrow">
+        <ArrowIcon />
+    </IconItem>
+    <IconItem name="Discord">
+        <DiscordIcon />
+    </IconItem>
+    <IconItem name="Expand">
+        <ExpandIcon />
+    </IconItem>
+    <IconItem name="External">
+        <ExternalIcon />
+    </IconItem>
+    <IconItem name="Female">
+        <FemaleIcon />
+    </IconItem>
+    <IconItem name="Male">
+        <MaleIcon />
+    </IconItem>
+    <IconItem name="Location">
+        <LocationIcon />
+    </IconItem>
+    <IconItem name="Receipt">
+        <ReceiptIcon />
+    </IconItem>
+    <IconItem name="Wallet">
+        <WalletIcon />
+    </IconItem>
+</IconGallery>
+
+## Usage
+
+Import these icons from the `@/components/Icons` directory.
+
+```jsx
+import { ArrowIcon } from '@/components/Icons/ArrowIcon';
+
+function MyComponent() {
+    return (
+        <div>
+            <ArrowIcon />
+            {/* Other component content */}
+        </div>
+    );
+}
+```
+
+Each icon can be customized with props including `className` and `fill` for setting the styles of the icon.
+
+```jsx
+<ArrowIcon className={styles.icon} fill="blue" />
+```

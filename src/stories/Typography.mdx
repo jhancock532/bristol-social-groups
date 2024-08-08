@@ -1,0 +1,106 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Style Guide/Typography" />
+
+# Typography
+
+The only font used by the site is **Rubik**, which is available on [Google Fonts](https://fonts.google.com/specimen/Rubik). It is a variable sans-serif font which does not support italics. This font was chosen for this project as it conveys a formal friendliness.
+
+## Font sizes
+
+The typography for this project scales dynamically between set values depending on the size of the viewport. This has been calculated using [utopia.fyi](https://utopia.fyi/type/calculator/?c=320,16,1.333,1240,20,1.333,5,1,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12).
+
+The following font sizes are measured in pixels, and represent the minimum mobile size and the maximum desktop size for each type setting, which the font will scale smoothly between.
+
+### Extra Small
+
+<Typeset
+    fontSizes={[12, 15]}
+    fontWeight={400}
+    sampleText={'Fine print and disclaimers'}
+    fontFamily={'"Rubik", Arial, sans-serif'}
+/>
+
+### Small
+
+<Typeset
+    fontSizes={[16, 20]}
+    fontWeight={400}
+    sampleText={'Body text'}
+    fontFamily={'"Rubik", Arial, sans-serif'}
+/>
+
+### Small Medium
+
+<Typeset
+    fontSizes={[19.2, 23.1]}
+    fontWeight={400}
+    sampleText={'H4 headings, hero description text'}
+    fontFamily={'"Rubik", Arial, sans-serif'}
+/>
+
+### Medium
+
+<Typeset
+    fontSizes={[21.3, 26.7]}
+    fontWeight={500}
+    sampleText={'H3 headings'}
+    fontFamily={'"Rubik", Arial, sans-serif'}
+/>
+
+### Large
+
+<Typeset
+    fontSizes={[28.4, 35.5]}
+    fontWeight={600}
+    sampleText={'H2 headings'}
+    fontFamily={'"Rubik", Arial, sans-serif'}
+/>
+
+### X Large
+
+<Typeset
+    fontSizes={[37.9, 47.4]}
+    fontWeight={700}
+    sampleText={'H1 headings, mobile'}
+    fontFamily={'"Rubik", Arial, sans-serif'}
+/>
+
+### Largest
+
+<Typeset
+    fontSizes={[50.5, 63.2]}
+    fontWeight={700}
+    sampleText={'H1 headings, desktop'}
+    fontFamily={'"Rubik", Arial, sans-serif'}
+/>
+
+## Usage
+
+Please use the following mixin to apply font sizes to your elements in SCSS:
+
+```scss
+@use 'variables' as *;
+
+@include font-size(s);
+```
+
+Where the following values are available, corresponding to the above typeset demonstrations:
+
+-   `xs`
+-   `s`
+-   `sm`
+-   `m`
+-   `l`
+-   `xl`
+-   `xxl`
+
+You can override a mobile font size with different font size on desktop, a H1 heading has the following SCSS for example:
+
+```scss
+@include font-size(xl);
+
+@include media-query(large) {
+    @include font-size(xxl);
+}
+```
