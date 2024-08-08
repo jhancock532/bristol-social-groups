@@ -2,9 +2,10 @@
 
 .container {
     @include font-size(s);
+
     padding: $grid;
     border-radius: $border-radius;
-    background-color: var(--color--bright-white);
+    background-color: var(--color--white);
     margin-bottom: auto;
     max-width: 600px;
     box-shadow: $box-shadow;
@@ -25,5 +26,5 @@
 }
 
 .externalLink {
-    @include external-button-link();
+    @include external-button-link;
 }

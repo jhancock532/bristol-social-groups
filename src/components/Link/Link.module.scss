@@ -1,8 +1,16 @@
 @use 'variables' as *;
 
+.externalLinkIcon {
+    vertical-align: middle;
+    margin-bottom: 0.35ex;
+    margin-left: 0.2ex;
+    transition: transform $transition;
+}
+
 .link {
-    @include highlight-link();
-    color: var(--color--midnight);
+    @include highlight-link;
+
+    color: var(--color--grey-80);
 
     &:hover {
         color: var(--color--black);
@@ -11,11 +19,4 @@
             transform: translate(0.1ex, -0.1ex);
         }
     }
-}
-
-.externalLinkIcon {
-    vertical-align: middle;
-    margin-bottom: 0.35ex;
-    margin-left: 0.2ex;
-    transition: transform $transition;
 }

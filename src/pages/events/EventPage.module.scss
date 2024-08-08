@@ -1,9 +1,10 @@
 .title {
-    @include h1();
+    @include h1;
 }
 
 .description {
     @include font-size(m);
+
     line-height: 1.5;
     margin: 0 0 $grid * 2;
 
@@ -15,12 +16,14 @@
 .event {
     &__title {
         @include font-size(l);
+
         line-height: 1.1;
         letter-spacing: -0.5px;
         margin-bottom: $grid;
 
         @include media-query(large) {
             @include font-size(l);
+
             max-width: 40ch;
             margin-bottom: $grid * 2;
         }
@@ -28,6 +31,7 @@
 
     &__description {
         @include font-size(s);
+
         line-height: 1.5;
         margin: 0 0 $grid * 2;
 
@@ -37,7 +41,8 @@
     }
 
     &__googleMapsLink {
-        @include external-highlight-link();
+        @include external-highlight-link;
+
         margin-top: $grid / 2;
     }
 }
@@ -51,6 +56,7 @@
 
     &__title {
         @include font-size(m);
+
         max-width: 30ch;
         line-height: 1.1;
     }
@@ -63,14 +69,16 @@
 
     &__description {
         @include font-size(s);
+
         line-height: 1.5;
         margin: 0 0 $grid * 2;
     }
 
     &__url {
-        @include focus-outline();
+        @include focus-outline;
+
         background-color: var(--color--primary);
-        color: var(--color--white);
+        color: var(--color--green-05);
         border: none;
         border-radius: $border-radius;
         width: max-content;
@@ -78,11 +86,11 @@
         cursor: pointer;
 
         & .toggleMapButton__icon path {
-            fill: var(--color--white);
+            fill: var(--color--green-05);
         }
 
         &:hover {
-            background-color: var(--color--highlight-green);
+            background-color: var(--color--green-20);
             color: var(--color--text);
 
             & .toggleMapButton__icon path {

@@ -1,5 +1,6 @@
 .container {
-    @include main-grid();
+    @include main-grid;
+
     padding-top: $grid;
     position: relative;
 
@@ -10,15 +11,17 @@
 
 .description {
     @include font-size(s);
+
     font-weight: 400;
     margin-bottom: $grid / 2;
-    color: var(--color--white);
+    color: var(--color--green-05);
 }
 
 .link {
-    @include highlight-link();
-    @include focus-outline();
+    @include highlight-link;
+    @include focus-outline;
     @include font-size(sm);
+
     font-weight: 400;
     color: var(--color--text);
     padding: $grid / 2;
@@ -38,7 +41,7 @@
     left: 0;
     right: 0;
     z-index: 2000;
-    background-color: var(--color--bright-white);
+    background-color: var(--color--white);
     padding: $grid;
     box-shadow: $box-shadow;
     display: none;
@@ -78,20 +81,25 @@
 
 .menuButton {
     @include font-size(m);
-    color: var(--color--white);
+
+    color: var(--color--green-05);
     background-color: var(--color--primary);
     padding: $grid / 2;
     border-radius: $border-radius;
     border: none;
     cursor: pointer;
-    font-weight: $weight--bold;
+    font-weight: $weight-bold;
     display: flex;
     align-items: center;
     gap: $grid / 2;
     margin-right: auto;
 
+    svg {
+        color: var(--color--green-05);
+    }
+
     &:hover {
-        background-color: var(--color--highlight-green);
+        background-color: var(--color--green-20);
         color: var(--color--text);
 
         & svg {
@@ -100,14 +108,10 @@
     }
 
     &:focus {
-        @include focus-outline();
+        @include focus-outline;
     }
 
     @include media-query(medium) {
         display: none;
-    }
-
-    svg {
-        color: var(--color--white);
     }
 }

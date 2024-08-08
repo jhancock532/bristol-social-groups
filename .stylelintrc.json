@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-css-modules"],
+  "rules": {
+    "selector-max-id": 0,
+    "custom-property-pattern": null,
+    "selector-class-pattern": null,
+    "color-hex-length": "long"
+  }
+}

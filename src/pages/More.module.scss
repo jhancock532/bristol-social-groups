@@ -1,11 +1,12 @@
 @use 'variables' as *;
 
 .title {
-    @include h1();
+    @include h1;
 }
 
 .description {
     @include font-size(m);
+
     line-height: 1.5;
     max-width: 52ch;
     margin-bottom: $grid * 2;
