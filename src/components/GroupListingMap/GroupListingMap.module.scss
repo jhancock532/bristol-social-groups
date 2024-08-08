@@ -11,7 +11,8 @@
 }
 
 .toggleButton {
-    @include focus-outline();
+    @include focus-outline;
+
     padding: $grid;
     display: flex;
     justify-content: center;
@@ -34,12 +35,26 @@
     }
 }
 
+.buttonText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    font-weight: 500;
+    color: var(--color--bright-white);
+    background-color: var(--color--dark-green);
+    padding: $grid * 0.5 $grid * 0.5 $grid * 0.5 $grid;
+    border-radius: $border-radius;
+    border: 1px solid var(--color--dark-gray);
+    transition: background-color 0.3s ease;
+}
+
 .toggleButtonOpen {
     // Whenever we open the dropdown, resize the button container to nothing,
     // only allowing the central button text to be clickable.
     // This is because we want the placeholder background image to disappear
     // and the map element to appear in its place.
-    background: rgba(0, 0, 0, 0);
+    background: rgb(0 0 0 / 0%);
     height: 0;
     padding: 0;
     border: none;
@@ -57,20 +72,6 @@
             outline-offset: 3px;
         }
     }
-}
-
-.buttonText {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: max-content;
-    font-weight: 500;
-    color: var(--color--bright-white);
-    background-color: var(--color--dark-green);
-    padding: $grid * 0.5 $grid * 0.5 $grid * 0.5 $grid;
-    border-radius: $border-radius;
-    border: 1px solid var(--color--dark-gray);
-    transition: background-color 0.3s ease;
 }
 
 .dropdownIcon {

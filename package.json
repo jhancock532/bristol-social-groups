@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && prettier --check '**/?(.)*.{md,css,scss,js,ts,tsx,json,yaml,yml}'",
+    "lint": "next lint && prettier --check '**/?(.)*.{md,css,scss,js,ts,tsx,json,yaml,yml}' && stylelint '**/*.scss'",
     "format": "prettier --write '**/?(.)*.{md,css,scss,js,ts,tsx,json,yaml,yml}'",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -44,6 +44,10 @@
     "axe-playwright": "^2.0.1",
     "eslint-config-torchbox": "1.1.0",
     "eslint-plugin-storybook": "0.8.0",
-    "storybook": "8.2.7"
+    "storybook": "8.2.7",
+    "stylelint": "16.8.1",
+    "stylelint-config-standard": "36.0.1",
+    "stylelint-config-standard-scss": "13.1.0",
+    "stylelint-config-css-modules": "4.4.0"
   }
 }

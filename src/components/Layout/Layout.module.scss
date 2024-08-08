@@ -1,5 +1,6 @@
 .mainContainer {
-    @include main-grid();
+    @include main-grid;
+
     padding-top: $grid * 2;
     padding-bottom: $grid * 2;
 
@@ -10,10 +11,4 @@
     @include media-query(large) {
         padding-top: $grid * 6;
     }
-}
-
-.sidebar {
-}
-
-.content {
 }

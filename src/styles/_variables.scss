@@ -1,23 +1,23 @@
 $border-radius: 4px;
 
 // Font weights
-$weight--extrabold: 900;
-$weight--heavy: 800;
-$weight--bold: 700;
-$weight--semibold: 600;
-$weight--medium: 500;
-$weight--normal: 400;
-$weight--light: 100;
+$weight-extrabold: 900;
+$weight-heavy: 800;
+$weight-bold: 700;
+$weight-semibold: 600;
+$weight-medium: 500;
+$weight-normal: 400;
+$weight-light: 100;
 
 // Box shadow effect
-$shadow-color: rgba(0, 60, 0, 0.2);
+$shadow-color: rgb(0 60 0 / 20%);
 $shadow-offset-y: 4px;
 $shadow-blur: 8px;
-$shadow-spread: 0px;
-
+$shadow-spread: 0;
 $box-shadow: 0 $shadow-offset-y $shadow-blur $shadow-spread $shadow-color;
 
 // Font variables calculated using Utopia
+
 /* https://utopia.fyi/type/calculator?c=320,16,1.333,1240,20,1.333,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 $font-size-map: (
@@ -52,14 +52,3 @@ $grid: 20px;
 
 $transition: 0.25s ease-out;
 $transition-quick: 0.2s ease;
-
-// --------------------------------- Z-indices --------------------------------------
-
-$z-index: (
-    under: -1,
-    zero: 0,
-    one: 1,
-    two: 2,
-    three: 3,
-    four: 4,
-);

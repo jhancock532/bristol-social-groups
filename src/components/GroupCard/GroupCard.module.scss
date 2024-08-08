@@ -10,7 +10,8 @@
 
 .title {
     @include font-size(m);
-    @include highlight-link();
+    @include highlight-link;
+
     line-height: 1.25;
     font-weight: 500;
 
@@ -19,14 +20,16 @@
     }
 
     &__link {
+        @include focus-outline;
+
         display: inline-block;
         margin-bottom: $grid;
-        @include focus-outline();
     }
 }
 
 .description {
     @include font-size(s);
+
     font-weight: 400;
     margin-bottom: $grid;
 }

@@ -1,5 +1,6 @@
 .container {
-    @include main-grid();
+    @include main-grid;
+
     padding-top: $grid * 2;
     padding-bottom: $grid * 2;
     background-color: var(--color--midnight);
@@ -12,14 +13,16 @@
 
 .description {
     @include font-size(s);
+
     font-weight: 400;
     margin-bottom: $grid / 2;
     color: var(--color--white);
 }
 
 .link {
-    @include focus-outline-inverse();
+    @include focus-outline-inverse;
     @include font-size(s);
+
     font-weight: 400;
     margin-top: $grid;
     color: var(--color--highlight-green);

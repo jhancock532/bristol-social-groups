@@ -13,11 +13,12 @@
 }
 
 .title {
-    @include h1();
+    @include h1;
 }
 
 .description {
     @include font-size(m);
+
     max-width: $max-content-width;
     margin-bottom: $grid * 1;
 
@@ -28,6 +29,7 @@
 
 .mapDescription {
     @include font-size(m);
+
     max-width: 65ch;
     margin-bottom: 0;
 
@@ -38,15 +40,15 @@
 
 .groupFilterTitle {
     @include font-size(m);
+
     margin-bottom: $grid;
     font-weight: 700;
 }
 
 .groupTagsContainer {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: $grid;
-    flex-wrap: wrap;
 }
 
 .groupFilterOptionsContainer {
@@ -56,13 +58,15 @@
 }
 
 .groupTagFilter {
-    @include focus-outline();
+    @include focus-outline;
+
     display: flex;
     align-items: baseline;
     gap: $grid * 0.5;
 
     &__checkbox {
-        @include focus-outline();
+        @include focus-outline;
+
         width: 16px;
         height: 16px;
     }
@@ -78,7 +82,8 @@
 }
 
 .clearSelectedTagsButton {
-    @include focus-outline();
+    @include focus-outline;
+
     cursor: pointer;
     border: 0;
     border-radius: 3px;
@@ -97,8 +102,9 @@
 }
 
 .link {
-    @include focus-outline();
-    @include highlight-link();
+    @include focus-outline;
+    @include highlight-link;
+
     color: var(--color--black);
 }
 
@@ -107,9 +113,21 @@
     max-width: $max-content-width;
 }
 
+.filterIcon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+
+    @include media-query(medium) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 .filterAccordionToggle {
-    @include focus-outline();
+    @include focus-outline;
     @include font-size(sm);
+
     width: 290px;
     display: flex;
     align-items: center;
@@ -134,17 +152,6 @@
 
     @include media-query(medium) {
         padding: $grid * 0.5 $grid;
-    }
-}
-
-.filterIcon {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-
-    @include media-query(medium) {
-        width: 32px;
-        height: 32px;
     }
 }
 

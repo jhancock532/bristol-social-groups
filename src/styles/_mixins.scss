@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'sass:map';
+@use 'sass:list';
 
 /* ============================================
     Media queries
@@ -6,8 +8,8 @@
 @mixin media-query($queries...) {
     @each $query in $queries {
         @each $breakpoint in $breakpoints {
-            $name: nth($breakpoint, 1);
-            $declaration: nth($breakpoint, 2);
+            $name: list.nth($breakpoint, 1);
+            $declaration: list.nth($breakpoint, 2);
 
             @if $query == $name and $declaration {
                 @media only screen and #{$declaration} {
@@ -16,19 +18,6 @@
             }
         }
     }
-}
-
-/* ============================================
-    z-index
-*/
-
-@mixin z-index($key) {
-    z-index: z-index($key);
-}
-
-// Todo: not required?
-@function z-index($key) {
-    @return map-get($z-index, $key);
 }
 
 /* ============================================
@@ -50,8 +39,7 @@
   iOS Native vertical scroll
 */
 @mixin native-vertical-scroll() {
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden scroll;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -60,10 +48,11 @@
 */
 
 @mixin font-size($size) {
-    @if $size == null {
+    @if not $size {
         @warn 'Font size ‘#{$keyword}’ does not exist';
     } @else {
-        $clamp-size: map-get($font-size-map, $size);
+        $clamp-size: map.get($font-size-map, $size);
+
         font-size: $clamp-size;
     }
 }
@@ -73,7 +62,7 @@
 */
 
 @mixin animation() {
-    @keyframes fadeOut {
+    @keyframes fade-out {
         0% {
             opacity: 1;
             display: block;
@@ -114,13 +103,11 @@
     position: relative;
     display: inline;
     border-radius: $border-radius;
-
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
     text-decoration-skip-ink: none;
     text-decoration-color: var(--color--underline);
-
     background-image: linear-gradient(
         180deg,
         var(--color--highlight-green) 0%,
@@ -131,7 +118,6 @@
     background-size: 100% 200%;
     background-repeat: no-repeat;
     background-position: 0 -100%;
-
     transition:
         background-position 0.2s,
         text-decoration-color $transition;
@@ -145,8 +131,8 @@
 }
 
 @mixin external-highlight-link {
-    @include highlight-link();
-    @include focus-outline();
+    @include highlight-link;
+    @include focus-outline;
 
     display: flex;
     flex-direction: row;
@@ -175,7 +161,8 @@
 }
 
 @mixin external-button-link() {
-    @include focus-outline();
+    @include focus-outline;
+
     color: var(--color--white);
     background-color: var(--color--primary);
     padding: 5px 10px;
@@ -184,7 +171,6 @@
     border-radius: $border-radius;
     width: max-content;
     font-weight: 450;
-
     display: flex;
     align-items: center;
     gap: 5px;
@@ -202,12 +188,14 @@
 
 @mixin h1() {
     @include font-size(xl);
+
     line-height: 1.1;
     letter-spacing: -1px;
     margin-bottom: $grid;
 
     @include media-query(large) {
         @include font-size(xxl);
+
         letter-spacing: -1.5px;
         max-width: 20ch;
         margin-bottom: $grid * 2;

@@ -1,5 +1,6 @@
 .details {
     @include font-size(s);
+
     padding: $grid;
     display: flex;
     flex-direction: column;
@@ -8,7 +9,6 @@
     background-color: var(--color--bright-white);
     margin-bottom: auto;
     max-width: 600px;
-
     box-shadow: $box-shadow;
 
     @include media-query(medium) {
@@ -36,7 +36,7 @@
 
         p {
             color: var(--color--text);
-            margin: -1px 0 0 0;
+            margin: -1px 0 0;
         }
     }
 }
@@ -51,6 +51,13 @@
     margin-top: 0;
     text-decoration: underline;
 
+    svg {
+        width: 1.8ex;
+        height: 1.8ex;
+        margin: 0.4ex 0 0 0.2ex;
+        transition: transform $transition;
+    }
+
     &:hover {
         color: var(--color--black);
 
@@ -58,16 +65,8 @@
             transform: translate(0.2ex, -0.2ex);
         }
     }
-
-    svg {
-        width: 1.8ex;
-        height: 1.8ex;
-        margin: 0.4ex 0 0 0.2ex;
-
-        transition: transform $transition;
-    }
 }
 
 .externalLink {
-    @include external-button-link();
+    @include external-button-link;
 }
