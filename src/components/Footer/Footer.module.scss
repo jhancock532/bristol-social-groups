@@ -4,10 +4,28 @@
     padding-top: $grid * 2;
     padding-bottom: $grid * 2;
     background-color: var(--color--grey-80);
+    background-image: url('/images/hot-air-balloon-two.svg'),
+        url('/images/hot-air-balloon-one.svg');
+    background-repeat: no-repeat;
+    background-size: 70px, 50px;
+    background-position:
+        top 15px right 15px,
+        top 10% right 90px;
+
+    @include media-query(medium) {
+        background-size: 100px, 50px;
+        background-position:
+            top 40% right 5%,
+            top 10% right 20%;
+    }
 
     @include media-query(large) {
         padding-top: $grid * 4;
         padding-bottom: $grid * 4;
+        background-size: 150px, 100px;
+        background-position:
+            top 50% right 100px,
+            top 20% right 240px;
     }
 }
 
@@ -15,8 +33,10 @@
     @include font-size(s);
 
     font-weight: 400;
-    margin-bottom: $grid / 2;
-    color: var(--color--green-05);
+
+    p {
+        color: var(--color--green-05);
+    }
 }
 
 .link {
