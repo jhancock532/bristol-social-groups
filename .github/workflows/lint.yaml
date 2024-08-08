@@ -21,9 +21,4 @@ jobs:
       - name: Install Node.js dependencies
         run: npm ci
       - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
-          prettier: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run lint
