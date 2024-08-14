@@ -37,6 +37,8 @@ yarn-error.log*
 next-env.d.ts
 
 *storybook.log
+
+# playwright
 /test-results/
 /playwright-report/
 /blob-report/
