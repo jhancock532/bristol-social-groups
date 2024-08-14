@@ -12,7 +12,8 @@
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
     "docker-playwright": "docker run --rm -p 9323:9323 -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:v1.46.0-jammy /bin/bash -c 'npm i; /bin/bash'",
-    "playwright": "npx playwright test"
+    "playwright": "npx playwright test",
+    "new-component": "node scripts/new-component.js"
   },
   "dependencies": {
     "@types/node": "20.5.6",
