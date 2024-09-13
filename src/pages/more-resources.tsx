@@ -13,7 +13,9 @@ export default function More() {
             <h1 className={styles.title}>More resources</h1>
             <p className={styles.description}>
                 Some of the best external websites for finding social groups in
-                Bristol.
+                Bristol. For more general community groups specific to Bristol,
+                see the <Link url="#community-groups">Community Groups</Link>{' '}
+                section.
             </p>
             <h2>Bristol Queer Directory</h2>
             <p>
@@ -43,7 +45,27 @@ export default function More() {
                     Meetup: view all groups in Bristol
                 </Link>
             </p>
-
+            <h2>Facebook</h2>
+            <p>
+                Many local groups are listed on Facebook, some more active than
+                others. Filter by location and search for something you are
+                interested in, note that not all groups will have
+                &apos;Bristol&apos; in their title.
+            </p>
+            <p>
+                <Link
+                    url="https://www.facebook.com/search/groups/?q=bristol"
+                    external
+                >
+                    Facebook: search for groups
+                </Link>
+            </p>
+            <p>
+                <strong>See also:</strong> A highly recommended community group
+                for women is <Link url="#bristol-girl">Bristol Girl</Link>, and
+                a male counterpart has been recently created called{' '}
+                <Link url="#bristol-men">Bristol Men</Link>.
+            </p>
             <h2>Eventbrite</h2>
             <p>
                 A popular platform that shares and tickets many events from
@@ -70,6 +92,7 @@ export default function More() {
                     Headfirst: view all events in Bristol
                 </Link>
             </p>
+
             <h2>The Bristol Index</h2>
             <p>
                 Not recently updated, but some clubs listed are active and still
@@ -110,11 +133,54 @@ export default function More() {
                 </Link>
             </p>
 
-            <h2>r/Bristol on Reddit</h2>
+            <h2 id="community-groups">Community Groups</h2>
+            <p>
+                Recommended networks to meet new people and ask questions
+                related to Bristol. Bristol Girl is very popular with over 25
+                thousand members, it recently inspired the creation of the
+                Bristol Men group.
+            </p>
+
+            <h3 id="bristol-girl">Bristol Girl Facebook Group</h3>
+            <p>
+                Bristol Girl is a project dedicated to empowering, inspiring and
+                supporting all women living in Bristol. We are running monthly
+                meet ups, which will range from coffee chats, to activities, to
+                aspirational panel events, in order to connect the Bristol Girl
+                community and create a support network for all women. We want to
+                help each other make the most of this wonderful city that we
+                call home.
+            </p>
+            <p>
+                <Link
+                    url="https://www.facebook.com/groups/bristolgirl"
+                    external
+                >
+                    Facebook: Bristol Girl community group
+                </Link>
+            </p>
+            <h3 id="bristol-men">Bristol Men Facebook Group</h3>
+            <p>
+                Has your girlfriend not shut up about Bristol Girl? Do you need
+                an extra man for your Sunday league team? Are you sick of having
+                nobody to play Wii Sports with? Well this is the answer! Feel
+                free to find friends, ask for recommendations or anything
+                friendly here.
+            </p>
+            <p>
+                <Link
+                    url="https://www.facebook.com/groups/851762896575341"
+                    external
+                >
+                    Facebook: Bristol Men community group
+                </Link>
+            </p>
+
+            <h3>r/Bristol on Reddit</h3>
             <p>
                 If you&apos;ve not found what you&apos;re looking for elsewhere,
                 it&apos;s likely worth searching or asking in r/Bristol. See the
-                forum sidebar for more websites that list local events.
+                forum sidebar for even more resources.
             </p>
             <p>
                 <Link url="https://www.reddit.com/r/bristol/" external>

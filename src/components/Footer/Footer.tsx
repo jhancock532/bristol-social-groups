@@ -11,7 +11,7 @@ export const Footer = () => {
                     <strong>Thank you for visiting!</strong>
                 </p>
                 <p>
-                    This website is a non-profit, volunteer led initiative.
+                    This website is a non-profit, volunteer run initiative.
                     <br />
                     If you&apos;d like to leave feedback,{' '}
                     <Link url="/feedback" className={styles.link}>
