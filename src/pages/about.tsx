@@ -12,12 +12,21 @@ export default function About() {
             />
             <div className={styles.hero}>
                 <h1 className={styles.title}>About</h1>
-                <h2>Aim</h2>
-                <p>
-                    This is a volunteer-led site that aims to support community
-                    and friendship in Bristol. It intends to share high-quality
-                    social groups that:
+                <p className={styles.description}>
+                    Bristol Social Groups is volunteer run site with the goal of
+                    building community and friendship across Bristol.
                 </p>
+
+                <h2>Background</h2>
+                <p>
+                    There are many social groups in Bristol that are not listed
+                    or easily found on{' '}
+                    <Link url="/more-resources">major event platforms</Link>,
+                    making these groups hard to find and take part in. This site
+                    intends to bridge this gap by providing a free, curated list
+                    of these missing groups.
+                </p>
+                <p>It intends to share high-quality social groups that:</p>
                 <ul>
                     <li>Are open to newcomers</li>
                     <li>Are well attended</li>
@@ -28,17 +37,15 @@ export default function About() {
                     </li>
                 </ul>
                 <p>
-                    There are many social groups in Bristol that are not listed
-                    on <Link url="/more-resources">major event platforms</Link>,
-                    making these groups hard to find and take part in - this
-                    site intends to bridge this gap by providing a free, curated
-                    list of the missing groups.
+                    The site does not track users, does not display adverts and
+                    does not make any money from affiliate schemes or links,
+                    etc.
                 </p>
 
-                <h2>Contribution</h2>
+                <h2>How can I help?</h2>
                 <p>
-                    If you know of a group that meets the above criteria, please
-                    do suggest it to be added to the site{' '}
+                    If you know a great social group in Bristol which is open to
+                    newcomers, please do suggest it to be added to the site{' '}
                     <Link url="/add-group">on the following page</Link>.
                 </p>
                 <p>
@@ -54,13 +61,12 @@ export default function About() {
                     >
                         GitHub repository
                     </Link>
-                    . Pull requests and other code contributions are much
-                    appreciated!
+                    . Pull requests and other code contributions are welcome!
                 </p>
                 <h2>Contributors</h2>
                 <ul>
                     <li>
-                        Lead website developer:{' '}
+                        Web development:{' '}
                         <Link
                             url="https://www.linkedin.com/in/james-hancock-52464a119/"
                             external
