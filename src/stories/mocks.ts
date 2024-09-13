@@ -13,18 +13,36 @@ const createMockEvent = (
     start: string,
     end: string,
     frequency: string,
-): Event => ({
-    time: { weekday, start, end, frequency },
-    location: {
-        address: '123 Example Street, Bristol, BS19 1AA',
-        latitude: (51.456098 + Math.random() / 50 - 0.01).toString(),
-        longitude: (-2.596541 + Math.random() / 50 - 0.01).toString(),
-        googleMapsLink: 'https://goo.gl/maps/example',
-    },
-    cost: { sessionPrice: 10, details: 'Per session' },
-    booking: { required: 'Advised', details: 'Booking is recommended' },
-    url: 'https://example.com/event',
-});
+    locationIndex: number,
+): Event => {
+    const locations = [
+        {
+            address: '123 Example Street, Bristol, BS19 1AA',
+            latitude: '51.456098',
+            longitude: '-2.590541',
+            googleMapsLink: 'https://goo.gl/maps/example1',
+        },
+        {
+            address: '456 Example Street, Bristol, BS19 1AB',
+            latitude: '51.458198',
+            longitude: '-2.596641',
+            googleMapsLink: 'https://goo.gl/maps/example2',
+        },
+        {
+            address: '789 Example Street, Bristol, BS19 1AC',
+            latitude: '51.450298',
+            longitude: '-2.601741',
+            googleMapsLink: 'https://goo.gl/maps/example3',
+        },
+    ];
+    return {
+        time: { weekday, start, end, frequency },
+        location: locations[locationIndex],
+        cost: { sessionPrice: 10, details: 'Per session' },
+        booking: { required: 'Advised', details: 'Booking is recommended' },
+        url: 'https://example.com/event',
+    };
+};
 
 export const MOCK_EVENTS: Event[] = [
     createMockEvent(
@@ -32,18 +50,21 @@ export const MOCK_EVENTS: Event[] = [
         '2024-07-22T18:00:00Z',
         '2024-07-22T20:00:00Z',
         'Weekly',
+        0,
     ),
     createMockEvent(
         'Wednesday',
         '2024-07-24T19:00:00Z',
         '2024-07-24T21:00:00Z',
         'Weekly',
+        1,
     ),
     createMockEvent(
         'Friday',
         '2024-07-26T17:30:00Z',
         '2024-07-26T19:30:00Z',
         'Weekly',
+        2,
     ),
 ];
 
