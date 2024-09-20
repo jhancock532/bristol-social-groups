@@ -5,6 +5,8 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import Link from 'next/link';
 import { rubik } from '@/pages/_app';
+import { Event } from '@/types/Event';
+import { Group } from '@/types/Group';
 import { ExternalIcon } from '../Icons/ExternalIcon';
 import styles from './Map.module.scss';
 
@@ -40,6 +42,12 @@ const Map = ({ groups, selectedWeekday }: MapProps) => {
             }
         }
     }
+
+    const someGroupsHaveEventsWithoutLocation = groups.some(
+        (group: Group) =>
+            !group.events ||
+            group.events.some((event: Event) => !event.location),
+    );
 
     return (
         <div className={styles.container}>
@@ -81,6 +89,17 @@ const Map = ({ groups, selectedWeekday }: MapProps) => {
                     </Marker>
                 ))}
             </MapContainer>
+            {someGroupsHaveEventsWithoutLocation && (
+                <div className={styles.noLocationContainer}>
+                    <p className={styles.noLocationTitle}>
+                        Some groups host events without a regular location.
+                    </p>
+                    <p className={styles.noLocationDescription}>
+                        These groups are not shown on the map but are still
+                        listed below.
+                    </p>
+                </div>
+            )}
         </div>
     );
 };

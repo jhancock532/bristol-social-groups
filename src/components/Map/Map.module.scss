@@ -37,3 +37,24 @@
     font-size: 1.125rem;
     font-weight: 450;
 }
+
+.noLocationContainer {
+    background-color: var(--color--white);
+    padding: $grid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.noLocationTitle {
+    @include font-size(s);
+
+    font-weight: 600;
+    margin: 0;
+}
+
+.noLocationDescription {
+    @include font-size(s);
+
+    margin: 0;
+}

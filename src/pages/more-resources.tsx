@@ -63,14 +63,14 @@ export default function More() {
             <p>
                 <strong>See also:</strong> A highly recommended community group
                 for women is <Link url="#bristol-girl">Bristol Girl</Link>, and
-                a male counterpart has been recently created called{' '}
+                a male version has been recently created called{' '}
                 <Link url="#bristol-men">Bristol Men</Link>.
             </p>
             <h2>Eventbrite</h2>
             <p>
                 A popular platform that shares and tickets many events from
-                around the UK. With some searching you&apos;ll find community
-                groups that have been using the platform to meet regularly.
+                around the UK. There are community groups that have been using
+                the platform to meet regularly.
             </p>
             <p>
                 <Link
@@ -135,10 +135,20 @@ export default function More() {
 
             <h2 id="community-groups">Community Groups</h2>
             <p>
-                Recommended networks to meet new people and ask questions
-                related to Bristol. Bristol Girl is very popular with over 25
-                thousand members, it recently inspired the creation of the
-                Bristol Men group.
+                This section covers recommended networks to meet new people and
+                ask questions related to Bristol.
+            </p>
+
+            <h3>r/Bristol on Reddit</h3>
+            <p>
+                If you&apos;ve not found what you&apos;re looking for elsewhere,
+                it&apos;s likely worth searching or asking in r/Bristol. See the
+                forum sidebar for even more resources.
+            </p>
+            <p>
+                <Link url="https://www.reddit.com/r/bristol/" external>
+                    r/Bristol: see all posts
+                </Link>
             </p>
 
             <h3 id="bristol-girl">Bristol Girl Facebook Group</h3>
@@ -173,18 +183,6 @@ export default function More() {
                     external
                 >
                     Facebook: Bristol Men community group
-                </Link>
-            </p>
-
-            <h3>r/Bristol on Reddit</h3>
-            <p>
-                If you&apos;ve not found what you&apos;re looking for elsewhere,
-                it&apos;s likely worth searching or asking in r/Bristol. See the
-                forum sidebar for even more resources.
-            </p>
-            <p>
-                <Link url="https://www.reddit.com/r/bristol/" external>
-                    r/Bristol: see all posts
                 </Link>
             </p>
         </Layout>

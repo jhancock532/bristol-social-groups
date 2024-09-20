@@ -36,21 +36,19 @@ export default function About() {
                         Have a shared, inclusive and proactively social activity
                     </li>
                 </ul>
-                <p>
-                    The site does not track users, does not display adverts and
-                    does not make any money from affiliate schemes or links,
-                    etc.
-                </p>
 
                 <h2>How can I help?</h2>
                 <p>
                     If you know a great social group in Bristol which is open to
-                    newcomers, please do suggest it to be added to the site{' '}
-                    <Link url="/add-group">on the following page</Link>.
+                    newcomers, please do{' '}
+                    <Link url="/add-group">
+                        suggest it to be added to the site
+                    </Link>
+                    .
                 </p>
                 <p>
-                    If you have feedback or suggestions for the site, please{' '}
-                    <Link url="/feedback">use this form</Link>.
+                    If you have feedback or suggestions, please{' '}
+                    <Link url="/feedback">add them to this form</Link>.
                 </p>
                 <p>
                     As a developer, you can leave suggestions and feedback on
@@ -63,10 +61,22 @@ export default function About() {
                     </Link>
                     . Pull requests and other code contributions are welcome!
                 </p>
+
+                <h2>Development Ethics</h2>
+                <p>
+                    The site does not track users, does not display adverts and
+                    does not make any money from affiliate schemes or links.
+                </p>
+                <p>
+                    The site aims for low data usage and low carbon emissions.
+                    This explains the general lack of images on the site,
+                    excluding small-file size SVGs and map tiles.
+                </p>
+
                 <h2>Contributors</h2>
-                <ul>
+                <ul style={{ listStyle: 'none' }}>
                     <li>
-                        Web development:{' '}
+                        👨🏼‍💻 Web development:{' '}
                         <Link
                             url="https://www.linkedin.com/in/james-hancock-52464a119/"
                             external
@@ -74,8 +84,9 @@ export default function About() {
                             James Hancock
                         </Link>
                     </li>
-                    <li>Google Forms inspiration: Chris Ward</li>
+                    <li> 📊 Google Forms idea: Chris Ward</li>
                     <li>
+                        🎥{' '}
                         <Link url="https://tabb.cc/events" external>
                             Film meetup groups
                         </Link>{' '}
@@ -84,7 +95,17 @@ export default function About() {
                             Tabb
                         </Link>
                     </li>
+                    <li>
+                        🙌 General support and enthusiasm:{' '}
+                        <Link url="https://www.reddit.com/r/bristol/" external>
+                            r/Bristol
+                        </Link>
+                    </li>
                 </ul>
+                <p>
+                    Thanks also to everyone who has submitted groups and
+                    feedback anonymously.
+                </p>
             </div>
         </Layout>
     );

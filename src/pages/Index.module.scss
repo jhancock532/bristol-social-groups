@@ -163,6 +163,20 @@
     }
 }
 
+.adHocGroupsIntroduction {
+    margin-bottom: $grid * 2;
+
+    @include media-query(medium) {
+        margin-bottom: $grid * 4;
+        margin-top: $grid * 4;
+    }
+}
+
 .callToAction {
     @include font-size(sm);
+
+    @include media-query(medium) {
+        margin-bottom: $grid * 4;
+        margin-top: $grid * 4;
+    }
 }

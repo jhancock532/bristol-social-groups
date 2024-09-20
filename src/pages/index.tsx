@@ -8,8 +8,10 @@ import Link from '@/components/Link';
 import Metadata from '@/components/Metadata';
 import FilteredGroupsShownMessage from '@/components/FilteredGroupsShownMessage';
 import { ExpandIcon } from '@/components/Icons/ExpandIcon';
-import { getDirectories } from '@/utils/utils';
+import { filterGroups, getDirectories } from '@/utils/utils';
 import { WEEKDAYS, GROUP_DATA_FILE_PATH } from '@/constants';
+import { Event } from '@/types/Event';
+import { Group } from '@/types/Group';
 import styles from './Index.module.scss';
 
 const generateListOfGroupTags = (events: any) => {
@@ -48,26 +50,16 @@ export default function Home({ groups }: any) {
     };
 
     const filteredGroups = useMemo(() => {
-        return groups.filter((event: any) => {
-            const matchesTags =
-                selectedGroupTags.length === 0 ||
-                event.tags?.some((tag: string) =>
-                    selectedGroupTags.includes(tag),
-                );
-            let matchesWeekday = selectedWeekday === 'All';
-            if (event.events) {
-                matchesWeekday =
-                    matchesWeekday ||
-                    event.events.some(
-                        (e: any) => e.time.weekday === selectedWeekday,
-                    );
-            }
-            if (event.type === 'Discord' || event.type === 'Ad-hoc') {
-                matchesWeekday = true;
-            }
-            return matchesTags && matchesWeekday;
-        });
+        return filterGroups(groups, selectedGroupTags, selectedWeekday);
     }, [groups, selectedGroupTags, selectedWeekday]);
+
+    const filteredGroupsContainRegularLocation =
+        filteredGroups.regularGroups.some((group: Group) => {
+            if (!group.events) {
+                return false;
+            }
+            return group.events.some((event: Event) => event.location);
+        });
 
     return (
         <Layout>
@@ -177,9 +169,7 @@ export default function Home({ groups }: any) {
                                 </div>
 
                                 <FilteredGroupsShownMessage
-                                    numberOfGroupsFiltered={
-                                        filteredGroups.length
-                                    }
+                                    filteredGroups={filteredGroups}
                                     numberOfPossibleGroups={groups.length}
                                 />
 
@@ -200,15 +190,36 @@ export default function Home({ groups }: any) {
                 </div>
             </div>
 
-            <GroupListingMap
-                groups={filteredGroups}
+            {filteredGroupsContainRegularLocation && (
+                <GroupListingMap
+                    groups={filteredGroups.regularGroups}
+                    selectedWeekday={selectedWeekday}
+                />
+            )}
+
+            <GroupListingFeed
+                groups={filteredGroups.regularGroups}
                 selectedWeekday={selectedWeekday}
             />
 
-            <GroupListingFeed
-                groups={filteredGroups}
-                selectedWeekday={selectedWeekday}
-            />
+            {filteredGroups.adHocGroups &&
+                filteredGroups.adHocGroups.length !== 0 && (
+                    <div>
+                        <div className={styles.adHocGroupsIntroduction}>
+                            <h2>Ad-hoc groups</h2>
+                            <p className={styles.description}>
+                                These groups may host an event on the day
+                                you&apos;ve specified. Please check the groups
+                                website, social media page or group chat for
+                                more information.{' '}
+                            </p>
+                        </div>
+                        <GroupListingFeed
+                            groups={filteredGroups.adHocGroups}
+                            selectedWeekday={selectedWeekday}
+                        />
+                    </div>
+                )}
 
             <div className={styles.callToAction}>
                 <h2>Not found what you&apos;re looking for?</h2>{' '}

@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { MOCK_GROUPS } from '@/stories/mocks';
 import FilteredGroupsShownMessage from './FilteredGroupsShownMessage';
 
 const meta = {
@@ -9,7 +10,7 @@ const meta = {
     },
     tags: ['autodocs'],
     argTypes: {
-        numberOfGroupsFiltered: { control: 'number' },
+        filteredGroups: { control: 'object' },
         numberOfPossibleGroups: { control: 'number' },
     },
 } satisfies Meta<typeof FilteredGroupsShownMessage>;
@@ -18,16 +19,52 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const MixOfRegularAndAdHocGroups: Story = {
     args: {
-        numberOfGroupsFiltered: 5,
-        numberOfPossibleGroups: 10,
+        filteredGroups: {
+            regularGroups: [MOCK_GROUPS[0], MOCK_GROUPS[2]],
+            adHocGroups: [MOCK_GROUPS[1]],
+        },
+        numberOfPossibleGroups: 4,
+    },
+};
+
+export const NoRegularGroups: Story = {
+    args: {
+        filteredGroups: {
+            regularGroups: [],
+            adHocGroups: [MOCK_GROUPS[1]],
+        },
+        numberOfPossibleGroups: 3,
+    },
+};
+
+export const NoAdHocGroups: Story = {
+    args: {
+        filteredGroups: {
+            regularGroups: [MOCK_GROUPS[0], MOCK_GROUPS[2]],
+            adHocGroups: undefined,
+        },
+        numberOfPossibleGroups: 3,
+    },
+};
+
+export const AllGroupsIncludedInResults: Story = {
+    args: {
+        filteredGroups: {
+            regularGroups: [MOCK_GROUPS[0], MOCK_GROUPS[2]],
+            adHocGroups: [MOCK_GROUPS[1]],
+        },
+        numberOfPossibleGroups: 3,
     },
 };
 
 export const NoGroupsFound: Story = {
     args: {
-        numberOfGroupsFiltered: 0,
+        filteredGroups: {
+            regularGroups: [],
+            adHocGroups: [],
+        },
         numberOfPossibleGroups: 10,
     },
 };
