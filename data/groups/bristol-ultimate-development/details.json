@@ -6,31 +6,6 @@
   "tags": ["fitness", "sports"],
   "events": [
     {
-      "name": "Wednesday Evening",
-      "time": {
-        "frequency": "Weekly",
-        "weekday": "Wednesday",
-        "start": "Jan 1, 1970 18:00",
-        "end": "Jan 1, 1970 20:00",
-        "details": "Social games. See the Facebook group for the latest details."
-      },
-      "location": {
-        "address": "The Downs, Clifton, Bristol, BS9 1FG",
-        "latitude": "51.473314",
-        "longitude": "-2.619059",
-        "googleMapsLink": "https://maps.app.goo.gl/djJ4w75rXFU62EvF9"
-      },
-      "cost": {
-        "sessionPrice": 0.00,
-        "details": "Outdoor sessions are free to join."
-      },
-      "booking": {
-        "required": true,
-        "details": "Booking recommended so the organisers have a sense of numbers, please join the Facebook group and vote in the latest poll."
-      },
-      "url": "https://www.facebook.com/groups/bristolultimatedevelopment/"
-    },
-    {
       "name": "Sunday Afternoon",
       "time": {
         "frequency": "Weekly",
