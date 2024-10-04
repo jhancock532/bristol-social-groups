@@ -2,7 +2,7 @@
 
 ## Priority features
 
-Search feature.
+Search feature (a WIP branch has been created for this)
 
 Create a mailing list where users can sign up to hear about more events in the future. This can be a google form to start with. Emails are sent out once a month or once every two months, depending on the amount of groups added.
 
@@ -13,6 +13,8 @@ Order the filter tags by most common to least common. Display three rows of tags
 Add accessibility aria labels or suitable titles to announce the icons in the GroupCard component
 
 Add tests for the filters combined with the map listing component and card feed listing component
+
+Consider and implement a low cost / free alternative to google forms for submitting groups, reducing the carbon impact of the google form pages. Use AI tool such as Townie for this?
 
 ## Nice to have
 
@@ -29,13 +31,3 @@ The font class should live in a seperate file to `_app.tsx` and then get importe
 Refactor every text content <a> link to the new <Link> component
 
 Add more styling documentation in `styling.md`
-
-## Potential features needing refinement
-
-Add a star ranking system for how well groups listed follow the aims of the site. Could be controversial and hard to maintain, ideally should be set up with a simple scoring system with clearly defined rules.
-
-## Moonshot features
-
-- Create custom map tiles with a green theme for the in house map component.
-
-- Consider and implement a low cost / free alternative to google forms for submitting groups, reducing the carbon impact of the google form pages.

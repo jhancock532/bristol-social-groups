@@ -1,8 +1,10 @@
 # Bristol Social Groups
 
-A website listing social groups in Bristol, UK. [View the live site](https://bristolsocialgroups.com/), or for an extended introduction to the project, [read the about page](https://bristolsocialgroups.com/about).
+A website listing social groups in Bristol, UK. [View the live site](https://bristolsocialgroups.com/). For more information about this project, [read the about page](https://bristolsocialgroups.com/about).
 
 The pattern library for this project [is hosted with Storybook](https://jhancock532.github.io/bristol-social-groups/?path=/docs/getting-started--docs).
+
+There are a few AI code generation helpers, for creating new groups and generating Storybook documentation. These require an Anthropic API key, and usually cost around 0.5 - 3 cents to run.
 
 ## Documentation Index
 
