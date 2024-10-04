@@ -1,0 +1,35 @@
+{
+  "name": "Drawing Club Bristol",
+  "slug": "drawing-club-bristol",
+  "description": "Friendly & informal art club! Weekly meets in Bristol city centre (circa 2015). No fees.",
+  "details": "",
+  "tags": ["art", "drawing"],
+  "type": "Regular",
+  "events": [
+    {
+      "name": "Weekly Drawing Club",
+      "details": "",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 22:00",
+        "details": ""
+      },
+      "location": {
+        "address": "The Robin Hood, 56 Saint Michael's Hill, BS2 8DX",
+        "latitude": "51.458572",
+        "longitude": "-2.599590",
+        "googleMapsLink": "https://maps.app.goo.gl/E2kTQuDEmiaqhtr19"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": "No fees"
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.eventbrite.co.uk/e/drawing-club-bristol-free-central-tickets-1013863301427"
+    }
+  ]
+}

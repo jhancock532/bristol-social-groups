@@ -10,4 +10,4 @@ No guarantee is made for the accuracy of data or for the long term maintenance o
 
 I've included direct links to the groups that host the events, so you can access the latest information about the event and contact the organizers yourself if you have further questions. These links should hopefully boost the search rankings of the individual groups and help them grow.
 
-To reduce carbon emissions and ensure a speedy loading experience, use of images or heavyweight JavaScript is avoided where possible. The OpenStreetMap map widget loads map tile images which are somewhat weighty - this component is only loaded when the user views it, and not bundled within all pages.
+To reduce carbon emissions and ensure a speedy loading experience, use of images or heavyweight JavaScript is avoided where possible. The OpenStreetMap map widget loads map tile images which are somewhat weighty - this component is only loaded when the user views it, and not bundled within all pages. I intend to replace the google form widgets with a lightweight alternative.

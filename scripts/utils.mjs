@@ -1,18 +1,19 @@
+/* eslint-disable no-console */
 import fs from 'fs';
 
 /**
  * Converts a string from kebab-case to camelCase.
- * 
+ *
  * @param {string} str - The string to convert.
  * @returns {string} The converted string in camelCase.
  */
 export function toCamelCase(str) {
-  return str.replace(/-(.)/g, (_, group1) => group1.toUpperCase());
+    return str.replace(/-(.)/g, (_, group1) => group1.toUpperCase());
 }
 
 /**
  * Reads the content of a file.
- * 
+ *
  * @param {string} filePath - The path to the file to read.
  * @returns {string} The content of the file or an empty string if an error occurs.
  */
@@ -27,23 +28,24 @@ export const readFile = (filePath) => {
 
 /**
  * Calculates and logs the usage cost based on input and output tokens.
- * 
+ *
  * @param {Object} usage - The usage object containing input_tokens and output_tokens.
  * @param {string} model - The model to calculate the cost for.
  */
-export function calculateUsageCost(usage, model) {
-    let inputCostPerMillion, outputCostPerMillion;
+export function logAnthropicAPICost(usage, model) {
+    let inputCostPerMillion;
+    let outputCostPerMillion;
     switch (model) {
-        case 'Claude 3.5 Sonnet':
+        case 'claude-3-5-sonnet-20240620':
             inputCostPerMillion = 3.75;
             outputCostPerMillion = 3;
             break;
-        case 'Claude 3 Opus':
+        case 'claude-3-opus-20240229':
             inputCostPerMillion = 18.75;
             outputCostPerMillion = 15;
             break;
-        case 'Claude 3 Haiku':
-            inputCostPerMillion = 0.30;
+        case 'claude-3-haiku-20240307':
+            inputCostPerMillion = 0.3;
             outputCostPerMillion = 0.25;
             break;
         default:

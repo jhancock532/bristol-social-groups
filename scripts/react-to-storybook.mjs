@@ -4,13 +4,9 @@ import fs from 'fs';
 import readline from 'readline';
 import path from 'path';
 import { config } from 'dotenv';
-import { toCamelCase, readFile, calculateUsageCost } from './utils.mjs';
+import { toCamelCase, readFile, logAnthropicAPICost } from './utils.mjs';
 
 config();
-
-// Define the model constant here
-// Options: 'Claude 3 Haiku', 'Claude 3.5 Sonnet', 'Claude 3 Opus'
-const ANTHROPIC_MODEL = 'Claude 3 Haiku'; 
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -19,7 +15,7 @@ const rl = readline.createInterface({
 
 const anthropic = new Anthropic({});
 
-const exampleDocumentation= `
+const exampleDocumentation = `
 --- REACT COMPONENT ---
 import React from 'react';
 import Link from 'next/link';
@@ -296,7 +292,6 @@ export const Default: Story = {
 const baseComponentsDirectoryName = 'src/components';
 
 rl.question('\x1b[1mEnter a component name:\x1b[0m ', async (componentName) => {
-
     const camelCaseComponentName = toCamelCase(componentName);
 
     const outputFilePath = `src/components/${camelCaseComponentName}/claude.${camelCaseComponentName}.stories.ts`;
@@ -312,25 +307,12 @@ rl.question('\x1b[1mEnter a component name:\x1b[0m ', async (componentName) => {
     const reactComponentCode = readFile(inputFilePath);
     const mocksCode = readFile(inputMocksFilePath);
     console.log(
-        `\x1b[3mConverting React component to Storybook documentation using ${ANTHROPIC_MODEL}...\x1b[0m`,
+        `\x1b[3mConverting React component to Storybook documentation...\x1b[0m`,
     );
-
-    let model;
-    switch (ANTHROPIC_MODEL) {
-        case 'Claude 3.5 Sonnet':
-            model = 'claude-3-5-sonnet-20240620';
-            break;
-        case 'Claude 3 Opus':
-            model = 'claude-3-opus-20240229';
-            break;
-        case 'Claude 3 Haiku':
-        default:
-            model = 'claude-3-haiku-20240307';
-    }
 
     // eslint-disable-next-line no-await-in-loop
     const msg = await anthropic.messages.create({
-        model: model,
+        model: process.env.ANTHROPIC_MODEL,
         system: `Here are some examples of Storybook documentation of React components.
         ${exampleDocumentation}
         Here are some mock constants for the Storybook stories, as found in @stories/mocks:
@@ -350,8 +332,7 @@ rl.question('\x1b[1mEnter a component name:\x1b[0m ', async (componentName) => {
         }
     });
 
-    calculateUsageCost(msg.usage, ANTHROPIC_MODEL);
+    logAnthropicAPICost(msg.usage, process.env.ANTHROPIC_MODEL);
 
     rl.close();
 });
-
