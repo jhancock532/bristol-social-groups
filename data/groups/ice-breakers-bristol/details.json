@@ -1,0 +1,34 @@
+{
+  "name": "Ice Breakers Bristol",
+  "slug": "ice-breakers-bristol",
+  "description": "A growing community of men embracing cold water therapy and new conversation. ALL men welcome.",
+  "details": "",
+  "tags": ["cold water therapy"],
+  "events": [
+    {
+      "name": "Sunday Morning",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Sunday",
+        "start": "Jan 1, 1970 08:00",
+        "end": "Jan 1, 1970 10:00",
+        "details": "Runs every Sunday morning."
+      },
+      "location": {
+        "address": "Conham River Park, 53 Conham Hill, Hanham, BS15 3AW",
+        "latitude": "51.445933",
+        "longitude": "-2.535832",
+        "googleMapsLink": "https://maps.app.goo.gl/kyHL3w8xbkuPJint7"
+      },
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free to join."
+      },
+      "booking": {
+        "required": false
+      },
+      "gender": "Men",
+      "url": "https://www.icebreakers.uk/"
+    }
+  ]
+}
