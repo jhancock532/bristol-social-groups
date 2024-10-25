@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import AdHocCard from '@/components/AdHocCard';
 import DiscordCard from '@/components/DiscordCard';
 import EventCard from '@/components/EventCard';
 import { Event } from '@/types/Event';
 import { GroupType } from '@/types/Group';
 
 import styles from './GroupCard.module.scss';
-import AdHocCard from '../AdHocCard';
 
 type GroupCardProps = {
     name: string;

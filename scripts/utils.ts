@@ -32,7 +32,7 @@ export const readFile = (filePath: string) => {
  * @param {Object} usage - The usage object containing input_tokens and output_tokens.
  * @param {string} model - The model to calculate the cost for.
  */
-export function logAnthropicAPICost(usage: any, model: string) {
+export function logAnthropicAPICost(usage: any, model: string): number {
     let inputCostPerMillion;
     let outputCostPerMillion;
     switch (model) {
@@ -53,7 +53,7 @@ export function logAnthropicAPICost(usage: any, model: string) {
             console.error(
                 `API Cost Calculation Error: Model ${model} is not yet supported.`,
             );
-            return;
+            return 0;
     }
 
     const inputTokens = usage.input_tokens;
@@ -77,4 +77,6 @@ export function logAnthropicAPICost(usage: any, model: string) {
     console.log(
         `Total cost: approx \x1b[1m\x1b[36m$${totalCost.toFixed(4)}\x1b[0m\n`,
     );
+
+    return totalCost;
 }
