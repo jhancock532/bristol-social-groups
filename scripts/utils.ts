@@ -7,7 +7,7 @@ import fs from 'fs';
  * @param {string} str - The string to convert.
  * @returns {string} The converted string in camelCase.
  */
-export function toCamelCase(str) {
+export function toCamelCase(str: string) {
     return str.replace(/-(.)/g, (_, group1) => group1.toUpperCase());
 }
 
@@ -17,7 +17,7 @@ export function toCamelCase(str) {
  * @param {string} filePath - The path to the file to read.
  * @returns {string} The content of the file or an empty string if an error occurs.
  */
-export const readFile = (filePath) => {
+export const readFile = (filePath: string) => {
     try {
         return fs.readFileSync(filePath, 'utf8');
     } catch (err) {
@@ -32,11 +32,12 @@ export const readFile = (filePath) => {
  * @param {Object} usage - The usage object containing input_tokens and output_tokens.
  * @param {string} model - The model to calculate the cost for.
  */
-export function logAnthropicAPICost(usage, model) {
+export function logAnthropicAPICost(usage: any, model: string) {
     let inputCostPerMillion;
     let outputCostPerMillion;
     switch (model) {
-        case 'claude-3-5-sonnet-20240620':
+        case 'claude-3-5-sonnet-latest':
+        case 'claude-3-5-sonnet-20241022':
             inputCostPerMillion = 3.75;
             outputCostPerMillion = 3;
             break;
@@ -49,7 +50,9 @@ export function logAnthropicAPICost(usage, model) {
             outputCostPerMillion = 0.25;
             break;
         default:
-            console.error(`Model ${model} is not supported.`);
+            console.error(
+                `API Cost Calculation Error: Model ${model} is not yet supported.`,
+            );
             return;
     }
 

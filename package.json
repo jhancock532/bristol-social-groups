@@ -13,17 +13,17 @@
     "test-storybook": "test-storybook",
     "docker-playwright": "docker run --rm -p 9323:9323 -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:v1.46.0-jammy /bin/bash -c 'npm i; /bin/bash'",
     "playwright": "npx playwright test",
-    "new-group": "node scripts/new-group.mjs",
+    "new-group": "tsx scripts/new-group.ts",
     "new-component": "node scripts/new-component.js",
     "react-to-storybook": "node scripts/react-to-storybook.mjs",
     "generate-visual-tests": "node scripts/generate-visual-tests.mjs"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.27.1",
+    "@anthropic-ai/sdk": "0.30.1",
     "@types/node": "20.5.6",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "dotenv": "^16.4.5",
+    "dotenv": "16.4.5",
     "eslint": "8.56.0",
     "eslint-config-next": "14.2.3",
     "leaflet": "1.9.4",
@@ -34,6 +34,7 @@
     "react-dom": "18.2.0",
     "react-leaflet": "4.2.1",
     "sass": "1.70.0",
+    "tsx": "4.19.1",
     "typescript": "5.3.3"
   },
   "devDependencies": {
@@ -50,7 +51,7 @@
     "@storybook/test": "8.2.7",
     "@storybook/test-runner": "0.19.1",
     "@types/leaflet": "1.9.8",
-    "axe-playwright": "^2.0.1",
+    "axe-playwright": "2.0.3",
     "eslint-config-torchbox": "1.1.0",
     "eslint-plugin-storybook": "0.8.0",
     "storybook": "8.2.7",

@@ -4,9 +4,11 @@ import fs from 'fs';
 import readline from 'readline';
 import path from 'path';
 import { config } from 'dotenv';
-import { logAnthropicAPICost } from './utils.mjs';
+import { logAnthropicAPICost } from './utils.js';
 
 config();
+
+const MODEL = process.env.ANTHROPIC_MODEL as string;
 
 const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY,
@@ -38,9 +40,13 @@ async function loadExampleGroups() {
     return exampleGroups;
 }
 
-async function generateGroupDetails(groupSlug, userInput, exampleGroups) {
+async function generateGroupDetails(
+    groupSlug: string,
+    userInput: string,
+    exampleGroups: any[],
+) {
     const msg = await anthropic.messages.create({
-        model: process.env.ANTHROPIC_MODEL,
+        model: MODEL,
         max_tokens: 1000,
         system: `You are a programming assistant that generates group detail JSON files based on a group slug and optional user input. You return only valid JSON, and make no other comments. Use the following example groups as context for how your output should be formatted: \n${JSON.stringify(exampleGroups)}\n Return a JSON response to the user's input, only including fields that match the above examples.`,
         messages: [
@@ -51,13 +57,17 @@ async function generateGroupDetails(groupSlug, userInput, exampleGroups) {
         ],
     });
 
-    logAnthropicAPICost(msg.usage, process.env.ANTHROPIC_MODEL);
+    logAnthropicAPICost(msg.usage, MODEL);
 
-    return msg.content[0].text;
+    if (msg.content[0].type === 'text') {
+        return msg.content[0].text;
+    }
+
+    return 'Error: AI response was not text.';
 }
 
 async function createGroup() {
-    const groupSlug = await new Promise((resolve) => {
+    const groupSlug: string = await new Promise((resolve) => {
         rl.question(
             '\x1b[1mEnter the group name as a slug, e.g. "bristol-hot-air-balloonists" :\x1b[0m ',
             resolve,
@@ -74,7 +84,7 @@ async function createGroup() {
         process.exit(1);
     }
 
-    const userInput = await new Promise((resolve) => {
+    const userInput: string = await new Promise((resolve) => {
         rl.question(
             '\x1b[1mEnter any additional information for the AI (optional):\x1b[0m ',
             resolve,

@@ -4,9 +4,11 @@ import fs from 'fs';
 import readline from 'readline';
 import path from 'path';
 import { config } from 'dotenv';
-import { toCamelCase, readFile, logAnthropicAPICost } from './utils.mjs';
+import { toCamelCase, readFile, logAnthropicAPICost } from './utils.js';
 
 config();
+
+const MODEL = process.env.ANTHROPIC_MODEL as string;
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -312,7 +314,7 @@ rl.question('\x1b[1mEnter a component name:\x1b[0m ', async (componentName) => {
 
     // eslint-disable-next-line no-await-in-loop
     const msg = await anthropic.messages.create({
-        model: process.env.ANTHROPIC_MODEL,
+        model: MODEL,
         system: `Here are some examples of Storybook documentation of React components.
         ${exampleDocumentation}
         Here are some mock constants for the Storybook stories, as found in @stories/mocks:
@@ -324,15 +326,20 @@ rl.question('\x1b[1mEnter a component name:\x1b[0m ', async (componentName) => {
         messages: [{ role: 'user', content: reactComponentCode }],
     });
 
-    fs.writeFile(outputFilePath, msg.content[0].text, (err) => {
-        if (err) {
-            console.error('An error occurred while creating the file:', err);
-        } else {
-            console.log(`\x1b[1m\x1b[32mFile created successfully.\x1b[0m`);
-        }
-    });
+    if (msg.content[0].type === 'text') {
+        fs.writeFile(outputFilePath, msg.content[0].text, (err) => {
+            if (err) {
+                console.error(
+                    'An error occurred while creating the file:',
+                    err,
+                );
+            } else {
+                console.log(`\x1b[1m\x1b[32mFile created successfully.\x1b[0m`);
+            }
+        });
+    }
 
-    logAnthropicAPICost(msg.usage, process.env.ANTHROPIC_MODEL);
+    logAnthropicAPICost(msg.usage, process.env.ANTHROPIC_MODEL as string);
 
     rl.close();
 });
