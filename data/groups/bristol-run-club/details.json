@@ -6,6 +6,25 @@
   "tags": ["running", "fitness", "cafes", "pubs"],
   "events": [
     {
+      "name": "Tuesday Morning Run",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 06:15",
+        "end": "Jan 1, 1970 06:30",
+        "details": "Meetup from 6:15am, with the run starting at 6:30am. 5km run followed by a post run get together."
+      },
+      "locationURL": "https://www.instagram.com/bristolrunclub/",
+      "cost": {
+        "sessionPrice": 0.00,
+        "details": "Free to join, no sign up necessary."
+      },
+      "booking": {
+        "required": false
+      },
+      "url": "https://www.instagram.com/bristolrunclub/"
+    },
+    {
       "name": "Thursday Evening Run",
       "time": {
         "frequency": "Weekly",
