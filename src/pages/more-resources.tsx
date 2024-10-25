@@ -7,7 +7,7 @@ export default function More() {
     return (
         <Layout>
             <Metadata
-                title="Social Bristol - More resources"
+                title="Bristol Social Groups - More resources"
                 description="Further websites and resources for finding social groups in Bristol."
             />
             <h1 className={styles.title}>More resources</h1>

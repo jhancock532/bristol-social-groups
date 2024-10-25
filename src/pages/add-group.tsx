@@ -7,7 +7,7 @@ export default function AddGroup() {
     return (
         <Layout>
             <Metadata
-                title="Social Bristol - Add group"
+                title="Bristol Social Groups - Add group"
                 description="Recommend a group to be added to the site."
             />
             <h1 className={styles.title}>Add group</h1>
@@ -23,7 +23,7 @@ export default function AddGroup() {
                 width="100%"
                 height="960"
                 frameBorder="0"
-                title="Social Bristol group submission form"
+                title="Bristol Social Groups group submission form"
             >
                 Form loading…
             </iframe>

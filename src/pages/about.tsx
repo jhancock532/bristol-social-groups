@@ -7,7 +7,7 @@ export default function About() {
     return (
         <Layout>
             <Metadata
-                title="Social Bristol - About"
+                title="Bristol Social Groups - About"
                 description="A list of regular meetups in Bristol that are open to newcomers."
             />
             <div className={styles.hero}>
