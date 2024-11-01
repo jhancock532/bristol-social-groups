@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { rubik } from '@/pages/_app';
 import { Event } from '@/types/Event';
 import { Group } from '@/types/Group';
-import { ExternalIcon } from '../Icons/ExternalIcon';
 import styles from './Map.module.scss';
 
 type MapProps = {
@@ -60,7 +59,7 @@ const Map = ({ groups, selectedWeekday }: MapProps) => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                {events.map((event, index) => (
+                {events.map((event: Event, index) => (
                     <Marker
                         key={index}
                         position={[
@@ -70,21 +69,13 @@ const Map = ({ groups, selectedWeekday }: MapProps) => {
                     >
                         <Popup className={rubik.className}>
                             <p className={styles.popupTitle}>
-                                <Link href={`/events/${event.slug}`}>
+                                <Link href={`/groups/${event.slug}`}>
                                     {event.name}
                                 </Link>
                             </p>
                             <p className={styles.popupText}>
                                 {event.location.address}
                             </p>
-                            <a
-                                className={styles.eventLink}
-                                href={event.url}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                View group&apos;s website <ExternalIcon />
-                            </a>
                         </Popup>
                     </Marker>
                 ))}

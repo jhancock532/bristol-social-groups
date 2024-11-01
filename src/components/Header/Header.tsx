@@ -67,7 +67,7 @@ export const Header = () => {
                         </li>
                         <li className={styles.navItem}>
                             <Link href="/add-group" className={styles.link}>
-                                Add group
+                                Add a group
                             </Link>
                         </li>
                     </ul>
