@@ -1,14 +1,16 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from '@/components/Link';
 import { ClockIcon } from '@/components/Icons/ClockIcon';
-import { WalletIcon } from '@/components/Icons/WalletIcon';
-import { LocationIcon } from '@/components/Icons/LocationIcon';
-import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
-import { ExternalIcon } from '@/components/Icons/ExternalIcon';
 import { FemaleIcon } from '@/components/Icons/FemaleIcon';
+import { LinkIcon } from '@/components/Icons/LinkIcon';
+import { LocationIcon } from '@/components/Icons/LocationIcon';
 import { MaleIcon } from '@/components/Icons/MaleIcon';
+import { PeopleIcon } from '@/components/Icons/PeopleIcon';
+import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
+import { WalletIcon } from '@/components/Icons/WalletIcon';
 import { getAMPMTimeFromDateString } from '@/utils/utils';
 import { Event } from '@/types/Event';
+
 import styles from './EventCard.module.scss';
 
 const EventCard = ({
@@ -17,7 +19,7 @@ const EventCard = ({
     location,
     locationURL,
     booking,
-    url,
+    link,
     gender,
 }: Event) => {
     return (
@@ -29,6 +31,9 @@ const EventCard = ({
                     )}
                     {gender === 'Men' && (
                         <MaleIcon className={styles.details__icon} />
+                    )}
+                    {gender !== 'Men' && gender !== 'Women' && (
+                        <PeopleIcon className={styles.details__icon} />
                     )}
                     <p>Open to {gender.toLowerCase()} only.</p>
                 </div>
@@ -60,7 +65,7 @@ const EventCard = ({
                     </p>
                 </div>
             )}
-            {booking && booking.required && (
+            {booking && booking.required !== 'Not required' && (
                 <div className={styles.details__item}>
                     <ReceiptIcon className={styles.details__icon} />
                     <p>
@@ -78,43 +83,44 @@ const EventCard = ({
                     {location && (
                         <p>
                             Meets at{' '}
-                            <a
+                            <Link
+                                type="basic"
                                 className={styles.googleMapsLink}
-                                href={location.googleMapsLink}
-                                target="_blank"
-                                rel="noreferrer"
+                                url={location.googleMapsLink}
+                                external
                             >
                                 {location.address}
-                                <ExternalIcon />
-                            </a>
+                            </Link>
                         </p>
                     )}
                     {locationURL && (
                         <p>
                             This event&apos;s location changes,{' '}
                             <Link
-                                href={locationURL}
+                                type="basic"
+                                url={locationURL}
                                 className={styles.googleMapsLink}
-                                target="_blank"
-                                rel="noreferrer"
+                                external
                             >
                                 click here for the latest details
-                                <ExternalIcon />
                             </Link>
                         </p>
                     )}
                 </div>
             </div>
-            <div className={styles.details__item}>
-                <a
-                    className={styles.externalLink}
-                    href={url}
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    View group&apos;s website <ExternalIcon />
-                </a>
-            </div>
+            {link && (
+                <div className={styles.details__item}>
+                    <LinkIcon className={styles.details__icon} />
+                    <Link
+                        type="basic"
+                        className={styles.externalLink}
+                        url={link.url}
+                        external
+                    >
+                        View this events webpage
+                    </Link>
+                </div>
+            )}
         </div>
     );
 };

@@ -37,8 +37,7 @@ const GroupListingFeed = ({
                     <GroupCard
                         key={index}
                         name={group.name}
-                        type={group.type}
-                        url={group.url}
+                        links={group.links}
                         description={group.description}
                         slug={group.slug}
                         events={filteredEvents}

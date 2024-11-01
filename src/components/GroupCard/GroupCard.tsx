@@ -1,19 +1,94 @@
 import React from 'react';
 import Link from 'next/link';
-import AdHocCard from '@/components/AdHocCard';
-import DiscordCard from '@/components/DiscordCard';
 import EventCard from '@/components/EventCard';
+import { DiscordIcon } from '@/components/Icons/DiscordIcon';
+import { ExternalIcon } from '@/components/Icons/ExternalIcon';
 import { Event } from '@/types/Event';
-import { GroupType } from '@/types/Group';
+import { Link as LinkType } from '@/types/base';
 
 import styles from './GroupCard.module.scss';
+import { WhatsappIcon } from '../Icons/WhatsappIcon';
+
+type GroupLinkProps = {
+    link: LinkType;
+};
+
+const GroupLink = ({ link }: GroupLinkProps) => {
+    switch (link.type) {
+        case 'Discord':
+            return (
+                <>
+                    <DiscordIcon className={styles.icon} /> Join the Discord
+                    server
+                </>
+            );
+        case 'WhatsApp':
+            return (
+                <>
+                    <WhatsappIcon className={styles.icon} /> Join the WhatsApp
+                    group chat
+                </>
+            );
+        case 'Meetup':
+            return (
+                <>
+                    View the group on Meetup <ExternalIcon />
+                </>
+            );
+        case 'Instagram':
+            return (
+                <>
+                    View the group on Instagram <ExternalIcon />
+                </>
+            );
+        case 'Facebook':
+            return (
+                <>
+                    View the group on Facebook <ExternalIcon />
+                </>
+            );
+        case 'Tiktok':
+            return (
+                <>
+                    View the group on TikTok <ExternalIcon />
+                </>
+            );
+        default:
+            return (
+                <>
+                    Go to the groups website <ExternalIcon />
+                </>
+            );
+    }
+};
+
+type GroupLinksProps = {
+    links: LinkType[];
+};
+
+export const GroupLinks = ({ links }: GroupLinksProps) => {
+    return (
+        <div className={styles.groupLinkContainer}>
+            {links.map((link: LinkType, index: number) => (
+                <a
+                    key={index}
+                    className={styles.externalLink}
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <GroupLink link={link} />
+                </a>
+            ))}
+        </div>
+    );
+};
 
 type GroupCardProps = {
     name: string;
     description: string;
     slug: string;
-    type?: GroupType;
-    url?: string;
+    links: LinkType[];
     events?: Event[];
 };
 
@@ -23,21 +98,18 @@ type GroupCardProps = {
  * @param {string} name - The name of the group
  * @param {string} description - A one to two sentence description of the group
  * @param {string} slug - The URL slug where the user can find more information about the group within this website
- * @param {string} type - The type of group, e.g. "Regular" or "Ad-hoc"
- * @param {string} url - A URL where the user can find more information about the group
  * @param {Event[]} events - An array of events hosted by the group
  */
 const GroupCard = ({
     name,
     description,
-    slug,
-    type,
-    url,
     events,
+    links,
+    slug,
 }: GroupCardProps) => {
     return (
         <div className={styles.container}>
-            <Link href={`/events/${slug}`} className={styles.title__link}>
+            <Link href={`/groups/${slug}`} className={styles.title__link}>
                 <h2 className={styles.title}>{name}</h2>
             </Link>
 
@@ -51,9 +123,11 @@ const GroupCard = ({
                 </div>
             )}
 
-            {type === 'Discord' && url && <DiscordCard url={url} />}
-
-            {type === 'Ad-hoc' && url && <AdHocCard url={url} />}
+            {links && (
+                <div className={styles.links}>
+                    <GroupLinks links={links} />
+                </div>
+            )}
         </div>
     );
 };
