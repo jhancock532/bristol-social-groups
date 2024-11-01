@@ -3,7 +3,17 @@
   "slug": "southville-running-club",
   "description": "A friendly running club in Bristol welcoming all abilities for social and training runs.",
   "details": "The club meets twice a week for group runs led by experienced runners. Sessions include various types of training, with some runners joining for a drink at a pub afterwards.",
-  "tags": ["running", "fitness", "pubs"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.southvillerunningclub.co.uk/new-runners-2"
+    }
+  ],
+  "tags": [
+    "running",
+    "fitness",
+    "pubs"
+  ],
   "events": [
     {
       "name": "Tuesday Evening Runs",
@@ -25,10 +35,9 @@
         "details": "50p per run to cover the cost of using the facilities at the Southbank Club. Annual membership is £4, with an optional EA Competition License for £19 per year."
       },
       "booking": {
-        "required": false,
+        "required": "Not required",
         "details": "New runners are welcome to join without prior booking. Membership can be obtained for additional benefits."
-      },
-      "url": "https://www.southvillerunningclub.co.uk/new-runners-2"
+      }
     },
     {
       "name": "Thursday Evening Runs",
@@ -50,10 +59,9 @@
         "details": "50p per run to cover the cost of using the facilities at the Southbank Club. Annual membership is £4, with an optional EA Competition License for £19 per year."
       },
       "booking": {
-        "required": false,
+        "required": "Not required",
         "details": "New runners are welcome to join without prior booking. Membership can be obtained for additional benefits."
-      },
-      "url": "https://www.southvillerunningclub.co.uk/new-runners-2"
+      }
     }
   ]
 }

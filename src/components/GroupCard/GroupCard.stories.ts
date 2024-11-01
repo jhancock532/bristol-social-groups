@@ -13,8 +13,7 @@ const meta = {
         name: { control: 'text' },
         description: { control: 'text' },
         slug: { control: 'text' },
-        type: { control: 'select', options: ['Discord', 'Regular', 'Other'] },
-        url: { control: 'text' },
+        links: { control: 'object' },
         events: { control: 'object' },
     },
 } satisfies Meta<typeof GroupCard>;
@@ -28,8 +27,12 @@ export const Default: Story = {
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         slug: 'example-group',
-        type: 'Regular',
-        url: 'https://example.com/group',
+        links: [
+            {
+                type: 'Website',
+                url: 'https://example.com/group',
+            },
+        ],
         events: [MOCK_EVENTS[0]],
     },
 };
@@ -47,17 +50,25 @@ export const DiscordGroup: Story = {
         ...Default.args,
         name: 'Group that organises over Discord',
         events: undefined,
-        type: 'Discord',
-        url: 'https://example.com/',
+        links: [
+            {
+                type: 'Discord',
+                url: 'https://example.com/group',
+            },
+        ],
     },
 };
 
-export const AdHocGroup: Story = {
+export const WhatsappGroup: Story = {
     args: {
         ...Default.args,
-        name: 'Group that arranges ad-hoc events',
+        name: 'Group that arranges events on WhatsApp',
         events: undefined,
-        type: 'Ad-hoc',
-        url: 'https://example.com/',
+        links: [
+            {
+                type: 'WhatsApp',
+                url: 'https://example.com/group',
+            },
+        ],
     },
 };

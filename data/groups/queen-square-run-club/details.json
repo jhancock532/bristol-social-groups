@@ -1,9 +1,18 @@
 {
   "name": "Queen Square Run Club",
   "slug": "queen-square-run-club",
-  "description": "A social running club meeting at Queen's Square several times a week.",
-  "details": "More details available on the club's website",
-  "tags": ["fitness", "running", "cafes"],
+  "description": "A social running club meeting at Queen Square several times a week.",
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://queensquarerunclub.com/"
+    }
+  ],
+  "tags": [
+    "fitness",
+    "running",
+    "cafes"
+  ],
   "events": [
     {
       "name": "Monday evenings",
@@ -21,16 +30,11 @@
         "googleMapsLink": "https://maps.app.goo.gl/LssFrqEMLH1QYThN6"
       },
       "cost": {
-        "sessionPrice": 0.00,
-        "details": "Free."
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
-      },
-      "accessibility": {
-        "details": "A flat route around the harbourside at a jogging pace. Please wear suitable running gear."
-      },
-      "url": "https://queensquarerunclub.com/"
+        "required": "Not required"
+      }
     },
     {
       "name": "Wednesday lunchtimes",
@@ -48,13 +52,11 @@
         "googleMapsLink": "https://maps.app.goo.gl/LssFrqEMLH1QYThN6"
       },
       "cost": {
-        "sessionPrice": 0.00,
-        "details": "Free."
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://queensquarerunclub.com/"
+        "required": "Not required"
+      }
     },
     {
       "name": "Friday mornings",
@@ -62,8 +64,7 @@
         "frequency": "Weekly",
         "weekday": "Friday",
         "start": "Jan 1, 1970 07:30",
-        "end": "Jan 1, 1970 08:30",
-        "details": ""
+        "end": "Jan 1, 1970 08:30"
       },
       "location": {
         "address": "Queen Square, BS1 4LH",
@@ -72,13 +73,11 @@
         "googleMapsLink": "https://maps.app.goo.gl/LssFrqEMLH1QYThN6"
       },
       "cost": {
-        "sessionPrice": 0.00,
-        "details": "Free."
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://queensquarerunclub.com/"
+        "required": "Not required"
+      }
     }
   ]
 }

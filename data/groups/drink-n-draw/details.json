@@ -3,7 +3,16 @@
   "slug": "drink-n-draw",
   "description": "Draw, scribble, doodle, sketch and drink!  Suggested donation of £3 to cover materials, spaces limited, first come, first served. Materials are provided and beginners are welcome.",
   "details": "",
-  "tags": ["art", "drawing"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://tobaccofactory.com/whats-on/"
+    }
+  ],
+  "tags": [
+    "art",
+    "drawing"
+  ],
   "events": [
     {
       "time": {
@@ -21,13 +30,12 @@
         "details": "The Tobacco Factory, the drawing group is located in the Snug. See the website for more details."
       },
       "cost": {
-        "sessionPrice": 0.00,
+        "sessionPrice": 0,
         "details": "Suggested donation £3 to cover the cost of materials."
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://tobaccofactory.com/whats-on/"
+        "required": "Not required"
+      }
     }
   ]
 }

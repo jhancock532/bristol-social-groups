@@ -38,6 +38,11 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: $grid;
+    margin-bottom: $grid;
+
+    @include media-query('medium') {
+        margin-bottom: $grid * 1.5;
+    }
 
     @include media-query('large') {
         grid-template-columns: 1fr 1fr;
@@ -51,4 +56,12 @@
         grid-template-columns: 1fr 1fr 1fr;
         margin-right: auto;
     }
+}
+
+.links {
+    margin-bottom: $grid * 1.5;
+}
+
+.externalLink {
+    @include external-button-link;
 }

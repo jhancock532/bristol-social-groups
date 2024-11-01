@@ -3,7 +3,16 @@
   "slug": "bristol-ultimate-development",
   "description": "We are a sociable, development-focused ultimate frisbee club open to anyone wanting to try the sport!",
   "details": "",
-  "tags": ["fitness", "sports"],
+  "links": [
+    {
+      "type": "Facebook",
+      "url": "https://www.facebook.com/groups/bristolultimatedevelopment/"
+    }
+  ],
+  "tags": [
+    "fitness",
+    "sports"
+  ],
   "events": [
     {
       "name": "Sunday Afternoon",
@@ -21,14 +30,61 @@
         "googleMapsLink": "https://maps.app.goo.gl/djJ4w75rXFU62EvF9"
       },
       "cost": {
-        "sessionPrice": 0.00,
+        "sessionPrice": 0,
         "details": "Outdoor sessions are free to join."
       },
       "booking": {
-        "required": true,
+        "required": "Advised",
         "details": "Booking recommended so the organisers have a sense of numbers, please join the Facebook group and vote in the latest poll."
+      }
+    },
+    {
+      "name": "Tuesday Indoor Session",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 19:15",
+        "end": "Jan 1, 1970 21:15",
+        "details": "Please sign up on the Facebook group for each individual hour you want. Due to player cap, we will pick squads and announce them the night before."
       },
-      "url": "https://www.facebook.com/groups/bristolultimatedevelopment/"
+      "location": {
+        "address": "Shine Sports Hall, Brecon Road, Henleaze, BS9 4DT",
+        "latitude": "51.4847",
+        "longitude": "-2.6066",
+        "googleMapsLink": "https://maps.app.goo.gl/EA2VJFazA1jL9VAe9"
+      },
+      "cost": {
+        "sessionPrice": 4,
+        "details": "The first session is free. After that, it's £4 per session, with bank transfer details available on the Facebook group."
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Booking required for each individual hour. Squad lists will be announced the night before."
+      }
+    },
+    {
+      "name": "Friday Indoor Session",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Friday",
+        "start": "Jan 1, 1970 20:00",
+        "end": "Jan 1, 1970 22:00",
+        "details": "Please sign up for each individual hour you want. Due to player cap, we will pick squads and announce them the night before."
+      },
+      "location": {
+        "address": "Shine Sports Hall, Brecon Road, Henleaze, BS9 4DT",
+        "latitude": "51.486401",
+        "longitude": "-2.6140988",
+        "googleMapsLink": "https://maps.app.goo.gl/EA2VJFazA1jL9VAe9"
+      },
+      "cost": {
+        "sessionPrice": 4,
+        "details": "The first session is free. After that, it's £4 per session, with bank transfer details available on the Facebook group."
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Booking required for each individual hour. Squad lists will be announced the night before."
+      }
     }
   ]
 }

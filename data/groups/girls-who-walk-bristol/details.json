@@ -3,9 +3,15 @@
   "slug": "girls-who-walk-bristol",
   "description": "Making friends & getting steps in 🩷. A walking group for women that meets on Sundays at various locations around Bristol.",
   "details": "",
-  "tags": ["walking"],
-  "type": "Regular",
-  "url": "https://www.instagram.com/girlswhowalkbristol/",
+  "tags": [
+    "walking"
+  ],
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/girlswhowalkbristol/"
+    }
+  ],
   "events": [
     {
       "name": "Sunday walk",
@@ -19,13 +25,12 @@
       },
       "locationURL": "https://www.instagram.com/girlswhowalkbristol/",
       "cost": {
-        "sessionPrice": 0.0
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
+        "required": "Not required"
       },
-      "gender": "Women",
-      "url": "https://www.instagram.com/girlswhowalkbristol/"
+      "gender": "Women"
     }
   ]
 }

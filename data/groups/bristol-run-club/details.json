@@ -3,8 +3,37 @@
   "slug": "bristol-run-club",
   "description": "Regular runs with 2.5km and 5km groups around Bristol, check their Instagram to confirm the start location each week.",
   "details": "",
-  "tags": ["running", "fitness", "cafes", "pubs"],
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/bristolrunclub/"
+    }
+  ],
+  "tags": [
+    "running",
+    "fitness",
+    "cafes",
+    "pubs"
+  ],
   "events": [
+    {
+      "name": "Tuesday Morning Run",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 06:15",
+        "end": "Jan 1, 1970 06:30",
+        "details": "Meetup from 6:15am, with the run starting at 6:30am. 5km run followed by a post run get together."
+      },
+      "locationURL": "https://www.instagram.com/bristolrunclub/",
+      "cost": {
+        "sessionPrice": 0,
+        "details": "Free to join, no sign up necessary."
+      },
+      "booking": {
+        "required": "Not required"
+      }
+    },
     {
       "name": "Thursday Evening Run",
       "time": {
@@ -16,13 +45,12 @@
       },
       "locationURL": "https://www.instagram.com/bristolrunclub/",
       "cost": {
-        "sessionPrice": 0.00,
+        "sessionPrice": 0,
         "details": "Free to join, no sign up necessary."
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.instagram.com/bristolrunclub/"
+        "required": "Not required"
+      }
     },
     {
       "name": "Sunday Run",
@@ -33,15 +61,14 @@
         "end": "Jan 1, 1970 11:00",
         "details": "Meetup from 9:45am, with the run starting at 10:00am. Two groups of 2.5km and 5km followed by a post run get together."
       },
-      "locationURL":  "https://www.instagram.com/bristolrunclub/",
+      "locationURL": "https://www.instagram.com/bristolrunclub/",
       "cost": {
-        "sessionPrice": 0.00,
+        "sessionPrice": 0,
         "details": "Free to join, no sign up necessary."
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.instagram.com/bristolrunclub/"
+        "required": "Not required"
+      }
     }
   ]
 }

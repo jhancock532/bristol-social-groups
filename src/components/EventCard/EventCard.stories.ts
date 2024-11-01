@@ -15,7 +15,8 @@ const meta = {
         location: { control: 'object' },
         locationURL: { control: 'text' },
         booking: { control: 'object' },
-        url: { control: 'text' },
+        link: { control: 'object' },
+        gender: { control: 'text' },
     },
     args: {},
 } satisfies Meta<typeof EventCard>;

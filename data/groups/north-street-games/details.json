@@ -2,8 +2,15 @@
   "name": "North Street Games",
   "slug": "north-street-games",
   "description": "We run games nights on different days every week at a variety of venues in South Bristol. Our ethos is about getting people together to enjoy board gaming and experience the cracking venues that the area has to offer.",
-  "details": "North Street Games Night was started back in 2017. Over the last six years we’ve run nights at Bristol Beer Factory Tap Room, The Hare, Electric Bear Brewery Taproom, The Hen & Chicken, Kask, Left Handed Giant Brewpub, The Leveret, Newton Park Brewery Taproom, The Old Bookshop, Spirited, The Steam Crane, The Tobacco Factory, Wild Beer at Wapping Wharf, Wiper and True Barrel Store.",
-  "tags": ["board games", "pubs"],
-  "type": "Ad-hoc",
-  "url": "https://northstreetgames.com/index.php"
+  "details": "North Street Games Night was started back in 2017. Over the last six years we've run nights at Bristol Beer Factory Tap Room, The Hare, Electric Bear Brewery Taproom, The Hen & Chicken, Kask, Left Handed Giant Brewpub, The Leveret, Newton Park Brewery Taproom, The Old Bookshop, Spirited, The Steam Crane, The Tobacco Factory, Wild Beer at Wapping Wharf, Wiper and True Barrel Store.",
+  "tags": [
+    "board games",
+    "pubs"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://northstreetgames.com/index.php"
+    }
+  ]
 }

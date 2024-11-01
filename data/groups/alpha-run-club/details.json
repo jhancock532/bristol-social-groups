@@ -3,7 +3,21 @@
   "slug": "alpha-run-club",
   "description": "Alpha Run Club welcomes runners of all abilities for weekly and monthly runs starting from Alpha Bottle Shop & Tap in Bedminster.",
   "details": "",
-  "tags": ["running", "fitness", "pubs"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://alphabottleshop.co.uk/pages/alpha-run-club"
+    },
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/alpha.runclub/"
+    }
+  ],
+  "tags": [
+    "running",
+    "fitness",
+    "pubs"
+  ],
   "events": [
     {
       "name": "Thursday Evening Run",
@@ -21,13 +35,12 @@
         "googleMapsLink": "https://maps.app.goo.gl/eQDgUs3wMZVk5SJB7"
       },
       "cost": {
-        "sessionPrice": 0.00,
+        "sessionPrice": 0,
         "details": "Free to join, no sign up necessary."
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://alphabottleshop.co.uk/pages/alpha-run-club"
+        "required": "Not required"
+      }
     },
     {
       "name": "Monthly Plogging Event",
@@ -45,13 +58,12 @@
         "googleMapsLink": "https://maps.app.goo.gl/eQDgUs3wMZVk5SJB7"
       },
       "cost": {
-        "sessionPrice": 0.00,
+        "sessionPrice": 0,
         "details": "Free to join, no sign up necessary."
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.instagram.com/alpha.runclub/"
+        "required": "Not required"
+      }
     }
   ]
 }

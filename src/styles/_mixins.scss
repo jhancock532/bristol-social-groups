@@ -99,6 +99,36 @@
     Link underscore
 */
 
+@mixin external-link {
+    @include focus-outline;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: max-content;
+    margin: 0;
+    gap: 4px;
+    color: var(--color--primary);
+    text-decoration: underline;
+
+    svg path {
+        fill: var(--color--primary);
+        transition:
+            transform $transition,
+            fill $transition;
+    }
+
+    &:hover {
+        color: var(--color--text);
+
+        svg path {
+            fill: var(--color--text);
+            transform: translate(2px, -2px);
+        }
+    }
+}
+
 @mixin highlight-link {
     position: relative;
     display: inline;

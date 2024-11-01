@@ -1,0 +1,115 @@
+.title {
+    @include h1;
+}
+
+.description {
+    @include font-size(m);
+
+    line-height: 1.5;
+    margin: 0 0 $grid * 2;
+
+    @include media-query(large) {
+        max-width: 60ch;
+    }
+}
+
+.event {
+    &__title {
+        @include font-size(l);
+
+        line-height: 1.1;
+        letter-spacing: -0.5px;
+        margin-bottom: $grid;
+
+        @include media-query(large) {
+            @include font-size(l);
+
+            max-width: 40ch;
+            margin-bottom: $grid * 2;
+        }
+    }
+
+    &__description {
+        @include font-size(s);
+
+        line-height: 1.5;
+        margin: 0 0 $grid * 2;
+
+        @include media-query(large) {
+            max-width: 60ch;
+        }
+    }
+
+    &__googleMapsLink {
+        @include external-highlight-link;
+
+        margin-top: $grid / 2;
+    }
+}
+
+.eventDetails {
+    &__heading {
+        display: flex;
+        align-items: center;
+        gap: $grid / 2;
+    }
+
+    &__title {
+        @include font-size(m);
+
+        line-height: 1.1;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    &__description {
+        @include font-size(s);
+
+        line-height: 1.5;
+        margin: 0 0 $grid * 2;
+    }
+
+    &__url {
+        @include focus-outline;
+
+        background-color: var(--color--primary);
+        color: var(--color--green-05);
+        border: none;
+        border-radius: $border-radius;
+        width: max-content;
+        padding: 10px 10px 8px 16px;
+        cursor: pointer;
+
+        & .toggleMapButton__icon path {
+            fill: var(--color--green-05);
+        }
+
+        &:hover {
+            background-color: var(--color--green-20);
+            color: var(--color--text);
+
+            & .toggleMapButton__icon path {
+                fill: var(--color--text);
+            }
+        }
+
+        &__icon {
+            margin-top: -2px;
+
+            @include media-query(medium) {
+                height: 27px;
+                width: 27px;
+            }
+        }
+
+        @include font-size(s);
+    }
+}
+
+.adhocSection {
+    margin-bottom: $grid * 2;
+}

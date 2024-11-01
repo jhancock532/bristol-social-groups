@@ -1,31 +1,46 @@
 import React from 'react';
-import NextLink from 'next/link';
-import { ExternalIcon } from '../Icons/ExternalIcon';
-import styles from './Link.module.scss';
+import HighlightLink from './HighlightLink';
+import BasicLink from './BasicLink';
 
 type LinkProps = {
     url: string;
+    type?: 'highlight' | 'basic';
     text?: string;
     external?: boolean;
     children?: React.ReactNode;
     className?: string;
 };
 
-const Link = ({ url, text, external, children, className }: LinkProps) => {
-    const classNames = `${styles.link} ${className}`;
+const Link = ({
+    url,
+    type = 'highlight',
+    text,
+    external,
+    children,
+    className,
+}: LinkProps) => {
+    if (type === 'highlight') {
+        return (
+            <HighlightLink
+                url={url}
+                text={text}
+                external={external}
+                className={className}
+            >
+                {children}
+            </HighlightLink>
+        );
+    }
 
     return (
-        <NextLink
-            className={classNames}
-            href={url}
-            target={external ? '_blank' : undefined}
-            rel={external ? 'noreferrer' : undefined}
+        <BasicLink
+            url={url}
+            text={text}
+            external={external}
+            className={className}
         >
-            {text || children}
-            {external ? (
-                <ExternalIcon className={styles.externalLinkIcon} />
-            ) : undefined}
-        </NextLink>
+            {children}
+        </BasicLink>
     );
 };
 

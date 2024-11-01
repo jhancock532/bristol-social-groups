@@ -3,8 +3,16 @@
   "slug": "drawing-club-bristol",
   "description": "Friendly & informal art club! Weekly meets in Bristol city centre (circa 2015). No fees.",
   "details": "",
-  "tags": ["art", "drawing"],
-  "type": "Regular",
+  "tags": [
+    "art",
+    "drawing"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.eventbrite.co.uk/e/drawing-club-bristol-free-central-tickets-1013863301427"
+    }
+  ],
   "events": [
     {
       "name": "Weekly Drawing Club",
@@ -27,9 +35,8 @@
         "details": "No fees"
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.eventbrite.co.uk/e/drawing-club-bristol-free-central-tickets-1013863301427"
+        "required": "Not required"
+      }
     }
   ]
 }
