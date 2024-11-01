@@ -1,0 +1,23 @@
+.link {
+    margin-top: 0;
+    text-decoration: underline;
+
+    svg {
+        width: 1.8ex;
+        height: 1.8ex;
+        margin: 0.4ex 0 0 0.2ex;
+        transition: transform $transition;
+    }
+
+    &:hover {
+        color: var(--color--black);
+
+        svg {
+            transform: translate(0.2ex, -0.2ex);
+        }
+    }
+}
+
+.iconWrapper {
+    white-space: nowrap;
+}

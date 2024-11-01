@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Link from './Link';
+import HighlightLink from './HighlightLink';
 
 const meta = {
-    title: 'Components/Link',
-    component: Link,
+    title: 'Components/Links/HighlightLink',
+    component: HighlightLink,
     parameters: {
         layout: 'centered',
     },
@@ -18,7 +18,7 @@ const meta = {
         url: 'https://example.com',
         text: 'Example link',
     },
-} satisfies Meta<typeof Link>;
+} satisfies Meta<typeof HighlightLink>;
 
 export default meta;
 
