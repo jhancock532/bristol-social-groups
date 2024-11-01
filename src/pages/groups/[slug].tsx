@@ -1,17 +1,17 @@
 import fs from 'fs';
 import { join } from 'path';
 import dynamic from 'next/dynamic';
-
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
-import AdHocCard from '@/components/AdHocCard';
-import DiscordCard from '@/components/DiscordCard';
+import { GroupLinks } from '@/components/GroupCard/GroupCard';
+import { AccessibilityIcon } from '@/components/Icons/AccessibilityIcon';
 import { ClockIcon } from '@/components/Icons/ClockIcon';
+import { ExternalIcon } from '@/components/Icons/ExternalIcon';
+import { LocationIcon } from '@/components/Icons/LocationIcon';
 import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
 import { WalletIcon } from '@/components/Icons/WalletIcon';
-import { LocationIcon } from '@/components/Icons/LocationIcon';
-import { ExternalIcon } from '@/components/Icons/ExternalIcon';
 import { get24HourTimeFromDateString, getDirectories } from '@/utils/utils';
+import { Event as EventType } from '@/types/Event';
 
 import styles from './EventPage.module.scss';
 
@@ -55,10 +55,12 @@ const Event = ({
     event,
     sectionTitleHeadingLevel,
 }: {
-    event: any;
+    event: EventType;
     sectionTitleHeadingLevel: 'h2' | 'h3';
 }) => {
-    const timeSectionTitle = `${event.time.frequency === 'Weekly' ? `Every ${event.time.weekday}` : event.time.frequency} from ${get24HourTimeFromDateString(event.time.start)} to
+    const timeSectionTitle =
+        event.time &&
+        `${event.time.frequency === 'Weekly' ? `Every ${event.time.weekday}` : event.time.frequency} from ${get24HourTimeFromDateString(event.time.start)} to
                 ${get24HourTimeFromDateString(event.time.end)}`;
 
     return (
@@ -68,24 +70,22 @@ const Event = ({
                 <h2 className={styles.event__title}>{event.name}</h2>
             )}
 
-            {event.description && (
-                <p className={styles.event__description}>{event.description}</p>
-            )}
-
             {event.details && (
                 <p className={styles.event__description}>{event.details}</p>
             )}
 
-            <p>
-                <a
-                    href={event.url}
-                    target="_blank"
-                    className={styles.eventDetails__url}
-                >
-                    Visit the <strong>group&apos;s website</strong>{' '}
-                    <ExternalIcon />
-                </a>
-            </p>
+            {event.link && event.link.url && (
+                <p>
+                    <a
+                        href={event.link.url}
+                        target="_blank"
+                        className={styles.eventDetails__url}
+                    >
+                        Visit the <strong>website for this event</strong>{' '}
+                        <ExternalIcon />
+                    </a>
+                </p>
+            )}
 
             <EventDetailsSection
                 title={timeSectionTitle}
@@ -123,8 +123,8 @@ const Event = ({
                     headingLevel={sectionTitleHeadingLevel}
                 >
                     <Map
-                        longitude={event.location.longitude}
-                        latitude={event.location.latitude}
+                        longitude={parseFloat(event.location.longitude)}
+                        latitude={parseFloat(event.location.latitude)}
                         address={event.location.address}
                     />
                     <a
@@ -137,29 +137,32 @@ const Event = ({
                 </EventDetailsSection>
             )}
 
-            <EventDetailsSection
-                title={`Costs £${event.cost.sessionPrice} per
+            {event.cost && (
+                <EventDetailsSection
+                    title={`Costs £${event.cost.sessionPrice} per
                 session`}
-                details={event.cost?.details}
-                Icon={WalletIcon}
-                headingLevel={sectionTitleHeadingLevel}
-            />
+                    details={event.cost?.details}
+                    Icon={WalletIcon}
+                    headingLevel={sectionTitleHeadingLevel}
+                />
+            )}
 
-            <EventDetailsSection
-                title={
-                    event.booking.required
-                        ? 'Advance booking required'
-                        : 'No advance booking required'
-                }
-                details={event.booking?.details}
-                Icon={ReceiptIcon}
-                headingLevel={sectionTitleHeadingLevel}
-            />
+            {event.booking && (
+                <EventDetailsSection
+                    title={
+                        'Booking ' + event.booking.required.toLocaleLowerCase()
+                    }
+                    details={event.booking?.details}
+                    Icon={ReceiptIcon}
+                    headingLevel={sectionTitleHeadingLevel}
+                />
+            )}
 
             {event.accessibility && (
                 <EventDetailsSection
-                    title="Accessibility notes"
-                    details={event.accessibility.details}
+                    title="Accessibility"
+                    details={event.accessibility}
+                    Icon={AccessibilityIcon}
                     headingLevel={'h3'}
                 />
             )}
@@ -173,10 +176,23 @@ const EventPage = ({ data }: { data: any }) => {
             <Metadata title={data.name} description={data.description} />
             <h1 className={styles.title}>{data.name}</h1>
             <p className={styles.description}>{data.description}</p>
+            {data.details && <p>{data.details}</p>}
+
+            {data.events === undefined ? (
+                <div className={styles.adhocSection}>
+                    <p>
+                        Events are organized on an ad-hoc basis. Please see the
+                        below links to find out when the next event will be run.
+                    </p>
+                    <GroupLinks links={data.links} />
+                </div>
+            ) : (
+                <GroupLinks links={data.links} />
+            )}
 
             {data.events &&
                 (data.events.length > 1 ? (
-                    data.events.map((event: any, index: number) => {
+                    data.events.map((event: EventType, index: number) => {
                         return (
                             <Event
                                 event={event}
@@ -191,24 +207,6 @@ const EventPage = ({ data }: { data: any }) => {
                         sectionTitleHeadingLevel="h2"
                     />
                 ))}
-
-            {data.type === 'Discord' && (
-                <div className={styles.discordContainer}>
-                    <p>
-                        Discord groups organize events via group chats. To take
-                        part and learn more about the events hosted, click on
-                        the invite link. If you don&apos;t have a Discord
-                        account already, it&apos;s free to sign up.
-                    </p>
-                    <DiscordCard url={data.url} />
-                </div>
-            )}
-
-            {data.type === 'Ad-hoc' && (
-                <div className={styles.discordContainer}>
-                    <AdHocCard url={data.url} />
-                </div>
-            )}
         </Layout>
     );
 };

@@ -62,21 +62,21 @@ export default function About() {
                     . Pull requests and other code contributions are welcome!
                 </p>
 
-                <h2>Development Ethics</h2>
+                <h2>Development ethos</h2>
                 <p>
                     The site does not track users, does not display adverts and
                     does not make any money from affiliate schemes or links.
                 </p>
                 <p>
                     The site aims for low data usage and low carbon emissions.
-                    This explains the general lack of images on the site,
-                    excluding small-file size SVGs and map tiles.
+                    This explains the general lack of images on the site, with
+                    the exception of small SVGs and map images.
                 </p>
 
                 <h2>Contributors</h2>
                 <ul style={{ listStyle: 'none' }}>
                     <li>
-                        👨🏼‍💻 Web development:{' '}
+                        👨🏼‍💻 Web dev & design:{' '}
                         <Link
                             url="https://www.linkedin.com/in/james-hancock-52464a119/"
                             external

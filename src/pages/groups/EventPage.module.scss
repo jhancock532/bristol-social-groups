@@ -57,7 +57,6 @@
     &__title {
         @include font-size(m);
 
-        max-width: 30ch;
         line-height: 1.1;
     }
 
@@ -111,6 +110,6 @@
     }
 }
 
-.discordContainer {
+.adhocSection {
     margin-bottom: $grid * 2;
 }

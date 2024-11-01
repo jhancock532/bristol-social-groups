@@ -7,10 +7,10 @@ export default function AddGroup() {
     return (
         <Layout>
             <Metadata
-                title="Bristol Social Groups - Add group"
+                title="Bristol Social Groups - Add a group"
                 description="Recommend a group to be added to the site."
             />
-            <h1 className={styles.title}>Add group</h1>
+            <h1 className={styles.title}>Add a group</h1>
             <p className={styles.description}>
                 Here you can complete a form to recommend a group not yet listed
                 on the site. Use the embed below or{' '}

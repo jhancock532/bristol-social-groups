@@ -63,7 +63,7 @@ export default function More() {
             <p>
                 <strong>See also:</strong> A highly recommended community group
                 for women is <Link url="#bristol-girl">Bristol Girl</Link>, and
-                a male version has been recently created called{' '}
+                a male equivalent has been created called{' '}
                 <Link url="#bristol-men">Bristol Men</Link>.
             </p>
             <h2>Eventbrite</h2>
