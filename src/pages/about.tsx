@@ -41,7 +41,7 @@ export default function About() {
                 <p>
                     If you know a great social group in Bristol which is open to
                     newcomers, please do{' '}
-                    <Link url="/add-group">
+                    <Link url="/add-a-group">
                         suggest it to be added to the site
                     </Link>
                     .
