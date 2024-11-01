@@ -3,7 +3,17 @@
   "slug": "bring-your-own-animation",
   "description": "A monthly meet-up and screening event for animators of all levels to showcase work and share their passion. Creatives who want to connect with the animation community are most welcome to attend.",
   "details": "",
-  "tags": ["art", "animation", "film"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://tabb.cc/events"
+    }
+  ],
+  "tags": [
+    "art",
+    "animation",
+    "film"
+  ],
   "events": [
     {
       "time": {
@@ -21,14 +31,13 @@
         "details": "Please check the event page for information on how to access the co-working space."
       },
       "cost": {
-        "sessionPrice": 3.00,
+        "sessionPrice": 3,
         "details": "A standard ticket fee of £3, with free ticket offerings for certain members. An optional supporter ticket can be purchased for £10 to help with the running of the event."
       },
       "booking": {
-        "required": false,
+        "required": "Required",
         "details": "To submit your work, send a download link to byoabristol@yahoo.com or message one of the organisers below. (We recommend using WeTransfer, Dropbox, or Google Drive.) The deadline for submissions is 8pm, the day before the event. More information can be found on the latest event details."
-      },
-      "url": "https://tabb.cc/events"
+      }
     }
   ]
 }

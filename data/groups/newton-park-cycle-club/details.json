@@ -4,6 +4,12 @@
   "description": "A social, welcoming and non-competitive road and gravel cycling community. Open to everyone who enjoys riding their bike, and drinking tasty beer.",
   "details": "",
   "tags": ["cycling", "fitness", "pubs"],
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/newtownpark.cc/"
+    }
+  ],
   "events": [
     {
       "name": "Hills & Pils",
@@ -26,9 +32,8 @@
         "sessionPrice": 0.0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.instagram.com/newtownpark.cc/"
+        "required": "Not required"
+      }
     },
     {
       "name": "Sunday Social rides",
@@ -45,9 +50,8 @@
         "sessionPrice": 0.0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.instagram.com/newtownpark.cc/"
+        "required": "Not required"
+      }
     }
   ]
 }

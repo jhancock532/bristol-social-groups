@@ -3,9 +3,16 @@
   "slug": "bristol-grit",
   "description": "Bristol based adventure cyclists, sharing routes, laughs and off road rides. No 🦬💩, just riding bikes.",
   "details": "",
-  "tags": ["cycling", "mountain biking"],
-  "type": "Regular",
-  "url": "https://www.instagram.com/bristolgrit/",
+  "tags": [
+    "cycling",
+    "mountain biking"
+  ],
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/bristolgrit/"
+    }
+  ],
   "events": [
     {
       "name": "Wednesday group ride",
@@ -19,12 +26,11 @@
       },
       "locationURL": "https://www.instagram.com/bristolgrit/",
       "cost": {
-        "sessionPrice": 0.0
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.instagram.com/bristolgrit/"
+        "required": "Not required"
+      }
     },
     {
       "name": "Saturday group ride",
@@ -38,12 +44,11 @@
       },
       "locationURL": "https://www.instagram.com/bristolgrit/",
       "cost": {
-        "sessionPrice": 0.0
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.instagram.com/bristolgrit/"
+        "required": "Not required"
+      }
     }
   ]
 }

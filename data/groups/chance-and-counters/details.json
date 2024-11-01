@@ -3,7 +3,17 @@
   "slug": "chance-and-counters",
   "description": "Two weekly board game sessions hosted at Chance & Counter's different Bristol branches. A wide variety of casual and in-depth games are played.",
   "details": "",
-  "tags": ["board games", "pubs", "cafes"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.chanceandcounters.com/bristol/"
+    }
+  ],
+  "tags": [
+    "board games",
+    "pubs",
+    "cafes"
+  ],
   "events": [
     {
       "name": "Monday evenings at Christmas Steps",
@@ -21,16 +31,18 @@
         "googleMapsLink": "https://goo.gl/maps/yBaBvqDHsQEQJUhc6"
       },
       "cost": {
-        "sessionPrice": 4.00,
+        "sessionPrice": 4,
         "details": "All board games provided are free to play - cost covers the table cover charge for the entire evening."
       },
       "booking": {
-        "required": false
+        "required": "Not required",
+        "details": "Attendees are welcome to turn up on the evening, if you speak to a member of staff they will direct you to the social gaming tables."
       },
-      "accessibility": {
-        "details": "Wheelchair accessible, ask staff for assistance with the front door step."
-      },
-      "url": "https://www.chanceandcounters.com/bristol/"
+      "accessibility": "Wheelchair accessible, ask staff for assistance with the front door step.",
+      "link": {
+        "type": "Website",
+        "url": "https://www.chanceandcounters.com/bristol/"
+      }
     },
     {
       "name": "Tuesday evenings at Gloucester Road",
@@ -48,13 +60,17 @@
         "googleMapsLink": "https://goo.gl/maps/4Q55SbeJ9d64vUXs9"
       },
       "cost": {
-        "sessionPrice": 4.00,
+        "sessionPrice": 4,
         "details": "All board games provided are free to play - cost covers the table cover charge for the entire evening."
       },
       "booking": {
-        "required": false
+        "required": "Not required",
+        "details": "Attendees are welcome to turn up on the evening, if you speak to a member of staff they will direct you to the social gaming tables."
       },
-      "url": "https://www.chanceandcounters.com/bristol-gloucester-road/"
+      "link": {
+        "type": "Website",
+        "url": "https://www.chanceandcounters.com/bristol-gloucester-road/"
+      }
     }
   ]
 }

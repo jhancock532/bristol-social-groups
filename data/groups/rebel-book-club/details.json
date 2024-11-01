@@ -2,7 +2,15 @@
   "name": "Rebel Book Club",
   "slug": "rebel-book-club",
   "description": "A non-fiction book club, meeting monthly in Bristol with additional social and online events.",
-  "tags": ["books"],
+  "tags": [
+    "books"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.rebelbook.club/events"
+    }
+  ],
   "events": [
     {
       "details": "The group meets monthly to discuss an assigned book, voted on by members from a choice of three themed titles, set by the event organiser. Usually an additional social get together is organised via WhatsApp each month. Members of the group can book into the sister meetup in London and join the Rebel Book Club online network.",
@@ -20,14 +28,13 @@
         "googleMapsLink": "https://maps.app.goo.gl/7fBNkbwMEc9MnN8E8"
       },
       "cost": {
-        "sessionPrice": 10.0,
+        "sessionPrice": 10,
         "details": "This is the monthly subscription price of attending sessions, not including the price of the book. At time of writing a 12 month subscription is £120 and a three month trial is £36 - details of how to subscribe are available on the event hosts website."
       },
       "booking": {
-        "required": true,
+        "required": "Required",
         "details": "Further details for joining the group are available on their website: https://www.rebelbook.club/events"
-      },
-      "url": "https://www.rebelbook.club/events"
+      }
     }
   ]
 }

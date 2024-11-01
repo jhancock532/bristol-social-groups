@@ -3,7 +3,16 @@
   "slug": "local-legends-run-club",
   "description": "A friendly, social run club meeting every Wednesday for a 5k run (rain or shine) and finishing with some great chats over drinks. All levels of runners are welcome. Feel free to join our WhatsApp group for more details and updates, linked below.",
   "details": "",
-  "tags": ["running", "pubs"],
+  "tags": [
+    "running",
+    "pubs"
+  ],
+  "links": [
+    {
+      "type": "WhatsApp",
+      "url": "https://chat.whatsapp.com/KDnBv98pJFyGV1UXZkKzoC"
+    }
+  ],
   "events": [
     {
       "name": "Wednesday Evening",
@@ -11,23 +20,20 @@
         "frequency": "Weekly",
         "weekday": "Wednesday",
         "start": "Jan 1, 1970 18:15",
-        "end": "Jan 1, 1970 20:00",
-        "details": "Runs every Wednesday evening."
+        "end": "Jan 1, 1970 20:00"
       },
       "location": {
-        "address": "Local. 11-13 North St, Bedminster, BS3 1EN",
+        "address": "Local, 11-13 North St, Bedminster, BS3 1EN",
         "latitude": "51.441324",
         "longitude": "-2.602277",
         "googleMapsLink": "https://maps.app.goo.gl/rHKkPb8a9weccprn8"
       },
       "cost": {
-        "sessionPrice": 0.00,
-        "details": "Free to join."
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://chat.whatsapp.com/KDnBv98pJFyGV1UXZkKzoC"
+        "required": "Not required"
+      }
     }
   ]
 }

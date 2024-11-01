@@ -3,7 +3,16 @@
   "slug": "super-miner-battle-farm",
   "description": "A community of fighting game players based in South West England and Wales, hosting weekly sessions and monthly tournaments in Bristol.",
   "details": "",
-  "tags": ["gaming", "console"],
+  "tags": [
+    "gaming",
+    "console"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://superminerbattle.farm/"
+    }
+  ],
   "events": [
     {
       "time": {
@@ -21,14 +30,13 @@
         "details": ""
       },
       "cost": {
-        "sessionPrice": 0.00,
+        "sessionPrice": 0,
         "details": "There is small fee for bracket entry to tournaments (£2-3), so please bring cash or PayPal to smbfbristol@gmail.com. Otherwise, casual play is free."
       },
       "booking": {
         "required": "Advised",
         "details": "Review the next event details on the superminerbattle.farm website. Some tournaments can be competitive and have limited places, while walk-ins may be available, advance sign-ups are advised."
-      },
-      "url": "https://superminerbattle.farm/"
+      }
     }
   ]
 }

@@ -1,11 +1,18 @@
 {
   "name": "Ride Bristol",
   "slug": "ride-bristol",
-  "description": "Bristol’s off-road cycling charity, organising community cycling events & developing trails. Rides are at a social, no drop pace, you'll need a mountain bike (or similar) and a helmet. Less experienced riders and newbies are 100% welcome!",
+  "description": "Bristol's off-road cycling charity, organising community cycling events & developing trails. Rides are at a social, no drop pace, you'll need a mountain bike (or similar) and a helmet. Less experienced riders and newbies are 100% welcome!",
   "details": "",
-  "tags": ["cycling", "mountain biking"],
-  "type": "Regular",
-  "url": "https://www.instagram.com/ridebristol/",
+  "tags": [
+    "cycling",
+    "mountain biking"
+  ],
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/ridebristol/"
+    }
+  ],
   "events": [
     {
       "name": "Thursday night ride out",
@@ -24,12 +31,11 @@
         "googleMapsLink": "https://maps.app.goo.gl/Pn9EGvMbMyRSKhSu7"
       },
       "cost": {
-        "sessionPrice": 0.0
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.instagram.com/ridebristol/"
+        "required": "Not required"
+      }
     },
     {
       "name": "The Women's Ride",
@@ -48,16 +54,12 @@
         "googleMapsLink": "https://maps.app.goo.gl/Pn9EGvMbMyRSKhSu7"
       },
       "cost": {
-        "sessionPrice": 0.0
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
+        "required": "Not required"
       },
-      "url": "https://www.instagram.com/ridebristol/",
       "gender": "Women and marginalised genders"
     }
   ]
 }
-
-
-

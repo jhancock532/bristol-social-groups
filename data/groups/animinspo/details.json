@@ -3,7 +3,15 @@
   "slug": "animinspo",
   "description": "ANIMINSPO is an event hosted at Small Bar, Bristol for showcasing animation work. Come down to our next event to meet some lovely people, grab a drink and watch some exciting new animations. We especially love to see work in progress projects for sharing feedback and ideas!",
   "details": "",
-  "tags": ["art", "animation", "film"],
-  "type": "Ad-hoc",
-  "url": "https://www.instagram.com/animinspo_bristol/"
+  "tags": [
+    "art",
+    "animation",
+    "film"
+  ],
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/animinspo_bristol/"
+    }
+  ]
 }

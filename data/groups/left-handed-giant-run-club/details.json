@@ -3,7 +3,17 @@
   "slug": "left-handed-giant-run-club",
   "description": "A weekly social running club meeting at the Left Handed Giant taproom.",
   "details": "The group has an official website linked below, and further up to date information can be found on the groups instagram page.",
-  "tags": ["fitness", "running", "pubs"],
+  "tags": [
+    "fitness",
+    "running",
+    "pubs"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://lhgrunclub.com"
+    }
+  ],
   "events": [
     {
       "details": "There are two running groups split into 6km and 8km routes; both stop roughly halfway through the run to pause and regroup. As a social running group everyone is encouraged to run at their own pace and people typically stay behind after the run to enjoy a drink together. There are no changing facilities at the bar, but there are toilets and a place to drop bags.",
@@ -21,14 +31,17 @@
         "googleMapsLink": "https://goo.gl/maps/XLsSwE54esztMU5v6"
       },
       "cost": {
-        "sessionPrice": 0.0,
+        "sessionPrice": 0,
         "details": "Free to attend, attendees who join the run get 10% off drinks at the bar."
       },
       "booking": {
-        "required": false,
+        "required": "Not required",
         "details": "No booking is required; please bring a smartphone so you can sign an electronic waiver."
       },
-      "url": "https://lhgrunclub.com/events"
+      "link": {
+        "type": "Website",
+        "url": "https://lhgrunclub.com/events"
+      }
     },
     {
       "details": "There are three running groups that split into 6km, 8km and 10km routes.",
@@ -46,14 +59,17 @@
         "googleMapsLink": "https://maps.app.goo.gl/3eoLmUXaW7nQxDhSA"
       },
       "cost": {
-        "sessionPrice": 0.0,
+        "sessionPrice": 0,
         "details": "Free to attend, attendees who join the run get 10% off drinks at the bar."
       },
       "booking": {
-        "required": false,
+        "required": "Not required",
         "details": "No booking is required; please bring a smartphone so you can sign an electronic waiver."
       },
-      "url": "https://lhgrunclub.com/events/run-club-thursdays"
+      "link": {
+        "type": "Website",
+        "url": "https://lhgrunclub.com/events/run-club-thursdays"
+      }
     }
   ]
 }

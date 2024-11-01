@@ -3,7 +3,15 @@
   "slug": "ice-breakers-bristol",
   "description": "A growing community of men embracing cold water therapy and new conversation. ALL men welcome.",
   "details": "",
-  "tags": ["cold water therapy"],
+  "tags": [
+    "cold water therapy"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.icebreakers.uk/"
+    }
+  ],
   "events": [
     {
       "name": "Sunday Morning",
@@ -21,14 +29,13 @@
         "googleMapsLink": "https://maps.app.goo.gl/kyHL3w8xbkuPJint7"
       },
       "cost": {
-        "sessionPrice": 0.00,
+        "sessionPrice": 0,
         "details": "Free to join."
       },
       "booking": {
-        "required": false
+        "required": "Not required"
       },
-      "gender": "Men",
-      "url": "https://www.icebreakers.uk/"
+      "gender": "Men"
     }
   ]
 }

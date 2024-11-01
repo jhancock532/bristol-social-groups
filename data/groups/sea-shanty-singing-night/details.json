@@ -2,7 +2,16 @@
   "name": "Sea Shanty Singing Night",
   "slug": "sea-shanty-singing-night",
   "description": "A pirate pub takeover from a friendly group that meets to sing sea shanties together.",
-  "tags": ["pubs", "singing"],
+  "tags": [
+    "pubs",
+    "singing"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.llandogertrow.co.uk/events-1"
+    }
+  ],
   "events": [
     {
       "details": "Can be busy, arrive slightly earlier to get a seat.",
@@ -20,12 +29,11 @@
         "googleMapsLink": "https://goo.gl/maps/GPz1c61uxqtUpqiu6"
       },
       "cost": {
-        "sessionPrice": 0.0
+        "sessionPrice": 0
       },
       "booking": {
-        "required": false
-      },
-      "url": "https://www.llandogertrow.co.uk/events-1"
+        "required": "Not required"
+      }
     }
   ]
 }
