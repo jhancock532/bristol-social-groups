@@ -32,12 +32,8 @@ async function applyGroupMigration(groupSlug: string): Promise<void> {
     const groupDir = path.join('data/groups', groupSlug);
     const originalPath = path.join(groupDir, 'details.json');
     const newPath = path.join(groupDir, 'details.new');
-    const backupPath = `${originalPath}.${new Date().toISOString().replace(/[:.]/g, '-')}.backup`;
 
     try {
-        // Create backup
-        fs.copyFileSync(originalPath, backupPath);
-
         // Copy new file to original
         fs.copyFileSync(newPath, originalPath);
 
@@ -45,7 +41,6 @@ async function applyGroupMigration(groupSlug: string): Promise<void> {
         fs.unlinkSync(newPath);
 
         console.log(`\x1b[32m✓ Applied migration for ${groupSlug}\x1b[0m`);
-        console.log(`  Backup created at: ${path.basename(backupPath)}`);
     } catch (error) {
         console.error(
             `\x1b[31m✗ Error applying migration for ${groupSlug}:\x1b[0m`,

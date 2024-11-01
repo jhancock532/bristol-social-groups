@@ -72,20 +72,23 @@ type UsageCost = {
  * @param groupSlug - The slug identifier for the group
  * @param typeDefinitions - Type definitions to use for the migration
  * @param userPrompt - User instructions for the migration
- * @returns UsageCost - The token usage and cost for this migration
- * @throws Error if group data cannot be processed
+ * @returns UsageCost - The token usage and cost for this migration, or undefined if migration failed
  */
 async function migrateGroupData(
     groupSlug: string,
     typeDefinitions: string,
     userPrompt: string,
-): Promise<UsageCost> {
+): Promise<UsageCost | undefined> {
     const groupDir = path.join('data/groups', groupSlug);
     const originalPath = path.join(groupDir, 'details.json');
     const newPath = path.join(groupDir, 'details.new');
+    const errorPath = path.join(groupDir, 'details.error');
 
     if (!fs.existsSync(originalPath)) {
-        throw new Error(`Group ${groupSlug} not found at ${originalPath}`);
+        console.error(
+            `\x1b[31m✗ Group ${groupSlug} not found at ${originalPath}\x1b[0m`,
+        );
+        return undefined;
     }
 
     try {
@@ -120,7 +123,7 @@ async function migrateGroupData(
         const updatedData = JSON.parse(msg.content[0].text);
         if (!updatedData.slug || updatedData.slug !== groupSlug) {
             throw new Error(
-                'AI response modified the group slug or returned invalid data',
+                `AI response modified the group slug or returned invalid data:\n\n${msg.content[0].text}\n\n`,
             );
         }
 
@@ -137,7 +140,20 @@ async function migrateGroupData(
         };
     } catch (error) {
         console.error(`\x1b[31m✗ Error processing ${groupSlug}:\x1b[0m`, error);
-        throw error;
+
+        // Write error details to details.error file
+        const errorDetails = {
+            timestamp: new Date().toISOString(),
+            error: error instanceof Error ? error.message : String(error),
+            prompt: userPrompt,
+        };
+
+        fs.writeFileSync(errorPath, JSON.stringify(errorDetails, null, 2));
+        console.log(
+            `\x1b[33m  Error details written to ${path.basename(errorPath)}\x1b[0m`,
+        );
+
+        return undefined;
     }
 }
 
@@ -245,6 +261,8 @@ async function main() {
         let totalInputTokens = 0;
         let totalOutputTokens = 0;
         let totalCost = 0;
+        let successCount = 0;
+        let failureCount = 0;
 
         for (const groupSlug of groupsToMigrate) {
             // eslint-disable-next-line no-await-in-loop
@@ -253,19 +271,39 @@ async function main() {
                 typeDefinitions,
                 migrationOptions.prompt,
             );
-            totalInputTokens += usage.inputTokens;
-            totalOutputTokens += usage.outputTokens;
-            totalCost += usage.cost;
+
+            if (usage) {
+                totalInputTokens += usage.inputTokens;
+                totalOutputTokens += usage.outputTokens;
+                totalCost += usage.cost;
+                successCount += 1;
+            } else {
+                failureCount += 1;
+            }
         }
 
         console.log('\n\x1b[32mMigration complete!\x1b[0m');
+        console.log('\nResults Summary:');
+        console.log(`Successful migrations: \x1b[32m${successCount}\x1b[0m`);
+        console.log(`Failed migrations: \x1b[31m${failureCount}\x1b[0m`);
         console.log('\nUsage Summary:');
         console.log(`Total Input Tokens: ${totalInputTokens.toLocaleString()}`);
         console.log(
             `Total Output Tokens: ${totalOutputTokens.toLocaleString()}`,
         );
         console.log(`Total Cost: $${totalCost.toFixed(4)}`);
-        console.log('\nRun apply-migration to apply the changes.\n');
+
+        if (successCount > 0) {
+            console.log(
+                '\nRun apply-migration to apply the successful changes.',
+            );
+        }
+        if (failureCount > 0) {
+            console.log(
+                '\nCheck details.error files in failed group directories for error details.',
+            );
+        }
+        console.log();
     } catch (error) {
         console.error('\n\x1b[31mMigration failed:\x1b[0m', error);
         process.exit(1);

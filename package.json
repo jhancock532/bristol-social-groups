@@ -14,9 +14,11 @@
     "docker-playwright": "docker run --rm -p 9323:9323 -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:v1.46.0-jammy /bin/bash -c 'npm i; /bin/bash'",
     "playwright": "npx playwright test",
     "new-group": "tsx scripts/new-group.ts",
-    "new-component": "node scripts/new-component.js",
-    "react-to-storybook": "node scripts/react-to-storybook.mjs",
-    "generate-visual-tests": "node scripts/generate-visual-tests.mjs"
+    "new-component": "tsx scripts/new-component.ts",
+    "react-to-storybook": "tsx scripts/react-to-storybook.ts",
+    "generate-visual-tests": "tsx scripts/generate-visual-tests.ts",
+    "make-migration": "tsx scripts/make-migration.ts",
+    "apply-migration": "tsx scripts/apply-migration.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.30.1",

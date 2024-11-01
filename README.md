@@ -1,10 +1,14 @@
 # Bristol Social Groups
 
-A website listing social groups in Bristol, UK. [View the live site](https://bristolsocialgroups.com/). For more information about this project, [read the about page](https://bristolsocialgroups.com/about).
+A website listing social groups in Bristol, UK. [Check out the live site](https://bristolsocialgroups.com/), and read about the project ethos on [the about page](https://bristolsocialgroups.com/about).
 
-The pattern library for this project [is hosted with Storybook](https://jhancock532.github.io/bristol-social-groups/?path=/docs/getting-started--docs).
+The design system for this project is built with Storybook and hosted with GitHub Pages. [View the project components & style guide here](https://jhancock532.github.io/bristol-social-groups/?path=/docs/introduction--docs).
 
-There are a few AI code generation helpers, for creating new groups and generating Storybook documentation. These require an Anthropic API key, and usually cost around 0.5 - 3 cents to run.
+## AI
+
+The repo has a few automation tools for developers, found in the `/scripts` directory. Most of these require an Anthropic API key, and usually cost around 0.5 - 2 cents to run (with the exception of [data migrations](https://github.com/jhancock532/bristol-social-groups/blob/main/documentation/migrations.md), which usually take 10 - 15 cents to run).
+
+All the group data is stored in the `data/groups` directory. It's likely that this data will be moved to a BE service at some point, experimenting with AI migrations here has proved quite flexible so far.
 
 ## Documentation Index
 
