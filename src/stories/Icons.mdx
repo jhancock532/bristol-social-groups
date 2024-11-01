@@ -1,20 +1,29 @@
 import { Meta, Title, IconGallery, IconItem } from '@storybook/blocks';
 
+import { AccessibilityIcon } from '@/components/Icons/AccessibilityIcon';
 import { ArrowIcon } from '@/components/Icons/ArrowIcon';
 import { DiscordIcon } from '@/components/Icons/DiscordIcon';
 import { ExpandIcon } from '@/components/Icons/ExpandIcon';
 import { ExternalIcon } from '@/components/Icons/ExternalIcon';
 import { FemaleIcon } from '@/components/Icons/FemaleIcon';
 import { LocationIcon } from '@/components/Icons/LocationIcon';
+import { LinkIcon } from '@/components/Icons/LinkIcon';
 import { MaleIcon } from '@/components/Icons/MaleIcon';
+import { PeopleIcon } from '@/components/Icons/PeopleIcon';
 import { ReceiptIcon } from '@/components/Icons/ReceiptIcon';
 import { WalletIcon } from '@/components/Icons/WalletIcon';
+import { WhatsappIcon } from '@/components/Icons/WhatsappIcon';
 
 <Meta title="Style Guide/Icons" />
 
 # Icons
 
+These icons are largely taken from Material Design v2, with some brand icons.
+
 <IconGallery>
+    <IconItem name="Accessibility">
+        <AccessibilityIcon />
+    </IconItem>
     <IconItem name="Arrow">
         <ArrowIcon />
     </IconItem>
@@ -36,13 +45,28 @@ import { WalletIcon } from '@/components/Icons/WalletIcon';
     <IconItem name="Location">
         <LocationIcon />
     </IconItem>
+    <IconItem name="Link">
+        <LinkIcon />
+    </IconItem>
+    <IconItem name="People">
+        <PeopleIcon />
+    </IconItem>
     <IconItem name="Receipt">
         <ReceiptIcon />
     </IconItem>
     <IconItem name="Wallet">
         <WalletIcon />
     </IconItem>
+    <IconItem name="Whatsapp">
+        <WhatsappIcon />
+    </IconItem>
 </IconGallery>
+
+The `Receipt` icon is used for noting whether an event requires prior booking to attend, while the `Wallet` icon is used for the associated cost for the event.
+
+`Link` should only be used in the context of a list of other icons, for example the Event Card component. Otherwise, it is a redundant indicator that a link is clickable.
+
+Where events have a specified gender which isn't specifically `Male` or `Female`, the `People` icon is used instead.
 
 ## Usage
 
