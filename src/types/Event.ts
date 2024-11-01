@@ -1,19 +1,15 @@
-import { Gender } from '@/types/base';
+import { Gender, Link } from '@/types/base';
 
 export type EventCost = {
     sessionPrice: number;
-    details: string;
+    details?: string;
 };
 
-export type EventBookingType =
-    | 'Not required'
-    | 'Advised'
-    | 'Required'
-    | boolean; // Where `true` is required and `false` is not required.
+export type EventBookingType = 'Not required' | 'Advised' | 'Required';
 
 export type EventBooking = {
     required: EventBookingType;
-    details: string;
+    details?: string;
 };
 
 export type EventLocation = {
@@ -43,11 +39,12 @@ export type Event = {
     name?: string;
     slug?: string;
     details?: string;
-    url?: string;
+    link?: Link; // If a specific URL that has details for this event is available, provide it here
     time?: EventTime;
     location: EventLocation;
-    locationURL?: string;
+    locationURL?: string; // If the event doesn't have a regular location, provide a link to where the user can find out this information
     cost?: EventCost;
     booking?: EventBooking;
     gender?: Gender; // defaults to all if left blank
+    accessibility?: string;
 };
