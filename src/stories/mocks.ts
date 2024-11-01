@@ -40,7 +40,10 @@ const createMockEvent = (
         location: locations[locationIndex],
         cost: { sessionPrice: 10, details: 'Per session' },
         booking: { required: 'Advised', details: 'Booking is recommended' },
-        url: 'https://example.com/event',
+        link: {
+            url: 'https://example.com/event',
+            type: 'Website',
+        },
     };
 };
 
@@ -76,8 +79,16 @@ export const MOCK_GROUPS: Group[] = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         tags: ['lorem', 'ipsum', 'dolor'],
         events: [MOCK_EVENTS[0], MOCK_EVENTS[1]],
-        type: 'Regular',
-        url: 'https://lorem.ipsum/dolor',
+        links: [
+            {
+                url: 'https://lorem.ipsum/dolor',
+                type: 'Website',
+            },
+            {
+                url: 'https://lorem.ipsum/dolor',
+                type: 'Facebook',
+            },
+        ],
     },
     {
         name: 'Sit Amet Minim Veniam Quis Nostrud',
@@ -86,8 +97,12 @@ export const MOCK_GROUPS: Group[] = [
             'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         tags: ['sit', 'amet', 'consectetur'],
         events: undefined,
-        type: 'Discord',
-        url: 'https://sit.amet/consectetur',
+        links: [
+            {
+                url: 'https://lorem.ipsum/dolor',
+                type: 'Discord',
+            },
+        ],
     },
     {
         name: 'Adipiscing Elit',
@@ -96,7 +111,11 @@ export const MOCK_GROUPS: Group[] = [
             'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
         tags: ['adipiscing', 'elit', 'sed'],
         events: MOCK_EVENTS,
-        type: 'Regular',
-        url: 'https://adipiscing.elit/sed',
+        links: [
+            {
+                url: 'https://lorem.ipsum/dolor',
+                type: 'WhatsApp',
+            },
+        ],
     },
 ];
