@@ -1,23 +1,66 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 import styles from './Header.module.scss';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef<HTMLDivElement | null>(null); // Reference for the menu
+    const closeButtonRef = useRef<HTMLButtonElement | null>(null); // Reference for the close button
+    const firstFocusableElementRef = useRef(null); // First focusable element in the menu
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen((prev) => !prev);
     };
 
+    // Handle trapping focus
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (isMenuOpen) {
+                const focusableElements = menuRef.current?.querySelectorAll<HTMLElement>('a, button') || [];
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.key === 'Tab') {
+                    // Shift + Tab (backward)
+                    if (e.shiftKey && document.activeElement === firstElement) {
+                        e.preventDefault();
+                        lastElement?.focus(); // Loop focus to last element
+                    }
+                    // Tab (forward)
+                    else if (!e.shiftKey && document.activeElement === lastElement) {
+                        e.preventDefault();
+                        firstElement?.focus(); // Loop focus to first element
+                    }
+                } else if (e.key === 'Escape') {
+                    // Close menu on Escape key
+                    setIsMenuOpen(false);
+                }
+            }
+        };
+
+        if (isMenuOpen) {
+            document.addEventListener('keydown', handleKeyDown);
+            // Focus on the close button when menu opens
+            closeButtonRef.current?.focus();
+        } else {
+            document.removeEventListener('keydown', handleKeyDown);
+        }
+
+        return () => document.removeEventListener('keydown', handleKeyDown);
+    }, [isMenuOpen]);
     return (
         <header className={styles.container}>
             <div></div>
             <div>
                 <nav
-                    className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}
+                    className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''
+                        }`}
+                    ref={menuRef}
+                    aria-hidden={!isMenuOpen}
                 >
                     <button
+                        ref={closeButtonRef}
                         className={styles.menuButton}
                         onClick={toggleMenu}
                         aria-label="Close menu"
@@ -48,7 +91,11 @@ export const Header = () => {
                     </button>
                     <ul>
                         <li className={styles.navItem}>
-                            <Link href="/" className={styles.link}>
+                            <Link
+                                href="/"
+                                className={styles.link}
+                                ref={firstFocusableElementRef} // First focusable element
+                            >
                                 Home
                             </Link>
                         </li>
@@ -112,4 +159,4 @@ export const Header = () => {
             <div></div>
         </header>
     );
-};
+};;
