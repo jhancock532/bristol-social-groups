@@ -1,0 +1,38 @@
+{
+  "name": "Bristol Spanish Circle",
+  "slug": "bristol-spanish-circle",
+  "description": "We've been promoting the Spanish language and Latin culture in Bristol since 1984. The Bristol Spanish Circle holds a varied program of talks, musical events and social evenings throughout the year.",
+  "details": "Events include talks, presentations, music, magic and special events like the Christmas quiz and raffle. Most events are in Spanish, with some in English. After the main event, drinks and tapas are served during social time.",
+  "tags": ["language", "culture"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.spanishcirclebristol.com/"
+    }
+  ],
+  "events": [
+    {
+      "name": "Monthly Spanish Circle Event",
+      "time": {
+        "frequency": "Monthly",
+        "weekday": "Friday",
+        "start": "Jan 1, 1970 19:30",
+        "end": "Jan 1, 1970 22:00",
+        "details": "Usually held on the last Friday of the month. Main feature starts at 8pm."
+      },
+      "location": {
+        "address": "St Peter's Church Hall, The Drive, Henleaze, Bristol, BS9 4LD",
+        "latitude": "51.485843",
+        "longitude": "-2.607107",
+        "googleMapsLink": "https://maps.app.goo.gl/iZNgbxb6GLg5Bbo18"
+      },
+      "cost": {
+        "sessionPrice": 5,
+        "details": "£30 for annual subscription, half price for students - more details on the website."
+      },
+      "booking": {
+        "required": "Not required"
+      }
+    }
+  ]
+}

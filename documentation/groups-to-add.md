@@ -6,6 +6,10 @@ The following is a list of groups still to be added to the site. These groups ar
 
 Board game social group - https://www.meetup.com/board-game-social/
 
+https://www.socialheroesadventureclub.co.uk/ - requires adding support for "Monthly recurring membership cost", like the Dickens Society requires an annual membership fee display...
+
+Review the groups listed in the following Local Voice magazine archive: https://issuu.com/keynshamvoice/
+
 Women's Craft workshops at the Arnolfini, free, fridays 11am to 1pm
 
 Writing meetup group - https://www.meetup.com/bristol-writing-meetup-group/
