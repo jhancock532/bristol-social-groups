@@ -93,19 +93,6 @@ export default function More() {
                 </Link>
             </p>
 
-            <h2>The Bristol Index</h2>
-            <p>
-                Not recently updated, but some clubs listed are active and still
-                meeting.
-            </p>
-            <p>
-                <Link
-                    url="https://www.bristolindex.co.uk/community-clubs.php"
-                    external
-                >
-                    Visit the Bristol Index
-                </Link>
-            </p>
             <h2>University Student Union Groups</h2>
             <p>
                 Students at the various universities in Bristol have access to a
@@ -130,6 +117,35 @@ export default function More() {
             <p>
                 <Link url="https://www.bristolsu.org.uk/groups" external>
                     UoB Student Union Groups
+                </Link>
+            </p>
+            <h2>Local magazine advertisments</h2>
+            <p>
+                A range of groups are advertised in local magazines for
+                different areas of Bristol -{' '}
+                <Link url="https://issuu.com/keynshamvoice" external>
+                    view an archive of Bristol Voice magazines here
+                </Link>
+                . Navigate to the &apos;What&apos;s On&apos; section to view the
+                group listings for that month.
+            </p>
+            <p>
+                If you find an exceptional social group you think would be a
+                great fit for this website, please{' '}
+                <Link url="/add-a-group">recommend it here!</Link>
+            </p>
+
+            <h2>The Bristol Index</h2>
+            <p>
+                Not recently updated, but some clubs listed are active and still
+                meeting.
+            </p>
+            <p>
+                <Link
+                    url="https://www.bristolindex.co.uk/community-clubs.php"
+                    external
+                >
+                    Visit the Bristol Index
                 </Link>
             </p>
 

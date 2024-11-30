@@ -1,0 +1,44 @@
+{
+  "name": "Dickens Society",
+  "slug": "dickens-society",
+  "description": "Talks, costumed readings, book club and social events focused on the works of Charles Dickens. An annual membership fee of £20 provides access to all events.",
+  "tags": ["books", "literature"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "http://www.dickens-society.org.uk"
+    },
+    {
+      "type": "Other",
+      "url": "http://www.dickens-society.org.uk/meetings-programme.html",
+      "text": "View the meeting programme"
+    }
+  ],
+  "events": [
+    {
+      "name": "Monday evening events",
+      "time": {
+        "frequency": "Monthly meetings on Monday evenings",
+        "weekday": "Monday",
+        "start": "Jan 1, 1970 19:00",
+        "end": "Jan 1, 1970 22:00",
+        "details": "Please check the website for specific meeting dates."
+      },
+      "location": {
+        "address": "Leonard Hall, Henleaze URC, Waterford Road, Bristol BS9 4BT",
+        "latitude": "51.486407",
+        "longitude": "-2.610420",
+        "googleMapsLink": "https://maps.app.goo.gl/gai7bh6PViRY18Sd9"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "First become a member via the membership page on the website before attending."
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "annualPrice": 20,
+        "details": "There is no cost for attending individual sessions, but there is an annual membership fee of £20 to join the group."
+      }
+    }
+  ]
+}
