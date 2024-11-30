@@ -54,6 +54,13 @@ const GroupLink = ({ link }: GroupLinkProps) => {
                 </>
             );
         default:
+            if (link.text) {
+                return (
+                    <>
+                        {link.text} <ExternalIcon />
+                    </>
+                );
+            }
             return (
                 <>
                     Go to the groups website <ExternalIcon />
