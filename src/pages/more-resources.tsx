@@ -126,8 +126,8 @@ export default function More() {
                 <Link url="https://issuu.com/keynshamvoice" external>
                     view an archive of Bristol Voice magazines here
                 </Link>
-                . Navigate to the &apos;What&apos;s On&apos; section to view
-                the group listings for that month.
+                . Navigate to the &apos;What&apos;s On&apos; section to view the
+                group listings for that month.
             </p>
             <p>
                 If you find an exceptional social group you think would be a
