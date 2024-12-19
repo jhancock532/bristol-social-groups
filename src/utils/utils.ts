@@ -48,9 +48,9 @@ export const filterGroups = (
     selectedGroupTags: string[],
     selectedWeekday: string,
 ) => {
-    const regularGroups = groups.filter((event: any) => {
+    const regularGroups = groups.filter((group: Group) => {
         // Find the groups that have a matching tag
-        let matchingTagFound = event.tags?.some((tag: string) =>
+        let matchingTagFound = group.tags?.some((tag: string) =>
             selectedGroupTags.includes(tag),
         );
 
@@ -63,15 +63,16 @@ export const filterGroups = (
         // If no weekday is selected, all groups will be shown
         if (selectedWeekday === 'All') {
             matchingWeekdaySelected = true;
-        } else if (event.events) {
+        } else if (group.events) {
             // If the group has event information,
             // check if it has an event on the selected weekday
-            matchingWeekdaySelected = event.events.some(
+            matchingWeekdaySelected = group.events.some(
                 (e: any) => e.time.weekday === selectedWeekday,
             );
         }
 
-        const adHocGroup = event.type === 'Discord' || event.type === 'Ad-hoc';
+        // If a group doesn't have any regular events, assume it is ad-hoc
+        const adHocGroup = group.events === undefined;
 
         if (adHocGroup) {
             return false;
@@ -80,16 +81,16 @@ export const filterGroups = (
         return matchingTagFound && matchingWeekdaySelected;
     });
 
-    const adHocGroups = groups.filter((event: any) => {
+    const adHocGroups = groups.filter((group: Group) => {
         // Find the groups that have a matching tag
-        let matchingTagFound = event.tags?.some((tag: string) =>
+        let matchingTagFound = group.tags?.some((tag: string) =>
             selectedGroupTags.includes(tag),
         );
 
         // If no tags are filtered by, all ad-hoc groups will be shown
         if (selectedGroupTags.length === 0) matchingTagFound = true;
 
-        const adHocGroup = event.type === 'Discord' || event.type === 'Ad-hoc';
+        const adHocGroup = group.events === undefined;
 
         return matchingTagFound && adHocGroup;
     });

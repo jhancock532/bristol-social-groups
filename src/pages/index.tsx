@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import fs from 'fs';
+import Fuse from 'fuse.js';
 import { join } from 'path';
 import GroupListingFeed from '@/components/GroupListingFeed';
 import GroupListingMap from '@/components/GroupListingMap';
@@ -23,11 +24,11 @@ const generateListOfGroupTags = (events: any) => {
     }, {});
 };
 
-export default function Home({ groups }: any) {
+export default function Home({ groups }: { groups: Group[] }) {
     const [selectedGroupTags, setSelectedGroupTags] = useState<string[]>([]);
     const [selectedWeekday, setSelectedWeekday] = useState<string>('All');
     const [filterIsOpen, setFilterIsOpen] = useState(false);
-
+    const [searchQuery, setSearchQuery] = useState<string>('');
     const groupTags = useMemo(() => generateListOfGroupTags(groups), [groups]);
 
     const handleGroupFilterClicked = (tag: string) => {
@@ -43,15 +44,37 @@ export default function Home({ groups }: any) {
     const clearAllFilters = () => {
         setSelectedGroupTags([]);
         setSelectedWeekday('All');
+        setSearchQuery('');
     };
 
     const toggleFilter = () => {
         setFilterIsOpen(!filterIsOpen);
     };
 
+    const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchQuery(event.target.value);
+    };
+
+    const searchOptions = {
+        includeScore: true,
+        minMatchCharLength: 3,
+        useAnd: false,
+        threshold: 0.2,
+        matchAllTokens: false,
+        tokenize: true,
+        keys: ['name', 'description', 'tags', 'details']
+    }
+      
+    const fuse = new Fuse(groups, searchOptions)
+
     const filteredGroups = useMemo(() => {
+        if (searchQuery.length > 2) {
+            const searchResults = fuse.search(searchQuery);
+            const searchResultGroups = searchResults.map((result: any) => result.item);
+            return filterGroups(searchResultGroups, selectedGroupTags, selectedWeekday);
+        }
         return filterGroups(groups, selectedGroupTags, selectedWeekday);
-    }, [groups, selectedGroupTags, selectedWeekday]);
+    }, [groups, selectedGroupTags, selectedWeekday, searchQuery]);
 
     const filteredGroupsContainRegularLocation =
         filteredGroups.regularGroups.some((group: Group) => {
@@ -73,17 +96,20 @@ export default function Home({ groups }: any) {
                     A collection of local groups that meet up regularly and are
                     open to newcomers.
                 </p>
-                <div className={styles.filterAccordion}>
+                <div className={styles.searchAndFilterContainer}>
+                    <input className={styles.searchInput} type="text" placeholder="Search" onChange={handleSearch} value={searchQuery} />
                     <button
-                        className={styles.filterAccordionToggle}
-                        onClick={toggleFilter}
-                    >
-                        {filterIsOpen ? 'Hide' : 'Show'} filter options
-                        <ExpandIcon
-                            className={styles.filterIcon}
-                            pointDownwards={!filterIsOpen}
-                        />
-                    </button>
+                            className={styles.filterAccordionToggle}
+                            onClick={toggleFilter}
+                        >
+                            {filterIsOpen ? 'Hide' : 'Show'} filter options
+                            <ExpandIcon
+                                className={styles.filterIcon}
+                                pointDownwards={!filterIsOpen}
+                            />
+                        </button>
+                </div>
+                <div className={styles.filterAccordion}>
                     {filterIsOpen && (
                         <div className={styles.filterContent}>
                             <div className={styles.groupFilterOptionsContainer}>
@@ -168,26 +194,30 @@ export default function Home({ groups }: any) {
                                     </div>
                                 </div>
 
-                                <FilteredGroupsShownMessage
-                                    filteredGroups={filteredGroups}
-                                    numberOfPossibleGroups={groups.length}
-                                />
 
-                                {(selectedGroupTags.length !== 0 ||
-                                    selectedWeekday !== 'All') && (
-                                    <button
-                                        className={
-                                            styles.clearSelectedTagsButton
-                                        }
-                                        onClick={clearAllFilters}
-                                    >
-                                        Clear all filters
-                                    </button>
-                                )}
                             </div>
                         </div>
                     )}
                 </div>
+            </div>
+
+            <div className={styles.filterActionsContainer}>
+                <FilteredGroupsShownMessage
+                    filteredGroups={filteredGroups}
+                    numberOfPossibleGroups={groups.length}
+                />
+
+                {(selectedGroupTags.length !== 0 ||
+                    selectedWeekday !== 'All' || searchQuery !== '') && (
+                    <button
+                        className={
+                            styles.clearSelectedTagsButton
+                        }
+                        onClick={clearAllFilters}
+                    >
+                        Clear all filters
+                    </button>
+                )}
             </div>
 
             {filteredGroupsContainRegularLocation && (
@@ -209,7 +239,7 @@ export default function Home({ groups }: any) {
                             <h2>Ad-hoc groups</h2>
                             <p className={styles.description}>
                                 These groups may host an event on the day
-                                you&apos;ve specified. Please check the groups
+                                you&apos;ve specified, on an ad-hoc basis. Please check the groups
                                 website, social media page or group chat for
                                 more information.{' '}
                             </p>
