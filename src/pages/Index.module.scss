@@ -2,14 +2,6 @@
 
 .hero {
     margin-bottom: 0;
-
-    @include media-query(medium) {
-        margin-bottom: $grid * 2;
-    }
-
-    @include media-query(large) {
-        margin-bottom: $grid * 2;
-    }
 }
 
 .title {
@@ -109,7 +101,7 @@
 }
 
 .filterAccordion {
-    margin-bottom: $grid * 2;
+    margin-bottom: $grid * 1;
     max-width: $max-content-width;
 }
 
@@ -130,6 +122,7 @@
 
     width: 290px;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
     padding: $grid * 0.5;
@@ -159,7 +152,20 @@
     padding: $grid 0;
 
     @include media-query(medium) {
-        padding: $grid * 2 0 0 0;
+        padding: $grid * 2 0 $grid * 1 0;
+    }
+}
+
+.filterActionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: $grid;
+    margin-bottom: $grid;
+
+    @include media-query(medium) {
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: $grid * 2;
     }
 }
 
@@ -178,5 +184,31 @@
     @include media-query(medium) {
         margin-bottom: $grid * 4;
         margin-top: $grid * 4;
+    }
+}
+
+.searchAndFilterContainer {
+    display: flex;
+    flex-direction: column;
+    gap: $grid;
+    margin-top: $grid * 2;
+
+    @include media-query(medium) {
+        flex-direction: row;
+    }
+}
+
+.searchInput {
+    @include focus-outline;
+    @include font-size(sm);
+
+    width: 290px;
+    padding: $grid * 0.5;
+    border: 1px solid var(--color--black);
+    border-radius: 4px;
+
+    @include media-query(medium) {
+        width: 100%;
+        max-width: 40ch;
     }
 }

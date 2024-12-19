@@ -28,6 +28,7 @@
     "dotenv": "16.4.5",
     "eslint": "8.56.0",
     "eslint-config-next": "14.2.3",
+    "fuse.js": "7.0.0",
     "leaflet": "1.9.4",
     "next": "14.2.13",
     "prettier": "3.2.4",
