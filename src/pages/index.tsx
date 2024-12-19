@@ -62,16 +62,22 @@ export default function Home({ groups }: { groups: Group[] }) {
         threshold: 0.2,
         matchAllTokens: false,
         tokenize: true,
-        keys: ['name', 'description', 'tags', 'details']
-    }
-      
-    const fuse = new Fuse(groups, searchOptions)
+        keys: ['name', 'description', 'tags', 'details'],
+    };
+
+    const fuse = new Fuse(groups, searchOptions);
 
     const filteredGroups = useMemo(() => {
         if (searchQuery.length > 2) {
             const searchResults = fuse.search(searchQuery);
-            const searchResultGroups = searchResults.map((result: any) => result.item);
-            return filterGroups(searchResultGroups, selectedGroupTags, selectedWeekday);
+            const searchResultGroups = searchResults.map(
+                (result: any) => result.item,
+            );
+            return filterGroups(
+                searchResultGroups,
+                selectedGroupTags,
+                selectedWeekday,
+            );
         }
         return filterGroups(groups, selectedGroupTags, selectedWeekday);
     }, [groups, selectedGroupTags, selectedWeekday, searchQuery]);
@@ -97,17 +103,23 @@ export default function Home({ groups }: { groups: Group[] }) {
                     open to newcomers.
                 </p>
                 <div className={styles.searchAndFilterContainer}>
-                    <input className={styles.searchInput} type="text" placeholder="Search" onChange={handleSearch} value={searchQuery} />
+                    <input
+                        className={styles.searchInput}
+                        type="text"
+                        placeholder="Search"
+                        onChange={handleSearch}
+                        value={searchQuery}
+                    />
                     <button
-                            className={styles.filterAccordionToggle}
-                            onClick={toggleFilter}
-                        >
-                            {filterIsOpen ? 'Hide' : 'Show'} filter options
-                            <ExpandIcon
-                                className={styles.filterIcon}
-                                pointDownwards={!filterIsOpen}
-                            />
-                        </button>
+                        className={styles.filterAccordionToggle}
+                        onClick={toggleFilter}
+                    >
+                        {filterIsOpen ? 'Hide' : 'Show'} filter options
+                        <ExpandIcon
+                            className={styles.filterIcon}
+                            pointDownwards={!filterIsOpen}
+                        />
+                    </button>
                 </div>
                 <div className={styles.filterAccordion}>
                     {filterIsOpen && (
@@ -193,8 +205,6 @@ export default function Home({ groups }: { groups: Group[] }) {
                                         ))}
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     )}
@@ -208,11 +218,10 @@ export default function Home({ groups }: { groups: Group[] }) {
                 />
 
                 {(selectedGroupTags.length !== 0 ||
-                    selectedWeekday !== 'All' || searchQuery !== '') && (
+                    selectedWeekday !== 'All' ||
+                    searchQuery !== '') && (
                     <button
-                        className={
-                            styles.clearSelectedTagsButton
-                        }
+                        className={styles.clearSelectedTagsButton}
                         onClick={clearAllFilters}
                     >
                         Clear all filters
@@ -239,9 +248,9 @@ export default function Home({ groups }: { groups: Group[] }) {
                             <h2>Ad-hoc groups</h2>
                             <p className={styles.description}>
                                 These groups may host an event on the day
-                                you&apos;ve specified, on an ad-hoc basis. Please check the groups
-                                website, social media page or group chat for
-                                more information.{' '}
+                                you&apos;ve specified, on an ad-hoc basis.
+                                Please check the groups website, social media
+                                page or group chat for more information.{' '}
                             </p>
                         </div>
                         <GroupListingFeed

@@ -14,10 +14,13 @@ export const Footer = () => {
                     This website is a non-profit, volunteer run initiative.
                     <br />
                     <Link url="/feedback" className={styles.link}>
-                    Leave feedback here
+                        Leave feedback here
                     </Link>{' '}
                     or send an email to{' '}
-                    <Link url="mailto:contact@bristol.social" className={styles.link}>
+                    <Link
+                        url="mailto:contact@bristol.social"
+                        className={styles.link}
+                    >
                         contact@bristol.social
                     </Link>
                     .
