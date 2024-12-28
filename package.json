@@ -18,7 +18,8 @@
     "react-to-storybook": "tsx scripts/react-to-storybook.ts",
     "generate-visual-tests": "tsx scripts/generate-visual-tests.ts",
     "make-migration": "tsx scripts/make-migration.ts",
-    "apply-migration": "tsx scripts/apply-migration.ts"
+    "apply-migration": "tsx scripts/apply-migration.ts",
+    "prepare": "husky"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.30.1",
@@ -58,6 +59,7 @@
     "axe-playwright": "2.0.3",
     "eslint-config-torchbox": "1.1.0",
     "eslint-plugin-storybook": "0.8.0",
+    "husky": "^9.1.7",
     "storybook": "8.2.7",
     "stylelint": "16.8.1",
     "stylelint-config-css-modules": "4.4.0",
