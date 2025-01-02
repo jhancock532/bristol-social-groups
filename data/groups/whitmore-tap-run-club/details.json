@@ -1,0 +1,38 @@
+{
+  "name": "Whitmore Tap Run Club",
+  "slug": "whitmore-tap-run-club",
+  "description": "Weekly run club meeting at the Whitmore Tap pub, welcoming runners of all abilities. Special offer of a pint and burger for £15 after your run.",
+  "details": "",
+  "tags": ["running", "pubs"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://butcombe.com/the-whitmore-tap-pub-bristol/offers/tuesday-run-club-every-week/"
+    }
+  ],
+  "events": [
+    {
+      "name": "Tuesday Run Club",
+      "details": "All runners welcome, meet at 6:15 for a 6:30 start.",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 18:15",
+        "end": "Jan 1, 1970 19:30",
+        "details": "Meet at 6:15 for a 6:30 start"
+      },
+      "location": {
+        "address": "The Whitmore Tap, 115 Whiteladies Rd, Redland, Bristol BS8 2PH",
+        "latitude": "51.4643795",
+        "longitude": "-2.6094237",
+        "googleMapsLink": "https://maps.app.goo.gl/SPNLvSeP8ffQMTnC8"
+      },
+      "cost": {
+        "sessionPrice": 0
+      },
+      "booking": {
+        "required": "Not required"
+      }
+    }
+  ]
+}

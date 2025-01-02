@@ -1,0 +1,46 @@
+{
+  "name": "The Dragon and Scribe",
+  "slug": "dragon-and-scribe",
+  "description": "The Dragon and Scribe run beginner friendly Dungeons and Dragons one-shots in the open-world campaign of Voxis. Women-run and LGBTQ+ focused, please see the website for more details & booking links.",
+  "details": "",
+  "tags": ["gaming", "DnD"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://dragonandscribe.com/sessions"
+    },
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/dragonandscribe/"
+    },
+    {
+      "type": "Discord",
+      "url": "https://discord.com/invite/HtPVJseDBE"
+    }
+  ],
+  "events": [
+    {
+      "name": "D&D 5e One-Shot Sessions",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 22:00"
+      },
+      "location": {
+        "address": "Excelsior, 51-53 Merchant Street, Bristol, BS1 3EE",
+        "latitude": "51.4582772",
+        "longitude": "-2.58986",
+        "googleMapsLink": "https://maps.app.goo.gl/jbx9crQenCJL9jSB6"
+      },
+      "cost": {
+        "sessionPrice": 12,
+        "details": "Price per 4-hour session."
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Please book via the website. Tickets are available on a first come first served basis."
+      }
+    }
+  ]
+}

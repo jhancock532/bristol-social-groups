@@ -1,0 +1,13 @@
+{
+  "name": "Let's Walk Bristol Nordic Walking Classes",
+  "slug": "lets-walk-bristol",
+  "description": "Regular Nordic walking classes across Bristol parks and green spaces, with sessions available for different community groups.",
+  "details": "Nordic walking classes suitable for different ability levels and community groups. Price varies from free to £3 per session. Poles can be provided - contact the session leader for details.",
+  "tags": ["walking"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://letswalkbristol.org/what-we-offer/"
+    }
+  ]
+}

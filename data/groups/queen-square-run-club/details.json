@@ -1,11 +1,11 @@
 {
   "name": "Queen Square Run Club",
   "slug": "queen-square-run-club",
-  "description": "A social running club meeting at Queen Square several times a week.",
+  "description": "A social running club meeting at Queen Square several times a week. Est. 2019.",
   "links": [
     {
-      "type": "Website",
-      "url": "https://queensquarerunclub.com/"
+      "type": "Instagram",
+      "url": "https://www.instagram.com/queensquarerunclub/"
     }
   ],
   "tags": [
@@ -37,13 +37,13 @@
       }
     },
     {
-      "name": "Wednesday lunchtimes",
+      "name": "Wednesday evenings",
       "time": {
         "frequency": "Weekly",
         "weekday": "Wednesday",
-        "start": "Jan 1, 1970 12:30",
-        "end": "Jan 1, 1970 13:30",
-        "details": ""
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 20:00",
+        "details": "Couch to 5K group."
       },
       "location": {
         "address": "Queen Square, BS1 4LH",

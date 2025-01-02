@@ -1,0 +1,13 @@
+{
+  "name": "Bristol Wine and Book Club",
+  "slug": "bristol-wine-and-book-club",
+  "description": "A wine and book club that meets monthly. Books are announced on Instagram & you can reserve a place for that session by booking on Eventbrite. Tickets cost £5 to £10, non-alcoholic drinks are also available.",
+  "details": "",
+  "tags": ["books", "wine"],
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/bristolwineandbookclub/"
+    }
+  ]
+}

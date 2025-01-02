@@ -1,0 +1,135 @@
+{
+  "name": "Let's Walk Bristol Nordic Walking Classes",
+  "slug": "lets-walk-bristol",
+  "description": "Regular Nordic walking classes across Bristol parks and green spaces, with sessions available for different community groups.",
+  "details": "Nordic walking classes suitable for different ability levels and community groups. Poles can be provided - contact the session leader for details.",
+  "tags": ["walking", "exercise"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://letswalkbristol.org/what-we-offer/"
+    }
+  ],
+  "events": [
+    {
+      "name": "Page Park Nordic Walking",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Monday",
+        "start": "Jan 1, 1970 10:00",
+        "end": "Jan 1, 1970 11:00"
+      },
+      "location": {
+        "address": "Page Park, Staple Hill, Bristol"
+      },
+      "cost": {
+        "sessionPrice": 3,
+        "details": "Priority given to local residents"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Contact Catalina at pageparknordicwalkers@gmail.com"
+      }
+    },
+    {
+      "name": "St George Park Nordic Walking",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 10:00",
+        "end": "Jan 1, 1970 11:00"
+      },
+      "location": {
+        "address": "St George Park, Church Road, Bristol"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": "Free for over 65s"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Contact The Beehive Centre on 07962 576651 or email info@thebeehivebristol.co.uk"
+      }
+    },
+    {
+      "name": "Blaise Castle Estate Nordic Walking",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 13:00",
+        "end": "Jan 1, 1970 14:00"
+      },
+      "location": {
+        "address": "Blaise Castle Estate, Kings Weston Road, Bristol"
+      },
+      "cost": {
+        "sessionPrice": 3,
+        "details": "Open to all"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Contact Sunita (07916 439436) or Lucille (07929 340175, lucillesmith@southmead.org)"
+      }
+    },
+    {
+      "name": "Eastville Park Morning Nordic Walking",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 10:00",
+        "end": "Jan 1, 1970 11:00"
+      },
+      "location": {
+        "address": "Eastville Park, Fishponds Road, Bristol"
+      },
+      "cost": {
+        "sessionPrice": 3,
+        "details": "Priority given to people who are visibly minority ethnic"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Contact Subitha (07721 711687) or Sunita (07916 439436, subitha@letswalkbristol.org)"
+      }
+    },
+    {
+      "name": "Eastville Park Evening Nordic Walking",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 19:00"
+      },
+      "location": {
+        "address": "Eastville Park, Fishponds Road, Bristol"
+      },
+      "cost": {
+        "sessionPrice": 3,
+        "details": "Open to all"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Contact Lucille (07929 340175, lucillesmith@southmead.org)"
+      }
+    },
+    {
+      "name": "Oldbury Court Estate Nordic Walking",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Friday",
+        "start": "Jan 1, 1970 10:00",
+        "end": "Jan 1, 1970 11:00"
+      },
+      "location": {
+        "address": "Oldbury Court Estate, Oldbury Court Road, Bristol"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": "Free for BS16 residents"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Contact Kate at kate@oldburycourtpark.org.uk"
+      }
+    }
+  ]
+}
