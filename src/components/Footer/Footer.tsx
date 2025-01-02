@@ -11,19 +11,48 @@ export const Footer = () => {
                     <strong>Thank you for visiting!</strong>
                 </p>
                 <p>
-                    This website is a non-profit, volunteer run initiative.
-                    <br />
+                    This website is a non-profit, volunteer run initiative.{' '}
                     <Link url="/feedback" className={styles.link}>
                         Leave feedback here
                     </Link>{' '}
-                    or send an email to{' '}
+                    and follow us on your favourite social media platform for
+                    updates.
+                </p>
+                <p>
                     <Link
-                        url="mailto:contact@bristol.social"
+                        url="https://bsky.app/profile/bristol.social"
                         className={styles.link}
                     >
-                        contact@bristol.social
+                        BlueSky
+                    </Link>{' '}
+                    -{' '}
+                    <Link
+                        url="https://www.facebook.com/profile.php?id=61571434642804"
+                        className={styles.link}
+                    >
+                        Facebook
+                    </Link>{' '}
+                    -{' '}
+                    <Link
+                        url="https://www.instagram.com/bristol.social/"
+                        className={styles.link}
+                    >
+                        Instagram
+                    </Link>{' '}
+                    -{' '}
+                    <Link
+                        url="https://www.threads.net/@bristol.social"
+                        className={styles.link}
+                    >
+                        Threads
+                    </Link>{' '}
+                    -{' '}
+                    <Link
+                        url="https://x.com/bristol_groups"
+                        className={styles.link}
+                    >
+                        X
                     </Link>
-                    .
                 </p>
             </div>
             <div></div>
