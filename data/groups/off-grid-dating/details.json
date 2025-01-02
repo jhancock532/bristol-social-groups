@@ -1,0 +1,17 @@
+{
+    "name": "OFF-GRID Dating",
+    "slug": "off-grid-dating",
+    "description": "A social dating group for sporty, outdoorsy people. Events include casual drinks and more active meetups like running, padel or crazy golf. Please check the website or Instragram page to book for the next event.",
+    "details": "",
+    "tags": ["dating", "fitness"],
+    "links": [
+        {
+            "type": "Instagram",
+            "url": "https://www.instagram.com/offgrid.dating/"
+        },
+        {
+            "type": "Website",
+            "url": "https://offgridbristol.co.uk/"
+        }
+    ]
+}

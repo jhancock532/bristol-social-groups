@@ -1,0 +1,13 @@
+{
+  "name": "Decolonial Book Club",
+  "slug": "decolonial-book-club",
+  "description": "A monthly book club meeting as part of Bristol Solidarity Cafe. DM the Instagram account for a free eBook link. No booking required, meets on a weekend at Radical Roasters Coffee Shop.",
+  "details": "",
+  "tags": ["books"],
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/bristolsolidaritycafe/"
+    }
+  ]
+}

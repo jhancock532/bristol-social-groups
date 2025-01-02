@@ -33,7 +33,7 @@
         @include font-size(s);
 
         line-height: 1.5;
-        margin: 0 0 $grid * 2;
+        margin: $grid * 2 0 $grid * 2;
 
         @include media-query(large) {
             max-width: 60ch;

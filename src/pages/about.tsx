@@ -84,6 +84,12 @@ export default function About() {
                             James Hancock
                         </Link>
                     </li>
+                    <li>
+                        🛠️ Accessibility improvements:{' '}
+                        <Link url="https://github.com/mynk2611" external>
+                            Mayank Mehta
+                        </Link>
+                    </li>
                     <li> 📊 Google Forms idea: Chris Ward</li>
                     <li>
                         🎥{' '}
@@ -104,7 +110,7 @@ export default function About() {
                 </ul>
                 <p>
                     Thanks also to everyone who has submitted groups and
-                    feedback anonymously.
+                    feedback anonymously 🙏
                 </p>
             </div>
         </Layout>

@@ -47,7 +47,7 @@ async function generateGroupDetails(
 ) {
     const msg = await anthropic.messages.create({
         model: MODEL,
-        max_tokens: 1000,
+        max_tokens: 4000,
         system: `You are a programming assistant that generates group detail JSON files based on a group slug and optional user input. You return only valid JSON, and make no other comments. Use the following example groups as context for how your output should be formatted: \n${JSON.stringify(exampleGroups)}\n Return a JSON response to the user's input, only including fields that match the above examples.`,
         messages: [
             {
@@ -66,53 +66,59 @@ async function generateGroupDetails(
     return 'Error: AI response was not text.';
 }
 
-async function createGroup() {
-    const groupSlug: string = await new Promise((resolve) => {
-        rl.question(
-            '\x1b[1mEnter the group name as a slug, e.g. "bristol-hot-air-balloonists" :\x1b[0m ',
-            resolve,
-        );
-    });
-
+export async function createGroup(groupSlug: string, userInput: string = '') {
     const groupFolderPath = path.join('data/groups', groupSlug);
 
     if (fs.existsSync(groupFolderPath)) {
-        console.error(
-            `The group you've specified "${groupSlug}" already exists.`,
-        );
-        rl.close();
-        process.exit(1);
+        throw new Error(`The group "${groupSlug}" already exists.`);
     }
 
-    const userInput: string = await new Promise((resolve) => {
-        rl.question(
-            '\x1b[1mEnter any additional information for the AI (optional):\x1b[0m ',
-            resolve,
-        );
+    const exampleGroups = await loadExampleGroups();
+    const groupDetails = await generateGroupDetails(
+        groupSlug,
+        userInput,
+        exampleGroups,
+    );
+
+    const groupDetailsFilePath = path.join(groupFolderPath, 'details.json');
+
+    fs.mkdirSync(groupFolderPath, {
+        recursive: true,
     });
 
-    try {
-        const exampleGroups = await loadExampleGroups();
-        const groupDetails = await generateGroupDetails(
-            groupSlug,
-            userInput,
-            exampleGroups,
-        );
-
-        const groupDetailsFilePath = path.join(groupFolderPath, 'details.json');
-
-        fs.mkdirSync(groupFolderPath, {
-            recursive: true,
-        });
-
-        fs.writeFileSync(groupDetailsFilePath, groupDetails);
-
-        console.log(`\n\x1b[32mGroup created successfully!\x1b[0m\n`);
-    } catch (error) {
-        console.error('Error creating group:', error);
-    }
-
-    rl.close();
+    fs.writeFileSync(groupDetailsFilePath, groupDetails);
+    return groupDetails;
 }
 
-createGroup();
+async function promptForInput(question: string): Promise<string> {
+    return new Promise((resolve) => {
+        rl.question(question, resolve);
+    });
+}
+
+async function runCLI() {
+    try {
+        const groupSlug = await promptForInput(
+            '\x1b[1mEnter the group name as a slug, e.g. "bristol-hot-air-balloonists" :\x1b[0m ',
+        );
+
+        const userInput = await promptForInput(
+            '\x1b[1mEnter any additional information for the AI (optional):\x1b[0m ',
+        );
+
+        await createGroup(groupSlug, userInput);
+        console.log(`\n\x1b[32mGroup created successfully!\x1b[0m\n`);
+    } catch (error) {
+        console.error(
+            'Error creating group:',
+            error instanceof Error ? error.message : error,
+        );
+    } finally {
+        rl.close();
+    }
+}
+
+// Keep the CLI version as the default behavior when running the script directly
+if (require.main === module) {
+    runCLI();
+}
