@@ -85,7 +85,7 @@ export default function About() {
                         </Link>
                     </li>
                     <li>
-                        👨🏼‍💻 Accessibility improvements:{' '}
+                        🛠️ Accessibility improvements:{' '}
                         <Link url="https://github.com/mynk2611" external>
                             Mayank Mehta
                         </Link>
