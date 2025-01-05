@@ -1,0 +1,40 @@
+{
+  "name": "Bristol Board Game Socials",
+  "slug": "bristol-board-game-socials",
+  "description": "Various social gaming events led by different hosts at Replay Board Game Bar. Regular Blood on the Clocktower game nights and other one-off events, all organised on Meetup.",
+  "details": "",
+  "tags": ["board games"],
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/board-game-social/"
+    }
+  ],
+  "events": [
+    {
+      "name": "Blood on the Clocktower",
+      "details": "Social deduction game night. New players are welcome to join! More details on the Meetup page.",
+      "time": {
+        "frequency": "Weekly except last Wednesday of the month",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 17:45",
+        "end": "Jan 1, 1970 21:45",
+        "details": ""
+      },
+      "location": {
+        "address": "Replay Bristol Board Game Bar, 196 Cheltenham Rd, Montpelier, Bristol BS6 5RB",
+        "latitude": "51.468376",
+        "longitude": "-2.592005",
+        "googleMapsLink": "https://maps.app.goo.gl/EWMA1DqGPvLZczcGA"
+      },
+      "cost": {
+        "sessionPrice": 8.50,
+        "details": "Entry fee includes a welcome drink. Please pay upon arrival."
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Please book on Meetup so the host is aware of numbers."
+      }
+    }
+  ]
+}
