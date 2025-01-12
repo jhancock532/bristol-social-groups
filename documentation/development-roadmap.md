@@ -1,8 +1,14 @@
 # Future Development Plans
 
-## Priority features
+- Sort out how pricing is displayed for groups that have subscriptions and discounts for existing members. Show a subscription price and a range of costs if ticket prices vary. If subscription is required to attend, show a note with this.
+- Add an age range which most members of the group are included in, e.g. 20-30, 20-40, 50-60, etc. Particularly important for groups that have a specific age range only, e.g. the offgrid dating group (30-40). Add a warning flag if users outside the age range aren't allowed to join.
+- Add a filter for the age range display.
+- Add an "established" year so that you can see how long the group has been running for.
+- Add a markdown blog that can answer common questions people are asking in the R/Bristol subreddit, e.g. D&D groups, groups for new parents, a taxonomy of running clubs
+- A button that shows up on a page to report an issue directly to GitHub.
+- Add a last updated date and a disclaimer in the site footer that information is provided as is without guarantee of accuracy.
 
-Search feature (a WIP branch has been created for this)
+## Features
 
 Create a mailing list where users can sign up to hear about more events in the future. This can be a google form to start with. Emails are sent out once a month or once every two months, depending on the amount of groups added.
 

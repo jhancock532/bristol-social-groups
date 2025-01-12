@@ -28,8 +28,8 @@
         "googleMapsLink": "https://maps.app.goo.gl/7fBNkbwMEc9MnN8E8"
       },
       "cost": {
-        "sessionPrice": 10,
-        "details": "This is the monthly subscription price of attending sessions, not including the price of the book. At time of writing a 12 month subscription is £120 and a three month trial is £36 - details of how to subscribe are available on the event hosts website."
+        "sessionPrice": 15,
+        "details": "This is the monthly subscription price of attending sessions, not including the price of the book. At time of writing a 12 month subscription is £150 - details of how to subscribe are available on the event hosts website."
       },
       "booking": {
         "required": "Required",

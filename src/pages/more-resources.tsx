@@ -201,6 +201,27 @@ export default function More() {
                     Facebook: Bristol Men community group
                 </Link>
             </p>
+            <h3>Other Facebook Groups</h3>
+            <p>
+                D&D Bristol, a group for the Bristol group of D&D players that
+                will regularly meet up and roleplay their hearts out!{' '}
+                <Link
+                    url="https://www.facebook.com/groups/359280917815026"
+                    external
+                >
+                    Facebook
+                </Link>
+            </p>
+            <p>
+                Roleplayer&apos;s Conclave, a welcoming Bristol-based LARP &
+                roleplay community:{' '}
+                <Link
+                    url="https://www.facebook.com/groups/roleplayersconclave"
+                    external
+                >
+                    Facebook
+                </Link>
+            </p>
         </Layout>
     );
 }

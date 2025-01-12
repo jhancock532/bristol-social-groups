@@ -19,19 +19,18 @@ export default function About() {
 
                 <h2>Background</h2>
                 <p>
-                    There are many social groups in Bristol that are not listed
-                    or easily found on{' '}
-                    <Link url="/more-resources">major event platforms</Link>,
-                    making these groups hard to find and take part in. This site
-                    intends to bridge this gap by providing a free, curated list
-                    of these missing groups.
+                    There are many social groups in Bristol found on{' '}
+                    <Link url="/more-resources">
+                        lots of different websites
+                    </Link>
+                    , this project aims to bring the groups together & make it
+                    easy to search through them.
                 </p>
                 <p>It intends to share high-quality social groups that:</p>
                 <ul>
                     <li>Are open to newcomers</li>
                     <li>Are well attended</li>
                     <li>Meet regularly</li>
-                    <li>Are free or low cost</li>
                     <li>
                         Have a shared, inclusive and proactively social activity
                     </li>
@@ -39,15 +38,14 @@ export default function About() {
 
                 <h2>How can I help?</h2>
                 <p>
-                    If you know a great social group in Bristol which is open to
-                    newcomers, please do{' '}
+                    If you know a great social group in Bristol, please{' '}
                     <Link url="/add-a-group">
                         suggest it to be added to the site
                     </Link>
                     .
                 </p>
                 <p>
-                    If you have feedback or suggestions, please{' '}
+                    If you have feedback or suggestions, you can{' '}
                     <Link url="/feedback">add them to this form</Link>.
                 </p>
                 <p>
