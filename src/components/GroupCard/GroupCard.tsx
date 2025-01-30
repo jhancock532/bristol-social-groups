@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import EventCard from '@/components/EventCard';
+import SubscriptionText from '@/components/SubscriptionText';
 import { DiscordIcon } from '@/components/Icons/DiscordIcon';
 import { ExternalIcon } from '@/components/Icons/ExternalIcon';
 import { Event } from '@/types/Event';
-import { Link as LinkType } from '@/types/base';
+import { Link as LinkType, Subscription } from '@/types/base';
 
 import styles from './GroupCard.module.scss';
 import { WhatsappIcon } from '../Icons/WhatsappIcon';
@@ -97,6 +98,7 @@ type GroupCardProps = {
     slug: string;
     links: LinkType[];
     events?: Event[];
+    subscriptions?: Subscription[];
 };
 
 /**
@@ -112,6 +114,7 @@ const GroupCard = ({
     description,
     events,
     links,
+    subscriptions,
     slug,
 }: GroupCardProps) => {
     return (
@@ -128,6 +131,10 @@ const GroupCard = ({
                         <EventCard key={index} {...event} />
                     ))}
                 </div>
+            )}
+
+            {subscriptions && (
+                <SubscriptionText subscriptions={subscriptions} />
             )}
 
             {links && (
