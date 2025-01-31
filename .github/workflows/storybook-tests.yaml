@@ -1,9 +1,12 @@
 name: 'Storybook Tests'
 on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for running tests'
+        required: false
+        type: string
   push:
-    branches:
-      - main
-  pull_request:
     branches:
       - main
 jobs:

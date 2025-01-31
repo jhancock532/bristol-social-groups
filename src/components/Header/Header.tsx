@@ -124,6 +124,11 @@ export const Header = () => {
                                 Add a group
                             </Link>
                         </li>
+                        <li className={styles.navItem}>
+                            <Link href="/blog" className={styles.link}>
+                                Blog
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
                 <button

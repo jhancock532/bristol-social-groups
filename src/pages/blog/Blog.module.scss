@@ -1,0 +1,105 @@
+@use 'variables' as *;
+
+.title {
+    @include h1;
+
+    margin-bottom: $grid * 2;
+}
+
+.description {
+    @include font-size(m);
+
+    max-width: $max-content-width;
+    margin-bottom: $grid * 1;
+
+    @include media-query(medium) {
+        margin-bottom: $grid * 2;
+    }
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: $grid;
+    color: var(--color--grey-60);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: $grid * 2;
+        height: $grid * 2;
+        border-radius: 50%;
+        margin-right: $grid * 0.5;
+    }
+}
+
+.blogLinks {
+    display: grid;
+    gap: $grid * 2;
+    margin: $grid * 2 0;
+    max-width: $max-content-width;
+
+    @include media-query(medium) {
+        margin: $grid * 3 0;
+    }
+}
+
+.content {
+    margin-bottom: $grid * 4;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+        margin: $grid * 2 0 $grid;
+    }
+
+    h2 {
+        line-height: 1.15;
+
+        @include media-query(medium) {
+            margin-top: $grid * 3;
+        }
+    }
+
+    p {
+        margin-bottom: 1em;
+        line-height: 1.6;
+    }
+
+    a {
+        @include highlight-link;
+
+        color: var(--color--text);
+    }
+
+    ul,
+    ol {
+        margin: 1em 0;
+        padding-left: 2em;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    pre {
+        background: var(--color--light);
+        padding: 1em;
+        border-radius: $border-radius;
+        overflow-x: auto;
+    }
+
+    code {
+        background: var(--color--light);
+        padding: 0.2em 0.4em;
+        border-radius: $border-radius * 0.5;
+    }
+}
