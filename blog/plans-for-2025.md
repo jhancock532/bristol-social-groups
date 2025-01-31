@@ -1,15 +1,15 @@
 ---
 title: Plans for 2025
-excerpt: A rough outline for where the Bristol Social Groups website will go in 2025, including opportunities for volunteering and contributing.
+excerpt: A rough outline for where the Bristol Social Groups website will go in
+  2025, including opportunities for volunteering and contributing.
 date: 2025-01-31T17:32:00.000Z
 author:
   name: James Hancock
   picture: /images/hot-air-balloon-one.svg
 ---
-
 ## Adding more groups
 
-Of course! [If you have suggestions, please recommend them](/add-a-group). Later in the year it'll be time to start working through Meetup, Eventbrite and Facebook to add all relevant groups from those sites. Hopefully we'll have a much easier way of adding them, due to...
+This year it's time to start combing through Meetup, Eventbrite and Facebook to make sure we're not missing relevant groups from those sites. As always, [if you have suggestions, please recommend them](/add-a-group) and I will add them to the site. Hopefully this year we'll have a much easier way of adding groups, due to...
 
 ## A proper website for adding groups
 
@@ -19,9 +19,12 @@ I'm experimenting with adding a content management system ([PagesCMS](https://pa
 
 While lower priority than adding social groups, blog content would still be useful & interesting for site visitors. Here are some questions I've notice come up recently.
 
-- How can new parents in Bristol connect with other new parents?
-- What are some great, free or low cost locations to host events for your group?
-- Just how many run clubs are there in Bristol, exactly?
+*   How can new parents in Bristol connect with other new parents?
+    
+*   What are some great, free or low cost locations to host events for your group?
+    
+*   Just how many run clubs are there in Bristol, exactly?
+    
 
 ## Keeping social channels up to date
 
