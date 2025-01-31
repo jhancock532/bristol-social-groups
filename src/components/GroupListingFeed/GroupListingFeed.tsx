@@ -40,6 +40,7 @@ const GroupListingFeed = ({
                         links={group.links}
                         description={group.description}
                         slug={group.slug}
+                        subscriptions={group.subscriptions}
                         events={filteredEvents}
                     />
                 );

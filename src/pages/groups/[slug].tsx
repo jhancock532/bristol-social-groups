@@ -3,6 +3,7 @@ import { join } from 'path';
 import dynamic from 'next/dynamic';
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
+import SubscriptionText from '@/components/SubscriptionText';
 import { GroupLinks } from '@/components/GroupCard/GroupCard';
 import { AccessibilityIcon } from '@/components/Icons/AccessibilityIcon';
 import { ClockIcon } from '@/components/Icons/ClockIcon';
@@ -137,7 +138,7 @@ const Event = ({
                 </EventDetailsSection>
             )}
 
-            {event.cost && (
+            {event.cost && event.cost.sessionPrice && (
                 <EventDetailsSection
                     title={`Costs £${event.cost.sessionPrice} per
                 session`}
@@ -175,7 +176,12 @@ const EventPage = ({ data }: { data: any }) => {
         <Layout>
             <Metadata title={data.name} description={data.description} />
             <h1 className={styles.title}>{data.name}</h1>
-            <p className={styles.description}>{data.description}</p>
+            <p className={styles.description}>{data.description} </p>
+
+            {data.subscriptions && (
+                <SubscriptionText subscriptions={data.subscriptions} />
+            )}
+
             {data.details && <p>{data.details}</p>}
 
             {data.events === undefined ? (

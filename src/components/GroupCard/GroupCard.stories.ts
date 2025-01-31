@@ -34,6 +34,13 @@ export const Default: Story = {
             },
         ],
         events: [MOCK_EVENTS[0]],
+        subscriptions: [
+            {
+                frequency: 'monthly',
+                cost: 40,
+                costPerEvent: 10,
+            },
+        ],
     },
 };
 

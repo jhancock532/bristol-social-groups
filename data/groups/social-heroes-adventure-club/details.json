@@ -1,0 +1,23 @@
+{
+  "name": "Social Heroes Adventure Club",
+  "slug": "social-heroes-adventure-club",
+  "description": "A social group based in Clifton offering a wide variety of weekly activities and social events. Membership includes free events as well as discounted access for holiday trips and local fitness classes (yoga, HIIT, cycling, running, swimming).",
+  "details": "",
+  "tags": ["hiking", "cycling", "fitness", "running"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.socialheroesadventureclub.co.uk/"
+    },
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/socialheroesadventureclub"
+    }
+  ],
+  "subscriptions": [
+    {
+      "frequency": "monthly",
+      "cost": 22
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { Gender, Link } from '@/types/base';
+import { Gender, Link, Subscription } from '@/types/base';
 import { Event } from '@/types/Event';
 
 export type Group = {
@@ -10,4 +10,5 @@ export type Group = {
     details?: string; // optional extended description displayed on the event slug page
     events?: Event[];
     gender?: Gender; // defaults to all if left blank
+    subscriptions?: Subscription[];
 };

@@ -56,7 +56,7 @@ const EventCard = ({
                     </p>
                 </div>
             )}
-            {cost && (
+            {cost && cost.sessionPrice !== undefined && (
                 <div className={styles.details__item}>
                     <WalletIcon className={styles.details__icon} />
                     <p>

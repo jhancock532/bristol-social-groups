@@ -1,7 +1,7 @@
 import { Gender, Link } from '@/types/base';
 
 export type EventCost = {
-    sessionPrice: number;
+    sessionPrice?: number;
     details?: string;
 };
 
