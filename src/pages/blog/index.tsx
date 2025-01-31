@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import Layout from '@/components/Layout';
 import Metadata from '@/components/Metadata';
-import BlogPostCard from '@/components/BlogPostCard/BlogPostCard';
+import BlogPostCard from '@/components/BlogPostCard';
 import { getAllPosts } from '@/lib/api';
 import { Post } from '@/types/Post';
 import styles from './Blog.module.scss';
