@@ -24,7 +24,13 @@ export function getPostBySlug(slug: string) {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
 
-    return { ...data, slug: realSlug, content } as Post;
+    // Ensure date is converted to ISO string if it's a Date object
+    // TODO: This feels like a hack to work around an issue with PagesCMS
+    // Maybe updating Next.js will resolve this issue, or the CMS config file.
+    const date =
+        data.date instanceof Date ? data.date.toISOString() : data.date;
+
+    return { ...data, date, slug: realSlug, content } as Post;
 }
 
 /**

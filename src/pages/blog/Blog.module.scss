@@ -48,6 +48,8 @@
 }
 
 .content {
+    margin-bottom: $grid * 4;
+
     h1,
     h2,
     h3,
@@ -55,7 +57,15 @@
     h5,
     h6 {
         font-weight: bold;
-        margin: 1.5em 0 0.5em;
+        margin: $grid * 2 0 $grid;
+    }
+
+    h2 {
+        line-height: 1.15;
+
+        @include media-query(medium) {
+            margin-top: $grid * 3;
+        }
     }
 
     p {
@@ -64,12 +74,9 @@
     }
 
     a {
-        color: var(--color--primary);
-        text-decoration: none;
+        @include highlight-link;
 
-        &:hover {
-            text-decoration: underline;
-        }
+        color: var(--color--text);
     }
 
     ul,

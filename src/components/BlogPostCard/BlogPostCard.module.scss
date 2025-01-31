@@ -6,6 +6,7 @@
     background-color: var(--color--white);
     border-radius: $border-radius;
     box-shadow: $box-shadow;
+    transition: box-shadow 0.2s ease;
 }
 
 .content {
@@ -23,6 +24,7 @@
     @include font-size(m);
 
     margin: 0;
+    color: var(--color--text);
 
     @include media-query(medium) {
         @include font-size(l);
@@ -76,4 +78,26 @@
     color: var(--color--text);
     margin: 0;
     line-height: 1.6;
+}
+
+.cardLink {
+    @include focus-outline;
+
+    text-decoration: none;
+    display: block;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+
+        .card {
+            box-shadow: 0 8px 16px rgb(0 0 0 / 30%);
+        }
+
+        .title {
+            text-decoration: underline;
+            text-decoration-color: var(--color--grey-80);
+            text-underline-offset: 4px;
+        }
+    }
 }

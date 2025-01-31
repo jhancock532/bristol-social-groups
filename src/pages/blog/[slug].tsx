@@ -19,9 +19,11 @@ export default function BlogPost({ post, content }: Props) {
                 title={`${post.title} | Bristol Social Groups`}
                 description={post.excerpt}
             />
-            <Head>
-                <meta property="og:image" content={post.ogImage.url} />
-            </Head>
+            {post.ogImage && (
+                <Head>
+                    <meta property="og:image" content={post.ogImage.url} />
+                </Head>
+            )}
             <main>
                 <div className={styles.header}>
                     <h1 className={styles.title}>{post.title}</h1>
