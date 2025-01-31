@@ -1,9 +1,14 @@
 name: 'Playwright Tests'
 on:
+  # Manual trigger through GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for running tests'
+        required: false
+        type: string
+  # Only run automatically when merging to main
   push:
-    branches:
-      - main
-  pull_request:
     branches:
       - main
 jobs:
