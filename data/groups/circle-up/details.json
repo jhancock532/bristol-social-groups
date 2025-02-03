@@ -1,0 +1,27 @@
+{
+  "name": "Circle Up",
+  "slug": "circle-up",
+  "description": "CircleUp is a brand new membership community for people in their 20s and 30s in Bath and Bristol who want to make friends, enjoy life, and be part of a great community.",
+  "details": "More information can be found on the group's website.",
+  "tags": ["walking", "board games", "climbing"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.letscircleup.co.uk/"
+    },
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/lets.circleup"
+    }
+  ],
+  "subscriptions": [
+    {
+      "frequency": "monthly",
+      "cost": 9
+    },
+    {
+      "frequency": "yearly",
+      "cost": 45
+    }
+  ]
+}

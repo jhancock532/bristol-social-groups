@@ -43,3 +43,23 @@ next-env.d.ts
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# ---- Django/Wagtail Specific Ignores ----
+/wagtail/env
+
+# Python compiled files and caches
+*.py[cod]
+__pycache__/
+
+# SQLite database file (if applicable)
+# db.sqlite3 # todo: ignore later.
+
+# Uploaded media files (if handled locally)
+media/
+
+# Local settings, which may contain sensitive information
+local_settings.py
+
+# IDE directories
+.vscode/
+.idea/
