@@ -37,7 +37,6 @@ export type EventTime = {
 
 export type Event = {
     name?: string;
-    slug?: string;
     details?: string;
     link?: Link; // If a specific URL that has details for this event is available, provide it here
     time?: EventTime;
