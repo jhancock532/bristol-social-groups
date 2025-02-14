@@ -71,6 +71,3 @@ wagtail/backend/settings/production.py
 
 # Environment variables
 .env
-
-# Database
-db.sqlite3
