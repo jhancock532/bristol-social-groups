@@ -64,3 +64,13 @@ local.py
 # IDE directories
 .vscode/
 .idea/
+
+# Django settings
+wagtail/backend/settings/local.py
+wagtail/backend/settings/production.py
+
+# Environment variables
+.env
+
+# Database
+db.sqlite3
