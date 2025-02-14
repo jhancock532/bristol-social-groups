@@ -1,0 +1,46 @@
+{
+  "name": "Dorkbot Bristol",
+  "slug": "dorkbot-bristol",
+  "description": "A monthly meeting of artists (sound / image / movement / whatever), designers, engineers, students and other interested parties from Bristol who are involved in the creation of electronic art.",
+  "details": "",
+  "tags": ["electronics", "art", "technology"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://dorkbotbristol.org/"
+    },
+    {
+      "type": "Mastodon",
+      "url": "https://assemblag.es/@dorkbotbristol",
+      "text": "Follow on Mastodon"
+    },
+    {
+      "type": "Discord",
+      "url": "https://discord.com/invite/MYfG8Z8vpk",
+      "text": "Join the Discord server"
+    }
+  ],
+  "events": [
+    {
+      "time": {
+        "frequency": "The second Tuesday of the month",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 20:00",
+        "details": "Second Tuesday of the month"
+      },
+      "location": {
+        "address": "Watershed, 1 Canon's Rd, Bristol BS1 5TX",
+        "latitude": "51.4518032",
+        "longitude": "-2.5981722",
+        "googleMapsLink": "https://maps.app.goo.gl/811DULtUe2k752zR9"
+      },
+      "cost": {
+        "sessionPrice": 0
+      },
+      "booking": {
+        "required": "Not required"
+      }
+    }
+  ]
+}

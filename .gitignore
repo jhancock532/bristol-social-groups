@@ -59,6 +59,7 @@ media/
 
 # Local settings, which may contain sensitive information
 local_settings.py
+local.py
 
 # IDE directories
 .vscode/

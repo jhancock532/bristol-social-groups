@@ -11,6 +11,15 @@
     {
       "type": "Website",
       "url": "https://superminerbattle.farm/"
+    },
+    {
+      "type": "Website",
+      "url": "https://x.com/SodiumShowdown",
+      "text": "Follow on X"
+    },
+    {
+      "type": "Discord",
+      "url": "https://discord.com/invite/WNg36S5Pat"
     }
   ],
   "events": [
