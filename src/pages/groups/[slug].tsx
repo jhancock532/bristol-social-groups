@@ -138,7 +138,7 @@ const Event = ({
                 </EventDetailsSection>
             )}
 
-            {event.cost && event.cost.sessionPrice && (
+            {event.cost && (
                 <EventDetailsSection
                     title={`Costs £${event.cost.sessionPrice} per
                 session`}

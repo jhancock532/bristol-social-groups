@@ -1,0 +1,38 @@
+{
+  "name": "Bristol Games Social",
+  "slug": "bristol-games-social",
+  "description": "A Meetup group where games fanatics, hobbyists, developers and casual players can get together and enjoy playing in a social setting. This is an inclusive group where everybody is welcome.",
+  "details": "If you want to bring your own game, please do. If you have a game that you would like to play test, bring it and ask around, you might just find some peeps that will be happy to help.",
+  "tags": ["board games", "gaming"],
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/bristolgamers/"
+    }
+  ],
+  "events": [
+    {
+      "name": "Board Game Night",
+      "time": {
+        "frequency": "Fortnightly on Thursdays",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 19:00",
+        "end": "Jan 1, 1970 23:00",
+        "details": ""
+      },
+      "location": {
+        "address": "The Open Arms, 24 St Michael's Hill, Bristol BS2 8DX",
+        "latitude": "51.457733",
+        "longitude": "-2.598392",
+        "googleMapsLink": "https://maps.app.goo.gl/QxGbPjvecZawnd6x9"
+      },
+      "cost": {
+        "sessionPrice": 0
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Please book a space on Meetup via the link above."
+      }
+    }
+  ]
+}

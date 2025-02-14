@@ -1,16 +1,88 @@
 {
   "name": "Wobbly Socials",
   "slug": "wobbly-socials",
-  "description": "Wobbly Socials are for anyone who often feels a bit nervous about socialising. The aim of the group is to create a safe and welcoming space so that all attendees feel comfortable.",
+  "description": "Wobbly Socials are a Bristol based non profit hosting social events for anyone who feels a bit 'wobbly' about socialising. Our mission is to reduce isolation in adults between the ages of 18-65 in Bristol and beyond. Current events include a walking group, board game nights and co-working sessions.",
   "details": "",
   "tags": [
     "walking",
-    "introvert"
+    "introvert",
+    "board games",
+    "co-working"
   ],
   "links": [
     {
       "type": "Instagram",
       "url": "https://www.instagram.com/wobblysocials/"
+    },
+    {
+      "type": "Mailing List",
+      "url": "http://eepurl.com/i3CgLg",
+      "text": "Join the mailing list"
+    },
+    {
+      "type": "Website",
+      "url": "https://wobblysocials.org/"
+    }
+  ],
+  "events": [
+    {
+      "name": "Wobbly Board Game Nights",
+      "details": "We run a monthly board game night at Bristol Folk House. Some games are provided; you’re also welcome to bring your own!",
+      "time": {
+        "frequency": "The last Monday of every month",
+        "weekday": "Monday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 20:00",
+        "details": "Usually takes place on the last Monday of every month, but dates may vary. Check the Eventbrite page for exact dates."
+      },
+      "location": {
+        "address": "Bristol Folk House, 40A Park St, Bristol BS1 5JG",
+        "latitude": "51.4544098",
+        "longitude": "-2.6017372",
+        "googleMapsLink": "https://maps.app.goo.gl/GfrQErExNGkXgAND7"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": "Please check the Eventbrite page for current ticket prices."
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Tickets must be booked via Eventbrite, please see the above website link. If the next event hasn't been listed yet, check the Instagram page or subscribe to the mailing list for updates."
+      },
+      "link": {
+        "type": "Eventbrite",
+        "url": "https://www.eventbrite.com/o/wobbly-socials-89371248993"
+      }
+    },
+    {
+      "name": "Wobbly Workers",
+      "details": "Working remotely can get lonely. In collaboration with Tabb Hub, we host a monthly co-working group in Bristol City Centre at a discounted rate.",
+      "time": {
+        "frequency": "The 3rd Wednesday of every month",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 10:00",
+        "end": "Jan 1, 1970 17:00",
+        "details": "Runs on the 3rd Wednesday of each month"
+      },
+      "location": {
+        "address": "Tabb Hub, 78-82 Broadmead, BS1 3DS",
+        "latitude": "51.4574117",
+        "longitude": "-2.5905542",
+        "googleMapsLink": "https://maps.app.goo.gl/t6FvxSu17jLD7MY56",
+        "details": "Please check the event page for information on how to access the co-working space."
+      },
+      "cost": {
+        "sessionPrice": 7,
+        "details": "Discounted day passes for Wobbly Workers are available through Tabb's events page, a standard day pass is £12."
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Book through Tabb's events page, please see the above website link."
+      },
+      "link": {
+        "type": "Website",
+        "url": "https://tabb.cc/events?event_series=Wobbly+Workers#event-list-top"
+      }
     }
   ]
 }
