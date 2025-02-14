@@ -1,14 +1,18 @@
 from django.db import models
 from django.core.validators import MinValueValidator
+from django.utils.functional import cached_property
 
 from wagtail.models import Orderable, Page
 from wagtail.fields import RichTextField
-from wagtail.admin.panels import FieldPanel, InlinePanel
+from wagtail.admin.panels import FieldPanel, InlinePanel, MultiFieldPanel
 from wagtail.api import APIField
-from wagtailgeowidget.panels import LeafletPanel
+from wagtailgeowidget import geocoders
+from wagtailgeowidget.panels import GeoAddressPanel, GoogleMapsPanel
+from wagtailgeowidget.helpers import geosgeometry_str_to_struct
 from modelcluster.fields import ParentalKey
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase
+
 
 # Import constants from the new constants file
 from group.constants import (
@@ -29,15 +33,24 @@ class GroupIndexPage(Page):
 # Links to external services where the user can find out more information about the group.
 class GroupLink(Orderable):
     page = ParentalKey('GroupPage', related_name='links')
-    type = models.CharField(max_length=50, choices=GROUP_LINK_TYPE_CHOICES)
+    platform = models.CharField(max_length=50, choices=GROUP_LINK_TYPE_CHOICES, help_text="The service used by the group to share event details.")
     url = models.URLField()
-    text = models.CharField(max_length=100, blank=True)
+    text = models.CharField(max_length=100, blank=True, help_text="Optional text that overrides the default link text for each platform.")
 
-# Todo: Events also support links, so we should rename and reuse this model and add a field there.
+    api_fields = [
+        APIField('platform'),
+        APIField('url'),
+        APIField('text'),
+    ]
 
 # Groups can have multiple different types of subscription costs, or none at all
 class GroupSubscription(Orderable):
     page = ParentalKey('GroupPage', related_name='subscriptions')
+    name = models.CharField(
+        max_length=100, 
+        blank=True,
+        help_text="Optional name for this subscription type (e.g. 'Monthly Membership', 'Annual Pass')"
+    )
     frequency = models.CharField(max_length=20, choices=SUBSCRIPTION_FREQUENCY_CHOICES)
     cost = models.DecimalField(max_digits=6, decimal_places=2)
     estimated_cost_per_event = models.DecimalField(
@@ -45,12 +58,23 @@ class GroupSubscription(Orderable):
         decimal_places=2, 
         null=True, 
         blank=True,
-        help_text="Estimated cost per event"
+        help_text="The total cost of the subscription divided by the number of events you can attend in that period."
     )
     offers_discount_on_event_cost = models.BooleanField(
         default=False,
-        help_text="Indicates if a discount applies on event cost."
+        help_text="Check this if by getting a subscription, you get a discount on the cost of future events."
     )
+
+    panels = [
+        FieldPanel('name'),
+        FieldPanel('frequency'),
+        FieldPanel('cost'),
+        FieldPanel('estimated_cost_per_event'),
+        FieldPanel('offers_discount_on_event_cost'),
+    ]
+
+    def __str__(self):
+        return self.name if self.name else f"{self.frequency} subscription"
 
 class GroupPageTag(TaggedItemBase):
     content_object = ParentalKey(
@@ -63,23 +87,39 @@ class GroupPage(Page):
     description = models.TextField(help_text="A one or two sentence description of the group")
     details = RichTextField(blank=True, help_text="Extended description displayed on the group page")
 
+    # Gender
     gender = models.CharField(
         max_length=50, 
-        choices=EVENT_GENDER_CHOICES,  # Now using common gender choices
+        choices=EVENT_GENDER_CHOICES, 
         default='all',
         blank=True, 
         help_text="Select a restricted gender if applicable; 'All Welcome' means no restrictions."
     )
-    
+    gender_other = models.CharField(
+        max_length=100,
+        blank=True,
+        help_text="If you selected 'Other', please specify here"
+    )
+
+    # Tags
     tags = ClusterTaggableManager(through=GroupPageTag, blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel('description'),
         FieldPanel('details'),
-        FieldPanel('gender'),
         FieldPanel('tags'),
         InlinePanel('links', label="Group Links"),
-        InlinePanel('subscriptions', label="Subscriptions"),
+        MultiFieldPanel([
+            FieldPanel('gender'),
+            FieldPanel('gender_other'),
+        ], heading="Gender requirements", classname="collapsible collapsed"),
+        InlinePanel(
+            'subscriptions', 
+            label="Subscriptions", 
+            classname="collapsible collapsed",
+            heading="Subscription Options",
+            help_text="Add any membership or subscription options that your group offers."
+        ),
         InlinePanel('events', label="Events"),
     ]
 
@@ -87,17 +127,27 @@ class GroupPage(Page):
         APIField('description'),
         APIField('details'),
         APIField('gender'),
+        APIField('gender_other'),
         APIField('tags'),
         APIField('links'),
         APIField('subscriptions'),
         APIField('events'),
     ]
 
+    def clean(self):
+        super().clean()
+        if self.gender == 'other' and not self.gender_other:
+            from django.core.exceptions import ValidationError
+            raise ValidationError({
+                'gender_other': 'This field is required when "Other" is selected.'
+            })
+
 class GroupEvent(Orderable):
     page = ParentalKey(GroupPage, on_delete=models.CASCADE, related_name='events')
     name = models.CharField(max_length=255)
     details = RichTextField(blank=True)
     
+    # Date and time
     frequency = models.CharField(
         max_length=50,
         choices=EVENT_FREQUENCY_CHOICES,
@@ -113,15 +163,31 @@ class GroupEvent(Orderable):
     start_time = models.TimeField() # Todo add support for minutes as well as hours
     end_time = models.TimeField() # Todo add support for minutes as well as hours
     time_details = models.TextField(blank=True, help_text="Any additional timing information")
+
+    # Event link
+    link = models.URLField(blank=True, help_text="Optional link to the organisers website, if they have a webpage for this specific event.")
     
     # Location
     address = models.CharField(max_length=250, blank=True, null=True)
-    location = models.CharField(max_length=250, blank=True, null=True)
-    
-    google_maps_link = models.URLField(blank=True)
-    location_details = models.TextField(blank=True, help_text="Additional location instructions or details")
 
-    link = models.URLField(blank=True, help_text="Optional link to the venue website for the specific event")
+    # The location is a string representation of latitude and longitude.
+    # We convert it to these seperate parts and return those fields in the API.
+    location = models.CharField(max_length=250, blank=True, null=True)
+
+    @cached_property
+    def point(self):
+        return geosgeometry_str_to_struct(self.location)
+
+    @property
+    def latitude(self):
+        return self.point['y']
+
+    @property
+    def longitude(self):
+        return self.point['x']
+
+    google_maps_link = models.URLField(blank=True, help_text="Copy this link from the above Google Maps panel, by clicking on the location and copying the link from the popup window that shows.")
+    location_details = models.TextField(blank=True, help_text="Optional extra location details. Any instructions that might help people find the location not already covered.")
     
     # Cost
     session_price = models.DecimalField(
@@ -133,14 +199,27 @@ class GroupEvent(Orderable):
     )
 
     cost_details = models.TextField(blank=True)
-
-    voluntary_contribution = models.BooleanField(default=False)
+    voluntary_contribution = models.BooleanField(default=False, help_text="The event cost is not compulsory to pay.")
     
     # Booking
     booking_required = models.CharField(max_length=20, choices=BOOKING_CHOICES)
     booking_details = models.TextField(blank=True)
     
-    gender = models.CharField(max_length=50, blank=True, choices=EVENT_GENDER_CHOICES, default='all')
+    # Gender
+    gender = models.CharField(
+        max_length=50, 
+        choices=EVENT_GENDER_CHOICES, 
+        default='all',
+        blank=True, 
+        help_text="Select a restricted gender if applicable; 'All Welcome' means no restrictions."
+    )
+    gender_other = models.CharField(
+        max_length=100,
+        blank=True,
+        help_text="If you selected 'Other', please specify here"
+    )
+
+    # Accessibility
     accessibility = models.TextField(blank=True)
 
     panels = [
@@ -152,16 +231,22 @@ class GroupEvent(Orderable):
         FieldPanel('start_time'),
         FieldPanel('end_time'),
         FieldPanel('time_details'),
-        FieldPanel('address'),
-        LeafletPanel('location'),
+        MultiFieldPanel([
+            GeoAddressPanel("address", geocoder=geocoders.GOOGLE_MAPS),
+            GoogleMapsPanel('location', address_field='address'),
+        ], 'Location details'),
         FieldPanel('google_maps_link'),
         FieldPanel('location_details'),
         FieldPanel('link'),
         FieldPanel('session_price'),
         FieldPanel('cost_details'),
+        FieldPanel('voluntary_contribution'),
         FieldPanel('booking_required'),
         FieldPanel('booking_details'),
-        FieldPanel('gender'),
+        MultiFieldPanel([
+            FieldPanel('gender',),
+            FieldPanel('gender_other'),
+        ], heading="Gender requirements", classname="collapsible collapsed"),
         FieldPanel('accessibility'),
     ]
 
@@ -175,15 +260,25 @@ class GroupEvent(Orderable):
         APIField('end_time'),
         APIField('time_details'),
         APIField('address'),
-        APIField('location'),
+        APIField('latitude'),
+        APIField('longitude'),
         APIField('google_maps_link'),
         APIField('location_details'),
         APIField('link'),
         APIField('session_price'),
         APIField('cost_details'),
+        APIField('voluntary_contribution'),
         APIField('booking_required'),
         APIField('booking_details'),
         APIField('gender'),
+        APIField('gender_other'),
         APIField('accessibility'),
     ]
 
+# Optional fields for minimum age and maximum age requirements.
+
+# Sort out the time picker so it supports minutes as well as hours.
+
+# How will we add support for regular events with changing locations, a checkbox?
+
+# How to split out / refactor this file into seperate sections?
