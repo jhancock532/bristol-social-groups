@@ -1,0 +1,42 @@
+{
+  "name": "Utopian Book Collective",
+  "slug": "utopian-book-collective",
+  "description": "A book club focused on utopian and dystopian literature, meeting monthly in central Bristol.",
+  "details": "Come along, join the dissection, cogitation, exuberation, confusion and libation! We don't have a hierarchical structure and decisions over the next book can be done in turn, or through discussion and scanning the internet.",
+  "tags": [
+    "books",
+    "literature"
+  ],
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/utopian-book-collective/"
+    }
+  ],
+  "events": [
+    {
+      "details": "We meet in central Bristol on the first Monday of every month, a new and exciting discussion ensues and we normally end with a few drinks and choose the next months wee bit of utopian or dystopian literature.",
+      "time": {
+        "frequency": "The first Monday of every month",
+        "weekday": "Monday",
+        "start": "Jan 1, 1970 19:00",
+        "end": "Jan 1, 1970 21:00",
+        "details": ""
+      },
+      "location": {
+        "address": "Watershed Studio, 1 Canon's Rd, Bristol BS1 5TX",
+        "latitude": "51.4517932",
+        "longitude": "-2.5981746",
+        "googleMapsLink": "https://maps.app.goo.gl/jCG7u13rzMrd6APA6"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": ""
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Please RSVP on Meetup using the link above."
+      }
+    }
+  ]
+}

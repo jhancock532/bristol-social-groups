@@ -1,0 +1,50 @@
+{
+  "name": "South Bristol Chess Club",
+  "slug": "south-bristol-chess-club",
+  "description": "A welcoming chess club for players of all levels, from beginners to masters, with regular meetups, tournaments, and league competition.",
+  "details": "Whether you are a beginner or a master, whether you want to play some friendly games over a pint or compete at the highest level - you will find a warm welcome at South Bristol Chess Club. Why not pop down to see us? Or better still let us know in advance via the contact details on our website - and we can arrange for a warm reception.",
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.southbristolchess.com/"
+    },
+    {
+      "type": "Facebook",
+      "url": "https://www.facebook.com/groups/187605676736112",
+      "text": "South Bristol Chess Club Facebook Group"
+    }
+  ],
+  "tags": [
+    "chess",
+    "board games"
+  ],
+  "events": [
+    {
+      "name": "Club Night",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 19:30",
+        "end": "Jan 1, 1970 23:00",
+        "details": "Regular club night for casual games, practice, and tournaments."
+      },
+      "location": {
+        "address": "Bristol Independent Gaming, 16 Cater Rd, Bishopsworth, BS13 7TW",
+        "latitude": "51.4154781",
+        "longitude": "-2.6096748",
+        "googleMapsLink": "https://maps.app.goo.gl/r6UioHeqpwEJ7iXAA"
+      },
+      "booking": {
+        "required": "Not required",
+        "details": "No booking required, contacting in advance via phone or email on the website is appreciated for new members."
+      }
+    }
+  ],
+  "subscriptions": [
+    {
+      "frequency": "monthly",
+      "cost": 7.50,
+      "details": "Membership is £7.50 per month, paid by standing order on the 1st of each month. New members pay on the 1st of the month following the month they joined. We offer dispensation on hardship grounds. Please ask any member of the committee for a membership form."
+    }
+  ]
+} 
