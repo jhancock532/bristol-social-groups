@@ -1,0 +1,104 @@
+---
+description: This rule provides instructions for creating a new React component in the Social Bristol project.
+globs: 
+alwaysApply: false
+---
+When asked to create a new component, the AI will:
+
+1. Create a new directory for the component at `src/components/[ComponentName]`
+2. Create all required files with appropriate boilerplate code
+3. Implement any specified functionality or props
+4. Add appropriate styling
+
+## Required Information
+
+When requesting a new component, the user should provide:
+- Component name (in PascalCase, e.g., "UserCard")
+- Component purpose/functionality
+- Props the component should accept (if any)
+
+## Standard File Structure
+
+The AI will create these files for each component:
+
+```
+src/components/[ComponentName]/
+├── [ComponentName].tsx
+├── [ComponentName].module.scss
+├── [ComponentName].stories.ts
+├── index.ts
+└── tests/
+    └── [ComponentName].visual.spec.ts
+```
+
+## File Templates
+
+### [ComponentName].tsx
+```tsx
+import React from 'react';
+import styles from './[ComponentName].module.scss';
+
+export const [ComponentName] = () => {
+    return (
+        <div className={styles.container}>
+            {/* Component content goes here */}
+        </div>
+    );
+};
+```
+
+### [ComponentName].module.scss
+```scss
+.container {
+    // Component styles go here
+}
+```
+
+### index.ts
+```ts
+import { [ComponentName] } from './[ComponentName]';
+
+export default [ComponentName];
+```
+
+### [ComponentName].stories.ts
+```ts
+import type { Meta, StoryObj } from '@storybook/react';
+import { [ComponentName] } from './[ComponentName]';
+
+const meta = {
+    title: 'Components/[ComponentName]',
+    component: [ComponentName],
+    parameters: {
+        layout: 'centered',
+    },
+    tags: ['autodocs'],
+    argTypes: {
+        // Define prop controls here
+    },
+    args: {
+        // Define default args here
+    },
+} satisfies Meta<typeof [ComponentName]>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {};
+```
+
+### tests/[ComponentName].visual.spec.ts
+```ts
+import { test, expect } from '@playwright/test';
+
+test('visual regression', async ({ page }) => {
+    await page.goto(
+        '/iframe.html?args=&id=components-[component-name]--default',
+    );
+
+    await expect(page.locator('#storybook-root')).toHaveScreenshot(
+        '[component-name].png',
+    );
+});
+```

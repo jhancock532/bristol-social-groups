@@ -1,8 +1,6 @@
 # Getting Started
 
-Welcome! This is a guide for developers who would like to run the project locally in development mode.
-
-After cloning the repository to your machine, make sure you have Node version 20 installed.
+Welcome! After cloning the repository to your machine, make sure you have Node version 20 installed.
 
 You can use command line tools such as [fnm](https://github.com/Schniz/fnm) or [nvm](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) to switch your node version to the current version used in the repository automatically, by opening a terminal in this projects root directory and running either of the following:
 
@@ -58,12 +56,8 @@ To update snapshots, run `npm run playwright -- --update-snapshots`. If you just
 
 ## Automations
 
-This project includes scripts to help kick start work on repetitive tasks.
+This project includes scripts to help kick start work on repetitive tasks. 
 
-`npm run new-component` - creates a new React component with the specified name, including boilerplate files for that component. Requires no API key.
+See the `.cursor/rules` directory for different prompts you can mention with an AI code editor's agentic development modes. 
 
-If you have an Anthropic API key, you can run further automated code generators. Set the `ANTHROPIC_API_KEY=` in your `.env` file, then in the project root, try running the following commands.
-
-`npm run new-group` - creates a new group folder and `details.json` file with the information that you pass into it. You'll be prompted for the slug of the group and then there's a prompt for adding extra information.
-
-`npm run react-to-storybook` - converts a specified React component into a Storybook story automatically.
+See also the `documentation/migrations.md` guide for automatically updating all group details at once.
