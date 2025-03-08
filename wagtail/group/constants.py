@@ -1,15 +1,14 @@
 # wagtail/group/constants.py
 
 # Constants used in the group models
-
-WEEKDAY_CHOICES = [
-    ('monday', 'Monday'),
-    ('tuesday', 'Tuesday'),
-    ('wednesday', 'Wednesday'),
-    ('thursday', 'Thursday'),
-    ('friday', 'Friday'),
-    ('saturday', 'Saturday'),
-    ('sunday', 'Sunday'),
+RRULE_WEEKDAY_CHOICES = [
+    ('MO', 'Monday'),
+    ('TU', 'Tuesday'),
+    ('WE', 'Wednesday'),
+    ('TH', 'Thursday'),
+    ('FR', 'Friday'),
+    ('SA', 'Saturday'),
+    ('SU', 'Sunday'),
 ]
 
 GROUP_LINK_TYPE_CHOICES = [
@@ -40,10 +39,3 @@ BOOKING_CHOICES = [
     ('advised', 'Advised'),
     ('required', 'Required'),
 ]
-
-EVENT_GENDER_CHOICES = [
-    ('all', 'All Welcome'),
-    ('women_only', 'Women Only'),
-    ('men_only', 'Men Only'),
-    ('other', 'Other'),
-] 
