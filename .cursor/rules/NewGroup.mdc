@@ -1,0 +1,147 @@
+---
+description: Guidance on how to add `details.json` files for new social groups.
+globs: 
+alwaysApply: false
+---
+Please create a complete and valid JSON file for a new social group. This JSON will be saved as `details.json` in a directory named after the group's slug (e.g., `data/groups/new-group-slug/details.json`).
+
+## JSON Schema
+
+A valid `details.json` file must conform to the following structure, based on the TypeScript types defined in the codebase:
+
+### Group Structure
+
+```typescript
+type Group = {
+    name: string;               // The display name of the group
+    slug: string;               // URL-friendly identifier for the group
+    description: string;        // A one or two sentence description
+    links: Link[];              // List of links to the group's online presence
+    tags: string[];             // Categories for the group
+    details?: string;           // Optional extended description
+    events?: Event[];           // Optional list of events organized by the group
+    gender?: Gender;            // Optional gender focus (defaults to all if blank)
+    subscriptions?: Subscription[]; // Optional subscription information
+};
+```
+
+### Link Structure
+
+```typescript
+type Link = {
+    type: string;  // e.g., 'Discord', 'WhatsApp', 'Meetup', 'Facebook', 'Instagram', 'TikTok', 'Website'
+    url: string;   // The full URL to the resource
+    text?: string; // Optional display text (defaults to "View group's website")
+};
+```
+
+### Event Structure
+
+```typescript
+type Event = {
+    name?: string;       // Name of the event
+    slug?: string;       // URL-friendly identifier for the event
+    details?: string;    // Description of the event
+    link?: Link;         // Optional specific URL for this event
+    time?: EventTime;    // Time information for the event
+    location: EventLocation; // Location information
+    locationURL?: string; // Optional URL if no regular location
+    cost?: EventCost;    // Optional cost information
+    booking?: EventBooking; // Optional booking requirements
+    gender?: Gender;     // Optional gender focus
+    accessibility?: string; // Optional accessibility information
+};
+```
+
+### Event Time Structure
+
+```typescript
+type EventTime = {
+    frequency: string;   // e.g., 'Weekly', 'Fortnightly', 'Monthly'
+    weekday: string;     // e.g., 'Monday', 'Tuesday', etc.
+    start: string;       // Start time
+    end: string;         // End time
+    details?: string;    // Optional additional time details
+};
+```
+
+### Event Location Structure
+
+```typescript
+type EventLocation = {
+    address: string;      // Physical address
+    latitude: string;     // Latitude coordinate
+    longitude: string;    // Longitude coordinate
+    googleMapsLink: string; // Link to Google Maps
+    details?: string;     // Optional additional location details
+};
+```
+
+### Event Cost Structure
+
+```typescript
+type EventCost = {
+    sessionPrice?: number; // Cost per session
+    details?: string;     // Optional additional cost details
+};
+```
+
+### Event Booking Structure
+
+```typescript
+type EventBooking = {
+    required: 'Not required' | 'Advised' | 'Required'; // Booking requirement level
+    details?: string;     // Optional additional booking details
+};
+```
+
+### Gender Type
+
+```typescript
+type Gender = 'Men' | 'Women' | string;
+```
+
+### Subscription Structure
+
+```typescript
+type Subscription = {
+    frequency: 'monthly' | 'quarterly' | 'yearly'; // Billing frequency
+    cost: number;                                  // Cost amount
+    costPerEvent?: number;                         // Optional cost per event
+    offersDiscountOnEventCosts?: boolean;          // Whether it offers discounts
+};
+```
+
+## Tips for Generating Valid Group Details
+
+1. **Required Fields**: Ensure all required fields are included (name, slug, description, links, tags).
+2. **Valid Formats**: Follow the format examples above, especially for nested objects like events, links, etc.
+3. **Consistency**: Ensure the slug matches the directory name in `data/groups/{slug}/`.
+4. **Real-World Accuracy**: For real groups, verify that links, addresses, and other data are accurate.
+5. **Formatting**: Use proper JSON format with double quotes for keys and string values.
+
+## Finding Example Groups
+
+For more examples, explore the existing groups in `data/groups/`:
+- `chance-and-counters`
+- `girls-who-walk-bristol`
+- `rebel-book-club`
+- `super-miner-battle-farm`
+- `ride-bristol`
+
+## Additional Notes
+
+- Date/time formats: Times are stored as strings in the format "Jan 1, 1970 HH:MM" (the date is placeholder)
+- Coordinates: Latitude and longitude are stored as strings
+- Session prices: Stored as numbers without currency symbols
+- Links: Always include the full URL with protocol (https://) 
+
+## Conclusion
+
+Using the information provided by the user, now create a JSON object in `details.json` that:
+
+   - Follows the Group type structure
+   - Contains all required fields
+   - Uses appropriate values for all fields
+   - Includes events if appropriate for the group type
+

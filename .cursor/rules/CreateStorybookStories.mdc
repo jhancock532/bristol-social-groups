@@ -1,0 +1,156 @@
+---
+description: This document provides instructions for generating Storybook stories for React components in the Social Bristol project.
+globs: 
+alwaysApply: false
+---
+## File Structure
+
+When generating a Storybook story for a React component, follow these conventions:
+
+1. The story file should be named `[ComponentName].stories.ts` and placed in the same directory as the component.
+2. If the component uses TypeScript, use `.ts` extension; if it's using JavaScript with JSX, use `.tsx`.
+
+## Story Template
+
+Use the following template for Storybook stories:
+
+```typescript
+import type { Meta, StoryObj } from '@storybook/react';
+import { MOCK_MOCK_DATA_CONSTANT } from '@/stories/mocks'; // Import appropriate mock data
+import ComponentName from './ComponentName';
+
+const meta = {
+    title: 'Components/[Category]/ComponentName',
+    component: ComponentName,
+    parameters: {
+        layout: 'centered', // Use 'padded' for larger components like Maps
+    },
+    tags: ['autodocs'],
+    argTypes: {
+        // Define controls for each prop
+        // Examples:
+        // stringProp: { control: 'text' },
+        // numberProp: { control: 'number' },
+        // booleanProp: { control: 'boolean' },
+        // objectProp: { control: 'object' },
+        // arrayProp: { control: 'object' },
+        // enumProp: { control: { type: 'select', options: ['option1', 'option2'] } },
+    },
+    args: {
+        // Default args that apply to all stories
+    },
+} satisfies Meta<typeof ComponentName>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+    args: {
+        // Default story props, often sourced from mocks
+        // Example: ...MOCK_DATA[0],
+    },
+};
+
+// Additional stories as needed
+export const Variation: Story = {
+    args: {
+        // Props for this variation
+    },
+};
+```
+
+## Categories
+
+Categorize components appropriately in the `title` field:
+
+- UI elements: `Components/UI/[ComponentName]`
+- Cards: `Components/Cards/[ComponentName]`
+- Layout: `Components/Layout/[ComponentName]`
+- Forms: `Components/Forms/[ComponentName]`
+- Maps: `Components/Maps/[ComponentName]`
+- Icons: `Components/Icons/[ComponentName]`
+
+## Mock Data
+
+1. Look for existing mock data in `src/stories/mocks.ts` that matches the component's props.
+2. If appropriate mock data doesn't exist, consider adding new mock constants to the mocks file.
+3. Mock data constants should be named using the pattern `MOCK_[PLURAL_ENTITY_NAME]`.
+
+## ArgTypes
+
+Define appropriate controls for all component props:
+
+- `string`: Use `{ control: 'text' }`
+- `number`: Use `{ control: 'number' }`
+- `boolean`: Use `{ control: 'boolean' }`
+- `object`: Use `{ control: 'object' }`
+- `enum/select`: Use `{ control: { type: 'select', options: [...] } }`
+- `date`: Use `{ control: 'date' }`
+- `color`: Use `{ control: 'color' }`
+
+## Story Variations
+
+Create additional stories for different component states or configurations:
+
+- Default state
+- Loading state (if applicable)
+- Error state (if applicable)
+- Different sizes or variants
+- With/without certain features enabled
+
+## Layout Parameter
+
+Choose the appropriate layout parameter based on component size:
+- For small to medium components: `layout: 'centered'`
+- For larger components (like maps): `layout: 'padded'`
+- For full-width components: `layout: 'fullscreen'`
+
+## Example
+
+Here's an example for an EventCard component:
+
+```typescript
+import type { Meta, StoryObj } from '@storybook/react';
+import { MOCK_EVENTS } from '@/stories/mocks';
+import EventCard from './EventCard';
+
+const meta = {
+    title: 'Components/Cards/EventCard',
+    component: EventCard,
+    parameters: {
+        layout: 'centered',
+    },
+    tags: ['autodocs'],
+    argTypes: {
+        cost: { control: 'object' },
+        time: { control: 'object' },
+        location: { control: 'object' },
+        locationURL: { control: 'text' },
+        booking: { control: 'object' },
+        link: { control: 'object' },
+        gender: { control: 'text' },
+    },
+    args: {},
+} satisfies Meta<typeof EventCard>;
+
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+    args: { ...MOCK_EVENTS[0] },
+};
+```
+
+## Workflow for AI Agent
+
+When asked to create a Storybook story for a React component:
+
+1. Analyze the component file to understand its props and functionality
+2. Check if appropriate mock data exists in `src/stories/mocks.ts`
+3. Create the story file following the template above
+4. Place the file in the same directory as the component
+5. If needed, suggest adding new mock data to the mocks file
+
+Remember to follow the naming conventions and categorize components appropriately. 
