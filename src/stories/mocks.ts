@@ -114,7 +114,7 @@ export const MOCK_GROUPS: Group[] = [
         links: [
             {
                 url: 'https://lorem.ipsum/dolor',
-                type: 'WhatsApp',
+                type: 'Meetup',
             },
         ],
     },

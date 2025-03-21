@@ -29,7 +29,7 @@ type Group = {
 
 ```typescript
 type Link = {
-    type: string;  // e.g., 'Discord', 'WhatsApp', 'Meetup', 'Facebook', 'Instagram', 'TikTok', 'Website'
+    type: string;  // e.g., 'Discord', 'Meetup', 'Facebook', 'Instagram', 'TikTok', 'Website'
     url: string;   // The full URL to the resource
     text?: string; // Optional display text (defaults to "View group's website")
 };

@@ -8,7 +8,6 @@ import { Event } from '@/types/Event';
 import { Link as LinkType, Subscription } from '@/types/base';
 
 import styles from './GroupCard.module.scss';
-import { WhatsappIcon } from '../Icons/WhatsappIcon';
 
 type GroupLinkProps = {
     link: LinkType;
@@ -21,13 +20,6 @@ const GroupLink = ({ link }: GroupLinkProps) => {
                 <>
                     <DiscordIcon className={styles.icon} /> Join the Discord
                     server
-                </>
-            );
-        case 'WhatsApp':
-            return (
-                <>
-                    <WhatsappIcon className={styles.icon} /> Join the WhatsApp
-                    group chat
                 </>
             );
         case 'Meetup':
