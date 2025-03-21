@@ -2,19 +2,20 @@
   "name": "Bristol Nerds",
   "slug": "bristol-nerds",
   "description": "An active social community for people who are interested in things of the nerdy variety, including videogames, boardgames, science fiction, fantasy, anime, science, history, and technology.",
-  "details": "The group has many sub-groups on WhatsApp for organising more informal events, with the main events posted on Meetup.",
+  "details": "The group has many sub-groups on WhatsApp around common interests, with the main events posted on Meetup. You can join the WhatsApp chats by visiting the Linktree website.",
   "tags": [
     "gaming",
     "board games"
   ],
   "links": [
     {
-      "type": "Meetup",
-      "url": "https://www.meetup.com/bristol-nerds/"
+      "type": "Website",
+      "url": "https://linktr.ee/BristolNerds",
+      "text": "See all links on Linktree"
     },
     {
-      "type": "WhatsApp",
-      "url": "https://chat.whatsapp.com/LXTiwe8s7CjHQV1zep7FhX"
+      "type": "Meetup",
+      "url": "https://www.meetup.com/bristol-nerds/"
     }
   ]
 }

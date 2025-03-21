@@ -1,7 +1,7 @@
 {
   "name": "Local Legends Run Club",
   "slug": "local-legends-run-club",
-  "description": "A friendly, social run club meeting every Wednesday for a 5k run (rain or shine) and finishing with some great chats over drinks. All levels of runners are welcome. Feel free to join our WhatsApp group for more details and updates, linked below.",
+  "description": "A friendly, social run club meeting every Wednesday for a 5k run (rain or shine) and finishing with some great chats over drinks. All levels of runners are welcome. Join our WhatsApp group for more details and updates, linked on our Instagram page.",
   "details": "",
   "tags": [
     "running",
@@ -11,10 +11,6 @@
     {
       "type": "Instagram",
       "url": "https://www.instagram.com/locallegendsrunclub/"
-    },
-    {
-      "type": "WhatsApp",
-      "url": "https://chat.whatsapp.com/KDnBv98pJFyGV1UXZkKzoC"
     }
   ],
   "events": [

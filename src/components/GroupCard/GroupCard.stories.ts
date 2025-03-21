@@ -65,17 +65,3 @@ export const DiscordGroup: Story = {
         ],
     },
 };
-
-export const WhatsappGroup: Story = {
-    args: {
-        ...Default.args,
-        name: 'Group that arranges events on WhatsApp',
-        events: undefined,
-        links: [
-            {
-                type: 'WhatsApp',
-                url: 'https://example.com/group',
-            },
-        ],
-    },
-};

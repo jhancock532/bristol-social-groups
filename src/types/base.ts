@@ -1,7 +1,6 @@
 export type Link = {
     type:
         | 'Discord'
-        | 'WhatsApp'
         | 'Meetup'
         | 'Facebook'
         | 'Instagram'
