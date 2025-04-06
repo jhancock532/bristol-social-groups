@@ -1,7 +1,7 @@
 {
     "name": "The Anime Club - Bristol & Beyond",
     "slug": "the-anime-club",
-    "description": "A community of anime fans that meet up in Bristol, organised on Discord. We have in-person meetups every other Friday, as well as other events including watch parties, karaoke and attending conventions. See the Meetup page for details.",
+    "description": "A community of adult anime fans that meet up in Bristol, organised on Discord. We have in-person meetups every other Friday, as well as other events including watch parties, karaoke, and attending conventions. Over 18s only. See the Meetup page for details. Note that attendance numbers on both Meetup and Discord are innacurate, as most regulars don't mark their attendance every time.",
     "details": "",
     "tags": ["anime", "film", "animation"],
     "links": [
@@ -26,7 +26,7 @@
                 "details": ""
             },
             "booking": {
-                "required": "Required",
+                "required": "Not required",
                 "details": "Join the Meetup group or Discord server for event details and locations"
             },
             "locationURL": "https://www.meetup.com/meetup-group-lyqtckmt/",
