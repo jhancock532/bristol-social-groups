@@ -1,0 +1,15 @@
+{
+  "name": "BS9 French Meetup Group",
+  "slug": "bs9-french-meetup-group",
+  "description": "For people who love France and want to practice their French in a friendly atmosphere and make friends in the process. Les français sont bienvenus.",
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/bs9-french-meetup-group",
+      "text": "View on Meetup"
+    }
+  ],
+  "tags": [
+    "languages"
+  ]
+} 
