@@ -59,7 +59,7 @@ export default function Home({ groups }: { groups: Group[] }) {
         includeScore: true,
         minMatchCharLength: 3,
         useAnd: false,
-        threshold: 0.2,
+        threshold: 0.3,
         matchAllTokens: false,
         tokenize: true,
         keys: ['name', 'description', 'tags', 'details'],

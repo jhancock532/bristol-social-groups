@@ -1,0 +1,45 @@
+{
+  "name": "Bristol Japanese Language Meetup Group",
+  "slug": "bristol-japanese-meetup",
+  "description": "This group is for you if: you're learning Japanese; you like Japan and Japanese culture; you're Japanese and you want to practice your English; you're Japanese and you want a place to hangout with other Japanese speakers; you want to make new friends; you just like a drink with some good people.",
+  "details": "We meet up every week + occasional special events, see main page for the time and venue. Please come along and if you feel shy, send a message to the admin on Meetup or Facebook and we can get to know each other before you come so you can feel less nervous. As well as the cultural exchange, we also host a study group on Monday evenings.",
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/bristol-japanese-meetup-group",
+      "text": "View on Meetup"
+    },
+    {
+      "type": "Facebook",
+      "url": "https://www.facebook.com/groups/BristolJapaneseMeetup/",
+      "text": "Join Facebook Group"
+    }
+  ],
+  "tags": [
+    "languages",
+    "culture"
+  ],
+  "events": [
+    {
+      "name": "English Japanese language and cultural exchange",
+      "slug": "placeholder-japanese-language-exchange",
+      "details": "",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 18:45",
+        "end": "Jan 1, 1970 21:45"
+      },
+      "location": {
+        "address": "Hort's Townhouse, 49 Broad Street, BS1 2EP",
+        "latitude": "51.4554831",
+        "longitude": "-2.5940138",
+        "googleMapsLink": "https://maps.app.goo.gl/54C5dz7LmZJo4At19",
+        "details": ""
+      },
+      "booking": {
+        "required": "Not required"
+      }
+    }
+  ]
+} 

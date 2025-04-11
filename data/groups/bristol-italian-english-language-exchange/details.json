@@ -1,0 +1,37 @@
+{
+  "name": "Italian/English Cultural Exchange",
+  "slug": "bristol-italian-english-language-exchange",
+  "description": "A chance to get together and have a friendly chat in Italian and English! Open to all those interested in Italian culture, all levels of conversational ability welcome.",
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/bristol-italian-english-language-exchange",
+      "text": "View on Meetup"
+    }
+  ],
+  "tags": [
+    "languages", "culture"
+  ],
+  "events": [
+    {
+      "details": "This is a very informal event and everybody is very welcome to join :) You don't need to be fluent in Italian! If the weather is nice we can go to the park opposite the venue. A friend has also got a guitar so we can listen to some Italian songs :) Looking forward to seeing you there!",
+      "time": {
+        "frequency": "Fortnightly on Sundays",
+        "weekday": "Sunday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 21:00"
+      },
+      "location": {
+        "address": "Left Handed Giant Brewpub, Hawkins Lane, Finzels Reach, BS1 6EU",
+        "latitude": "51.4543851",
+        "longitude": "-2.5895366",
+        "googleMapsLink": "https://maps.app.goo.gl/PixMXUNvqCrx4nxZ9",
+        "details": ""
+      },
+      "booking": {
+        "required": "Advised",
+        "details": "Please mark as going on the Meetup page to help the organiser get an idea of numbers."
+      }
+    }
+  ]
+} 
