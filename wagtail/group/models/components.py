@@ -32,11 +32,13 @@ class GroupLocation(Orderable):
 
     @property
     def latitude(self):
-        return self.point['y'] if self.location else None
+        point = self.point
+        return point['y'] if point else None
 
     @property
     def longitude(self):
-        return self.point['x'] if self.location else None
+        point = self.point
+        return point['x'] if point else None
 
     @property
     def google_maps_link(self):

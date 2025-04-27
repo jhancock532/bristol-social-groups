@@ -1,1 +1,0 @@
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'wagtail.backend.settings.local') 
