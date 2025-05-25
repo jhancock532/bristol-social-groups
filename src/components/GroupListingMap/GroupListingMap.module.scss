@@ -60,6 +60,10 @@
     position: relative;
     transform: translateY($grid);
 
+    .buttonText {
+        padding: $grid $grid * 0.5 $grid $grid;
+    }
+
     &:focus-visible {
         // Remove the focus outline from the container button
         // And only apply the outline effect to the child

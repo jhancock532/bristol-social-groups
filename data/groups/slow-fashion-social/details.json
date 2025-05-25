@@ -1,0 +1,48 @@
+{
+    "name": "Slow Fashion Social",
+    "slug": "slow-fashion-social",
+    "description": "A monthly social to meet others who are interested in sustainable fashion. The social will be run as a workshop to learn new craft and mending skills together. No sewing or fashion experience required and all materials will be provided! ",
+    "links": [
+        {
+            "type": "Instagram",
+            "url": "https://www.instagram.com/weavingchangeuk/"
+        },
+        {
+            "type": "Website",
+            "url": "https://www.weavingchange.co.uk/workshops"
+        }
+    ],
+    "tags": [
+        "fashion",
+        "sewing",
+        "sustainability"
+    ],
+    "details": "This is an inclusive group (we're not too worried about straight stitches!) for people who want to have a more sustainable wardrobe.",
+    "events": [
+        {
+            "name": "Monthly Sustainable Fashion Workshop",
+            "details": "",
+            "time": {
+                "frequency": "First Sunday of the month",
+                "weekday": "Sunday",
+                "start": "Jan 1, 1970 14:00",
+                "end": "Jan 1, 1970 16:00",
+                "details": ""
+            },
+            "location": {
+                "address": "The Canteen Bristol, 80 Stokes Croft, Bristol BS1 3QY",
+                "latitude": "51.462831",
+                "longitude": "-2.589651",
+                "googleMapsLink": "https://maps.app.goo.gl/G9KyFGZx7cY2gjtL8",
+                "details": ""
+            },
+            "booking": {
+                "required": "Required",
+                "details": "Tickets must be booked in advance. Please see the website or Instagram for more information."
+            },
+            "cost": {
+              "details": "The price per event may vary; the June 2025 event had general admission tickets listed at £10 and reduced income tickets for £5."
+            }
+        }
+    ]
+}
