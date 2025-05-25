@@ -1,0 +1,16 @@
+{
+  "name": "Bristol Mandarin Chinese Meetup",
+  "slug": "bristol-mandarin-chinese-meetup",
+  "description": "A group for Mandarin and English learners to practice conversation. We organize various activities like meals and drinks, welcoming everyone, whether you're just starting Chinese or are a fluent speaker.",
+  "details": "Please try to RSVP on Meetup as we often book tables, but feel free to join last minute if the event is an informal gathering without a booking. A small contribution (e.g. £2 cash or via WeChat Pay/PayPal) is appreciated at events to help cover Meetup's monthly fees and keep the group running.",
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/bristol-mandarin-chinese-meetup",
+      "text": "View on Meetup"
+    }
+  ],
+  "tags": [
+    "languages"
+  ]
+} 

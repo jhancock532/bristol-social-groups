@@ -1,0 +1,52 @@
+{
+  "name": "Bristol Language Exchange",
+  "slug": "bristol-language-exchange",
+  "description": "Connecting locals and internationals in Bristol with weekly language exchange events, for all languages and levels.",
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/bristollanguageexchange"
+    },
+    {
+      "type": "Facebook",
+      "url": "https://www.facebook.com/groups/1713176182264761",
+      "text": "View Facebook Group"
+   },
+    {
+      "type": "Website",
+      "url": "https://linktr.ee/bristollanguageexchange",
+      "text": "View WhatsApp & more on Linktree"
+    }
+  ],
+  "tags": [
+    "languages"
+  ],
+  "details": "All languages and levels are welcome, and we are inclusive of all ages, races, religions etc. Whether you're a polyglot, a beginner just starting with Duolingo Spanish, or you just want to come and socialise, you will be welcomed to our community of language learners and international friends. With the help of our host you will be able to find other people attending the event with compatible language interests - we are all very friendly and the majority of our attendees come alone, so there's no need to worry about getting involved!",
+  "events": [
+    {
+      "details": " It's a relaxed environment perfect for making new friends and practicing languages at your own pace. Please disregard the attendee numbers shown on Meetup or Facebook. Because we meet at the same time and place every week, many regulars do not sign up beforehand, but we always have a great turnout, often exceeding 40 people. We also have many more participants who join through other platforms.",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 19:00",
+        "end": "Jan 1, 1970 21:00",
+        "details": "Arrive any time between 7-9pm."
+      },
+      "location": {
+        "address": "Daisy's, 38-40 Triangle, Clifton, BS8 1ER",
+        "latitude": "51.456550",
+        "longitude": "-2.607755",
+        "googleMapsLink": "https://maps.app.goo.gl/HDhJDeBvbdeEmR5w6",
+        "details": "Always check the location on Meetup and WhatsApp Group just in case there is a change."
+      },
+      "cost": {
+          "sessionPrice": 1,
+          "details": "There is a £1 entry fee, which is card only please."
+      },
+      "booking": {
+        "required": "Not required",
+        "details": "No need to register, just turn up!"
+      }
+    }
+  ]
+} 

@@ -1,0 +1,41 @@
+{
+  "name": "WOW's ESEA and Friends Meetup",
+  "slug": "wows-esea-and-friends-meetup",
+  "description": "We're a friendly and welcoming group who loves East & South East Asian culture and food.",
+  "details": "If you are nervous about coming for what ever reason don't hesitate to DM us beforehand and come along! If you want to join the WhatsApp chat, please DM on Meetup for the link.",
+  "tags": [
+    "culture"
+  ],
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/wows-esea-and-friends/"
+    }
+  ],
+  "events": [
+    {
+      "details": "Join us for a chat and drinks. Our group has been going on for few years now and there are always different people coming with the few of us that are regulars. If you feel shy or nervous don't hesitate to message me beforehand.We are a very friendly and welcoming group and have lots of members from different places all over the world 🌎😊",
+      "time": {
+        "frequency": "First Wednesday of the month",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 19:00",
+        "end": "Jan 1, 1970 23:00",
+        "details": ""
+      },
+      "location": {
+        "address": "Kongs of King Street, 13-15 King Street, BS1 4EF",
+        "latitude": "51.451750",
+        "longitude": "-2.594240",
+        "googleMapsLink": "https://goo.gl/maps/XLsSwE54esztMU5v6"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": ""
+      },
+      "booking": {
+        "required": "Not required",
+        "details": ""
+      }
+    }
+  ]
+}
