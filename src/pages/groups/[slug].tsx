@@ -140,8 +140,11 @@ const Event = ({
 
             {event.cost && (
                 <EventDetailsSection
-                    title={`Costs £${event.cost.sessionPrice} per
-                session`}
+                    title={
+                        event.cost.sessionPrice
+                            ? `Costs £${event.cost.sessionPrice} per session`
+                            : 'Costs change depending on the event'
+                    }
                     details={event.cost?.details}
                     Icon={WalletIcon}
                     headingLevel={sectionTitleHeadingLevel}
