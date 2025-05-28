@@ -1,0 +1,2474 @@
+[
+  {
+    "Venue": "Wiper and True",
+    "Time": "6:30 PM–7:30 PM",
+    "Day": "Alternate Fridays",
+    "Recurring Frequency": "Bi-weekly"
+  },
+  {
+    "Venue": "Wiper and True",
+    "Time": "2:00 PM–3:00 PM",
+    "Day": "Alternate Saturdays",
+    "Recurring Frequency": "Bi-weekly"
+  },
+  {
+    "Venue": "Wiper and True",
+    "Time": "Starts at 7:00 PM",
+    "Day": "First, second, and third Friday of every month",
+    "Recurring Frequency": "Monthly on the 1st–3rd Fridays"
+  },
+  {
+    "Venue": "New Bristol Brewery",
+    "Time": "7:30 PM–10:00 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "New Bristol Brewery",
+    "Time": "4:00 PM–10:00 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lost and Grounded Brewers",
+    "Time": "4:00 PM–10:00 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lost and Grounded Brewers",
+    "Time": "1:00 PM–10:00 PM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bristol Beer Factory",
+    "Time": "7:00 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "King Street Brew House",
+    "Time": "7:30 PM (Sign-ups from 7:00 PM)",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Hop Union Brewery & Taproom",
+    "Time": "7:00 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Bi-weekly"
+  },
+  {
+    "Venue": "Bruhaha Brewpub",
+    "Time": "7:00 PM–9:30 PM",
+    "Day": "Varies (e.g. Tuesday, 20 May 2025 for next session)",
+    "Recurring Frequency": "Monthly workshop series"
+  },
+  {
+    "Venue": "Moor Beer Company",
+    "Time": "12:30 PM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bristol Craft Beer Festival",
+    "Time": "Varies",
+    "Day": "June (e.g., 13–14 June 2025)",
+    "Recurring Frequency": "Annual summer festival"
+  },
+  {
+    "Venue": "CAMRA Bristol Beer & Cider Festival",
+    "Time": "Varies (multi-day event)",
+    "Day": "November (e.g., 14–17 November 2024)",
+    "Recurring Frequency": "Annual autumn festival"
+  },
+  {
+    "Venue": "Bristol & Bath Rum Distillery",
+    "Time": "2:00 PM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bristol & Bath Rum Distillery",
+    "Time": "7:00 PM",
+    "Day": "Fridays & Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bristol & Bath Rum Distillery",
+    "Time": "Afternoon (exact start varies)",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "6 O’Clock Gin Distillery",
+    "Time": "12:00 PM, 2:30 PM & 5:00 PM",
+    "Day": "Usually over the same weekend (Saturday & Sunday)",
+    "Recurring Frequency": "Monthly (4 tours per month)"
+  },
+  {
+    "Venue": "Circumstance Distillery",
+    "Time": "Hourly sessions between 11:00 AM and 4:00 PM",
+    "Day": "Monday–Friday",
+    "Recurring Frequency": "Weekly on weekdays"
+  },
+  {
+    "Venue": "Circumstance Distillery",
+    "Time": "6:00 PM–7:30 PM",
+    "Day": "First Thursday of every month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Bristol Dry Gin Distillery",
+    "Time": "7:00 PM–8:45 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bristol Dry Gin Distillery",
+    "Time": "3:00 PM–4:45 PM & 7:00 PM–8:45 PM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Spirited Bristol",
+    "Time": "6:30 PM–8:30 PM",
+    "Day": "Every Wednesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Spirited Bristol",
+    "Time": "2:00 PM–4:00 PM",
+    "Day": "First Sunday of every month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Spirited Bristol",
+    "Time": "Varies (e.g., 2:00 PM–8:00 PM)",
+    "Day": "One day in November (e.g., Sat, 9 Nov 2024)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bristol Beacon",
+    "Time": "7:30 PM (evening concerts); 2:00 PM & 4:00 PM (CBeebies Prom matinees)",
+    "Day": "Various weekdays and weekends (evening concerts); Sundays (matinees)",
+    "Recurring Frequency": "Annual (Mid-July to mid-September)"
+  },
+  {
+    "Venue": "Arnolfini",
+    "Time": "1:00 PM–3:00 PM",
+    "Day": "Last Thursday of every month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Arnolfini",
+    "Time": "5:00 PM",
+    "Day": "Monthly on Sundays",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Arnolfini",
+    "Time": "2:00 PM–5:00 PM",
+    "Day": "Monthly on Sundays",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Arnolfini",
+    "Time": "6:00 PM–8:00 PM",
+    "Day": "Monthly (evenings)",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Arnolfini",
+    "Time": "11:00 AM–1:00 PM",
+    "Day": "Every Friday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Arnolfini",
+    "Time": "2:30 PM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Arnolfini",
+    "Time": "11:30 AM – 12:30 PM",
+    "Day": "Tuesdays & Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Trinity Centre",
+    "Time": "5:45 PM–7:15 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Trinity Centre",
+    "Time": "12:00 PM–2:00 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Trinity Centre",
+    "Time": "6:00 PM–10:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Trinity Centre",
+    "Time": "12:00 PM–2:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Trinity Centre",
+    "Time": "7:00 PM–10:00 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Spike Island",
+    "Time": "10:00 AM–5:00 PM (Public); 6:00 PM–9:00 PM (Preview)",
+    "Day": "First weekend in May (Fri preview, Sat & Sun public)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "St Paul’s Carnival",
+    "Time": "Parade 12:30 PM–3:00 PM; music & stages until 10:00 PM",
+    "Day": "First Saturday of July",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Afrika Eye Festival",
+    "Time": "Evening film screenings (typically 7:00 PM start)",
+    "Day": "Daily during festival in November",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Cube Microplex",
+    "Time": "7:30 PM",
+    "Day": "Every Tuesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Cube Microplex",
+    "Time": "11:00 AM",
+    "Day": "Every Wednesday morning",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Cube Microplex",
+    "Time": "Doors 7:30 PM (films ~8:00 PM)",
+    "Day": "Last Wednesday of every other month",
+    "Recurring Frequency": "Bimonthly"
+  },
+  {
+    "Venue": "Cube Microplex",
+    "Time": "7:00 PM",
+    "Day": "4th Monday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Watershed",
+    "Time": "Screenings throughout each day (varies by film)",
+    "Day": "Wed–Sun (e.g., 23–27 July 2025)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Watershed",
+    "Time": "Online, on-demand",
+    "Day": "Annual (dates vary)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Watershed",
+    "Time": "Daily online",
+    "Day": "1–24 December",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Watershed Café/Bar",
+    "Time": "12:00 PM–9:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Watershed Café/Bar",
+    "Time": "Screenings daily",
+    "Day": "Mid-February each year (dates vary)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "St Paul’s Community Sports Academy",
+    "Time": "Varies by term",
+    "Day": "Varies by term",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "St Paul’s Community Sports Academy (Bristol SU Intramural Sport)",
+    "Time": "1:30 PM–6:30 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "St Paul’s Community Sports Academy (Bristol SU Intramural Sport)",
+    "Time": "2:00 PM–6:00 PM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bradley Stoke Active Lifestyle Centre",
+    "Time": "9:00 AM–9:45 AM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bradley Stoke Active Lifestyle Centre",
+    "Time": "1:00 PM–1:55 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bradley Stoke Active Lifestyle Centre",
+    "Time": "9:30 AM–10:15 AM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bradley Stoke Active Lifestyle Centre",
+    "Time": "9:00 AM–9:55 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bradley Stoke Active Lifestyle Centre",
+    "Time": "7:30 PM–8:25 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bradley Stoke Active Lifestyle Centre",
+    "Time": "10:30 AM–11:25 AM",
+    "Day": "Tuesdays & Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bradley Stoke Active Lifestyle Centre",
+    "Time": "9:30 AM–10:25 AM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Kingswood Active Lifestyle Centre",
+    "Time": "11:30 AM–12:25 PM",
+    "Day": "Mondays & Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Longwell Green Active Lifestyle Centre",
+    "Time": "2:30 PM & 7:30 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Longwell Green Active Lifestyle Centre",
+    "Time": "9:30 AM & 7:30 PM",
+    "Day": "Tuesdays & Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Longwell Green Active Lifestyle Centre",
+    "Time": "9:30 AM & 7:30 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Longwell Green Active Lifestyle Centre",
+    "Time": "10:30 AM–11:25 AM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Thornbury Active Lifestyle Centre",
+    "Time": "9:00 AM–9:45 AM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Thornbury Active Lifestyle Centre",
+    "Time": "10:00 AM–10:45 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Thornbury Active Lifestyle Centre",
+    "Time": "11:30 AM–12:25 PM",
+    "Day": "Mondays & Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Thornbury Active Lifestyle Centre",
+    "Time": "10:30 AM–11:25 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Thornbury Active Lifestyle Centre",
+    "Time": "12:00 PM–2:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yate Active Lifestyle Centre",
+    "Time": "11:15 AM–12:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yate Active Lifestyle Centre",
+    "Time": "11:00 AM–11:45 AM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yate Active Lifestyle Centre",
+    "Time": "11:30 AM–12:15 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yate Active Lifestyle Centre",
+    "Time": "2:00 PM–2:45 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yate Active Lifestyle Centre",
+    "Time": "1:00 PM–1:45 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yate Active Lifestyle Centre",
+    "Time": "9:00 AM–9:45 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yate Active Lifestyle Centre",
+    "Time": "9:30 AM–10:15 AM",
+    "Day": "Mondays, Wednesdays, Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yate Active Lifestyle Centre",
+    "Time": "10:30 AM–11:15 AM",
+    "Day": "Tuesdays & Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Eastville Park",
+    "Time": "9:00 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Eastville Park",
+    "Time": "9:00 AM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Eastville Park",
+    "Time": "6:00 PM–9:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Eastville Park",
+    "Time": "9:30 AM",
+    "Day": "Wednesdays (booking required)",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Ashton Court Estate",
+    "Time": "Arrival by 8:30 AM, workouts to ~6:00 PM",
+    "Day": "Late June (e.g., Saturday, 29 June 2024)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Ashton Court Estate",
+    "Time": "Starts at 11:00 AM",
+    "Day": "Second Sunday in October",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Ashton Court Estate",
+    "Time": "Heats begin ~11:00 AM–11:30 AM",
+    "Day": "Spring & Autumn (dates vary)",
+    "Recurring Frequency": "Recurring series events each year"
+  },
+  {
+    "Venue": "Ashton Court Estate",
+    "Time": "6:00 AM & 6:00 PM (mass ascents); 9:00 PM (Nightglow Thu & Sat)",
+    "Day": "Early August (3–4 days)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Ashton Court Estate",
+    "Time": "9:00 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Crafty Egg (Stokes Croft & Fishponds)",
+    "Time": "Sign-ups 7:00 PM; music 7:30 PM–10:00 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Crafty Egg (Stokes Croft & Fishponds)",
+    "Time": "Starts 7:30 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Crafty Egg (Stokes Croft & Fishponds)",
+    "Time": "Doors 7:30 PM, show 8:00 PM–10:15 PM",
+    "Day": "First Tuesday of every month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Crafty Egg (Fishponds & St George’s)",
+    "Time": "7:00 PM–10:00 PM",
+    "Day": "Third Thursday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Sundial Kitchen (Totterdown)",
+    "Time": "6:30 PM–7:30 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Sundial Kitchen (Totterdown)",
+    "Time": "6:30 PM–8:00 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Sundial Kitchen (Totterdown)",
+    "Time": "7:00 PM",
+    "Day": "Second Thursday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Withywood FAB Café (Bishopsworth)",
+    "Time": "11:00 AM–1:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Shire Memory Café (Shirehampton)",
+    "Time": "2:00 PM–4:00 PM",
+    "Day": "Third Friday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Bambalan (City Centre / Beacon Tower)",
+    "Time": "10:00 AM–12:00 AM (Saturdays) & 10:00 AM–6:00 PM (Sundays)",
+    "Day": "Saturdays & Sundays",
+    "Recurring Frequency": "Weekly on weekends"
+  },
+  {
+    "Venue": "Bambalan",
+    "Time": "10:00 AM–3:00 PM",
+    "Day": "Saturdays & Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bambalan",
+    "Time": "4:00 PM–7:00 PM",
+    "Day": "Monday–Saturday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lawrence’s Café (Easton)",
+    "Time": "Not specified",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Origin Coffee (Victoria Street)",
+    "Time": "By appointment (1.5-hour sessions)",
+    "Day": "Multiple dates each week",
+    "Recurring Frequency": "Ongoing regular sessions"
+  },
+  {
+    "Venue": "The Old Duke",
+    "Time": "~9:00 PM–11:00 PM",
+    "Day": "Every night",
+    "Recurring Frequency": "Daily"
+  },
+  {
+    "Venue": "The Old Duke",
+    "Time": "Approx. 12:30 PM–2:30 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Old Duke",
+    "Time": "8:30 PM–11:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Mr Wolf’s",
+    "Time": "9:00 PM–12:30 AM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Mr Wolf’s",
+    "Time": "From 8:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Mr Wolf’s",
+    "Time": "9:30 PM–11:00 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Mr Wolf’s",
+    "Time": "Evenings (varies by act)",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Daily"
+  },
+  {
+    "Venue": "The King’s Head",
+    "Time": "Sign-up: 7:00 PM–7:30 PM; Music: 8:00 PM–11:00 PM",
+    "Day": "First Wednesday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Gallimaufry",
+    "Time": "Sign-up from 8:00 PM; Music: 8:00 PM–11:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Oxford (Totterdown)",
+    "Time": "8:30 PM–Late",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Langton (St Anne’s)",
+    "Time": "7:00 PM–11:00 PM",
+    "Day": "Last Thursday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Tobacco Factory",
+    "Time": "7:00 PM–10:00 PM",
+    "Day": "One Monday each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Tobacco Factory Market",
+    "Time": "10:00 AM – 2:30 PM",
+    "Day": "Every Sunday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Tobacco Factory Market",
+    "Time": "10:00 AM – 2:30 PM",
+    "Day": "First Sunday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Zerodegrees (Microbrewery)",
+    "Time": "7:00 PM–10:00 PM",
+    "Day": "First Tuesday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Orchard Coffee & Co.",
+    "Time": "7:30 PM–10:00 PM",
+    "Day": "Third Tuesday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Motion",
+    "Time": "5:00 PM – 10:00 PM",
+    "Day": "Every Friday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Watershed",
+    "Time": "Varies",
+    "Day": "Late July (e.g. Wed 23–Sun 27 July 2025)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Watershed",
+    "Time": "Varies",
+    "Day": "September (e.g. 24–28 Sept 2025)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "PYTCH (Skyline Park)",
+    "Time": "Not specified",
+    "Day": "Early July (e.g. 7 July 2023)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "The Mount Without",
+    "Time": "7:00 PM – 8:30 PM",
+    "Day": "Third Tuesday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Thekla",
+    "Time": "10:00 PM – 3:00 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Thekla",
+    "Time": "10:00 PM – 3:00 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Summer Vibes Boat Party",
+    "Time": "6:00 PM – 9:00 PM",
+    "Day": "Select Saturdays during summer (May–August)",
+    "Recurring Frequency": "Recurring themed boat party series"
+  },
+  {
+    "Venue": "Bristol Ferry – Thirsty Thursday Cruise",
+    "Time": "6:30 PM – approx. 8:00 PM",
+    "Day": "Every Thursday (select dates)",
+    "Recurring Frequency": "Weekly (select dates)"
+  },
+  {
+    "Venue": "The Matthew of Bristol",
+    "Time": "As advertised",
+    "Day": "Various days (April–October)",
+    "Recurring Frequency": "Regularly during sailing season"
+  },
+  {
+    "Venue": "Bristol Packet Boat Trips",
+    "Time": "10:30 AM, 11:30 AM, 12:30 PM, 2:00 PM, 3:00 PM, 4:00 PM",
+    "Day": "Daily during summer and school holidays",
+    "Recurring Frequency": "Daily during summer and school holidays"
+  },
+  {
+    "Venue": "The White Lion Bar",
+    "Time": "Nights",
+    "Day": "Wednesday & Thursday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The White Lion Bar",
+    "Time": "Mornings",
+    "Day": "Wednesday & Thursday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The White Lion Bar",
+    "Time": "Nights",
+    "Day": "Friday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The White Lion Bar",
+    "Time": "Nights",
+    "Day": "Saturday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The White Lion Bar",
+    "Time": "Not specified",
+    "Day": "Every Other Sunday",
+    "Recurring Frequency": "Bi-weekly"
+  },
+  {
+    "Venue": "The White Lion Bar",
+    "Time": "12:00 PM–4:00 PM",
+    "Day": "Sunday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Mall Clifton",
+    "Time": "Nights",
+    "Day": "Friday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Volley (The Famous Royal Navy Volunteer)",
+    "Time": "7:30 PM",
+    "Day": "Monday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Volley (The Famous Royal Navy Volunteer)",
+    "Time": "5:00 PM",
+    "Day": "Thursday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Volley (The Famous Royal Navy Volunteer)",
+    "Time": "9:30 PM",
+    "Day": "Thursday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Volley (The Famous Royal Navy Volunteer)",
+    "Time": "10:00 PM",
+    "Day": "Friday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Volley (The Famous Royal Navy Volunteer)",
+    "Time": "9:30 PM",
+    "Day": "Saturday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bristol Museum & Art Gallery",
+    "Time": "10:30 AM – 11:30 AM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bristol Museum & Art Gallery",
+    "Time": "11:00 AM (40 min)",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly (during run 2 Apr 2025 – 25 Mar 2026)"
+  },
+  {
+    "Venue": "Bristol Museum & Art Gallery",
+    "Time": "11:00 AM and 3:00 PM (30 min)",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly (during run 2 Apr 2024 – 31 Dec 2026)"
+  },
+  {
+    "Venue": "Bristol Museum & Art Gallery",
+    "Time": "10:00 AM – 4:00 PM",
+    "Day": "Saturday & Sunday of Lunar New Year weekend",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bristol Museum & Art Gallery",
+    "Time": "11:00 AM – 4:00 PM (subject to availability)",
+    "Day": "Tuesday – Sunday",
+    "Recurring Frequency": "Daily (subject to availability)"
+  },
+  {
+    "Venue": "M Shed",
+    "Time": "11:30 AM (Tue, Thu, Fri, Sat); 11:30 AM & 2:30 PM (Wed)",
+    "Day": "Tuesday, Wednesday, Thursday, Friday, Saturday",
+    "Recurring Frequency": "Weekly (during run 2 Jan – 31 Dec 2025)"
+  },
+  {
+    "Venue": "M Shed",
+    "Time": "10:30 AM – 12:00 PM",
+    "Day": "One Monday per month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "M Shed & Bristol Harbour Railway",
+    "Time": "11:00 AM – 5:00 PM (trips from 11 AM)",
+    "Day": "Weekends (Sat & Sun)",
+    "Recurring Frequency": "Weekly on weekends (Seasonal: 24 May – 2 Nov 2025)"
+  },
+  {
+    "Venue": "M Shed & Bristol Harbour Railway",
+    "Time": "Departures at 11:00 AM, 1:00 PM & 3:00 PM",
+    "Day": "Weekends (Apr–Oct)",
+    "Recurring Frequency": "Weekly during season"
+  },
+  {
+    "Venue": "M Shed & Bristol Harbour Railway",
+    "Time": "Gallery open 10:00 AM–5:00 PM",
+    "Day": "Tuesday–Sunday",
+    "Recurring Frequency": "Weekly (exhibitions rotate quarterly)"
+  },
+  {
+    "Venue": "Blaise Museum",
+    "Time": "11:00 AM – 3:30 PM",
+    "Day": "Thursdays during August school holidays",
+    "Recurring Frequency": "Weekly (during August school holidays)"
+  },
+  {
+    "Venue": "Engine Shed",
+    "Time": "6:30 PM – 8:30 PM",
+    "Day": "Quarterly on a Thursday",
+    "Recurring Frequency": "Quarterly"
+  },
+  {
+    "Venue": "Engine Shed",
+    "Time": "Doors 6:00 PM; event 6:30 PM",
+    "Day": "Day Varies",
+    "Recurring Frequency": "Quarterly (four times a year)"
+  },
+  {
+    "Venue": "TechSPARK",
+    "Time": "6:00 PM",
+    "Day": "Every third Thursday of the month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "SETsquared Bristol",
+    "Time": "Varies by year",
+    "Day": "Annually on a Wednesday in late September",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bristol Technology Festival",
+    "Time": "Multiple sessions each day",
+    "Day": "Monday–Friday in early October",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bristol Walk Fest",
+    "Time": "Various start times",
+    "Day": "Daily throughout 1–31 May",
+    "Recurring Frequency": "Daily (during May)"
+  },
+  {
+    "Venue": "DeskLodge (Redcliffe Way & Beacon Tower)",
+    "Time": "6:00 PM",
+    "Day": "Fortnightly on Wednesdays",
+    "Recurring Frequency": "Fortnightly (every other Wednesday)"
+  },
+  {
+    "Venue": "Runway East (Bristol Bridge)",
+    "Time": "3:00 PM",
+    "Day": "Every Wednesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "St Nicholas Market",
+    "Time": "11:00 AM – 2:30 PM",
+    "Day": "Tuesdays and Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "St Nicholas Market",
+    "Time": "9:00 AM – 2:30 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "St Nicholas Market (Bristol Indies’ Market)",
+    "Time": "10:00 AM – 5:00 PM",
+    "Day": "Fridays and Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Harbourside Street Food Market",
+    "Time": "12:00 PM – 2:30 PM",
+    "Day": "Wed–Fri",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Harbourside Street Food Market",
+    "Time": "11:30 AM – 4:00 PM",
+    "Day": "Sat–Sun",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "M32 Flea Market",
+    "Time": "11:00 AM – 4:00 PM",
+    "Day": "Selected Saturdays (spring & autumn)",
+    "Recurring Frequency": "Monthly (seasonal)"
+  },
+  {
+    "Venue": "Bristol Farmers’ Market",
+    "Time": "9:00 AM – 2:30 PM",
+    "Day": "Every Wednesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Craft & Flea Market (Bristol Folk House)",
+    "Time": "11:00 AM – 4:00 PM",
+    "Day": "Monthly, on a Sunday",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Green Rooms Market (PROPYARD)",
+    "Time": "10:00 AM – 4:00 PM (example)",
+    "Day": "Occasional Sundays",
+    "Recurring Frequency": "Occasional (Roughly quarterly)"
+  },
+  {
+    "Venue": "Bristol Alternative Market (Trinity Centre)",
+    "Time": "11:00 AM (approx.)",
+    "Day": "Monthly, on Sundays",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Get Weird Pop-Up Market (Lost Horizon HQ)",
+    "Time": "11:00 AM – 6:00 PM (example)",
+    "Day": "Occasional pop-ups (approx. quarterly)",
+    "Recurring Frequency": "Occasional (Approx. quarterly)"
+  },
+  {
+    "Venue": "Bristol Car Boot Sale",
+    "Time": "9:00 AM – 3:00 PM",
+    "Day": "Every Sunday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Redpoint Bristol",
+    "Time": "10:00 AM – 6:30 PM",
+    "Day": "Early November (e.g., Saturday 2 November)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Redpoint Bristol",
+    "Time": "Doors open 10:00 AM; sessions 1.5 hrs",
+    "Day": "Daily (Monday–Sunday)",
+    "Recurring Frequency": "Daily"
+  },
+  {
+    "Venue": "Redpoint Bristol",
+    "Time": "Evenings (Tues, Wed, Thu); Weekends (Varies)",
+    "Day": "Tuesdays, Wednesdays, Thursdays, Weekends",
+    "Recurring Frequency": "Weekly courses, term-time"
+  },
+  {
+    "Venue": "Redpoint Bristol",
+    "Time": "7:00 PM – 8:30 PM",
+    "Day": "First Monday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Church – The Climbing Academy (TCA)",
+    "Time": "2 hr sessions (exact start time not public)",
+    "Day": "Mondays & Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Bloc Climbing Centre",
+    "Time": "Bookable throughout opening hours",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Daily"
+  },
+  {
+    "Venue": "Bristol Inclusive Climbing (BIC Fest at Redpoint Bristol)",
+    "Time": "1:00 PM–3:00 PM, 2:00 PM–4:00 PM, 3:00 PM–5:00 PM, 6:30 PM–8:30 PM",
+    "Day": "e.g., 17 April 2025",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bristol Rock Climbers – Meetup Group (at Bloc)",
+    "Time": "6:45 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Fresh Dance & Arts Centre",
+    "Time": "6:00 PM - 7:00 PM",
+    "Day": "Monday & Thursday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Fresh Dance & Arts Centre",
+    "Time": "7:10 PM - 8:10 PM",
+    "Day": "Monday & Thursday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Fresh Dance & Arts Centre",
+    "Time": "6:00 PM - 7:00 PM",
+    "Day": "Tuesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Fresh Dance & Arts Centre",
+    "Time": "10:30 AM - 11:15 AM",
+    "Day": "Wednesdays & Fridays",
+    "Recurring Frequency": "Weekly (term time)"
+  },
+  {
+    "Venue": "Fresh Dance & Arts Centre",
+    "Time": "7:10 PM - 8:30 PM",
+    "Day": "Fortnightly Tuesdays",
+    "Recurring Frequency": "Fortnightly"
+  },
+  {
+    "Venue": "Unity Dance Studio (Unity Dance Academy)",
+    "Time": "9:00 AM – 9:30 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Unity Dance Studio (Unity Dance Academy)",
+    "Time": "9:30 AM – 10:15 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Unity Dance Studio (Unity Dance Academy)",
+    "Time": "11:00 AM – 11:45 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Unity Dance Studio (Unity Dance Academy)",
+    "Time": "12:30 PM – 1:30 PM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Dance Factory Bristol",
+    "Time": "8:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly (for 6-week block, repeats each term)"
+  },
+  {
+    "Venue": "Dance Factory Bristol",
+    "Time": "6:30 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly (for 6-week block, repeats each term)"
+  },
+  {
+    "Venue": "Streetenvy Dance Academy",
+    "Time": "8:00 PM – 9:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Streetenvy Dance Academy",
+    "Time": "8:00 PM – 9:00 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Pirate Studios",
+    "Time": "6:00 PM – 9:00 PM",
+    "Day": "First Wednesday of every month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Pirate Studios",
+    "Time": "Typically evening (sign-up on the night)",
+    "Day": "Monthly (day varies)",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Pirate Studios",
+    "Time": "Varies by location",
+    "Day": "Monthly (day varies by location)",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "University of Bristol Botanic Garden",
+    "Time": "10:00 AM – 5:00 PM",
+    "Day": "Last weekend of August (Saturday & Sunday)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "University of Bristol Botanic Garden",
+    "Time": "10:00 AM – 5:00 PM",
+    "Day": "First Sunday in July",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Queen Square",
+    "Time": "Wed–Fri 7:30 PM; Sat 1:00 PM, 4:15 PM, 7:45 PM; Sun 4:00 PM, 7:30 PM",
+    "Day": "Early June (first full week)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Barley Wood Walled Garden",
+    "Time": "4:00 PM – 10:00 PM",
+    "Day": "Third Saturday in January",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Belmont Estate – The Walled Garden",
+    "Time": "2:00 PM – 4:00 PM",
+    "Day": "Selected Sundays in June",
+    "Recurring Frequency": "Annual (summer months)"
+  },
+  {
+    "Venue": "Redcatch Community Garden (Knowle)",
+    "Time": "12:00 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Redcatch Community Garden (Knowle)",
+    "Time": "10:00 AM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Redcatch Community Garden (Knowle)",
+    "Time": "3:00 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Redcatch Community Garden (Knowle)",
+    "Time": "11:30 AM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Goldney Hall Gardens (Clifton)",
+    "Time": "1:00 PM – 5:00 PM",
+    "Day": "Early August, Sunday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Goldney Hall Gardens (Clifton)",
+    "Time": "6:00 PM – late",
+    "Day": "Typically June, Saturday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Perrett’s Park (Totterdown)",
+    "Time": "Starts around 12:00 PM",
+    "Day": "Mid-summer (date varies), Sunday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Perrett’s Park (Totterdown)",
+    "Time": "Easter Sunday morning (e.g. 12:00 PM)",
+    "Day": "Easter weekend (date varies)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Perrett’s Park (Totterdown)",
+    "Time": "Evening sessions (e.g. 6:30 PM)",
+    "Day": "Early December (date varies)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Perrett’s Park (Totterdown)",
+    "Time": "6:00 AM (mass ascents)",
+    "Day": "Early August Saturday & Sunday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bedminster’s Secret Gardens",
+    "Time": "12:00 PM – 5:00 PM",
+    "Day": "Second weekend of June (Saturday & Sunday)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Penny Brohn UK (Pill, near Bristol)",
+    "Time": "Full-day programme",
+    "Day": "Tuesday–Thursday",
+    "Recurring Frequency": "Four times per year (approximately every quarter)"
+  },
+  {
+    "Venue": "Penny Brohn UK (Pill, near Bristol)",
+    "Time": "9:30 AM–4:00 PM",
+    "Day": "Wednesday (various dates)",
+    "Recurring Frequency": "Monthly (roughly twice per month)"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "3:00 PM–5:00 PM",
+    "Day": "Every Tuesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "5:00 PM–6:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "5:30 PM–6:00 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "5:30 PM–6:00 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "10:30 AM–12:00 PM",
+    "Day": "Every Wednesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "Time on enquiry",
+    "Day": "Every Wednesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "5:00 PM–6:00 PM",
+    "Day": "Every Thursday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "8:00 PM",
+    "Day": "Every Thursday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "2:00 PM–3:30 PM",
+    "Day": "Every Friday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Well Centre for Spirituality at Elsie Briggs House",
+    "Time": "8:00 PM",
+    "Day": "First Friday of the month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Base Vegan Retreat & Animal Sanctuary (Bristol)",
+    "Time": "10:00 AM–4:00 PM",
+    "Day": "Every Friday–Monday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Yoga with Eliana (throughout Bristol)",
+    "Time": "1:00 PM–4:00 PM",
+    "Day": "Sunday (early April)",
+    "Recurring Frequency": "Annual (each spring)"
+  },
+  {
+    "Venue": "Yoga with Eliana (throughout Bristol)",
+    "Time": "1:00 PM–4:00 PM",
+    "Day": "Sunday (mid-July)",
+    "Recurring Frequency": "Annual (each summer)"
+  },
+  {
+    "Venue": "Orchardleigh Wellness Retreats (Frome, Somerset)",
+    "Time": "All-day",
+    "Day": "Saturday–Sunday (e.g. May 31–June 1 2025)",
+    "Recurring Frequency": "Annual (late May/early June)"
+  },
+  {
+    "Venue": "Orchardleigh Wellness Retreats (Frome, Somerset)",
+    "Time": "Varied daily sessions",
+    "Day": "Friday–Sunday (e.g. 21–23 March 2025)",
+    "Recurring Frequency": "Periodically throughout the year"
+  },
+  {
+    "Venue": "Orchardleigh Wellness Retreats (Frome, Somerset)",
+    "Time": "Full-day",
+    "Day": "One-day event (weekday varies)",
+    "Recurring Frequency": "Periodically (dates on enquiry)"
+  },
+  {
+    "Venue": "Orchardleigh Wellness Retreats (Frome, Somerset)",
+    "Time": "Full-day",
+    "Day": "One-day event (weekday varies)",
+    "Recurring Frequency": "Throughout the year (dates on enquiry)"
+  },
+  {
+    "Venue": "The Sharpham Trust (Totnes, Devon)",
+    "Time": "3 nights",
+    "Day": "Varies",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Sharpham Trust (Totnes, Devon)",
+    "Time": "6 nights",
+    "Day": "Varies",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Sharpham Trust (Totnes, Devon)",
+    "Time": "4 nights",
+    "Day": "Varies",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Sharpham Trust (Totnes, Devon)",
+    "Time": "6 nights",
+    "Day": "Varies",
+    "Recurring Frequency": "Annually"
+  },
+  {
+    "Venue": "The Sharpham Trust (Totnes, Devon)",
+    "Time": "4 nights",
+    "Day": "Varies",
+    "Recurring Frequency": "Quarterly"
+  },
+  {
+    "Venue": "The Sharpham Trust (Totnes, Devon)",
+    "Time": "4 nights",
+    "Day": "Varies",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Sharpham Trust (Totnes, Devon)",
+    "Time": "1 day (online)",
+    "Day": "Varies",
+    "Recurring Frequency": "Bi-monthly"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "11:30 AM–12:00 PM",
+    "Day": "Every Monday until mid-September",
+    "Recurring Frequency": "Weekly (seasonal)"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "5:30 PM–6:00 PM",
+    "Day": "Every Thursday (Companions only)",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "1:00 PM–3:00 PM",
+    "Day": "Early June, Friday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "All day",
+    "Day": "Early June, Saturday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "7:00 PM–9:00 PM",
+    "Day": "Early June, Saturday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "10:30 AM–12:30 PM",
+    "Day": "Early June, Sunday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "1:30 PM–3:30 PM",
+    "Day": "Early June, Sunday",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "10:00 AM–12:00 PM",
+    "Day": "June 21",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "All day",
+    "Day": "August 1",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "All day",
+    "Day": "September 22",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "All day",
+    "Day": "September 29",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "All day",
+    "Day": "October 31",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Chalice Well Trust (Glastonbury)",
+    "Time": "All day",
+    "Day": "December 21",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Royal West of England Academy (RWA)",
+    "Time": "6:30 PM – 8:30 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Royal West of England Academy (RWA) (at Hartcliffe City Farm)",
+    "Time": "10:30 AM – 12:30 PM",
+    "Day": "First Saturday of the month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Royal West of England Academy (RWA)",
+    "Time": "10:30 AM – 11:30 AM & 11:30 AM – 12:30 PM",
+    "Day": "First Saturday of the month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Centrespace Gallery",
+    "Time": "Preview 6 PM – 9 PM; Public 11 AM – 5 PM",
+    "Day": "Annual (Nov/Dec weekend - Fri preview, Sat & Sun public)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "SPACE at PRSC (People's Republic of Stokes Croft)",
+    "Time": "2:00 PM – 4:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "SPACE at PRSC (People's Republic of Stokes Croft)",
+    "Time": "6:30 PM – 8:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Paintworks Event Space",
+    "Time": "Early-bird 10:30 AM – 11:30 AM; general 11:30 AM – 4:00 PM",
+    "Day": "Sundays (dates vary)",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Cloak and Dagger (Cheltenham Road)",
+    "Time": "Sign-up 7:30 PM, starts 8:00 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Cat & Wheel (Cheltenham Road)",
+    "Time": "9:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Cat & Wheel (Cheltenham Road)",
+    "Time": "From 8:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Cat & Wheel (Cheltenham Road)",
+    "Time": "From 9:00 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Cat & Wheel (Cheltenham Road)",
+    "Time": "Evenings (from around 9:00 PM)",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Keynsham Courtyard (Keynsham)",
+    "Time": "From 7:30 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Keynsham Courtyard (Keynsham)",
+    "Time": "6:00 PM–9:00 PM",
+    "Day": "1st & 3rd Tuesdays of the month",
+    "Recurring Frequency": "Monthly (1st & 3rd Tuesdays)"
+  },
+  {
+    "Venue": "The Keynsham Courtyard (Keynsham)",
+    "Time": "From 8:30 PM",
+    "Day": "Fridays & Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Keynsham Courtyard (Keynsham)",
+    "Time": "6:00 PM–10:00 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Grounded Café Bars (Various)",
+    "Time": "7:30 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Grounded Café Bars (Various)",
+    "Time": "7:30 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Spotted Cow (Bedminster)",
+    "Time": "9:00 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Spotted Cow (Bedminster)",
+    "Time": "2:00 PM–6:00 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Ye Olde Inne (Westerleigh)",
+    "Time": "Evenings (from 8:00 PM)",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Ye Olde Inne (Westerleigh)",
+    "Time": "Evenings (from 8:00 PM)",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Ye Olde Inne (Westerleigh)",
+    "Time": "From 8:00 PM",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Daily"
+  },
+  {
+    "Venue": "The Glee Club (Central Bristol)",
+    "Time": "Evenings (showtimes vary)",
+    "Day": "Fridays & Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Hare on the Hill (Kingsdown)",
+    "Time": "7:30 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Hare on the Hill (Kingsdown)",
+    "Time": "Evenings (varies by act)",
+    "Day": "Sundays (and occasional Saturdays)",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Hare on the Hill (Kingsdown)",
+    "Time": "Sign-up 7:30 PM, music starts 8:00 PM",
+    "Day": "Last Thursday of month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Easton Community Centre",
+    "Time": "9:30 AM – 11:30 AM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Easton Community Centre",
+    "Time": "10:00 AM – 11:00 AM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Easton Community Centre",
+    "Time": "12:00 PM – 1:30 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Easton Community Centre",
+    "Time": "1:30 PM – 2:30 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Easton Community Centre",
+    "Time": "8:00 AM – 6:00 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Easton Community Centre",
+    "Time": "1:00 PM – 3:00 PM",
+    "Day": "Third Monday",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Malcolm X Community Centre",
+    "Time": "9:30 AM – 4:00 PM (bookings)",
+    "Day": "Monday–Friday",
+    "Recurring Frequency": "Weekly (bookings)"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "6:00 PM – 8:30 PM",
+    "Day": "Mondays & Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "7:00 PM – 8:30 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "6:30 PM – 7:45 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "2:30 PM – 4:00 PM",
+    "Day": "Second Wednesday",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "9:00 AM – 11:30 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "6:00 PM – 7:30 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "7:30 PM – 9:00 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "5:30 PM – 6:15 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "6:30 PM – 7:30 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "6:30 PM – 7:30 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "9:00 AM – 9:45 AM (term-time)",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly (term-time)"
+  },
+  {
+    "Venue": "Meadow Vale Community Centre",
+    "Time": "9:00 AM – 10:00 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "St Werburghs Community Centre",
+    "Time": "9:00 AM – 9:00 PM",
+    "Day": "Daily",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Avonmouth Community Centre",
+    "Time": "9:30 AM – 4:30 PM",
+    "Day": "Monday–Friday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Avonmouth Community Centre",
+    "Time": "11:00 AM – 1:00 PM",
+    "Day": "First Tuesday of the month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Withywood Centre",
+    "Time": "11:00 AM – 1:00 PM",
+    "Day": "Weekly",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Withywood Centre",
+    "Time": "10:30 AM – 12:30 PM",
+    "Day": "Third Tuesday",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "St Paul’s Learning Centre",
+    "Time": "12:00 PM – 2:00 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Centre",
+    "Time": "9:30 AM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Centre",
+    "Time": "9:45 AM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Centre",
+    "Time": "10:30 AM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Centre",
+    "Time": "10:45 AM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "5:30 PM–8:45 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:15 AM–10:00 AM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "10:15 AM–11:00 AM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "11:15 AM–12:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "12:15 PM–1:00 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "2:00 PM–2:45 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "7:00 PM–7:45 PM",
+    "Day": "Mondays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:15 AM–10:00 AM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:45 AM–10:45 AM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "10:30 AM–11:30 AM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "11:35 AM–12:20 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "12:30 PM–1:15 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "1:30 PM–2:30 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "4:30 PM–5:30 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "5:45 PM–6:45 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:15 AM–10:00 AM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "10:15 AM–11:00 AM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "2:00 PM–3:00 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:15 AM–10:00 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:15 AM–10:00 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "10:30 AM–11:15 AM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "12:00 PM–12:45 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "4:30 PM–5:30 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "7:00 PM–7:45 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:15 AM–10:00 AM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:15 AM–10:00 AM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "10:30 AM–11:30 AM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "12:00 PM–12:45 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "6:00 PM–6:45 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "9:15 AM–10:00 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Greenway Gym Centre",
+    "Time": "10:15 AM–11:00 AM",
+    "Day": "Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "BS3 Community Centre",
+    "Time": "9:30 AM – 10:30 AM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lawrence Weston Community Centre",
+    "Time": "10:00 AM – 12:00 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lawrence Weston Community Centre",
+    "Time": "11:50 AM – 1:30 PM",
+    "Day": "Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lawrence Weston Community Centre",
+    "Time": "11:30 AM – 12:30 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lawrence Weston Community Centre",
+    "Time": "10:00 AM – 12:00 PM",
+    "Day": "Fridays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lawrence Weston Community Centre",
+    "Time": "6:30 PM – 7:30 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lawrence Weston Community Centre",
+    "Time": "6:30 PM",
+    "Day": "Tuesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Henbury & Brentry Community Centre",
+    "Time": "10:00 AM – 12:00 PM",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Henbury & Brentry Community Centre",
+    "Time": "10:00 AM – 2:00 PM",
+    "Day": "Wednesdays & Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Henbury & Brentry Community Centre",
+    "Time": "4:15 PM – 5:30 PM (term-time)",
+    "Day": "Wednesdays",
+    "Recurring Frequency": "Weekly (term-time)"
+  },
+  {
+    "Venue": "Sparks Bristol",
+    "Time": "11:30 AM – 1:30 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Sparks Bristol",
+    "Time": "2:30 PM – 4:30 PM",
+    "Day": "Sundays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Montpelier Bean Feast",
+    "Time": "Varies",
+    "Day": "Mid-July (Saturday & Sunday)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bristol Harbour Festival",
+    "Time": "Fri 6:00 PM–10:00 PM, Sat 11:00 AM–10:00 PM, Sun 11:00 AM–6:00 PM",
+    "Day": "Mid-July (Friday–Sunday)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bristol Hackspace",
+    "Time": "7:00 PM – 9:00 PM",
+    "Day": "First Thursday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "KWMC: The Factory",
+    "Time": "6:00 PM – 8:00 PM",
+    "Day": "Thursdays (during series run)",
+    "Recurring Frequency": "Weekly, four-week series"
+  },
+  {
+    "Venue": "KWMC: The Factory",
+    "Time": "10:00 AM – 1:00 PM",
+    "Day": "Fridays (during series run)",
+    "Recurring Frequency": "Weekly, four-week series"
+  },
+  {
+    "Venue": "Southmead Maker Space",
+    "Time": "Varies by course",
+    "Day": "Weekly sessions (dates vary by course)",
+    "Recurring Frequency": "Each course runs over four consecutive weeks"
+  },
+  {
+    "Venue": "People’s Republic of Stokes Croft (PRSC)",
+    "Time": "2:00 PM – 4:00 PM",
+    "Day": "Every Tuesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Dean Lane Skatepark",
+    "Time": "From 1:00 PM",
+    "Day": "Last Saturday of August",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Dean Lane Skatepark",
+    "Time": "2:00 PM – 4:00 PM",
+    "Day": "Last Saturday of August",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Dean Lane Skatepark",
+    "Time": "From 4:00 PM onward",
+    "Day": "Last Saturday of August",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Victoria Park Skatepark",
+    "Time": "12:00 PM – 7:00 PM",
+    "Day": "First Saturday of May",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bradley Stoke Skatepark",
+    "Time": "4:30 PM – 6:30 PM",
+    "Day": "Tuesdays & Thursdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Level 7 Pop-Up Skatepark (Cabot Circus)",
+    "Time": "10:00 AM – 8:00 PM",
+    "Day": "Every day during October half-term",
+    "Recurring Frequency": "Annual (school half-term)"
+  },
+  {
+    "Venue": "Spring Longboard & Surfskate Festival (SPARKS Bristol)",
+    "Time": "10:30 AM – 3:00 PM",
+    "Day": "Third Saturday of May",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "The Green Man (Kingsdown)",
+    "Time": "7:30 PM",
+    "Day": "Every Wednesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Green Man (Kingsdown)",
+    "Time": "8:00 PM",
+    "Day": "Every Friday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Full Moon & Attic Bar (Stokes Croft)",
+    "Time": "Evenings (from 10:00 PM)",
+    "Day": "Thursdays, Fridays & Saturdays",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Golden Guinea (Redcliffe)",
+    "Time": "8:00 PM",
+    "Day": "Every Monday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Golden Guinea (Redcliffe)",
+    "Time": "8:00 PM",
+    "Day": "One Thursday each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Robin Hood (St Michael’s Hill)",
+    "Time": "7:30 PM",
+    "Day": "Every Wednesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Robin Hood (St Michael’s Hill)",
+    "Time": "7:30 PM",
+    "Day": "Every Sunday, Monday & Tuesday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Orchard Inn (Harbourside)",
+    "Time": "8:30 PM – 11:00 PM",
+    "Day": "Every Monday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "The Orchard Inn (Harbourside)",
+    "Time": "8:00 PM – 10:30 PM",
+    "Day": "First Wednesday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Orchard Inn (Harbourside)",
+    "Time": "7:30 PM",
+    "Day": "Second Wednesday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "The Wackum Inn (Brislington)",
+    "Time": "8:00 PM – 11:00 PM",
+    "Day": "Every Sunday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Redland Green",
+    "Time": "1:00 PM–5:00 PM",
+    "Day": "First Monday in May (May Day bank holiday)",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Stoke Park Estate (Lockleaze)",
+    "Time": "10:30 AM–2:30 PM",
+    "Day": "e.g. Saturday 24 May 2025",
+    "Recurring Frequency": "Seasonal spring series (annual)"
+  },
+  {
+    "Venue": "Stoke Park Estate (Lockleaze)",
+    "Time": "10:30 AM onward",
+    "Day": "e.g. Saturday 28 June 2025 (also other summer dates)",
+    "Recurring Frequency": "Seasonal summer series (annual)"
+  },
+  {
+    "Venue": "Stoke Park Estate (Lockleaze)",
+    "Time": "6:30 PM (~2 hrs)",
+    "Day": "Monthly (e.g. Thursday 8 May 2025)",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Victoria Park (Bedminster)",
+    "Time": "7:30 PM",
+    "Day": "First Monday of each month",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Luxe Fitness",
+    "Time": "5:00 AM",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Daily (weekly recurring series)"
+  },
+  {
+    "Venue": "Luxe Fitness",
+    "Time": "5:30 AM",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Daily (weekly recurring series)"
+  },
+  {
+    "Venue": "Luxe Fitness",
+    "Time": "Throughout the day",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Weekly (over 100 classes)"
+  },
+  {
+    "Venue": "Cabot Circus",
+    "Time": "11:00 AM–4:30 PM",
+    "Day": "Saturday of Easter weekend",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Bannatyne Health Club & Spa Bristol",
+    "Time": "Arrival from 9:00 AM (Mon–Fri); 10:00 AM (Sat–Sun)",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Daily (ongoing weekly series)"
+  },
+  {
+    "Venue": "Bannatyne Health Club & Spa Bristol",
+    "Time": "From 5:00 PM",
+    "Day": "Monday–Friday evenings",
+    "Recurring Frequency": "Weekly (seasonal)"
+  },
+  {
+    "Venue": "Riverside Leisure Club",
+    "Time": "Multiple slots each day",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Weekly (35+ classes/week)"
+  },
+  {
+    "Venue": "Riverside Leisure Club",
+    "Time": "Pool open Mon–Thu 6:00 AM–10:00 PM; Fri 6:00 AM–9:00 PM; Sat–Sun 7:30 AM–7:00 PM",
+    "Day": "Daily",
+    "Recurring Frequency": "Daily (recurring each week)"
+  },
+  {
+    "Venue": "Riverside Leisure Club",
+    "Time": "Term-time slots afternoons (e.g. 4:00 PM–6:00 PM) & Sat mornings",
+    "Day": "Weekdays & Saturday",
+    "Recurring Frequency": "Weekly"
+  },
+  {
+    "Venue": "Lush Spa Bristol",
+    "Time": "Varies by treatment (e.g. 60–80 min)",
+    "Day": "Available Mon–Sun by appointment",
+    "Recurring Frequency": "Year-round (daily availability)"
+  },
+  {
+    "Venue": "42 Acres Retreats (Somerset)",
+    "Time": "1 hr",
+    "Day": "Any day Jan–Dec",
+    "Recurring Frequency": "Daily (year-round)"
+  },
+  {
+    "Venue": "42 Acres Retreats (Somerset)",
+    "Time": "1–1.5 hrs",
+    "Day": "Any day Jan–Dec",
+    "Recurring Frequency": "Daily (year-round)"
+  },
+  {
+    "Venue": "42 Acres Retreats (Somerset)",
+    "Time": "1–1.5 hrs",
+    "Day": "Any day Jan–Dec",
+    "Recurring Frequency": "Daily (year-round)"
+  },
+  {
+    "Venue": "42 Acres Retreats (Somerset)",
+    "Time": "2 hrs",
+    "Day": "Any day Jan–Dec",
+    "Recurring Frequency": "Daily (year-round)"
+  },
+  {
+    "Venue": "BookRetreats in Bristol",
+    "Time": "Varies by programme",
+    "Day": "Multiple dates each month",
+    "Recurring Frequency": "Monthly series (all year)"
+  },
+  {
+    "Venue": "Bristol Temple Meads Station (Temple Quarter)",
+    "Time": "~10:00 AM–11:30 AM",
+    "Day": "First Monday of each month (except bank holidays)",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Bristol Temple Meads Station (Temple Quarter)",
+    "Time": "11:00 AM–12:30 PM",
+    "Day": "Monthly on Wednesdays at Redcliffe Hub/Wellspring Settlement",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Avon Valley Railway (Bitton Station)",
+    "Time": "Departures at 10:45 AM, 12:00 PM, 1:15 PM, 2:30 PM & 3:45 PM",
+    "Day": "Last weekend of June & first weekend of September",
+    "Recurring Frequency": "Annual"
+  },
+  {
+    "Venue": "Avon Valley Railway (Bitton Station)",
+    "Time": "Same departures as Teddy Bears' Picnic",
+    "Day": "Selected Sundays in October",
+    "Recurring Frequency": "Weekly in October (annual)"
+  },
+  {
+    "Venue": "Avon Valley Railway (Bitton Station)",
+    "Time": "Boarding 1:00 PM; depart 1:15 PM; finish ~3:15 PM",
+    "Day": "Selected Sundays (Mar–Aug)",
+    "Recurring Frequency": "Monthly (Mar–Aug) annually"
+  },
+  {
+    "Venue": "Avon Valley Railway (Bitton Station)",
+    "Time": "Boarding 6:15 PM; ~3 hrs",
+    "Day": "Six dates Apr–Oct",
+    "Recurring Frequency": "Monthly (six events/year)"
+  },
+  {
+    "Venue": "Avon Valley Railway (Bitton Station)",
+    "Time": "Depart 3:45 PM; ~1 hr",
+    "Day": "Weekends & select weekdays Apr–Jun",
+    "Recurring Frequency": "Weekly during those months"
+  },
+  {
+    "Venue": "Bristol Ferry Boats",
+    "Time": "Departures at 11:00 AM, 1:00 PM, 3:00 PM & 5:00 PM",
+    "Day": "Monday–Sunday",
+    "Recurring Frequency": "Daily"
+  },
+  {
+    "Venue": "Bristol Ferry Boats",
+    "Time": "Varies (e.g. Evening Jazz 6:00 PM–8:00 PM)",
+    "Day": "Monthly",
+    "Recurring Frequency": "Monthly"
+  },
+  {
+    "Venue": "Portway Park & Ride",
+    "Time": "10:00 AM–4:00 PM",
+    "Day": "Quarterly Saturdays",
+    "Recurring Frequency": "Quarterly"
+  }
+]
