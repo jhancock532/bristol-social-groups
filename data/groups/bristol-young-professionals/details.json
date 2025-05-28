@@ -1,0 +1,42 @@
+{
+  "name": "Bristol Young Professionals",
+  "slug": "bristol-young-professionals",
+  "description": "A social networking group for young professionals from all industries. Hosting monthly drinks events and other social activities since 2005.",
+  "details": "Bristol Young Professionals (BYP) is a casual networking group for young people from a wide variety of professions. BYP hosts a drinks event every first Thursday of the month, at a different location, for relaxed networking and socialising. We also organise other monthly social events. There are no set introductions or speeches - it's more about socialising and having a chance to meet likeminded people in a friendly and non-pressured environment.",
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.bristolyp.co.uk/"
+    },
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/bypbristol/"
+    }
+  ],
+  "tags": [
+    "networking",
+    "pubs"
+  ],
+  "events": [
+    {
+      "name": "Monthly Drinks",
+      "details": "",
+      "time": {
+        "frequency": "The first Thursday of the month",
+        "weekday": "Thursday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 21:00",
+        "details": ""
+      },
+      "locationURL": "https://www.bristolyp.co.uk/our-events",
+      "cost": {
+        "sessionPrice": 0,
+        "details": "Free to attend. Drinks are pay-as-you-go, often with special deals at the venue. Sponsored events may include free drinks tokens."
+      },
+      "booking": {
+        "required": "Not required",
+        "details": "Just turn up! Check the website for the latest venue information and any special arrangements."
+      }
+    }
+  ]
+} 

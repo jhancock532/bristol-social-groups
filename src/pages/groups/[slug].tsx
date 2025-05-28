@@ -141,7 +141,7 @@ const Event = ({
             {event.cost && (
                 <EventDetailsSection
                     title={
-                        event.cost.sessionPrice
+                        event.cost.sessionPrice !== undefined
                             ? `Costs £${event.cost.sessionPrice} per session`
                             : 'Costs change depending on the event'
                     }
