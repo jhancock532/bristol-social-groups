@@ -1,0 +1,55 @@
+{
+  "name": "Bristol Gym Girls",
+  "slug": "bristol-gym-girls",
+  "description": "A welcoming community for women in Bristol who want to connect with like-minded gym girls. Bristol Gym Girls organizes a monthly social walk followed by coffee and pastries at a local cafe.",
+  "details": "",
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/bristolgymgirls/"
+    },
+    {
+      "type": "Facebook",
+      "url": "https://www.facebook.com/groups/6810788765653659/"
+    }
+  ],
+  "tags": [
+    "fitness",
+    "walking",
+    "cafes"
+  ],
+  "gender": "Women",
+  "events": [
+    {
+      "name": "Monthly Stomp & Coffee",
+      "details": "A walk, a chat, and a good pastry — because sometimes that's all you need to reset before a new month begins! Stomp through some Bristol greenery before grabbing a coffee and a catch-up with your favourite gym girls. Exact meet-up location is emailed two days before the event. Open to all Bristol Gym Girls, whether you're brand new or a familiar face. A lot of girls come solo and end up making new friends — it's a laid-back, no-pressure space to connect.",
+      "time": {
+        "frequency": "Last Saturday of the month",
+        "weekday": "Saturday",
+        "start": "Jan 1, 1970 10:00",
+        "end": "Jan 1, 1970 12:00",
+        "details": ""
+      },
+      "location": {
+        "address": "The Downs, Clifton, Bristol",
+        "latitude": "51.468596",
+        "longitude": "-2.623802",
+        "googleMapsLink": "https://www.google.com/maps/place/Ladies+Mile,+Clifton,+Bristol",
+        "details": "This location is a nearby placeholder, as the precise meeting point varies around Clifton & the Downs. Participants receive specific location via email before each event, so make sure to sign up on Eventbrite!"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": "This event is free. A free coffee is included if you buy any pastry at Catleys Cafe afterwards!"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Tickets are available on Eventbrite, please see the links above. Make sure to register to receive the event location."
+      },
+      "gender": "Women",
+      "link": {
+        "type": "Eventbrite",
+        "url": "https://www.eventbrite.co.uk/o/bristol-gym-girls-109383716471"
+      }
+    }
+  ]
+} 
