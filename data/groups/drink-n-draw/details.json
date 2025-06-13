@@ -1,12 +1,20 @@
 {
   "name": "Drink 'n' Draw",
   "slug": "drink-n-draw",
-  "description": "Draw, scribble, doodle, sketch and drink!  Suggested donation of £3 to cover materials, spaces limited, first come, first served. Materials are provided and beginners are welcome.",
+  "description": "Draw, scribble, doodle, sketch and drink! Fun different drawing games and a Communal Doodle™ wall, with all arts materials provided, beginners welcome. There is a suggested donation of £4 to cover the cost for pens and paper. See the website for FAQs!",
   "details": "",
   "links": [
     {
       "type": "Website",
-      "url": "https://tobaccofactory.com/whats-on/"
+      "url": "https://drinkndrawbristol.com/faqs"
+    },
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/drinkndrawbristol/"
+    },
+    {
+      "type": "Facebook",
+      "url": "https://www.facebook.com/drinkndrawbristol"
     }
   ],
   "tags": [
@@ -16,10 +24,10 @@
   "events": [
     {
       "time": {
-        "frequency": "Monthly on a Tuesday",
+        "frequency": "First Tuesday of the month",
         "weekday": "Tuesday",
         "start": "Jan 1, 1970 19:45",
-        "end": "Jan 1, 1970 21:45",
+        "end": "Jan 1, 1970 22:00",
         "details": ""
       },
       "location": {
@@ -27,11 +35,11 @@
         "latitude": "51.4423774",
         "longitude": "-2.6135534",
         "googleMapsLink": "https://maps.app.goo.gl/n15BxPExbdDU1Yzw5",
-        "details": "The Tobacco Factory, the drawing group is located in the Snug. See the website for more details."
+        "details": "The Tobacco Factory, the drawing group is located in the Snug (room to the right of the bar)."
       },
       "cost": {
-        "sessionPrice": 0,
-        "details": "Suggested donation £3 to cover the cost of materials."
+        "sessionPrice": 4,
+        "details": "There is a suggested donation of £4 to cover the cost of arts materials - there is no entrance fee, any donations are much appreciated."
       },
       "booking": {
         "required": "Not required"

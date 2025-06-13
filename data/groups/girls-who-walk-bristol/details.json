@@ -1,7 +1,7 @@
 {
   "name": "Girls Who Walk Bristol",
   "slug": "girls-who-walk-bristol",
-  "description": "Making friends & getting steps in 🩷. A walking group for women that meets on Sundays at various locations around Bristol.",
+  "description": "Making friends & getting steps in 🩷 A walking group for women that meets at different locations around Bristol.",
   "details": "",
   "tags": [
     "walking"
@@ -10,6 +10,10 @@
     {
       "type": "Instagram",
       "url": "https://www.instagram.com/girlswhowalkbristol/"
+    },
+    {
+      "type": "Website",
+      "url": "https://linktr.ee/girlswhowalkbristol"
     }
   ],
   "events": [
@@ -17,7 +21,7 @@
       "name": "Sunday walk",
       "details": "",
       "time": {
-        "frequency": "Weekly",
+        "frequency": "Twice a month on Sundays",
         "weekday": "Sunday",
         "start": "Jan 1, 1970 10:30",
         "end": "Jan 1, 1970 12:00",
