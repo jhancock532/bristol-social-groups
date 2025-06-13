@@ -1,0 +1,79 @@
+{
+  "name": "Creative Space Redcliffe",
+  "slug": "creative-space-redcliffe",
+  "description": "A welcoming creative arts and crafts group in Redcliffe, Bristol. Monthly drop-in sessions for all abilities, plus special creative events.",
+  "tags": [
+    "art",
+    "crafts"
+  ],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://www.placesforpeople.co.uk/about-us/community/community-projects/creative-space-redcliffe-bristol/"
+    },
+    {
+      "type": "Facebook",
+      "url": "https://www.facebook.com/groups/redcliffecommunitypage",
+      "text": "Redcliffe Community Facebook Group"
+    },
+    {
+      "type": "Email",
+      "url": "mailto:sjj.southbristol@gmail.com",
+      "text": "Email the organiser"
+    }
+  ],
+  "events": [
+    {
+      "name": "Temple Church Drawing Club",
+      "details": "A special drawing event series running until July. Advance booking is required.",
+      "time": {
+        "frequency": "Weekly",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 10:00",
+        "end": "Jan 1, 1970 13:00",
+        "details": "Every Tuesday from 10 June - 15 July. Part of the Insane Root Theatre community programme."
+      },
+      "link": {
+        "type": "Website",
+        "url": "https://www.redcliffeandtemplebid.co.uk/events/temple-church-drawing-club/",
+        "text": "Event details and booking"
+      },
+      "location": {
+        "address": "Temple Church, Victoria St, Redcliffe, Bristol BS1 6HS",
+        "latitude": "51.4521032",
+        "longitude": "-2.5868274",
+        "googleMapsLink": "https://maps.app.goo.gl/QHVJBdrE3RBZKc2k8"
+      },
+      "booking": {
+        "required": "Required",
+        "details": "Advance booking required via the event website."
+      }
+    },
+    {
+      "name": "Monthly Creative Group Drop-In",
+      "details": "A welcoming creative arts and crafts group. Free tea and coffee. Bring your own creative projects or join in with group activities. All abilities welcome. This group has paused until August, but please do join the drawing club in the meantime.",
+      "time": {
+        "frequency": "Monthly on Tuesdays",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 10:00",
+        "end": "Jan 1, 1970 13:00",
+        "details": "First Tuesday of every month."
+      },
+      "location": {
+        "address": "Redcliffe Methodist Church, Prewett St, Redcliffe, Bristol BS1 6PB",
+        "latitude": "51.447753",
+        "longitude": "-2.587715",
+        "googleMapsLink": "https://maps.app.goo.gl/ccuJEFkuQtf9doqo6"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": "Free hot drinks & crafts."
+      },
+      "booking": {
+        "required": "Not required",
+        "details": "No booking required, just drop in."
+      },
+      "accessibility": ""
+    }
+  ]
+}

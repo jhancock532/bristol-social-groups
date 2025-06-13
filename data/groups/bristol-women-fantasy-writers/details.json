@@ -1,0 +1,20 @@
+{
+  "name": "Bristol Women Fantasy Writers",
+  "slug": "bristol-women-fantasy-writers",
+  "description": "Meet, write and chat with other female fantasy writers in Bristol through weekly Discord sessions and fortnightly in-person meetups.",
+  "details": "Thursdays on Discord 7-9pm, in-person meetings every other Sunday. Please check the Instagram page for the latest details.",
+  "links": [
+    {
+      "type": "Discord",
+      "url": "https://discord.gg/StAhy58M2M",
+      "text": "Join our Discord server"
+    },
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/bristolwomenfantasywriters/",
+      "text": "Follow us on Instagram"
+    }
+  ],
+  "tags": ["writing", "books"],
+  "gender": "Women"
+}

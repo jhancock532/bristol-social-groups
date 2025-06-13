@@ -1,0 +1,12 @@
+{
+  "name": "Inkling Book Club",
+  "slug": "inkling-book-club",
+  "description": "A Bristol based book club with monthly book meets and social events. Attendance to each event costs £3, with the money raised donated to charity. Please find tickets to the next event via the Instagram page.",
+  "links": [
+    {
+      "type": "Instagram",
+      "url": "https://www.instagram.com/inkling.bookclub/"
+    }
+  ],
+  "tags": ["books"]
+}

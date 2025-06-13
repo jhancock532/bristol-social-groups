@@ -81,7 +81,7 @@ type EventLocation = {
 
 ```typescript
 type EventCost = {
-    sessionPrice?: number; // Cost per session
+    sessionPrice?: number; // Cost per session (use 0 for free events)
     details?: string;     // Optional additional cost details
 };
 ```
@@ -119,6 +119,26 @@ type Subscription = {
 3. **Consistency**: Ensure the slug matches the directory name in `data/groups/{slug}/`.
 4. **Real-World Accuracy**: For real groups, verify that links, addresses, and other data are accurate.
 5. **Formatting**: Use proper JSON format with double quotes for keys and string values.
+6. **Free Events**: Set `sessionPrice` to 0 for free events.
+7. **Varying Locations**: For events without a fixed location, omit the `location` field and use `locationURL` instead to point to where location info can be found.
+8. **Details Sections**: Avoid repeating information in the group `details` and event `details`. Often it's better to leave the group `details` blank and provide specific information in event `details` sections. Only add group details if they provide meaningful additional context.
+
+## Handling Events Without Fixed Locations
+
+For events that change locations (e.g., networking events that rotate venues), use this pattern:
+
+```json
+{
+  "name": "Event Name",
+  "details": "Event description...",
+  "time": { /* time info */ },
+  "locationURL": "https://website.com/events",
+  "cost": { /* cost info */ },
+  "booking": { /* booking info */ }
+}
+```
+
+Note: Omit the `location` field entirely and use `locationURL` to point to where attendees can find current venue information.
 
 ## Finding Example Groups
 
@@ -133,7 +153,7 @@ For more examples, explore the existing groups in `data/groups/`:
 
 - Date/time formats: Times are stored as strings in the format "Jan 1, 1970 HH:MM" (the date is placeholder)
 - Coordinates: Latitude and longitude are stored as strings
-- Session prices: Stored as numbers without currency symbols
+- Session prices: Stored as numbers without currency symbols. Use 0 for free events.
 - Links: Always include the full URL with protocol (https://) 
 
 ## Conclusion
