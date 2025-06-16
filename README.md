@@ -1,4 +1,4 @@
-# Bristol Social Groups
+# Bristol Social
 
 A website listing social groups in Bristol, UK. [Check out the live site](https://bristolsocialgroups.com/), and read about the project ethos on [the about page](https://bristolsocialgroups.com/about).
 

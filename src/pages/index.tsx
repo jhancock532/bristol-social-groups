@@ -93,14 +93,14 @@ export default function Home({ groups }: { groups: Group[] }) {
     return (
         <Layout>
             <Metadata
-                title="Bristol Social Groups"
+                title="Bristol Social"
                 description="A list of social groups in Bristol that meet up regularly and are open to newcomers."
             />
             <div className={styles.hero}>
-                <h1 className={styles.title}>Bristol Social Groups</h1>
+                <h1 className={styles.title}>Bristol Social</h1>
                 <p className={styles.description}>
-                    A collection of local groups that meet up regularly and are
-                    open to newcomers.
+                    Discover local groups that meet up regularly and are open to
+                    newcomers.
                 </p>
                 <div className={styles.searchAndFilterContainer}>
                     <input

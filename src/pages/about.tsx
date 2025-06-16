@@ -7,14 +7,14 @@ export default function About() {
     return (
         <Layout>
             <Metadata
-                title="Bristol Social Groups - About"
+                title="Bristol Social - About"
                 description="A list of regular meetups in Bristol that are open to newcomers."
             />
             <div className={styles.hero}>
                 <h1 className={styles.title}>About</h1>
                 <p className={styles.description}>
-                    Bristol Social Groups is volunteer run site with the goal of
-                    building community and friendship across Bristol.
+                    Bristol Social is volunteer run site with the goal of
+                    building community and friendships across Bristol.
                 </p>
 
                 <h2>Background</h2>

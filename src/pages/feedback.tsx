@@ -7,7 +7,7 @@ export default function Feedback() {
     return (
         <Layout>
             <Metadata
-                title="Bristol Social Groups - Feedback"
+                title="Bristol Social - Feedback"
                 description="Provide feedback or suggestions for the website."
             />
             <h1 className={styles.title}>Feedback</h1>
@@ -23,7 +23,7 @@ export default function Feedback() {
                 width="100%"
                 height="600"
                 frameBorder="0"
-                title="Bristol Social Groups feedback submission form"
+                title="Bristol Social feedback submission form"
             >
                 Form loading…
             </iframe>

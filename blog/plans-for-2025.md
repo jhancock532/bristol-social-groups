@@ -1,6 +1,6 @@
 ---
 title: Plans for 2025
-excerpt: A rough outline for where the Bristol Social Groups website will go in
+excerpt: A rough outline for where the Bristol Social website will go in
   2025, including opportunities for volunteering and contributing.
 date: 2025-01-31T17:32:00.000Z
 author:

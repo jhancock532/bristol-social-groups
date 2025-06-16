@@ -16,7 +16,7 @@ export default function BlogPost({ post, content }: Props) {
     return (
         <Layout>
             <Metadata
-                title={`${post.title} | Bristol Social Groups`}
+                title={`${post.title} | Bristol Social`}
                 description={post.excerpt}
             />
             {post.ogImage && (
