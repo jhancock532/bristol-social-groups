@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.46.0-jammy
+      image: mcr.microsoft.com/playwright:v1.52.0-jammy
     env:
       PLAYWRIGHT_BASE_URL: http://localhost:6006
       HOME: /root
