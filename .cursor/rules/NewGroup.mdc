@@ -39,7 +39,7 @@ type Link = {
 
 ```typescript
 type Event = {
-    name?: string;       // Name of the event
+    name?: string;       // Name of the event, only add if there are multiple events
     slug?: string;       // URL-friendly identifier for the event
     details?: string;    // Description of the event
     link?: Link;         // Optional specific URL for this event
