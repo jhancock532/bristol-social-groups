@@ -25,18 +25,26 @@
         background-size: 150px, 100px;
         background-position:
             top 50% right 100px,
-            top 20% right 240px;
+            top 10% right 240px;
     }
 }
 
 .description {
     @include font-size(s);
 
+    @include media-query(medium) {
+        max-width: 85%;
+    }
+
     font-weight: 400;
 
     p {
         color: var(--color--green-05);
     }
+}
+
+.fullPageWrapper {
+    background-color: var(--color--grey-80);
 }
 
 .link {
