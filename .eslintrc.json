@@ -1,6 +1,6 @@
 // See https://github.com/torchbox/eslint-config-torchbox for rules.
 {
-  "extends": ["torchbox/typescript", "next/core-web-vitals"],
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
   "env": {
     "browser": true,
     "commonjs": true,
