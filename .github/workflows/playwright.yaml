@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build Storybook
-        run: npm run build-storybook
+        run: npm run storybook:build
       - name: Serve Storybook and run Playwright tests
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
