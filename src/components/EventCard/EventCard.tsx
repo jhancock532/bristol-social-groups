@@ -14,6 +14,7 @@ import { Event } from '@/types/Event';
 import styles from './EventCard.module.scss';
 
 const EventCard = ({
+    name,
     cost,
     time,
     location,
@@ -24,6 +25,7 @@ const EventCard = ({
 }: Event) => {
     return (
         <div className={styles.details}>
+            {name && <h3 className={styles.details__title}>{name}</h3>}
             {gender && (
                 <div className={styles.details__item}>
                     {gender === 'Women' && (
