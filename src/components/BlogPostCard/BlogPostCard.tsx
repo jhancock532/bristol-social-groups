@@ -14,6 +14,7 @@ export default function BlogPostCard({ post }: Props) {
                     <h2 className={styles.title}>{post.title}</h2>
                     <div className={styles.meta}>
                         <div className={styles.author}>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src={post.author.picture}
                                 alt={post.author.name}

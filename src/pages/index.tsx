@@ -80,6 +80,7 @@ export default function Home({ groups }: { groups: Group[] }) {
             );
         }
         return filterGroups(groups, selectedGroupTags, selectedWeekday);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [groups, selectedGroupTags, selectedWeekday, searchQuery]);
 
     const filteredGroupsContainRegularLocation =

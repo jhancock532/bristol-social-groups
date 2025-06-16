@@ -20,7 +20,7 @@ type FilteredGroupsShownMessageProps = {
 const FilteredGroupsShownMessage = ({
     filteredGroups,
     numberOfPossibleGroups,
-}: FilteredGroupsShownMessageProps): JSX.Element | null => {
+}: FilteredGroupsShownMessageProps): React.JSX.Element | null => {
     const totalNumberOfGroupsFiltered =
         filteredGroups.regularGroups.length +
         (filteredGroups.adHocGroups ? filteredGroups.adHocGroups.length : 0);

@@ -18,7 +18,7 @@ type GroupListingFeedProps = {
 const GroupListingFeed = ({
     groups,
     selectedWeekday,
-}: GroupListingFeedProps): JSX.Element => {
+}: GroupListingFeedProps): React.JSX.Element => {
     return (
         <div>
             {groups.map((group: Group, index: number) => {
