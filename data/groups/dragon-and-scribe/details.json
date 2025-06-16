@@ -20,7 +20,6 @@
   ],
   "events": [
     {
-      "name": "D&D 5e One-Shot Sessions",
       "time": {
         "frequency": "Weekly",
         "weekday": "Tuesday",

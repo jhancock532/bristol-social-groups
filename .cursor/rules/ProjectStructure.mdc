@@ -1,0 +1,158 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Bristol Social Project Structure
+
+## Overview
+This is a Next.js static site for discovering social groups in Bristol. The site uses the **Pages Router** and generates as a static site with data from local JSON files and markdown content.
+
+## Architecture
+
+### Router & Pages
+- **Router Type**: Next.js Pages Router (not App Router)
+- **Static Generation**: Uses `getStaticProps` and `getStaticPaths` for static site generation
+- **Pages Directory**: `src/pages/`
+
+### Data Sources
+1. **Groups Data**: 
+   - Location: `data/groups/[slug]/details.json`
+   - Structure: Each group has its own directory with a `details.json` file
+   - Contains: `name`, `slug`, `description`, `tags`, `gender`, `links`, `events`, etc.
+   - Access via: `getDirectories()` utility function
+
+2. **Blog Posts**:
+   - Location: `blog/` directory (markdown files)
+   - Structure: Frontmatter + markdown content
+   - Access via: `getAllPosts()`, `getPostBySlug()` from `src/lib/api.ts`
+
+### Key Directories
+
+```
+src/
+├── pages/                    # Next.js pages (Pages Router)
+│   ├── index.tsx            # Homepage
+│   ├── about.tsx            # Static about page
+│   ├── groups.tsx           # Groups listing page
+│   ├── groups/[slug].tsx    # Dynamic group pages
+│   ├── blog/                # Blog pages
+│   │   ├── index.tsx        # Blog listing
+│   │   └── [slug].tsx       # Individual blog posts
+│   └── *.tsx                # Other static pages
+├── components/              # React components
+├── lib/                     # Utilities for data fetching
+│   └── api.ts              # Blog data functions
+├── utils/                   # General utilities
+│   └── utils.ts            # Group data functions
+├── types/                   # TypeScript type definitions
+├── styles/                  # CSS/SCSS styles
+└── constants.ts            # Project constants
+
+data/
+└── groups/                  # Group data
+    └── [slug]/
+        └── details.json     # Group information
+
+blog/                        # Blog content
+└── *.md                    # Markdown blog posts
+```
+
+## Data Fetching Patterns
+
+### Groups
+```typescript
+// Get all group slugs
+import { getDirectories } from '@/utils/utils'
+import { GROUP_DATA_FILE_PATH } from '@/constants'
+const groupSlugs = getDirectories(GROUP_DATA_FILE_PATH)
+
+// Get individual group data
+const groupData = JSON.parse(
+  fs.readFileSync(`${GROUP_DATA_FILE_PATH}/${slug}/details.json`, 'utf8')
+)
+```
+
+### Blog Posts
+```typescript
+// Get all posts
+import { getAllPosts, getPostBySlug } from '@/lib/api'
+const posts = getAllPosts()
+
+// Individual post
+const post = getPostBySlug(slug)
+```
+
+## Static Generation Patterns
+
+### For Dynamic Routes
+- Groups: Uses `getStaticPaths` to generate all group pages at build time
+- Blog: Uses `getStaticPaths` to generate all blog post pages at build time
+- Both use `getStaticProps` to fetch data for each page
+
+### For Static Pages
+- Most pages are simple exports with minimal props
+- Homepage fetches group data at build time
+
+## Component Patterns
+
+### Layout
+- Uses a common `<Layout>` component wrapper
+- Includes `<Metadata>` component for SEO
+
+### Data Display
+- Groups use `<GroupCard>` components
+- Blog posts render markdown content
+- Maps are loaded dynamically with `dynamic()` import
+
+## File Naming Conventions
+
+### Pages
+- Static pages: lowercase with extensions (e.g., `about.tsx`)
+- Dynamic pages: bracket notation (e.g., `[slug].tsx`)
+
+### Data Files
+- Groups: `details.json` in named directories
+- Blog: `.md` files with frontmatter
+
+### Styles
+- Component-specific: `ComponentName.module.scss`
+- Global styles in `styles/` directory
+
+## Key Constants & Utilities
+
+### Constants (`src/constants.ts`)
+- `WEEKDAYS`: Array of weekday options
+- `GROUP_DATA_FILE_PATH`: Path to groups data directory
+
+### Utils (`src/utils/utils.ts`)
+- `getDirectories()`: Get directory names from filesystem
+- `filterGroups()`: Filter groups by tags and weekdays
+- Time formatting utilities
+
+### API (`src/lib/api.ts`)
+- `getAllPosts()`: Get all blog posts sorted by date
+- `getPostBySlug()`: Get individual blog post
+- `getPostSlugs()`: Get all blog post slugs
+
+## Build Process
+- **Static Generation**: Site builds to static files
+- **Data Sources**: Local filesystem (no external APIs)
+- **Deployment**: Static files can be deployed anywhere
+
+## Adding New Content
+
+### New Group
+1. Create directory in `data/groups/[new-slug]/`
+2. Add `details.json` with group information
+3. Site will automatically include in listings and generate page
+
+### New Blog Post
+1. Add `.md` file to `blog/` directory
+2. Include frontmatter with title, date, excerpt, author
+3. Site will automatically include in blog listing and generate page
+
+### New Static Page
+1. Add `.tsx` file to `src/pages/`
+2. Export React component
+3. Add to navigation if needed

@@ -44,11 +44,16 @@ export const Default: Story = {
     },
 };
 
+const EVENTS_WITH_NAMES = MOCK_EVENTS.map((event, index) => ({
+    ...event,
+    name: `Event ${index + 1}`,
+}));
+
 export const MultipleEvents: Story = {
     args: {
         ...Default.args,
         name: 'Group with multiple events',
-        events: MOCK_EVENTS,
+        events: EVENTS_WITH_NAMES,
     },
 };
 

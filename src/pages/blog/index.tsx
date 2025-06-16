@@ -14,8 +14,8 @@ export default function BlogIndex({ posts }: Props) {
     return (
         <Layout>
             <Metadata
-                title="Blog | Bristol Social Groups"
-                description="Latest blog posts from Bristol Social Groups"
+                title="Blog | Bristol Social"
+                description="Latest blog posts from Bristol Social"
             />
             <main>
                 <h1 className={styles.title}>Blog Posts</h1>

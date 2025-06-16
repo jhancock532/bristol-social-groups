@@ -16,7 +16,8 @@
   ],
   "events": [
     {
-      "details": "There are two running groups split into 6km and 8km routes; both stop roughly halfway through the run to pause and regroup. As a social running group everyone is encouraged to run at their own pace and people typically stay behind after the run to enjoy a drink together. There are no changing facilities at the bar, but there are toilets and a place to drop bags.",
+      "name": "Tuesday Run",
+      "details": "There are three running groups split into 4km, 6km and 8km routes; all routes stop roughly halfway through the run to pause and regroup. As a social running group everyone is encouraged to run at their own pace and people typically stay behind after the run to enjoy a drink together. There are no changing facilities at the bar, but there are toilets and a place to drop bags.",
       "time": {
         "frequency": "Weekly",
         "weekday": "Tuesday",
@@ -44,6 +45,7 @@
       }
     },
     {
+      "name": "Thursday Run",
       "details": "There are three running groups that split into 6km, 8km and 10km routes.",
       "time": {
         "frequency": "Weekly",
