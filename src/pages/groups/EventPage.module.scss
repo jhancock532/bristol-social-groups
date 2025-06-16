@@ -43,7 +43,7 @@
     &__googleMapsLink {
         @include external-highlight-link;
 
-        margin-top: $grid / 2;
+        margin-top: $grid * 0.5;
     }
 }
 
@@ -51,7 +51,7 @@
     &__heading {
         display: flex;
         align-items: center;
-        gap: $grid / 2;
+        gap: $grid * 0.5;
     }
 
     &__title {
