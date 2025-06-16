@@ -20,7 +20,6 @@
   ],
   "events": [
     {
-      "name": "Club Night",
       "time": {
         "frequency": "Weekly",
         "weekday": "Wednesday",

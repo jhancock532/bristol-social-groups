@@ -12,7 +12,6 @@
   ],
   "events": [
     {
-      "name": "Board Game Night",
       "time": {
         "frequency": "Fortnightly on Thursdays",
         "weekday": "Thursday",

@@ -16,7 +16,6 @@
   ],
   "events": [
     {
-      "name": "Monday evening events",
       "time": {
         "frequency": "Monthly meetings on Monday evenings",
         "weekday": "Monday",

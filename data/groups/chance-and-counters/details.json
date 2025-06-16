@@ -16,7 +16,7 @@
   ],
   "events": [
     {
-      "name": "Monday evenings at Christmas Steps",
+      "name": "Mondays at Christmas Steps",
       "time": {
         "frequency": "Weekly",
         "weekday": "Monday",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "name": "Tuesday evenings at Gloucester Road",
+      "name": "Tuesdays at Gloucester Road",
       "time": {
         "frequency": "Weekly",
         "weekday": "Tuesday",

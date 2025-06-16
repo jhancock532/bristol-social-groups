@@ -19,7 +19,6 @@
   ],
   "events": [
     {
-      "name": "Monthly Drinks",
       "details": "",
       "time": {
         "frequency": "The first Thursday of the month",
