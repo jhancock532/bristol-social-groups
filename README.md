@@ -1,6 +1,6 @@
 # Bristol Social
 
-A website listing social groups in Bristol, UK. [Check out the live site](https://bristolsocialgroups.com/), and read about the project ethos on [the about page](https://bristolsocialgroups.com/about).
+A website listing social groups in Bristol, UK. [Check out the live site](https://bristol.social/), and read about the project ethos on [the about page](https://bristol.social/about).
 
 The design system for this project is built with Storybook and hosted with GitHub Pages. [View the project components & style guide here](https://jhancock532.github.io/bristol-social-groups/?path=/docs/introduction--docs).
 
