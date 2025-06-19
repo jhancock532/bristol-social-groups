@@ -19,3 +19,30 @@ The repo has a few automation tools for developers - see the `.cursor/rules` pro
 - [Groups to add](https://github.com/jhancock532/bristol-social-groups/blob/main/documentation/groups-to-add.md)
 - [Development roadmap](https://github.com/jhancock532/bristol-social-groups/blob/main/documentation/development-roadmap.md)
 - [Development ethos](https://github.com/jhancock532/bristol-social-groups/blob/main/documentation/development-ethos.md)
+
+## 🧪 Testing Setup
+
+This project includes unit testing using **Jest** and **React Testing Library**, with tooling to enforce consistent and high-quality tests.
+
+### ✅ What's Included
+
+- **Basic tests** have been added for existing components under the `src/__tests__/` directory.
+- **Jest** is configured for unit testing.
+- **React Testing Library** is used to test components from the user's perspective.
+- **@testing-library/jest-dom** provides custom DOM matchers for better assertions.
+- **eslint-plugin-testing-library** is installed and integrated into the ESLint config to enforce testing best practices.
+- A `test` script has been added to `package.json`:
+
+  ```json
+  "scripts": {
+    "test": "jest"
+  }
+Pre-commit checks using Husky ensure that:
+
+npm test is run to validate components.
+
+npm run lint is executed to catch style and logic issues early.
+
+CI pipeline integration: Tests are run automatically as part of the GitHub Actions workflows to verify that pull requests and commits do not break the app.
+
+💡 For more on best practices with React Testing Library, check out this guide by Kent C. Dodds.
