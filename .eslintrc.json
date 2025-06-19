@@ -1,6 +1,13 @@
 // See https://github.com/torchbox/eslint-config-torchbox for rules.
 {
-  "extends": ["torchbox/typescript", "next/core-web-vitals"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:storybook/recommended",
+    "prettier"
+  ],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -8,6 +15,7 @@
     "jest": true,
     "node": true
   },
+  "plugins": ["@typescript-eslint", "testing-library", "jest-dom", "storybook"],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "no-underscore-dangle": [2, { "allow": ["__typename"] }],
@@ -51,5 +59,13 @@
     "react/no-unused-prop-types": "off",
     "react/require-default-props": "off",
     "react/self-closing-comp": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-require-imports": "off"
+      }
+    }
+  ]
 }
