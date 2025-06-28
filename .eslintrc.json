@@ -14,7 +14,7 @@
     "jest": true,
     "node": true
   },
-  "plugins": ["@typescript-eslint", "testing-library", "jest-dom", "storybook"],
+  "plugins": ["@typescript-eslint", "testing-library", "jest-dom"],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "no-underscore-dangle": [2, { "allow": ["__typename"] }],
@@ -61,7 +61,7 @@
   },
   "overrides": [
     {
-      "files": ["*.js"],
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
       "rules": {
         "@typescript-eslint/no-require-imports": "off"
       }
