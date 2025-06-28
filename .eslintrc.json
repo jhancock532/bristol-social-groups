@@ -1,12 +1,11 @@
 // See https://github.com/torchbox/eslint-config-torchbox for rules.
 {
   "extends": [
-    "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:testing-library/react",
-    "plugin:jest-dom/recommended",
-    "plugin:storybook/recommended",
-    "prettier"
+  "torchbox/typescript",
+  "next/core-web-vitals",
+  "plugin:testing-library/react",
+  "plugin:jest-dom/recommended",
+  "prettier"
   ],
   "env": {
     "browser": true,
