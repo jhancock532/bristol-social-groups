@@ -13,6 +13,7 @@
     "test": "jest",
     "lint": "eslint . --resolve-plugins-relative-to node_modules && prettier --check '**/*.{md,css,scss,js,ts,tsx,json,yaml,yml}' && stylelint **/*.scss",
     "format": "prettier --write '**/?(.)*.{md,css,scss,js,ts,tsx,json,yaml,yml}'",
+    "pre-commit-tasks": "npm run lint && npm test",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
