@@ -14,7 +14,14 @@ const customJestConfig: Config.InitialOptions = {
         '^@/(.*)$': '<rootDir>/src/$1',
         '\\.(scss|sass|css)$': 'identity-obj-proxy', // Only needed if you're using CSS Modules
     },
-    testMatch: ['**/__tests__/**/*.(test|spec).(js|jsx|ts|tsx)'],
+    testMatch: [
+        // Unit tests
+        '**/?(*.)+(test).[jt]s?(x)',
+        // Component tests
+        '**/?(*.)+(spec).[jt]s?(x)',
+        // Exclude visual tests
+        '!**/?(*.)+(visual.spec).[jt]s?(x)',
+    ],
 };
 
 export default createJestConfig(customJestConfig);
