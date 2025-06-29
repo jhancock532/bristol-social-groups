@@ -7,11 +7,12 @@ const createJestConfig = nextJest({
 });
 
 const customJestConfig: Config.InitialOptions = {
-    setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-    testEnvironment: 'jsdom',
+    // No external setup file; use built-in utilities directly
+    setupFilesAfterEnv: ['@testing-library/jest-dom'],
+    testEnvironment: 'jest-environment-jsdom',
     moduleNameMapper: {
-        '\\.(scss|sass|css)$': 'identity-obj-proxy',
         '^@/(.*)$': '<rootDir>/src/$1',
+        '\\.(scss|sass|css)$': 'identity-obj-proxy', // Only needed if you're using CSS Modules
     },
     testMatch: ['**/__tests__/**/*.(test|spec).(js|jsx|ts|tsx)'],
 };
