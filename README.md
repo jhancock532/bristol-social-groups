@@ -20,29 +20,58 @@ The repo has a few automation tools for developers - see the `.cursor/rules` pro
 - [Development roadmap](https://github.com/jhancock532/bristol-social-groups/blob/main/documentation/development-roadmap.md)
 - [Development ethos](https://github.com/jhancock532/bristol-social-groups/blob/main/documentation/development-ethos.md)
 
-## 🧪 Testing Setup
+### Testing Setup
 
-This project includes unit testing using **Jest** and **React Testing Library**, with tooling to enforce consistent and high-quality tests.
+This project includes a comprehensive setup for unit testing using **Jest** and **React Testing Library**, ensuring that components are tested from the user's perspective. It also enforces testing best practices through linting and pre-commit hooks.
 
-### ✅ What's Included
+### What’s Included
 
-- **Basic tests** have been added for existing components under the `src/__tests__/` directory.
-- **Jest** is configured for unit testing.
-- **React Testing Library** is used to test components from the user's perspective.
-- **@testing-library/jest-dom** provides custom DOM matchers for better assertions.
-- **eslint-plugin-testing-library** is installed and integrated into the ESLint config to enforce testing best practices.
-- A `test` script has been added to `package.json`:
+- Test files are located in the `src/__tests__/` directory.
+- [Jest](https://jestjs.io/) is used as the test runner.
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) is used to simulate real user interactions and behavior.
+- [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom) provides custom DOM matchers for more expressive and reliable assertions.
+- [`eslint-plugin-testing-library`](https://github.com/testing-library/eslint-plugin-testing-library) is integrated into the ESLint config to enforce best practices when writing tests.
 
-  ```json
+### Running Tests
+
+To run tests manually:
+
+```sh
+npm test
+```
+This is defined in your `package.json`:
+
+```json
+{
   "scripts": {
     "test": "jest"
   }
-Pre-commit checks using Husky ensure that:
+}
+```
+### Pre-commit Checks with Husky
 
-npm test is run to validate components.
+This project uses Husky to ensure code quality before every commit. The pre-commit hook runs a custom task that includes:
+```sh
+  npm run pre-commit-tasks
+```
+This command runs:
 
-npm run lint is executed to catch style and logic issues early.
+- `npm test` – Validates that components work as expected  
+- `npm run lint` – Detects and flags style or logic issues
 
-CI pipeline integration: Tests are run automatically as part of the GitHub Actions workflows to verify that pull requests and commits do not break the app.
+These automated checks help maintain code reliability and consistency throughout the development process.
 
-💡 For more on best practices with React Testing Library, check out this guide by Kent C. Dodds.
+### Continuous Integration
+
+A GitHub Actions CI pipeline is configured to automatically run all tests and checks on:
+
+- Every pull request
+
+- Every push to the main branch
+
+This ensures no breaking changes are introduced during development or code review.
+
+### Further Reading
+
+To learn more about writing effective tests with React Testing Library, check out [this guide by Kent C. Dodds](https://testing-library.com/docs/intro/).
+
