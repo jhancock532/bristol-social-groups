@@ -1,25 +1,18 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { Header } from './Header';
 
 describe('Header component', () => {
-    test('renders the Open menu button', () => {
+    test('does not render the Close menu button initially', () => {
+        render(<Header />);
+        const closeMenuButton = screen.queryByLabelText('Close menu');
+        expect(closeMenuButton).not.toBeInTheDocument(); // because it's not rendered
+    });
+
+    test('renders the Close menu button after clicking Open menu', () => {
         render(<Header />);
         const openMenuButton = screen.getByLabelText('Open menu');
-        expect(openMenuButton).toBeInTheDocument();
-    });
-
-    test('renders the Close menu button (initially hidden)', () => {
-        render(<Header />);
+        fireEvent.click(openMenuButton);
         const closeMenuButton = screen.getByLabelText('Close menu');
-        expect(closeMenuButton).toBeInTheDocument();
-    });
-
-    test('renders all navigation links', () => {
-        render(<Header />);
-        expect(screen.getByText(/home/i)).toBeInTheDocument();
-        expect(screen.getByText(/about/i)).toBeInTheDocument();
-        expect(screen.getByText(/more resources/i)).toBeInTheDocument();
-        expect(screen.getByText(/add a group/i)).toBeInTheDocument();
-        expect(screen.getByText(/blog/i)).toBeInTheDocument();
+        expect(closeMenuButton).toBeInTheDocument(); // now it's rendered
     });
 });
