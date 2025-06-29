@@ -1,7 +1,5 @@
-// src/__tests__/header.test.tsx
-
 import { render, screen } from '@testing-library/react';
-import { Header } from '../components/Header/Header';
+import { Header } from './Header';
 
 describe('Header component', () => {
     test('renders the Open menu button', () => {
