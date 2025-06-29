@@ -55,17 +55,18 @@ export default function Home({ groups }: { groups: Group[] }) {
         setSearchQuery(event.target.value);
     };
 
-    const searchOptions = {
-        includeScore: true,
-        minMatchCharLength: 3,
-        useAnd: false,
-        threshold: 0.3,
-        matchAllTokens: false,
-        tokenize: true,
-        keys: ['name', 'description', 'tags', 'details'],
-    };
-
-    const fuse = new Fuse(groups, searchOptions);
+    const fuse = useMemo(() => {
+        const searchOptions = {
+            includeScore: true,
+            minMatchCharLength: 3,
+            useAnd: false,
+            threshold: 0.3,
+            matchAllTokens: false,
+            tokenize: true,
+            keys: ['name', 'description', 'tags', 'details'],
+        };
+        return new Fuse(groups, searchOptions);
+    }, [groups]);
 
     const filteredGroups = useMemo(() => {
         if (searchQuery.length > 2) {
@@ -80,7 +81,7 @@ export default function Home({ groups }: { groups: Group[] }) {
             );
         }
         return filterGroups(groups, selectedGroupTags, selectedWeekday);
-    }, [groups, selectedGroupTags, selectedWeekday, searchQuery]);
+    }, [fuse, groups, selectedGroupTags, selectedWeekday, searchQuery]);
 
     const filteredGroupsContainRegularLocation =
         filteredGroups.regularGroups.some((group: Group) => {
