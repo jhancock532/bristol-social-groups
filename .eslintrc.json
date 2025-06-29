@@ -1,12 +1,13 @@
 // See https://github.com/torchbox/eslint-config-torchbox for rules.
 {
   "extends": [
-  "torchbox/typescript",
-  "next/core-web-vitals",
-  "plugin:testing-library/react",
-  "plugin:testing-library/dom",
-  "plugin:jest-dom/recommended",
-  "prettier"
+    "torchbox/typescript",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:testing-library/react",
+    "plugin:testing-library/dom",
+    "plugin:jest-dom/recommended",
+    "prettier"
   ],
   "env": {
     "browser": true,
@@ -19,10 +20,11 @@
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "no-underscore-dangle": [2, { "allow": ["__typename"] }],
-    // "@next/next/no-img-element": "off",
+    "@next/next/no-img-element": "off",
     // "@next/next/google-font-display": "off",
     // "@next/next/google-font-preconnect": "off",
     // "@next/next/no-page-custom-font": "off",
+    "no-console": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-redeclare": "off",
     "@typescript-eslint/no-shadow": "off",
@@ -61,7 +63,7 @@
     "react/self-closing-comp": "off"
   },
   "overrides": [
-      {
+    {
       "files": ["**/__tests__/**/*.test.tsx", "**/*.spec.tsx"],
       "extends": ["plugin:testing-library/react"]
     }
