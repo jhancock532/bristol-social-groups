@@ -1,0 +1,69 @@
+{
+  "name": "Bristol Codehub",
+  "slug": "bristol-codehub",
+  "description": "A place to code, share, and learn from one another, and make connections within the industry. It is aimed at anybody who is interested in learning and sharing their knowledge, beginners and experienced developers alike.",
+  "details": "",
+  "links": [
+    {
+      "type": "Meetup",
+      "url": "https://www.meetup.com/codehub-bristol"
+    },
+    {
+      "type": "Website",
+      "url": "https://www.codehub.org.uk/about-us"
+    }
+  ],
+  "tags": [
+    "coding",
+    "development",
+    "live coding"
+  ],
+  "events": [
+    {
+      "name": "HackNight",
+      "time": {
+        "frequency": "Fortnightly on Tuesdays",
+        "weekday": "Tuesday",
+        "start": "Jan 1, 1970 18:15",
+        "end": "Jan 1, 1970 20:30",
+        "details": "A social coding and tech meetup for anyone, regardless of level of experience. It's a chill event where you can work on those side projects you’ve been putting off, team up with others, or tackle some coding challenges."
+      },
+      "location": {
+        "address": "DeskLodge House, 2 Redcliffe Way, Redcliffe, Bristol BS1 6NL",
+        "latitude": "51.448692",
+        "longitude": "-2.587149,17",
+        "googleMapsLink": "https://maps.app.goo.gl/ntCyQVf3KQh7xfM19"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": "Free to join, no sign up necessary."
+      },
+      "booking": {
+        "required": "Not required"
+      }
+    },
+    {
+      "name": "Python Code Dojo",
+      "time": {
+        "frequency": "Fortnightly on Wednesdays",
+        "weekday": "Wednesday",
+        "start": "Jan 1, 1970 18:00",
+        "end": "Jan 1, 1970 20:30",
+        "details": "A non-competitive, mixed group coding session, where people of all levels are welcome."
+      },
+      "location": {
+        "address": "DeskLodge House, 2 Redcliffe Way, Redcliffe, Bristol BS1 6NL",
+        "latitude": "51.448692",
+        "longitude": "-2.587149,17",
+        "googleMapsLink": "https://maps.app.goo.gl/ntCyQVf3KQh7xfM19"
+      },
+      "cost": {
+        "sessionPrice": 0,
+        "details": "Free to join, no sign up necessary."
+      },
+      "booking": {
+        "required": "Not required"
+      }
+    }
+  ]
+}
