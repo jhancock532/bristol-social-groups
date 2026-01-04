@@ -1,0 +1,40 @@
+{
+    "name": "Club 395",
+    "slug": "club-395",
+    "description": "For all ages, introverts or not, come make friends, do art, craft anything you like, with different focuses every week, completely unpredictable but fun!",
+    "details": "A safe & diverse space in every possible way, to share your projects, your struggles, be truly yourself and have a creative sesh - whether it's drawing, painting, crocheting, fashion, digital design, photography, brainstorming, or join us and play Dungeons and Dragons, or discuss anime & manga 🌊  Please donate what you can or buy drinks if you can to support.",
+    "links": [
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/club395_"
+      }
+    ],
+    "tags": [
+      "creative"
+    ],
+    "events": [
+      {
+        "time": {
+          "frequency": "Weekly on Tuesdays",
+          "weekday": "Tuesday",
+          "start": "Jan 1, 1970 19:00",
+          "end": "Jan 1, 1970 22:00",
+          "details": ""
+        },
+        "location": {
+          "address": "Unit 4, Old Malt House, Little Ann St, St Jude's, BS2 9EB",
+          "latitude": "51.4595869",
+          "longitude": "-2.5784456",
+          "googleMapsLink": "https://maps.app.goo.gl/xJTcFvpGtnPEbhENA",
+          "details": ""
+        },
+        "cost": {
+          "sessionPrice": 0,
+          "details": "Please donate what you can or buy drinks if you can to support. Donations on Headfirst 😇"
+        },
+        "booking": {
+          "required": "Not required"
+        }
+      }
+    ]
+  } 
