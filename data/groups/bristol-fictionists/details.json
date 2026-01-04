@@ -1,0 +1,13 @@
+{
+  "name": "Bristol Fictionists",
+  "slug": "bristol-fictionists",
+  "description": "An informal but very friendly writers’ social group for fiction writers. We meet monthly in a Bristol city centre pub. Information about the venue is emailed to newsletter subscribers, please sign up on the website.",
+  "details": "Meetups typically held on a Wednesday evening, 7pm to 10pm, but please check the website and sign up to the newsletter for latest information.",
+  "tags": ["writing"],
+  "links": [
+    {
+      "type": "Website",
+      "url": "https://bristolwriters.co.uk/"
+    }
+  ]
+}

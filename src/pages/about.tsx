@@ -100,6 +100,22 @@ export default function About() {
                         </Link>
                     </li>
                     <li>
+                        🏃 With support from Simon Tolley of{' '}
+                        <Link url="https://www.ravers2runners.com/" external>
+                            Ravers2Runners
+                        </Link>
+                    </li>
+                    <li>
+                        📚 With support from{' '}
+                        <Link url="https://nicolamartin.com/" external>
+                            Nicola Martin
+                        </Link>{' '}
+                        of{' '}
+                        <Link url="https://bristolwriters.co.uk/" external>
+                            Bristol Fictionists
+                        </Link>
+                    </li>
+                    <li>
                         🙌 General support and enthusiasm:{' '}
                         <Link url="https://www.reddit.com/r/bristol/" external>
                             r/Bristol

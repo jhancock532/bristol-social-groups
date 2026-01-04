@@ -1,0 +1,40 @@
+{
+    "name": "Ravers2Runners",
+    "slug": "ravers-2-runners",
+    "description": "Ravers2Runners enables party-people to find and participate in fun, non-judgemental, music oriented runs and running events, helping them to become fitter and healthier.",
+    "details": "We want to help millions of ravers from around the world become healthier and happier through exercise. The R2R community is an inclusive and non-judgemental space. If you want to move your body and be sociable with like-minded people without it having to be in a nightclub, then we’re the community for you.",
+    "tags": ["running", "fitness"],
+    "links": [
+        {
+            "type": "Website",
+            "url": "https://www.ravers2runners.com/"
+        },
+        {
+            "type": "Instagram",
+            "url": "https://www.instagram.com/ravers2runners/"
+        },
+        {
+            "type": "Facebook",
+            "url": "https://www.facebook.com/ravers2runners"
+        }
+    ],
+    "events": [
+        {
+          "name": "Regular Wednesday evening runs",
+          "time": {
+            "frequency": "Weekly",
+            "weekday": "Wednesday",
+            "start": "Jan 1, 1970 18:30",
+            "end": "Jan 1, 1970 20:00",
+            "details": "Join us for a fun 5km loop of the centre or BS5 area, intervals or something a little different from time-to-time. We run a steady pace to tunes with a non-judgemental attitude. Check the WhatsApp group for updates on the day!"
+          },
+          "locationURL": "https://www.ravers2runners.com/localweeklyruns",
+          "cost": {
+            "sessionPrice": 0
+          },
+          "booking": {
+            "required": "Not required"
+          }
+        }
+    ]
+}

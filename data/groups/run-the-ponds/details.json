@@ -1,0 +1,39 @@
+{
+    "name": "Run The Ponds",
+    "slug": "run-the-ponds",
+    "description": "Social running for all faces & paces. Thursdays 5+8K groups from The All Inn, additional runs on Saturdays - please check Instagram and join the WhatsApp group linked there for more information.",
+    "links": [
+      {
+        "type": "Instagram",
+        "url": "https://www.instagram.com/runtheponds/"
+      }
+    ],
+    "tags": [
+      "fitness",
+      "running"
+    ],
+    "events": [
+      {
+        "name": "Thursday evenings",
+        "time": {
+          "frequency": "Weekly",
+          "weekday": "Thursday",
+          "start": "Jan 1, 1970 18:00",
+          "end": "Jan 1, 1970 20:00",
+          "details": "5+8K groups from The All Inn. Just turn up or join on WhatsApp, see latest link on Instagram bio."
+        },
+        "location": {
+          "address": "The All Inn, 106 North St, Bedminster, BS3 1EN",
+          "latitude": "51.4818777",
+          "longitude": "-2.5232678",
+          "googleMapsLink": "https://maps.app.goo.gl/6WNmfHT2XHk7DbDo7"
+        },
+        "cost": {
+          "sessionPrice": 0
+        },
+        "booking": {
+          "required": "Not required"
+        }
+      }
+    ]
+}
