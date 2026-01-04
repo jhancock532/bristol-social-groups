@@ -175,7 +175,11 @@ export default function More() {
                 aspirational panel events, in order to connect the Bristol Girl
                 community and create a support network for all women. We want to
                 help each other make the most of this wonderful city that we
-                call home.
+                call home. Bristol Girl is part of the{' '}
+                <Link url="https://citygirlnetwork.com/bristol-girl" external>
+                    City Girl Network
+                </Link>
+                .
             </p>
             <p>
                 <Link
