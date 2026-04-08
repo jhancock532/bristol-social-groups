@@ -1,7 +1,7 @@
 {
   "name": "Bristol Run Club",
   "slug": "bristol-run-club",
-  "description": "Regular runs with 2.5km and 5km groups around Bristol, check their Instagram to confirm the start location each week.",
+  "description": "Regular runs with 2.5km and 5km groups around Bristol, check their Instagram or join the Whatsapp group to confirm the start location each week.",
   "details": "",
   "links": [
     {
@@ -17,31 +17,13 @@
   ],
   "events": [
     {
-      "name": "Tuesday Morning Run",
-      "time": {
-        "frequency": "Weekly",
-        "weekday": "Tuesday",
-        "start": "Jan 1, 1970 06:15",
-        "end": "Jan 1, 1970 06:30",
-        "details": "Meetup from 6:15am, with the run starting at 6:30am. 5km run followed by a post run get together."
-      },
-      "locationURL": "https://www.instagram.com/bristolrunclub/",
-      "cost": {
-        "sessionPrice": 0,
-        "details": "Free to join, no sign up necessary."
-      },
-      "booking": {
-        "required": "Not required"
-      }
-    },
-    {
       "name": "Thursday Evening Run",
       "time": {
         "frequency": "Weekly",
         "weekday": "Thursday",
         "start": "Jan 1, 1970 18:15",
         "end": "Jan 1, 1970 20:00",
-        "details": "Meetup from 6:15pm, with the run starting at 6:30pm. Two groups of 2.5km and 5km followed by a post run get together."
+        "details": "Meetup from 6:15pm, with the run starting at 6:30pm. Three groups including a beginners 2.5km, chill 5km and faster 5km, followed by a post run pint."
       },
       "locationURL": "https://www.instagram.com/bristolrunclub/",
       "cost": {
@@ -53,13 +35,13 @@
       }
     },
     {
-      "name": "Sunday Run",
+      "name": "Sunday Morning Run",
       "time": {
         "frequency": "Weekly",
         "weekday": "Sunday",
         "start": "Jan 1, 1970 09:45",
         "end": "Jan 1, 1970 11:00",
-        "details": "Meetup from 9:45am, with the run starting at 10:00am. Two groups of 2.5km and 5km followed by a post run get together."
+        "details": "Meetup from 9:45am, with the run starting at 10:00am. Three groups including a beginners 2.5km, chill 5km and faster 5km, followed by a post run coffee and cake."
       },
       "locationURL": "https://www.instagram.com/bristolrunclub/",
       "cost": {
