@@ -31,8 +31,8 @@
         "details": "Free to attend - please support the bar by buying a drink."
       },
       "booking": {
-        "required": "Not required",
-        "details": ""
+        "required": "Required",
+        "details": "Please get a free e-ticket on Headfirst for the day you're attending."
       }
     }
   ]
