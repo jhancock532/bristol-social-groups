@@ -4,6 +4,7 @@ export default function Document() {
     return (
         <Html lang="en">
             <Head>
+                <meta name="robots" content="noindex, follow" />
                 <link
                     rel="stylesheet"
                     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
